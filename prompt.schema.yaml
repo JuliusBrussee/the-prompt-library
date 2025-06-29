@@ -5,7 +5,7 @@
 # Use it with tools like `yamale`, `jsonschema`, or GitHub’s built‑in
 # YAML validation action.
 
-$id: https://github.com/juliusbrusse/the-prompt-library/raw/main/prompt.schema.yaml
+$id: https://github.com/juliusbrussee/the-prompt-library/raw/main/prompt.schema.yaml
 $schema: http://json-schema.org/draft-07/schema#
 
 title: Prompt
