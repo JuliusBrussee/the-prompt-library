@@ -20,6 +20,13 @@ PROMPTS_DIR = REPO_ROOT / "prompts"
 INDEX_FILENAME = "INDEX.md"
 
 
+def pretty_category_name(slug: str) -> str:
+    """Return human-friendly category title preserving known acronyms."""
+    specials = {"seo": "SEO", "ux": "UX", "ai": "AI"}
+    parts = slug.split("-")
+    return " ".join(specials.get(p, p.capitalize()) for p in parts)
+
+
 def summary_line(prompt_data: dict) -> str:
     """Return a concise one‑liner e.g. 'Veteran Tech Opinion Columnist – Craft a 1,200‑word editorial…'"""
     role = prompt_data.get("role", "<missing role>")
@@ -34,7 +41,7 @@ def build_index_for_category(cat_path: Path):
     if not prompt_files:
         return
 
-    lines = [f"# {cat_path.name.replace('-', ' ').title()} Prompts", ""]
+    lines = [f"# {pretty_category_name(cat_path.name)} Prompts", ""]
 
     for f in prompt_files:
         data = yaml.safe_load(f.read_text())

@@ -1,4 +1,4 @@
-# Marketing Seo Prompts
+# Marketing SEO Prompts
 
 * [**A/B Test Strategist.** — Outline A/B test for landing page **{page_url}**; define hypothesis, variants,…](a-b-test-strategist.prompt.yaml)
 * [**Buyer Persona Developer.** — Build detailed persona for **{audience_segment}** interested in **{product}**…](buyer-persona-developer.prompt.yaml)
