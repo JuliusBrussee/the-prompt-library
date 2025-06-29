@@ -1,0 +1,277 @@
+Category,Prompt,CriticalInformation
+Content Writing & Blogging,"ROLE: Veteran Tech Opinion Columnist.
+OBJECTIVE: Craft a 1,200‑word editorial on **{topic}** for **{publication}** that translates complex AI developments into layman's terms while maintaining expert depth.
+REQUIREMENTS:
+  • Integrate perspectives of three stakeholders (regulators, industry leaders, everyday users).
+  • Include one storytelling anecdote illustrating real‑world impact.
+  • Conclude with two evidence‑based forecasts for the next 18 months.
+STYLE: Authoritative yet conversational, active voice, AP style.
+OUTPUT FORMAT: Markdown with H2 headers (Background | Stakeholder Insights | Forecasts | Takeaways).",topic; publication
+Content Writing & Blogging,"ROLE: SEO‑specialized Content Strategist.
+OBJECTIVE: Produce a pillar blog post outline (minimum 3,000 words) on **{topic}** targeting **{persona}** that will rank top‑3 for the keyword cluster **{keyword_cluster}**.
+REQUIREMENTS:
+  • Identify 8 sub‑topics mapped to search intent stages (TOFU, MOFU, BOFU).
+  • Provide suggested word counts, keyword density (%), and internal link anchors.
+  • Recommend one interactive element (quiz, calculator, visualization) to improve dwell time.
+OUTPUT FORMAT: Markdown table.",topic; persona; keyword_cluster
+Content Writing & Blogging,"ROLE: Newsletter Ghostwriter.
+OBJECTIVE: Draft a 400‑word weekly digest for **{brand}** summarizing the three most impactful events in **{sector}**.
+REQUIREMENTS:
+  • Begin with a 30‑word hook.
+  • For each event: include a one‑sentence TL;DR, two bullet insights, and an 'Why it matters' line.
+  • Use a friendly but data‑driven tone.
+OUTPUT FORMAT: Plain text, ready to paste into Mailchimp.",brand; sector
+Content Writing & Blogging,"ROLE: Conversion Copy Specialist.
+OBJECTIVE: Rewrite the following landing‑page hero section **{text}** to achieve a Flesch Reading Ease > 60 and raise emotional appeal.
+REQUIREMENTS:
+  • Keep headline under 10 words, sub‑headline under 20.
+  • Incorporate a power verb and one specific benefit.
+METRICS: Provide original vs revised readability scores and headline emotional value score (EMV).
+OUTPUT: Table with Original | Revised | Metric Comparison.",text
+Content Writing & Blogging,"ROLE: Brand Storytelling Architect.
+OBJECTIVE: Develop a three‑email narrative arc introducing **{product}** to first‑time subscribers.
+STRUCTURE PER EMAIL:
+  1️⃣ Subject line (<45 chars, Title Case)
+  2️⃣ Opening hook (≤30 words)
+  3️⃣ Story segment employing the Hero's Journey framework
+  4️⃣ CTA with urgency cue.
+Ensure cohesion across emails and measurable progression of reader commitment (curiosity → desire → action).",product
+Content Writing & Blogging,"ROLE: Social Media Tone Adapter.
+OBJECTIVE: Transform the blog excerpt **{paragraph}** into platform‑optimized posts for Twitter, LinkedIn, and Instagram.
+GUIDELINES:
+  • Twitter: 2‑tweet thread, each ≤260 chars, includes a statistic and a question.
+  • LinkedIn: 120‑word mini‑essay, uses storytelling CTA.
+  • Instagram: Caption ≤150 words plus 3 hashtag suggestions.
+Ensure brand voice consistency and add an emoji only on Instagram.",paragraph
+Content Writing & Blogging,"ROLE: Podcast Show Notes Producer.
+OBJECTIVE: Create detailed show notes for episode **{episode_title}** featuring guest **{guest_name}**.
+INCLUDE:
+  • 100‑word episode summary
+  • Timestamped highlights (mm:ss – key takeaway) at 2‑minute granularity
+  • Guest bio (50 words) and two social links
+  • Three pull‑quotes formatted for Twitter
+OUTPUT: Markdown.",episode_title; guest_name
+Content Writing & Blogging,"ROLE: Expert Interview Prep Assistant.
+OBJECTIVE: Generate 12 probing interview questions for **{expert_role}** on **{topic}**.
+REQUIREMENTS:
+  • Balance 4 strategic, 4 operational, 4 personal perspective questions.
+  • Each question ≤20 words, avoids yes/no wording.
+  • Include a one‑sentence rationale for each question.",expert_role; topic
+Content Writing & Blogging,"ROLE: Fact‑Checker & Citation Assistant.
+OBJECTIVE: Validate the factual claims in **{article_text}** and supply APA 7th citations for each.
+OUTPUT:
+  • Table: Claim | Verified/False | Source Title | Year | DOI/URL.
+  • Summary paragraph noting any unsubstantiated statements.",article_text
+Content Writing & Blogging,"ROLE: Blog SEO Auditor.
+OBJECTIVE: Audit the post at **{url}** for on‑page SEO and produce an optimization roadmap.
+TASKS:
+  • List 5 highest‑value keyword gaps with search volume.
+  • Rate title tag, meta description, H1‑H3 hierarchy, and internal links (score /10 each).
+  • Suggest improvements with before/after snippets.
+OUTPUT: Markdown checklist.",url
+Academic Writing & Research,"ROLE: Graduate Thesis Mentor.
+OBJECTIVE: Craft a precise research question and justification for a study on **{topic}** in **{field}** at PhD level.
+INCLUDE: knowledge gap identification, theoretical framework (≤150 words), and testable hypothesis statement.
+OUTPUT FORMAT: Paragraph style.",topic; field
+Academic Writing & Research,"ROLE: Literature Review Synthesizer.
+OBJECTIVE: Create a thematic literature map for **{topic}** using sources post‑2021 only.
+REQUIREMENTS:
+  • Group at least 12 studies into 3 themes; list citation details.
+  • Provide one consensus point and one controversy per theme.
+  • Visual output: ASCII mind map.",topic
+Academic Writing & Research,"ROLE: Academic Paraphrase Checker.
+OBJECTIVE: Rewrite **{paragraph}** to reduce similarity index below 10% while preserving technical nuance.
+RETURN: Revised text + bullet note explaining changes (structure, synonyms, syntax).",paragraph
+Academic Writing & Research,"ROLE: Statistical Methodologist.
+OBJECTIVE: Recommend an analysis plan for dataset **{dataset_description}** aiming to test the hypothesis **{hypothesis}**.
+INCLUDE: variable operationalization, suitable statistical tests (with assumptions), effect size metrics, and robustness checks.
+OUTPUT: Markdown numbered list.",dataset_description; hypothesis
+Academic Writing & Research,"ROLE: Structured Abstract Composer.
+OBJECTIVE: Draft a 250‑word structured abstract for study **{study_title}**.
+SECTIONS: Background | Methods | Results | Conclusion | Implications, each 2‑3 sentences.
+",study_title
+Academic Writing & Research,"ROLE: Peer‑Review Critique Assistant.
+OBJECTIVE: Provide constructive peer‑review comments for the manuscript **{manuscript_text}** following journal guidelines.
+STRUCTURE: Major Comments (≥3) | Minor Comments (≥3) | Recommendation summary.
+TONE: Courteous, evidence‑backed.",manuscript_text
+Academic Writing & Research,"ROLE: Citation Style Converter.
+OBJECTIVE: Transform bibliography entries **{references}** from APA 7th to Chicago‑Notes style.
+OUTPUT: Numbered list.",references
+Academic Writing & Research,"ROLE: Empirical Result Interpreter.
+OBJECTIVE: Explain the statistical output **{output_block}** to a non‑statistical audience.
+FORMAT: Plain English summary, key takeaway bullets, and limitations.",output_block
+Academic Writing & Research,"ROLE: Ethical Review Drafting Assistant.
+OBJECTIVE: Draft the ethical considerations section for a study involving **{population}** using **{methodology}**.
+INCLUDE: consent procedure, risk mitigation, data privacy measures, and IRB compliance statement.",population; methodology
+Academic Writing & Research,"ROLE: Conference Abstract Rewriter.
+OBJECTIVE: Condense **{long_abstract}** to 300 words without losing key findings and ensuring clear contribution statement.",long_abstract
+Creative Writing,"ROLE: Story Architect.
+OBJECTIVE: Outline a 5‑chapter novella in the **{genre}** genre centered on protagonist **{name}**.
+INCLUDE: chapter titles, one‑sentence cliffhanger per chapter, and dominant theme.
+FRAMEWORK: Freytag’s Pyramid.",genre; name
+Creative Writing,"ROLE: Scene Detail Enhancer.
+OBJECTIVE: Expand the brief setting description **{setting_snippet}** into a 250‑word immersive scene using multi‑sensory imagery.
+FOCUS: show, don’t tell.",setting_snippet
+Creative Writing,"ROLE: Character Flaw Designer.
+OBJECTIVE: Generate 3 deep internal conflicts for character **{character_name}** that align with the archetype **{archetype}** and drive plot tension.",character_name; archetype
+Creative Writing,"ROLE: Dialogue Rewriter.
+OBJECTIVE: Rewrite the dialogue segment **{dialogue}** to heighten subtext and pacing while keeping word count ±10%.",dialogue
+Creative Writing,"ROLE: Poetry Form Coach.
+OBJECTIVE: Compose a **{form}** poem on **{theme}** employing at least one example each of alliteration, enjambment, and internal rhyme.",form; theme
+Creative Writing,"ROLE: Flash Fiction Generator.
+OBJECTIVE: Write a 100‑word micro‑fiction about **{prompt}** ending with a twist.
+STYLE: minimalistic, strong final image.",prompt
+Creative Writing,"ROLE: Alternate Ending Visionary.
+OBJECTIVE: Propose two alternative endings for the story scenario **{scenario}**, each ≤250 words and exploring divergent themes.",scenario
+Creative Writing,"ROLE: Back‑Cover Blurb Maker.
+OBJECTIVE: Transform synopsis **{synopsis}** into a gripping 150‑word blurb with hook, stakes, and teaser question.",synopsis
+Creative Writing,"ROLE: Writing Prompt Curator.
+OBJECTIVE: Provide 10 genre‑agnostic writing prompts around motif **{motif}**, each ≤25 words, designed to spark character‑driven stories.",motif
+Creative Writing,"ROLE: Imaginary City Builder.
+OBJECTIVE: Describe a fantastical city famed for **{unique_feature}** in 200 words, focusing on architecture, culture, and atmosphere.",unique_feature
+Coding & Software Development,"ROLE: Code Refactor Consultant.
+OBJECTIVE: Improve the code snippet **{code}** in **{language}** for readability, modularity, and performance without altering functionality.
+DELIVERABLES: refactored code, inline comments on changes, and complexity comparison (before vs after).",code; language
+Coding & Software Development,"ROLE: Algorithm Complexity Analyst.
+OBJECTIVE: Explain time and space complexity for algorithm **{algorithm_description}** and suggest optimization opportunities.",algorithm_description
+Coding & Software Development,"ROLE: Unit Test Generator.
+OBJECTIVE: Generate pytest unit tests for function **{function_name}** to achieve ≥90% coverage.
+INCLUDE: edge cases and parameterized tests.",function_name
+Coding & Software Development,"ROLE: SQL Query Crafter.
+OBJECTIVE: Write an optimized SQL query to retrieve **{business_question}** from tables **{tables_involved}**.
+CONSIDER: indexing, CTEs, and execution plan hints.",business_question; tables_involved
+Coding & Software Development,"ROLE: API Design Architect.
+OBJECTIVE: Outline RESTful API endpoints for managing **{resource}** including HTTP verbs, sample request/response JSON, and authentication scheme.",resource
+Coding & Software Development,"ROLE: DevOps Dockerfile Author.
+OBJECTIVE: Produce a production‑ready Dockerfile for **{framework}** app enabling multi‑stage build, non‑root user, and healthcheck.",framework
+Coding & Software Development,"ROLE: Git Commit Message Formatter.
+OBJECTIVE: Draft Conventional Commit messages for change set **{change_log}**, each with scope, type, and short imperative description.",change_log
+Coding & Software Development,"ROLE: Memory Optimization Advisor.
+OBJECTIVE: Recommend three strategies to reduce RAM usage in **{language}** application processing large arrays **{use_case}**.",language; use_case
+Coding & Software Development,"ROLE: Code Documentation Generator.
+OBJECTIVE: Generate docstrings for module **{module_name}** following Google style with parameter, return, and example sections.",module_name
+Coding & Software Development,"ROLE: Design Pattern Recommender.
+OBJECTIVE: Suggest suitable design pattern(s) to restructure **{current_architecture_issue}** in **{language}**, with rationale and UML sketch (ASCII).",current_architecture_issue; language
+Data Analysis & Visualization,"ROLE: Exploratory Data Analyst.
+OBJECTIVE: Outline a full EDA plan for **{dataset}** including key visualizations, data quality checks, and hypothesis generation.
+DELIVERABLE: Ordered task list with justification.",dataset
+Data Analysis & Visualization,"ROLE: Visualization Storyboarder.
+OBJECTIVE: Design a three‑chart story to explain **{insight}** to executives.
+SPECIFY: chart types, key message of each, and sequencing rationale.",insight
+Data Analysis & Visualization,"ROLE: Model Selection Advisor.
+OBJECTIVE: Recommend top 3 ML models for predicting **{target}** given features **{feature_list}**, citing pros/cons and interpretability.",target; feature_list
+Data Analysis & Visualization,"ROLE: Data Cleaning Pipeline Designer.
+OBJECTIVE: Draft a Python pandas pipeline to handle missing and erroneous values in **{dataset_name}**, with code comments.",dataset_name
+Data Analysis & Visualization,"ROLE: Metric Dashboard SQL Engineer.
+OBJECTIVE: Write SQL to create a summary table aggregating **{metric}** by **{dimension}** for Looker dashboard.
+CONSIDER: efficient window functions.",metric; dimension
+Data Analysis & Visualization,"ROLE: Confusion Matrix Interpreter.
+OBJECTIVE: Explain confusion matrix **{matrix_values}** for stakeholders focusing on precision, recall, and business impact.",matrix_values
+Data Analysis & Visualization,"ROLE: Feature Importance Explainer.
+OBJECTIVE: Summarize SHAP values output **{shap_output}** into plain‑language insights and next‑step recommendations.",shap_output
+Data Analysis & Visualization,"ROLE: A/B Test Analyzer.
+OBJECTIVE: Interpret experiment results **{ab_results}** computing lift, p‑value, and recommending rollout decision.",ab_results
+Data Analysis & Visualization,"ROLE: Data Story Narrator.
+OBJECTIVE: Compose a 500‑word narrative weaving together three insights from **{analysis_summary}** for an internal newsletter.",analysis_summary
+Data Analysis & Visualization,"ROLE: Model Interpretability Strategist.
+OBJECTIVE: Suggest methods to increase transparency of a random forest predicting **{outcome}**, including surrogate models and visualization.",outcome
+Business Strategy & Entrepreneurship,"ROLE: Strategic Analyst.
+OBJECTIVE: Compile a SWOT analysis for **{company}** entering **{market}** with emphasis on AI‑driven disruption factors.",company; market
+Business Strategy & Entrepreneurship,"ROLE: Pitch Deck Content Advisor.
+OBJECTIVE: Outline 10‑slide pitch deck for startup solving **{pain_point}** with **{solution}**, specifying key data points per slide.",pain_point; solution
+Business Strategy & Entrepreneurship,"ROLE: Business Model Canvas Coach.
+OBJECTIVE: Draft a complete business model canvas for idea **{idea}**, including evidence‑based assumptions and risk rating.",idea
+Business Strategy & Entrepreneurship,"ROLE: Pricing Strategist.
+OBJECTIVE: Recommend three pricing tiers for SaaS **{product}** targeting **{segment}**, including feature bundling and psychological pricing cues.",product; segment
+Business Strategy & Entrepreneurship,"ROLE: Go‑To‑Market Planner.
+OBJECTIVE: Map a 6‑month GTM plan for **{product}** in **{region}** detailing channels, KPIs, and resource allocation.",product; region
+Business Strategy & Entrepreneurship,"ROLE: OKR Facilitator.
+OBJECTIVE: Draft OKRs for Q3 for team handling **{goal_area}**, including measurable key results and confidence ratings.",goal_area
+Business Strategy & Entrepreneurship,"ROLE: Revenue Stream Ideator.
+OBJECTIVE: List at least 5 revenue streams for **{business_model}** estimating TAM, SAM, SOM for each.",business_model
+Business Strategy & Entrepreneurship,"ROLE: Competitive Landscape Mapper.
+OBJECTIVE: Produce a competitor matrix comparing **{company}** to **{competitors}** across 5 critical dimensions (price, features, market share, funding, differentiation).",company; competitors
+Business Strategy & Entrepreneurship,"ROLE: Partnership Proposal Writer.
+OBJECTIVE: Draft an outreach email to **{partner_company}** proposing collaboration with clear mutual benefit and next steps.",partner_company
+Business Strategy & Entrepreneurship,"ROLE: KPI Recommender.
+OBJECTIVE: Suggest 5 KPIs to measure success of **{initiative}** with definition, formula, and target benchmark.",initiative
+Marketing & SEO,"ROLE: Keyword Research Analyst.
+OBJECTIVE: Generate 20 long‑tail keywords around **{topic}** with search volume, CPC, and intent categorization.",topic
+Marketing & SEO,"ROLE: Google Ads Copywriter.
+OBJECTIVE: Write 3 ad variants promoting **{product}** focusing on benefit **{key_benefit}** (headlines ≤30 chars, descriptions ≤90).",product; key_benefit
+Marketing & SEO,"ROLE: Content Calendar Planner.
+OBJECTIVE: Build a 4‑week content calendar for **{brand}** with post topics, channels, target persona, and CTAs.",brand
+Marketing & SEO,"ROLE: Social Media Announcer.
+OBJECTIVE: Compose a LinkedIn post announcing **{milestone}** in professional but engaging tone, ≤120 words, include hashtag strategy.",milestone
+Marketing & SEO,"ROLE: Email Drip Architect.
+OBJECTIVE: Create 5‑email onboarding sequence for **{service}** increasing activation rate; specify trigger timings and SMART goal per email.",service
+Marketing & SEO,"ROLE: Tagline Crafter.
+OBJECTIVE: Invent a product tagline (<8 words) expressing **{value_prop}** using poetic devices (alliteration or rhyme).",value_prop
+Marketing & SEO,"ROLE: A/B Test Strategist.
+OBJECTIVE: Outline A/B test for landing page **{page_url}**; define hypothesis, variants, success metric, and sample size calculation.",page_url
+Marketing & SEO,"ROLE: Influencer Campaign Ideator.
+OBJECTIVE: Propose 3 influencer collaboration concepts for **{brand}** on **{platform}**, including expected KPIs and creative brief.",brand; platform
+Marketing & SEO,"ROLE: Buyer Persona Developer.
+OBJECTIVE: Build detailed persona for **{audience_segment}** interested in **{product}** including demographics, psychographics, and buying triggers.",audience_segment; product
+Marketing & SEO,"ROLE: Email Subject Line Generator.
+OBJECTIVE: Craft 5 personalized subject lines for offer **{offer_name}**; each ≤50 characters, include dynamic token.",offer_name
+Education & Tutoring,"ROLE: Lesson Plan Designer.
+OBJECTIVE: Create a 4‑week lesson plan to teach **{subject}** to **{level}** students incorporating Bloom’s Taxonomy.",subject; level
+Education & Tutoring,"ROLE: Quiz Maker.
+OBJECTIVE: Generate 10 multiple‑choice questions assessing **{concept}** with answers and brief explanations.",concept
+Education & Tutoring,"ROLE: Concept Simplifier.
+OBJECTIVE: Explain **{complex_concept}** to a 10‑year‑old using analogies and visuals description.",complex_concept
+Education & Tutoring,"ROLE: Differentiated Instruction Advisor.
+OBJECTIVE: Suggest strategies for learners struggling with **{skill}** across visual, auditory, kinesthetic modalities.",skill
+Education & Tutoring,"ROLE: Rubric Creator.
+OBJECTIVE: Create assessment rubric for project on **{topic}** at grade **{grade_level}** with 4 criteria and 4 proficiency levels.",topic; grade_level
+Education & Tutoring,"ROLE: Study Guide Summarizer.
+OBJECTIVE: Condense chapter **{chapter_text}** into a one‑page study guide with key terms, concepts, and memory hooks.",chapter_text
+Education & Tutoring,"ROLE: Socratic Seminar Questioner.
+OBJECTIVE: Draft 8 open‑ended questions for **{literary_work}** connecting text to modern societal issues.",literary_work
+Education & Tutoring,"ROLE: Essay Feedback Generator.
+OBJECTIVE: Provide feedback on student essay **{essay_text}** focusing on thesis clarity, evidence, and mechanics.",essay_text
+Education & Tutoring,"ROLE: Formative Assessment Designer.
+OBJECTIVE: Design a formative assessment to gauge understanding of **{lesson_objective}** using exit tickets.",lesson_objective
+Education & Tutoring,"ROLE: Interactive Activity Planner.
+OBJECTIVE: Propose 3 interactive online activities to teach **{concept}**, specifying tools and engagement metric.",concept
+Design & UX,"ROLE: UX Copywriter.
+OBJECTIVE: Write signup form microcopy encouraging account creation on **{app}**, covering headline, placeholder, and error states.",app
+Design & UX,"ROLE: User Journey Mapper.
+OBJECTIVE: Outline 5 user journey stages for first‑time visitor to **{website}** including goals, emotions, and touchpoints.",website
+Design & UX,"ROLE: Brand Color Consultant.
+OBJECTIVE: Recommend color palette for **{industry}** brand aiming to evoke **{emotion}**, with HEX codes and accessibility contrast ratio.",industry; emotion
+Design & UX,"ROLE: Persona Creator.
+OBJECTIVE: Build primary user persona for **{product}** covering demographics, goals, pain points, and preferred devices.",product
+Design & UX,"ROLE: Micro‑interaction Designer.
+OBJECTIVE: Suggest 3 delightful micro‑interactions for onboarding flow in **{app}** detailing trigger, feedback, and purpose.",app
+Design & UX,"ROLE: Accessibility Auditor.
+OBJECTIVE: Provide recommendations to improve contrast and navigability of **{page_url}** to meet WCAG 2.2 AA.",page_url
+Design & UX,"ROLE: Usability Test Planner.
+OBJECTIVE: Draft plan for testing **{feature}** with 5 participants, including tasks, success metrics, and post‑test interview script.",feature
+Design & UX,"ROLE: Design System Guide Writer.
+OBJECTIVE: Write button component guidelines for **{framework}** design system including states, spacing, and naming convention.",framework
+Design & UX,"ROLE: Hero Section Copywriter.
+OBJECTIVE: Craft hero headline and subheadline for landing page pursuing **{goal}**, headline <10 words, subheadline <20.",goal
+Design & UX,"ROLE: Heuristic Evaluator.
+OBJECTIVE: Apply Nielsen heuristics to audit **{interface}**, scoring each criterion and summarizing top 3 issues.",interface
+Personal Productivity & Life Planning,"ROLE: Schedule Optimizer.
+OBJECTIVE: Build weekly schedule balancing **{tasks}** within 40 hours, incorporating Pomodoro blocks and buffer time.",tasks
+Personal Productivity & Life Planning,"ROLE: SMART Goal Setter.
+OBJECTIVE: Formulate SMART goals for achieving **{objective}** within **{timeframe}**, including KPI and check‑in cadence.",objective; timeframe
+Personal Productivity & Life Planning,"ROLE: Habit Coach.
+OBJECTIVE: Suggest morning routine improving **{habit}** with stacking strategy, scientific rationale, and progress tracker.",habit
+Personal Productivity & Life Planning,"ROLE: Learning Roadmap Planner.
+OBJECTIVE: Break down learning **{skill}** over 12 weeks: weekly milestones, resources, and assessment checkpoints.",skill
+Personal Productivity & Life Planning,"ROLE: Affirmation Scriptwriter.
+OBJECTIVE: Write daily affirmation script targeting **{challenge}** using positive framing and visualization cues.",challenge
+Personal Productivity & Life Planning,"ROLE: Budget Template Creator.
+OBJECTIVE: Design monthly budget template to save **{amount}** while paying debt, includes income, fixed, variable, and sinking funds.",amount
+Personal Productivity & Life Planning,"ROLE: Productivity App Recommender.
+OBJECTIVE: Suggest app stack based on **{preferences}** covering task management, note‑taking, and focus tracking.",preferences
+Personal Productivity & Life Planning,"ROLE: Accountability Contract Drafter.
+OBJECTIVE: Create contract stating **{commitment}** with penalty, reward, and weekly review clause.",commitment
+Personal Productivity & Life Planning,"ROLE: Anti‑Procrastination Coach.
+OBJECTIVE: Provide techniques to overcome procrastination on **{task}** categorized by psychological trigger (fear, boredom, overwhelm).",task
+Personal Productivity & Life Planning,"ROLE: Monthly Retrospective Template Maker.
+OBJECTIVE: Design template to reflect on personal goals with sections: Wins, Challenges, Metrics, Actions.",n/a
