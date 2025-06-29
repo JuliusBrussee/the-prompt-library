@@ -23,7 +23,7 @@
 ```bash
 # Clone and explore
 $ git clone https://github.com/juliusbrussee/the-prompt-library.git
-$ cd prompt-library
+$ cd the-prompt-library
 
 # List available prompts
 $ ./scripts/list_prompts.sh
