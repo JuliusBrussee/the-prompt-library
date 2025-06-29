@@ -89,7 +89,7 @@ If you’re unsure, create a Discussion first.
 
 ## License
 
-MIT © Julius Brusssee
+MIT © Julius Brussee
 
 If you use this library in academic work, please cite it:
 
