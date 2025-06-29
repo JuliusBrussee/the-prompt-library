@@ -1,0 +1,65 @@
+# Prompt file schema (YAML‑encoded JSON Schema)
+# -------------------------------------------------
+# This schema validates individual *.prompt.yaml files in the library.
+# Required fields capture the same structure you see in the README.
+# Use it with tools like `yamale`, `jsonschema`, or GitHub’s built‑in
+# YAML validation action.
+
+$id: https://github.com/juliusbrusse/the-prompt-library/raw/main/prompt.schema.yaml
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Prompt
+comment: >
+  Each prompt file defines one reusable AI prompt.  
+  Filenames follow kebab-case and end with `.prompt.yaml`.
+
+type: object
+required:
+  - role
+  - objective
+  - requirements
+  - placeholders
+  - output_format
+properties:
+  role:
+    type: string
+    description: |
+      Persona framing the AI assistant.  
+      Keep it short but vivid (e.g., "Veteran Tech Opinion Columnist").
+    examples:
+      - "Newsletter Ghostwriter"
+  objective:
+    type: string
+    description: |
+      One‑sentence goal for the task—what success looks like.
+    examples:
+      - "Craft a 1,200‑word editorial explaining {topic}."
+  requirements:
+    type: array
+    minItems: 1
+    description: |
+      Bullet‑level must‑haves (formatting rules, length, style constraints).
+    items:
+      type: string
+  placeholders:
+    type: array
+    description: |
+      List of dynamic tokens the user must supply.  
+      Tokens MUST match the regex `^\{[a-zA-Z0-9_]+\}$` (curly‑brace wrapped).
+    items:
+      type: string
+      pattern: "^\\{[a-zA-Z0-9_]+\\}$"
+  output_format:
+    type: string
+    description: |
+      Brief note telling the model how to structure its answer  
+      (e.g., "Markdown table", "Plain text", "JSON").
+    examples:
+      - "Markdown with H2 headers"
+  tags:
+    type: array
+    description: |
+      Optional list of lowercase keywords for search, filters, or analytics.
+    items:
+      type: string
+additionalProperties: false
