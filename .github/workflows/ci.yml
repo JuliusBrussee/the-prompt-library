@@ -24,7 +24,7 @@ jobs:
       - name: Validate prompt schema
         run: |
           for file in $(find prompts -name '*.prompt.yaml' -print); do
-            jsonschema -i "$file" prompt.schema.yaml
+            check-jsonschema --schemafile prompt.schema.yaml "$file"
           done
 
       - name: Regenerate category indexes
