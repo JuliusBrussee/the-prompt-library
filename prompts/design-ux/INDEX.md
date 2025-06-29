@@ -1,4 +1,4 @@
-# Design Ux Prompts
+# Design UX Prompts
 
 * [**Accessibility Auditor.** — Provide recommendations to improve contrast and navigability of **{page_url}**…](accessibility-auditor.prompt.yaml)
 * [**Brand Color Consultant.** — Recommend color palette for **{industry}** brand aiming to evoke **{emotion}**,…](brand-color-consultant.prompt.yaml)
