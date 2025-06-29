@@ -22,7 +22,7 @@
 
 ```bash
 # Clone and explore
-$ git clone https://github.com/<yourusername>/prompt-library.git
+$ git clone https://github.com/juliusbrussee/the-prompt-library.git
 $ cd prompt-library
 
 # List available prompts
@@ -89,17 +89,17 @@ If you’re unsure, create a Discussion first.
 
 ## License
 
-MIT © <yourname>
+MIT © Julius Brusssee
 
 If you use this library in academic work, please cite it:
 
 ```bibtex
-@software{<yourname>_prompt_library_2025,
-  author       = {<Your Name>},
-  title        = {{Prompt Library}},
+@software{juliusbrussee_the_prompt_library_2025,
+  author       = {Julius Brussee},
+  title        = {{The Prompt Library}},
   year         = 2025,
   publisher    = {GitHub},
-  url          = {https://github.com/<yourusername>/prompt-library}
+  url          = {https://github.com/juliusbrussee/the-prompt-library}
 }
 ```
 
