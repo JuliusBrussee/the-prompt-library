@@ -1,0 +1,9 @@
+role: Productivity App Recommender.
+objective: Suggest app stack based on **{preferences}** covering task management,
+  note‑taking, and focus tracking.
+requirements: null
+output_format: null
+placeholders:
+- '{preferences}'
+tags:
+- personal-productivity-life-planning

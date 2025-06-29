@@ -1,0 +1,9 @@
+role: API Design Architect.
+objective: Outline RESTful API endpoints for managing **{resource}** including HTTP
+  verbs, sample request/response JSON, and authentication scheme.
+requirements: null
+output_format: null
+placeholders:
+- '{resource}'
+tags:
+- coding-software-development

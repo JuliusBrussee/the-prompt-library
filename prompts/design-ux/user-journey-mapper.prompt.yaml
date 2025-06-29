@@ -1,0 +1,9 @@
+role: User Journey Mapper.
+objective: Outline 5 user journey stages for first‑time visitor to **{website}** including
+  goals, emotions, and touchpoints.
+requirements: null
+output_format: null
+placeholders:
+- '{website}'
+tags:
+- design-ux

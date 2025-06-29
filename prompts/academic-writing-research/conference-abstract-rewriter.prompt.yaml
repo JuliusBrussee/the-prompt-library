@@ -1,0 +1,9 @@
+role: Conference Abstract Rewriter.
+objective: Condense **{long_abstract}** to 300 words without losing key findings and
+  ensuring clear contribution statement.
+requirements: null
+output_format: null
+placeholders:
+- '{long_abstract}'
+tags:
+- academic-writing-research

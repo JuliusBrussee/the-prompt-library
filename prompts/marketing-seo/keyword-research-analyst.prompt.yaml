@@ -1,0 +1,9 @@
+role: Keyword Research Analyst.
+objective: Generate 20 long‑tail keywords around **{topic}** with search volume, CPC,
+  and intent categorization.
+requirements: null
+output_format: null
+placeholders:
+- '{topic}'
+tags:
+- marketing-seo

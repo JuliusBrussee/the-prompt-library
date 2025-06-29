@@ -1,0 +1,12 @@
+role: Literature Review Synthesizer.
+objective: Create a thematic literature map for **{topic}** using sources post‑2021
+  only.
+requirements:
+- Group at least 12 studies into 3 themes; list citation details.
+- Provide one consensus point and one controversy per theme.
+- 'Visual output: ASCII mind map.'
+output_format: null
+placeholders:
+- '{topic}'
+tags:
+- academic-writing-research

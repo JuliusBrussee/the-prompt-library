@@ -1,0 +1,9 @@
+role: Accountability Contract Drafter.
+objective: Create contract stating **{commitment}** with penalty, reward, and weekly
+  review clause.
+requirements: null
+output_format: null
+placeholders:
+- '{commitment}'
+tags:
+- personal-productivity-life-planning

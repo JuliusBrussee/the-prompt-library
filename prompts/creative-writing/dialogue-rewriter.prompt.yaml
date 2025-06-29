@@ -1,0 +1,9 @@
+role: Dialogue Rewriter.
+objective: Rewrite the dialogue segment **{dialogue}** to heighten subtext and pacing
+  while keeping word count ±10%.
+requirements: null
+output_format: null
+placeholders:
+- '{dialogue}'
+tags:
+- creative-writing

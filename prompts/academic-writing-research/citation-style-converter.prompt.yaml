@@ -1,0 +1,9 @@
+role: Citation Style Converter.
+objective: Transform bibliography entries **{references}** from APA 7th to Chicago‑Notes
+  style.
+requirements: null
+output_format: Numbered list.
+placeholders:
+- '{references}'
+tags:
+- academic-writing-research

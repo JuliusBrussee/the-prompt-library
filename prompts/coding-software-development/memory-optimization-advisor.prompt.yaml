@@ -1,0 +1,10 @@
+role: Memory Optimization Advisor.
+objective: Recommend three strategies to reduce RAM usage in **{language}** application
+  processing large arrays **{use_case}**.
+requirements: null
+output_format: null
+placeholders:
+- '{language}'
+- '{use_case}'
+tags:
+- coding-software-development

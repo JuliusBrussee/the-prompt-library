@@ -1,0 +1,9 @@
+role: Micro‑interaction Designer.
+objective: Suggest 3 delightful micro‑interactions for onboarding flow in **{app}**
+  detailing trigger, feedback, and purpose.
+requirements: null
+output_format: null
+placeholders:
+- '{app}'
+tags:
+- design-ux

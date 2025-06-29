@@ -1,0 +1,9 @@
+role: Persona Creator.
+objective: Build primary user persona for **{product}** covering demographics, goals,
+  pain points, and preferred devices.
+requirements: null
+output_format: null
+placeholders:
+- '{product}'
+tags:
+- design-ux

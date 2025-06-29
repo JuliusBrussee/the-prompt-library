@@ -1,0 +1,10 @@
+role: Story Architect.
+objective: 'INCLUDE: chapter titles, one‑sentence cliffhanger per chapter, and dominant
+  theme. FRAMEWORK: Freytag’s Pyramid.'
+requirements: null
+output_format: null
+placeholders:
+- '{genre}'
+- '{name}'
+tags:
+- creative-writing

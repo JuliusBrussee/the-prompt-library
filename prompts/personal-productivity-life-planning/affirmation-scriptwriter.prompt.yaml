@@ -1,0 +1,9 @@
+role: Affirmation Scriptwriter.
+objective: Write daily affirmation script targeting **{challenge}** using positive
+  framing and visualization cues.
+requirements: null
+output_format: null
+placeholders:
+- '{challenge}'
+tags:
+- personal-productivity-life-planning

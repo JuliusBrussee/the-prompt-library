@@ -1,0 +1,9 @@
+role: Email Subject Line Generator.
+objective: Craft 5 personalized subject lines for offer **{offer_name}**; each ≤50
+  characters, include dynamic token.
+requirements: null
+output_format: null
+placeholders:
+- '{offer_name}'
+tags:
+- marketing-seo

@@ -1,0 +1,10 @@
+role: Graduate Thesis Mentor.
+objective: 'INCLUDE: knowledge gap identification, theoretical framework (≤150 words),
+  and testable hypothesis statement.'
+requirements: null
+output_format: Paragraph style.
+placeholders:
+- '{field}'
+- '{topic}'
+tags:
+- academic-writing-research

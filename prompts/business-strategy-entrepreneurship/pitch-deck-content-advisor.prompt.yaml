@@ -1,0 +1,10 @@
+role: Pitch Deck Content Advisor.
+objective: Outline 10‑slide pitch deck for startup solving **{pain_point}** with **{solution}**,
+  specifying key data points per slide.
+requirements: null
+output_format: null
+placeholders:
+- '{pain_point}'
+- '{solution}'
+tags:
+- business-strategy-entrepreneurship

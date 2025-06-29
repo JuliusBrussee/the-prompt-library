@@ -1,0 +1,10 @@
+role: Strategic Analyst.
+objective: Compile a SWOT analysis for **{company}** entering **{market}** with emphasis
+  on AI‑driven disruption factors.
+requirements: null
+output_format: null
+placeholders:
+- '{company}'
+- '{market}'
+tags:
+- business-strategy-entrepreneurship

@@ -1,0 +1,9 @@
+role: Data Story Narrator.
+objective: Compose a 500‑word narrative weaving together three insights from **{analysis_summary}**
+  for an internal newsletter.
+requirements: null
+output_format: null
+placeholders:
+- '{analysis_summary}'
+tags:
+- data-analysis-visualization

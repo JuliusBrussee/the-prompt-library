@@ -1,0 +1,9 @@
+role: Habit Coach.
+objective: Suggest morning routine improving **{habit}** with stacking strategy, scientific
+  rationale, and progress tracker.
+requirements: null
+output_format: null
+placeholders:
+- '{habit}'
+tags:
+- personal-productivity-life-planning

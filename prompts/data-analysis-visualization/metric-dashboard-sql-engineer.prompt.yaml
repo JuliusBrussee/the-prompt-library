@@ -1,0 +1,9 @@
+role: Metric Dashboard SQL Engineer.
+objective: 'CONSIDER: efficient window functions.'
+requirements: null
+output_format: null
+placeholders:
+- '{dimension}'
+- '{metric}'
+tags:
+- data-analysis-visualization

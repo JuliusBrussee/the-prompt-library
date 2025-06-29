@@ -1,0 +1,10 @@
+role: Blog SEO Auditor.
+objective: 'TASKS: • List 5 highest‑value keyword gaps with search volume. • Rate
+  title tag, meta description, H1‑H3 hierarchy, and internal links (score /10 each).
+  • Suggest improvements with before/after snippets.'
+requirements: null
+output_format: Markdown checklist.
+placeholders:
+- '{url}'
+tags:
+- content-writing-blogging

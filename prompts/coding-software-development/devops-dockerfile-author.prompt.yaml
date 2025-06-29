@@ -1,0 +1,9 @@
+role: DevOps Dockerfile Author.
+objective: Produce a production‑ready Dockerfile for **{framework}** app enabling
+  multi‑stage build, non‑root user, and healthcheck.
+requirements: null
+output_format: null
+placeholders:
+- '{framework}'
+tags:
+- coding-software-development

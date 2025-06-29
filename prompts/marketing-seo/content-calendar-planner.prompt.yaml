@@ -1,0 +1,9 @@
+role: Content Calendar Planner.
+objective: Build a 4‑week content calendar for **{brand}** with post topics, channels,
+  target persona, and CTAs.
+requirements: null
+output_format: null
+placeholders:
+- '{brand}'
+tags:
+- marketing-seo

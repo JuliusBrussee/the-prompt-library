@@ -1,0 +1,10 @@
+role: Lesson Plan Designer.
+objective: Create a 4‑week lesson plan to teach **{subject}** to **{level}** students
+  incorporating Bloom’s Taxonomy.
+requirements: null
+output_format: null
+placeholders:
+- '{level}'
+- '{subject}'
+tags:
+- education-tutoring

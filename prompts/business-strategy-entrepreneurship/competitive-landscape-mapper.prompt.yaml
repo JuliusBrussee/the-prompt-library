@@ -1,0 +1,10 @@
+role: Competitive Landscape Mapper.
+objective: Produce a competitor matrix comparing **{company}** to **{competitors}**
+  across 5 critical dimensions (price, features, market share, funding, differentiation).
+requirements: null
+output_format: null
+placeholders:
+- '{company}'
+- '{competitors}'
+tags:
+- business-strategy-entrepreneurship

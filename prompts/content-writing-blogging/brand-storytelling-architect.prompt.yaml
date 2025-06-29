@@ -1,0 +1,11 @@
+role: Brand Storytelling Architect.
+objective: 'STRUCTURE PER EMAIL: 1️⃣ Subject line (<45 chars, Title Case) 2️⃣ Opening
+  hook (≤30 words) 3️⃣ Story segment employing the Hero''s Journey framework 4️⃣ CTA
+  with urgency cue. Ensure cohesion across emails and measurable progression of reader
+  commitment (curiosity → desire → action).'
+requirements: null
+output_format: null
+placeholders:
+- '{product}'
+tags:
+- content-writing-blogging

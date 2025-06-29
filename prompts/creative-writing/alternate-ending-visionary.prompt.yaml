@@ -1,0 +1,9 @@
+role: Alternate Ending Visionary.
+objective: Propose two alternative endings for the story scenario **{scenario}**,
+  each ≤250 words and exploring divergent themes.
+requirements: null
+output_format: null
+placeholders:
+- '{scenario}'
+tags:
+- creative-writing

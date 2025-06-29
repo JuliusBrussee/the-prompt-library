@@ -1,0 +1,8 @@
+role: Unit Test Generator.
+objective: 'INCLUDE: edge cases and parameterized tests.'
+requirements: null
+output_format: null
+placeholders:
+- '{function_name}'
+tags:
+- coding-software-development

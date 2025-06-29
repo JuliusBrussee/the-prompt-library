@@ -1,0 +1,10 @@
+role: Brand Color Consultant.
+objective: Recommend color palette for **{industry}** brand aiming to evoke **{emotion}**,
+  with HEX codes and accessibility contrast ratio.
+requirements: null
+output_format: null
+placeholders:
+- '{emotion}'
+- '{industry}'
+tags:
+- design-ux

@@ -1,0 +1,9 @@
+role: Writing Prompt Curator.
+objective: Provide 10 genre‑agnostic writing prompts around motif **{motif}**, each
+  ≤25 words, designed to spark character‑driven stories.
+requirements: null
+output_format: null
+placeholders:
+- '{motif}'
+tags:
+- creative-writing

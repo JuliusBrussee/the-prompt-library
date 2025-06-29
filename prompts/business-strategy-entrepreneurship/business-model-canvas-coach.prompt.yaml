@@ -1,0 +1,9 @@
+role: Business Model Canvas Coach.
+objective: Draft a complete business model canvas for idea **{idea}**, including evidence‑based
+  assumptions and risk rating.
+requirements: null
+output_format: null
+placeholders:
+- '{idea}'
+tags:
+- business-strategy-entrepreneurship

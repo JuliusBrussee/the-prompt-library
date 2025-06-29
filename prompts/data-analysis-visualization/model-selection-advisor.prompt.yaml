@@ -1,0 +1,10 @@
+role: Model Selection Advisor.
+objective: Recommend top 3 ML models for predicting **{target}** given features **{feature_list}**,
+  citing pros/cons and interpretability.
+requirements: null
+output_format: null
+placeholders:
+- '{feature_list}'
+- '{target}'
+tags:
+- data-analysis-visualization

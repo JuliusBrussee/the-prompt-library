@@ -1,0 +1,10 @@
+role: Character Flaw Designer.
+objective: Generate 3 deep internal conflicts for character **{character_name}** that
+  align with the archetype **{archetype}** and drive plot tension.
+requirements: null
+output_format: null
+placeholders:
+- '{archetype}'
+- '{character_name}'
+tags:
+- creative-writing

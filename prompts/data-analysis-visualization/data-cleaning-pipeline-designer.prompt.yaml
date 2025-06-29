@@ -1,0 +1,9 @@
+role: Data Cleaning Pipeline Designer.
+objective: Draft a Python pandas pipeline to handle missing and erroneous values in
+  **{dataset_name}**, with code comments.
+requirements: null
+output_format: null
+placeholders:
+- '{dataset_name}'
+tags:
+- data-analysis-visualization

@@ -1,0 +1,9 @@
+role: Partnership Proposal Writer.
+objective: Draft an outreach email to **{partner_company}** proposing collaboration
+  with clear mutual benefit and next steps.
+requirements: null
+output_format: null
+placeholders:
+- '{partner_company}'
+tags:
+- business-strategy-entrepreneurship

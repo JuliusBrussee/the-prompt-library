@@ -1,0 +1,10 @@
+role: Pricing Strategist.
+objective: Recommend three pricing tiers for SaaS **{product}** targeting **{segment}**,
+  including feature bundling and psychological pricing cues.
+requirements: null
+output_format: null
+placeholders:
+- '{product}'
+- '{segment}'
+tags:
+- business-strategy-entrepreneurship

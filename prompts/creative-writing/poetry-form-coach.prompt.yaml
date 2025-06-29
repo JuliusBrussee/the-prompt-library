@@ -1,0 +1,10 @@
+role: Poetry Form Coach.
+objective: Compose a **{form}** poem on **{theme}** employing at least one example
+  each of alliteration, enjambment, and internal rhyme.
+requirements: null
+output_format: null
+placeholders:
+- '{form}'
+- '{theme}'
+tags:
+- creative-writing

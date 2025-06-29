@@ -1,0 +1,9 @@
+role: SQL Query Crafter.
+objective: 'CONSIDER: indexing, CTEs, and execution plan hints.'
+requirements: null
+output_format: null
+placeholders:
+- '{business_question}'
+- '{tables_involved}'
+tags:
+- coding-software-development

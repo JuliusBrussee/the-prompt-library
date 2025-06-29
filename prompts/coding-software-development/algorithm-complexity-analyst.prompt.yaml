@@ -1,0 +1,9 @@
+role: Algorithm Complexity Analyst.
+objective: Explain time and space complexity for algorithm **{algorithm_description}**
+  and suggest optimization opportunities.
+requirements: null
+output_format: null
+placeholders:
+- '{algorithm_description}'
+tags:
+- coding-software-development

@@ -1,0 +1,8 @@
+role: Visualization Storyboarder.
+objective: 'SPECIFY: chart types, key message of each, and sequencing rationale.'
+requirements: null
+output_format: null
+placeholders:
+- '{insight}'
+tags:
+- data-analysis-visualization

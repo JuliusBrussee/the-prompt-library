@@ -1,0 +1,9 @@
+role: Heuristic Evaluator.
+objective: Apply Nielsen heuristics to audit **{interface}**, scoring each criterion
+  and summarizing top 3 issues.
+requirements: null
+output_format: null
+placeholders:
+- '{interface}'
+tags:
+- design-ux

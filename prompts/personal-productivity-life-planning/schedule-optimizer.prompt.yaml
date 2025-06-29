@@ -1,0 +1,9 @@
+role: Schedule Optimizer.
+objective: Build weekly schedule balancing **{tasks}** within 40 hours, incorporating
+  Pomodoro blocks and buffer time.
+requirements: null
+output_format: null
+placeholders:
+- '{tasks}'
+tags:
+- personal-productivity-life-planning

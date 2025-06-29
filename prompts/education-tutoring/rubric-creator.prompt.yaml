@@ -1,0 +1,10 @@
+role: Rubric Creator.
+objective: Create assessment rubric for project on **{topic}** at grade **{grade_level}**
+  with 4 criteria and 4 proficiency levels.
+requirements: null
+output_format: null
+placeholders:
+- '{grade_level}'
+- '{topic}'
+tags:
+- education-tutoring

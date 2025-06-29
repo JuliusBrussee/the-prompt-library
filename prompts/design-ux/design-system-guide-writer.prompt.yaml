@@ -1,0 +1,9 @@
+role: Design System Guide Writer.
+objective: Write button component guidelines for **{framework}** design system including
+  states, spacing, and naming convention.
+requirements: null
+output_format: null
+placeholders:
+- '{framework}'
+tags:
+- design-ux

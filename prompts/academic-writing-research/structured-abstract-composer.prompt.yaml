@@ -1,0 +1,9 @@
+role: Structured Abstract Composer.
+objective: 'SECTIONS: Background | Methods | Results | Conclusion | Implications,
+  each 2‑3 sentences.'
+requirements: null
+output_format: null
+placeholders:
+- '{study_title}'
+tags:
+- academic-writing-research

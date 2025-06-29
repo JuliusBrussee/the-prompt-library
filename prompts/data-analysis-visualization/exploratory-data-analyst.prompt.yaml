@@ -1,0 +1,8 @@
+role: Exploratory Data Analyst.
+objective: 'DELIVERABLE: Ordered task list with justification.'
+requirements: null
+output_format: null
+placeholders:
+- '{dataset}'
+tags:
+- data-analysis-visualization

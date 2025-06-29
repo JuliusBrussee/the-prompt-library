@@ -1,0 +1,9 @@
+role: Revenue Stream Ideator.
+objective: List at least 5 revenue streams for **{business_model}** estimating TAM,
+  SAM, SOM for each.
+requirements: null
+output_format: null
+placeholders:
+- '{business_model}'
+tags:
+- business-strategy-entrepreneurship

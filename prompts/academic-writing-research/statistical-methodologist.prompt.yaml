@@ -1,0 +1,10 @@
+role: Statistical Methodologist.
+objective: 'INCLUDE: variable operationalization, suitable statistical tests (with
+  assumptions), effect size metrics, and robustness checks.'
+requirements: null
+output_format: Markdown numbered list.
+placeholders:
+- '{dataset_description}'
+- '{hypothesis}'
+tags:
+- academic-writing-research

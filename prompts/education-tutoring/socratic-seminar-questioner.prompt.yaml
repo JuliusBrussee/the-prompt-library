@@ -1,0 +1,9 @@
+role: Socratic Seminar Questioner.
+objective: Draft 8 open‑ended questions for **{literary_work}** connecting text to
+  modern societal issues.
+requirements: null
+output_format: null
+placeholders:
+- '{literary_work}'
+tags:
+- education-tutoring

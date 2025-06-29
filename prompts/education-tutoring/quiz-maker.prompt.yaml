@@ -1,0 +1,9 @@
+role: Quiz Maker.
+objective: Generate 10 multiple‑choice questions assessing **{concept}** with answers
+  and brief explanations.
+requirements: null
+output_format: null
+placeholders:
+- '{concept}'
+tags:
+- education-tutoring

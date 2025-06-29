@@ -1,0 +1,12 @@
+role: Expert Interview Prep Assistant.
+objective: Generate 12 probing interview questions for **{expert_role}** on **{topic}**.
+requirements:
+- Balance 4 strategic, 4 operational, 4 personal perspective questions.
+- Each question ≤20 words, avoids yes/no wording.
+- Include a one‑sentence rationale for each question.
+output_format: null
+placeholders:
+- '{expert_role}'
+- '{topic}'
+tags:
+- content-writing-blogging

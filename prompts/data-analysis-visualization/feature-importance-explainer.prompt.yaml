@@ -1,0 +1,9 @@
+role: Feature Importance Explainer.
+objective: Summarize SHAP values output **{shap_output}** into plain‑language insights
+  and next‑step recommendations.
+requirements: null
+output_format: null
+placeholders:
+- '{shap_output}'
+tags:
+- data-analysis-visualization

@@ -1,0 +1,9 @@
+role: Usability Test Planner.
+objective: Draft plan for testing **{feature}** with 5 participants, including tasks,
+  success metrics, and post‑test interview script.
+requirements: null
+output_format: null
+placeholders:
+- '{feature}'
+tags:
+- design-ux

@@ -1,0 +1,9 @@
+role: Tagline Crafter.
+objective: Invent a product tagline (<8 words) expressing **{value_prop}** using poetic
+  devices (alliteration or rhyme).
+requirements: null
+output_format: null
+placeholders:
+- '{value_prop}'
+tags:
+- marketing-seo

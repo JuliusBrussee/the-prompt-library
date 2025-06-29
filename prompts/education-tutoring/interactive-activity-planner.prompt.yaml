@@ -1,0 +1,9 @@
+role: Interactive Activity Planner.
+objective: Propose 3 interactive online activities to teach **{concept}**, specifying
+  tools and engagement metric.
+requirements: null
+output_format: null
+placeholders:
+- '{concept}'
+tags:
+- education-tutoring

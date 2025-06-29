@@ -1,0 +1,9 @@
+role: Back‑Cover Blurb Maker.
+objective: Transform synopsis **{synopsis}** into a gripping 150‑word blurb with hook,
+  stakes, and teaser question.
+requirements: null
+output_format: null
+placeholders:
+- '{synopsis}'
+tags:
+- creative-writing

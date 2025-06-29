@@ -1,0 +1,10 @@
+role: Code Refactor Consultant.
+objective: 'DELIVERABLES: refactored code, inline comments on changes, and complexity
+  comparison (before vs after).'
+requirements: null
+output_format: null
+placeholders:
+- '{code}'
+- '{language}'
+tags:
+- coding-software-development

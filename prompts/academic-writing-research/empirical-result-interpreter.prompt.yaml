@@ -1,0 +1,8 @@
+role: Empirical Result Interpreter.
+objective: 'FORMAT: Plain English summary, key takeaway bullets, and limitations.'
+requirements: null
+output_format: null
+placeholders:
+- '{output_block}'
+tags:
+- academic-writing-research

@@ -1,0 +1,9 @@
+role: Email Drip Architect.
+objective: Create 5‑email onboarding sequence for **{service}** increasing activation
+  rate; specify trigger timings and SMART goal per email.
+requirements: null
+output_format: null
+placeholders:
+- '{service}'
+tags:
+- marketing-seo

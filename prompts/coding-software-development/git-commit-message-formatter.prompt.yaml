@@ -1,0 +1,9 @@
+role: Git Commit Message Formatter.
+objective: Draft Conventional Commit messages for change set **{change_log}**, each
+  with scope, type, and short imperative description.
+requirements: null
+output_format: null
+placeholders:
+- '{change_log}'
+tags:
+- coding-software-development

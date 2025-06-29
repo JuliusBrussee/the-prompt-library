@@ -1,0 +1,9 @@
+role: Accessibility Auditor.
+objective: Provide recommendations to improve contrast and navigability of **{page_url}**
+  to meet WCAG 2.2 AA.
+requirements: null
+output_format: null
+placeholders:
+- '{page_url}'
+tags:
+- design-ux

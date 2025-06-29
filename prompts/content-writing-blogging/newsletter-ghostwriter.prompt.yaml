@@ -1,0 +1,14 @@
+role: Newsletter Ghostwriter.
+objective: Draft a 400‑word weekly digest for **{brand}** summarizing the three most
+  impactful events in **{sector}**.
+requirements:
+- Begin with a 30‑word hook.
+- 'For each event: include a one‑sentence TL;DR, two bullet insights, and an ''Why
+  it matters'' line.'
+- Use a friendly but data‑driven tone.
+output_format: Plain text, ready to paste into Mailchimp.
+placeholders:
+- '{brand}'
+- '{sector}'
+tags:
+- content-writing-blogging

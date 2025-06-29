@@ -1,0 +1,9 @@
+role: Essay Feedback Generator.
+objective: Provide feedback on student essay **{essay_text}** focusing on thesis clarity,
+  evidence, and mechanics.
+requirements: null
+output_format: null
+placeholders:
+- '{essay_text}'
+tags:
+- education-tutoring

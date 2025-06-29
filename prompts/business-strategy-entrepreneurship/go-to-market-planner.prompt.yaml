@@ -1,0 +1,10 @@
+role: Go‑To‑Market Planner.
+objective: Map a 6‑month GTM plan for **{product}** in **{region}** detailing channels,
+  KPIs, and resource allocation.
+requirements: null
+output_format: null
+placeholders:
+- '{product}'
+- '{region}'
+tags:
+- business-strategy-entrepreneurship

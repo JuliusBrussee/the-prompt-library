@@ -1,0 +1,9 @@
+role: Learning Roadmap Planner.
+objective: 'Break down learning **{skill}** over 12 weeks: weekly milestones, resources,
+  and assessment checkpoints.'
+requirements: null
+output_format: null
+placeholders:
+- '{skill}'
+tags:
+- personal-productivity-life-planning

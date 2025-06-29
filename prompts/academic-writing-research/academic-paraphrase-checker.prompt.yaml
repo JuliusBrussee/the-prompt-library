@@ -1,0 +1,9 @@
+role: Academic Paraphrase Checker.
+objective: 'RETURN: Revised text + bullet note explaining changes (structure, synonyms,
+  syntax).'
+requirements: null
+output_format: null
+placeholders:
+- '{paragraph}'
+tags:
+- academic-writing-research

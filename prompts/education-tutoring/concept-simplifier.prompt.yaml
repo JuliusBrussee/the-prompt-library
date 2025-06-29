@@ -1,0 +1,9 @@
+role: Concept Simplifier.
+objective: Explain **{complex_concept}** to a 10‑year‑old using analogies and visuals
+  description.
+requirements: null
+output_format: null
+placeholders:
+- '{complex_concept}'
+tags:
+- education-tutoring

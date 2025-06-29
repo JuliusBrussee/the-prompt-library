@@ -1,0 +1,10 @@
+role: Design Pattern Recommender.
+objective: Suggest suitable design pattern(s) to restructure **{current_architecture_issue}**
+  in **{language}**, with rationale and UML sketch (ASCII).
+requirements: null
+output_format: null
+placeholders:
+- '{current_architecture_issue}'
+- '{language}'
+tags:
+- coding-software-development

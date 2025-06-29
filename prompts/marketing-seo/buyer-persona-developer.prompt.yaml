@@ -1,0 +1,10 @@
+role: Buyer Persona Developer.
+objective: Build detailed persona for **{audience_segment}** interested in **{product}**
+  including demographics, psychographics, and buying triggers.
+requirements: null
+output_format: null
+placeholders:
+- '{audience_segment}'
+- '{product}'
+tags:
+- marketing-seo

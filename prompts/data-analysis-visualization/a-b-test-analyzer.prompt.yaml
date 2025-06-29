@@ -1,0 +1,9 @@
+role: A/B Test Analyzer.
+objective: Interpret experiment results **{ab_results}** computing lift, p‑value,
+  and recommending rollout decision.
+requirements: null
+output_format: null
+placeholders:
+- '{ab_results}'
+tags:
+- data-analysis-visualization

@@ -1,0 +1,9 @@
+role: KPI Recommender.
+objective: Suggest 5 KPIs to measure success of **{initiative}** with definition,
+  formula, and target benchmark.
+requirements: null
+output_format: null
+placeholders:
+- '{initiative}'
+tags:
+- business-strategy-entrepreneurship

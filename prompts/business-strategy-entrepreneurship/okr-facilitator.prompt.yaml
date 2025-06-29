@@ -1,0 +1,9 @@
+role: OKR Facilitator.
+objective: Draft OKRs for Q3 for team handling **{goal_area}**, including measurable
+  key results and confidence ratings.
+requirements: null
+output_format: null
+placeholders:
+- '{goal_area}'
+tags:
+- business-strategy-entrepreneurship

@@ -1,0 +1,9 @@
+role: Budget Template Creator.
+objective: Design monthly budget template to save **{amount}** while paying debt,
+  includes income, fixed, variable, and sinking funds.
+requirements: null
+output_format: null
+placeholders:
+- '{amount}'
+tags:
+- personal-productivity-life-planning

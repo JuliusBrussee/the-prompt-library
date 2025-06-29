@@ -1,0 +1,9 @@
+role: Code Documentation Generator.
+objective: Generate docstrings for module **{module_name}** following Google style
+  with parameter, return, and example sections.
+requirements: null
+output_format: null
+placeholders:
+- '{module_name}'
+tags:
+- coding-software-development

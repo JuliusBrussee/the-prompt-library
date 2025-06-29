@@ -1,0 +1,9 @@
+role: Study Guide Summarizer.
+objective: Condense chapter **{chapter_text}** into a one‑page study guide with key
+  terms, concepts, and memory hooks.
+requirements: null
+output_format: null
+placeholders:
+- '{chapter_text}'
+tags:
+- education-tutoring

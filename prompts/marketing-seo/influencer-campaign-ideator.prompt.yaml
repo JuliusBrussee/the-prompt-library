@@ -1,0 +1,10 @@
+role: Influencer Campaign Ideator.
+objective: Propose 3 influencer collaboration concepts for **{brand}** on **{platform}**,
+  including expected KPIs and creative brief.
+requirements: null
+output_format: null
+placeholders:
+- '{brand}'
+- '{platform}'
+tags:
+- marketing-seo

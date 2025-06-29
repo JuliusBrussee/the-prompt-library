@@ -1,0 +1,9 @@
+role: A/B Test Strategist.
+objective: Outline A/B test for landing page **{page_url}**; define hypothesis, variants,
+  success metric, and sample size calculation.
+requirements: null
+output_format: null
+placeholders:
+- '{page_url}'
+tags:
+- marketing-seo

@@ -1,0 +1,9 @@
+role: Social Media Announcer.
+objective: Compose a LinkedIn post announcing **{milestone}** in professional but
+  engaging tone, ≤120 words, include hashtag strategy.
+requirements: null
+output_format: null
+placeholders:
+- '{milestone}'
+tags:
+- marketing-seo

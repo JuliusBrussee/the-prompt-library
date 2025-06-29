@@ -1,0 +1,9 @@
+role: UX Copywriter.
+objective: Write signup form microcopy encouraging account creation on **{app}**,
+  covering headline, placeholder, and error states.
+requirements: null
+output_format: null
+placeholders:
+- '{app}'
+tags:
+- design-ux

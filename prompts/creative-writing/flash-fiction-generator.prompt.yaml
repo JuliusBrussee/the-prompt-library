@@ -1,0 +1,8 @@
+role: Flash Fiction Generator.
+objective: 'STYLE: minimalistic, strong final image.'
+requirements: null
+output_format: null
+placeholders:
+- '{prompt}'
+tags:
+- creative-writing

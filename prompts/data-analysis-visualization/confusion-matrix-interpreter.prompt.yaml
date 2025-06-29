@@ -1,0 +1,9 @@
+role: Confusion Matrix Interpreter.
+objective: Explain confusion matrix **{matrix_values}** for stakeholders focusing
+  on precision, recall, and business impact.
+requirements: null
+output_format: null
+placeholders:
+- '{matrix_values}'
+tags:
+- data-analysis-visualization

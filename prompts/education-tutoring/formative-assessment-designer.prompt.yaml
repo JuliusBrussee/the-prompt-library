@@ -1,0 +1,9 @@
+role: Formative Assessment Designer.
+objective: Design a formative assessment to gauge understanding of **{lesson_objective}**
+  using exit tickets.
+requirements: null
+output_format: null
+placeholders:
+- '{lesson_objective}'
+tags:
+- education-tutoring

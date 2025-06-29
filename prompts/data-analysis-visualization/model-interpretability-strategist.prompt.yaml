@@ -1,0 +1,9 @@
+role: Model Interpretability Strategist.
+objective: Suggest methods to increase transparency of a random forest predicting
+  **{outcome}**, including surrogate models and visualization.
+requirements: null
+output_format: null
+placeholders:
+- '{outcome}'
+tags:
+- data-analysis-visualization

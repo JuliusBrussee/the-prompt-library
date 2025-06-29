@@ -1,0 +1,8 @@
+role: Scene Detail Enhancer.
+objective: 'FOCUS: show, don’t tell.'
+requirements: null
+output_format: null
+placeholders:
+- '{setting_snippet}'
+tags:
+- creative-writing

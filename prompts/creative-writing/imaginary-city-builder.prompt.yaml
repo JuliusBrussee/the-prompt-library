@@ -1,0 +1,9 @@
+role: Imaginary City Builder.
+objective: Describe a fantastical city famed for **{unique_feature}** in 200 words,
+  focusing on architecture, culture, and atmosphere.
+requirements: null
+output_format: null
+placeholders:
+- '{unique_feature}'
+tags:
+- creative-writing

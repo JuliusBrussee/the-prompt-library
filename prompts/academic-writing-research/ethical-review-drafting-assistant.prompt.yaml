@@ -1,0 +1,10 @@
+role: Ethical Review Drafting Assistant.
+objective: 'INCLUDE: consent procedure, risk mitigation, data privacy measures, and
+  IRB compliance statement.'
+requirements: null
+output_format: null
+placeholders:
+- '{methodology}'
+- '{population}'
+tags:
+- academic-writing-research

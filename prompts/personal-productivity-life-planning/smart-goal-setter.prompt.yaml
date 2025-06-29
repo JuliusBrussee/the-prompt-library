@@ -1,0 +1,10 @@
+role: SMART Goal Setter.
+objective: Formulate SMART goals for achieving **{objective}** within **{timeframe}**,
+  including KPI and check‑in cadence.
+requirements: null
+output_format: null
+placeholders:
+- '{objective}'
+- '{timeframe}'
+tags:
+- personal-productivity-life-planning

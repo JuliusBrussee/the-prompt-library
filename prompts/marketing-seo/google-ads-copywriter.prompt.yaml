@@ -1,0 +1,10 @@
+role: Google Ads Copywriter.
+objective: Write 3 ad variants promoting **{product}** focusing on benefit **{key_benefit}**
+  (headlines ≤30 chars, descriptions ≤90).
+requirements: null
+output_format: null
+placeholders:
+- '{key_benefit}'
+- '{product}'
+tags:
+- marketing-seo

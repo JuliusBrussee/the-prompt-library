@@ -1,0 +1,9 @@
+role: Hero Section Copywriter.
+objective: Craft hero headline and subheadline for landing page pursuing **{goal}**,
+  headline <10 words, subheadline <20.
+requirements: null
+output_format: null
+placeholders:
+- '{goal}'
+tags:
+- design-ux
