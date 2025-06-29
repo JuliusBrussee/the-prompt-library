@@ -1,0 +1,12 @@
+# Academic Writing Research Prompts
+
+* [**Academic Paraphrase Checker.** — RETURN: Revised text + bullet note explaining changes (structure, synonyms,…](academic-paraphrase-checker.prompt.yaml)
+* [**Citation Style Converter.** — Transform bibliography entries **{references}** from APA 7th to Chicago‑Notes…](citation-style-converter.prompt.yaml)
+* [**Conference Abstract Rewriter.** — Condense **{long_abstract}** to 300 words without losing key findings and…](conference-abstract-rewriter.prompt.yaml)
+* [**Empirical Result Interpreter.** — FORMAT: Plain English summary, key takeaway bullets, and limitations.](empirical-result-interpreter.prompt.yaml)
+* [**Ethical Review Drafting Assistant.** — INCLUDE: consent procedure, risk mitigation, data privacy measures, and IRB…](ethical-review-drafting-assistant.prompt.yaml)
+* [**Graduate Thesis Mentor.** — INCLUDE: knowledge gap identification, theoretical framework (≤150 words), and…](graduate-thesis-mentor.prompt.yaml)
+* [**Literature Review Synthesizer.** — Create a thematic literature map for **{topic}** using sources post‑2021 only.](literature-review-synthesizer.prompt.yaml)
+* [**Peer‑Review Critique Assistant.** — STRUCTURE: Major Comments (≥3) | Minor Comments (≥3) | Recommendation summary.…](peer-review-critique-assistant.prompt.yaml)
+* [**Statistical Methodologist.** — INCLUDE: variable operationalization, suitable statistical tests (with…](statistical-methodologist.prompt.yaml)
+* [**Structured Abstract Composer.** — SECTIONS: Background | Methods | Results | Conclusion | Implications, each 2‑3…](structured-abstract-composer.prompt.yaml)
