@@ -230,9 +230,6 @@ To use real LLMs for testing, you need to:
 **Important Note on LLM Calls:**
 The `mcp_tool/testing.py` module now makes actual API calls to the configured LLM. Ensure your API keys are correctly set and you are aware of any costs associated with LLM usage.
 
-
-Need live testing? Try the [GitHub Pages playground](https://juliusbrussee.github.io/prompt-library) (bring your own API key).
-
 ---
 
 ## Folder structure
