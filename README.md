@@ -20,24 +20,32 @@
 
 ## Quick start
 
-```bash
-# Clone and explore
-$ git clone https://github.com/juliusbrussee/the-prompt-library.git
-$ cd the-prompt-library
+### Finding Prompts
 
-# List available prompts
-$ ./scripts/list_prompts.sh
+To find the right prompt for your needs, use the `mcp.py` script with the `find` command:
+
+```bash
+# Find prompts related to a specific topic
+$ python3 scripts/mcp.py find "data analysis"
 ```
 
-Or in Python:
+This will search the library and return a list of matching prompts.
+
+### Using Prompts in Python
+
+Once you've identified a suitable prompt, you can use the `get_prompt` function from the `mcp` module to retrieve it in your Python scripts:
 
 ```python
-from pathlib import Path
-import yaml
+from scripts.mcp import get_prompt
 
-prompt_path = Path("prompts/content-writing/editorial.prompt.yaml")
-print(yaml.safe_load(prompt_path.read_text()))
+prompt = get_prompt("code documentation")
+
+if prompt:
+    # Now you can use the prompt details in your LLM workflow
+    print(f"Using prompt: {prompt['path']}")
+    # ... fill placeholders and call your model
 ```
+
 
 Need live testing? Try the [GitHub Pages playground](https://juliusbrussee.github.io/prompt-library) (bring your own API key).
 
