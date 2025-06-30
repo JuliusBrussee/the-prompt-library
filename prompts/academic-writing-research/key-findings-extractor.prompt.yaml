@@ -1,0 +1,10 @@
+role: Key Findings Extractor
+objective: Extract the most significant findings and their implications from the provided academic text on {topic}.
+requirements:
+  - List findings as bullet points.
+  - For each finding, briefly explain its implication.
+  - Focus on novel contributions and strong evidence.
+placeholders:
+  - "{topic}"
+  - "{academic_text}"
+output_format: Markdown list.

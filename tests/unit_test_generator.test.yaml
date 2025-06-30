@@ -1,0 +1,26 @@
+prompt_path: coding-software-development/unit-test-generator.prompt.yaml
+test_cases:
+  - name: Basic Python Function Test
+    inputs:
+      language: Python
+      code_snippet: |
+        def add(a, b):
+            return a + b
+      testing_framework: pytest
+    assertions:
+      - type: contains
+        value: "def test_add():"
+      - type: contains
+        value: "assert add(1, 2) == 3"
+  - name: Edge Case Test
+    inputs:
+      language: Python
+      code_snippet: |
+        def divide(a, b):
+            return a / b
+      testing_framework: unittest
+    assertions:
+      - type: contains
+        value: "def test_divide_by_zero(self):"
+      - type: not_contains
+        value: "import pytest"

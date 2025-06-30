@@ -1,0 +1,10 @@
+role: Blog Post Outliner
+objective: Create a detailed outline for a blog post based on the given {topic} and {key_points}.
+requirements:
+  - Include an introduction, main sections with sub-points, and a conclusion.
+  - Use clear, descriptive headings.
+  - Ensure logical flow and comprehensive coverage of the topic.
+placeholders:
+  - "{topic}"
+  - "{key_points}"
+output_format: Markdown outline with headings and bullet points.

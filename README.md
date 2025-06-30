@@ -28,35 +28,210 @@ The Model Context Protocol (MCP) tool is the primary way to interact with this l
 python3 -m mcp_tool.build_index
 ```
 
-### Finding and Using Prompts (CLI)
+### 1. Finding and Using Prompts (CLI & Interactive)
 
-Use the `find` command to search for prompts by keyword and the `get` command to retrieve the full text of the best match.
+The `mcp_tool.mcp` command provides two ways to get prompts:
+
+*   **`find <query>`**: Searches the library for prompts matching your keywords and lists them.
+*   **`get <query>`**: Retrieves the single best-matching prompt and displays its full, ready-to-use text.
+*   **`get <query> --interactive`**: Provides a guided, interactive experience to select a prompt and fill its placeholders.
+
+**Examples:**
 
 ```bash
-# Find relevant prompts
-$ python3 -m mcp_tool.mcp find "unit test"
+# Find relevant prompts by keyword
+$ python3 -m mcp_tool.mcp find "code documentation"
 
-# Get the best prompt for a task, ready to use
+# Get the best prompt for a task (non-interactive)
 $ python3 -m mcp_tool.mcp get "Create a unit test for my function"
+
+# Get a prompt in interactive mode (you will be prompted for input)
+$ python3 -m mcp_tool.mcp get "code review" --interactive
 ```
+
+**Interactive Mode Tutorial:**
+
+When you run `python3 -m mcp_tool.mcp get <query> --interactive`, the tool will:
+1.  Display the top 5 matching prompts and ask you to select one by number.
+2.  Once selected, it will list all placeholders (`{like_this}`) within that prompt.
+3.  For each placeholder, it will prompt you to enter a value.
+4.  Finally, it will print the complete, filled-in prompt, ready for you to copy and use with your LLM.
+
+### 2. Running Workflows (CLI)
+
+Workflows allow you to chain multiple prompts together to accomplish complex, multi-step tasks. Workflows are defined in `.workflow.yaml` files.
+
+**Example Workflow: User Story to Code & Test (`workflows/user-story-to-code-test.workflow.yaml`)**
+
+```yaml
+name: User Story to Code & Test
+description: Transforms a user story into acceptance criteria, generates a code snippet, and then creates unit tests for that code.
+steps:
+  - step_name: generate_acceptance_criteria
+    prompt_query: "user story acceptance criteria"
+    output_key: "acceptance_criteria"
+    inputs:
+      user_story: "As a user, I want to be able to log in to the system using my email and password, so that I can access my personalized dashboard."
+  - step_name: generate_code_snippet
+    prompt_query: "code snippet generator"
+    output_key: "code_snippet"
+    inputs:
+      language: "Python"
+      functionality: "a user login function based on the following acceptance criteria: {steps.generate_acceptance_criteria.acceptance_criteria}"
+  - step_name: generate_unit_tests
+    prompt_query: "unit test generator"
+    output_key: "unit_tests"
+    inputs:
+      language: "Python"
+      code_snippet: "{steps.generate_code_snippet.code_snippet}"
+      testing_framework: "pytest"
+```
+
+**Example Workflow: Content Marketing Campaign (`workflows/content-marketing-campaign.workflow.yaml`)**
+
+```yaml
+name: Content Marketing Campaign
+description: Generates blog post ideas, outlines a chosen idea, and drafts social media posts.
+steps:
+  - step_name: generate_blog_ideas
+    prompt_query: "blog post idea generator"
+    output_key: "blog_ideas"
+    inputs:
+      topic: "AI in healthcare"
+      audience: "healthcare professionals"
+  - step_name: outline_blog_post
+    prompt_query: "blog post outliner"
+    output_key: "blog_outline"
+    inputs:
+      topic: "AI in healthcare"
+      key_points: "{steps.generate_blog_ideas.blog_ideas}"
+  - step_name: generate_social_posts
+    prompt_query: "social media post generator"
+    output_key: "social_posts"
+    inputs:
+      platform: "LinkedIn"
+      content_summary: "{steps.outline_blog_post.blog_outline}"
+```
+
+**Example Workflow: Academic Research Assistant (`workflows/academic-research-assistant.workflow.yaml`)**
+
+```yaml
+name: Academic Research Assistant
+description: Summarizes a paper, extracts key findings, and generates research questions.
+steps:
+  - step_name: summarize_paper
+    prompt_query: "paper summarizer"
+    output_key: "summary"
+    inputs:
+      topic: "the impact of AI on climate modeling"
+      paper_content: "(Paste the full content of the academic paper here)"
+  - step_name: extract_findings
+    prompt_query: "key findings extractor"
+    output_key: "findings"
+    inputs:
+      topic: "the impact of AI on climate modeling"
+      academic_text: "{steps.summarize_paper.summary}"
+  - step_name: generate_questions
+    prompt_query: "research question generator"
+    output_key: "research_questions"
+    inputs:
+      topic: "the impact of AI on climate modeling"
+      key_findings: "{steps.extract_findings.findings}"
+```
+
+**How to Run:**
+
+```bash
+# Run a defined workflow
+$ python3 -m mcp_tool.mcp run-workflow workflows/user-story-to-code-test.workflow.yaml
+$ python3 -m mcp_tool.mcp run-workflow workflows/content-marketing-campaign.workflow.yaml
+$ python3 -m mcp_tool.mcp run-workflow workflows/academic-research-assistant.workflow.yaml
+```
+
+**Workflow Explanation:**
+*   `name` and `description`: Self-explanatory metadata for the workflow.
+*   `steps`: A list of individual prompt execution steps.
+    *   `step_name`: A unique identifier for this step.
+    *   `prompt_query`: The query used to find the best prompt for this step.
+    *   `output_key`: The key under which the simulated output of this step will be stored.
+    *   `inputs`: A dictionary mapping prompt placeholders to their values. Values can be static strings or references to outputs from previous steps using the `{steps.<step_name>.<output_key>}` syntax.
+
+### 3. Testing Prompts (CLI)
+
+The testing framework allows you to define test cases for your prompts and validate their behavior against expected outputs. Tests are defined in `.test.yaml` files.
+
+**Example Test File (`tests/unit_test_generator.test.yaml`):**
+
+```yaml
+prompt_path: coding-software-development/unit-test-generator.prompt.yaml
+test_cases:
+  - name: Basic Python Function Test
+    inputs:
+      language: Python
+      code_snippet: |
+        def add(a, b):
+            return a + b
+      testing_framework: pytest
+    assertions:
+      - type: contains
+        value: "def test_add():"
+      - type: contains
+        value: "assert add(1, 2) == 3"
+  - name: Edge Case Test
+    inputs:
+      language: Python
+      code_snippet: |
+        def divide(a, b):
+            return a / b
+      testing_framework: unittest
+    assertions:
+      - type: contains
+        value: "def test_divide_by_zero(self):"
+      - type: not_contains
+        value: "import pytest"
+```
+
+**How to Run:**
+
+```bash
+# Run tests for a specific prompt
+$ python3 -m mcp_tool.mcp test tests/unit_test_generator.test.yaml
+```
+
+**Testing Framework Explanation:**
+*   `prompt_path`: The relative path to the prompt file being tested.
+*   `test_cases`: A list of individual test scenarios.
+    *   `name`: A descriptive name for the test case.
+    *   `inputs`: A dictionary mapping prompt placeholders to their test values. These values will be used to prepare the prompt for the simulated LLM call.
+    *   `assertions`: A list of checks to perform on the (simulated) LLM's output.
+        *   `type`: The type of assertion (`contains`, `not_contains`, `regex_matches`).
+        *   `value`: The string or regex pattern to check against the output.
+
+**Important Note on LLM Calls:**
+The testing framework *simulates* the LLM call. In a real-world scenario, you would integrate your actual LLM API call within the `mcp_tool/testing.py` module to get real outputs for validation. The `prepared_prompt` variable within the test execution is what you would send to your LLM.
 
 ### Integrating with Python
 
 You can easily integrate the prompt library into your own tools. The `mcp_tool` package exposes functions to find and retrieve prompts.
 
 ```python
-from mcp_tool import get_prompt
+from mcp_tool.core import find_prompts, get_full_prompt
+from mcp_tool.mcp import get_prompt # For getting the single best match
+
+# Find all prompts related to a query
+matching_prompts = find_prompts("marketing strategy")
+for prompt_info in matching_prompts:
+    print(f"Found: {prompt_info['role']} ({prompt_info['path']})")
 
 # Get the best prompt object for a specific task
-prompt = get_prompt("generate a git commit message")
+best_prompt_summary = get_prompt("generate a git commit message")
 
-if prompt:
-    print(f"Found prompt: {prompt['path']}")
-    # You can now use the prompt's details to format a request
-    # to your language model.
-    # For example, to get the full text:
-    # from mcp_tool.mcp import get_full_prompt
-    # full_prompt_text = get_full_prompt(prompt['path'])
+if best_prompt_summary:
+    print(f"Best prompt: {best_prompt_summary['path']}")
+    # To get the full YAML content of the prompt:
+    full_prompt_content = get_full_prompt(best_prompt_summary['path'])
+    print(f"Objective: {full_prompt_content['objective']}")
+    # You can now use full_prompt_content to format a request to your language model.
 ```
 
 
@@ -81,6 +256,8 @@ prompt-library/
 │   └── productivity/
 ├── data/                   # CSV / JSON bulk exports
 ├── mcp_tool/               # Helper CLI & CI scripts
+├── workflows/              # Definitions for multi-step prompt sequences
+├── tests/                  # Definitions for prompt test cases
 └── docs/                   # GitHub Pages site (auto‑generated)
 ```
 
@@ -127,6 +304,8 @@ If you use this library in academic work, please cite it:
 ---
 
 ## Roadmap
+
+See [`changes.md`](changes.md) for our full roadmap and planned features.
 
 * [ ] Automated prompt count badge
 * [ ] NPM/PyPI package

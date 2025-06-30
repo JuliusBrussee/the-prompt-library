@@ -1,0 +1,21 @@
+name: Academic Research Assistant
+description: Summarizes a paper, extracts key findings, and generates research questions.
+steps:
+  - step_name: summarize_paper
+    prompt_query: "paper summarizer"
+    output_key: "summary"
+    inputs:
+      topic: "the impact of AI on climate modeling"
+      paper_content: "(Paste the full content of the academic paper here)"
+  - step_name: extract_findings
+    prompt_query: "key findings extractor"
+    output_key: "findings"
+    inputs:
+      topic: "the impact of AI on climate modeling"
+      academic_text: "{steps.summarize_paper.summary}"
+  - step_name: generate_questions
+    prompt_query: "research question generator"
+    output_key: "research_questions"
+    inputs:
+      topic: "the impact of AI on climate modeling"
+      key_findings: "{steps.extract_findings.findings}"

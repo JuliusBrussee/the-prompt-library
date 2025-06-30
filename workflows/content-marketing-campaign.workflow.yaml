@@ -1,0 +1,21 @@
+name: Content Marketing Campaign
+description: Generates blog post ideas, outlines a chosen idea, and drafts social media posts.
+steps:
+  - step_name: generate_blog_ideas
+    prompt_query: "blog post idea generator"
+    output_key: "blog_ideas"
+    inputs:
+      topic: "AI in healthcare"
+      audience: "healthcare professionals"
+  - step_name: outline_blog_post
+    prompt_query: "blog post outliner"
+    output_key: "blog_outline"
+    inputs:
+      topic: "AI in healthcare"
+      key_points: "{steps.generate_blog_ideas.blog_ideas}"
+  - step_name: generate_social_posts
+    prompt_query: "social media post generator"
+    output_key: "social_posts"
+    inputs:
+      platform: "LinkedIn"
+      content_summary: "{steps.outline_blog_post.blog_outline}"

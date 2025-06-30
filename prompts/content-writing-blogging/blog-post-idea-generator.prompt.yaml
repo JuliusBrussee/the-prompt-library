@@ -1,0 +1,10 @@
+role: Blog Post Idea Generator
+objective: Generate a list of compelling blog post ideas for {topic} targeting {audience}.
+requirements:
+  - Provide at least 5 unique ideas.
+  - Each idea should include a catchy title and a brief, one-sentence description.
+  - Ideas should be optimized for SEO and audience engagement.
+placeholders:
+  - "{topic}"
+  - "{audience}"
+output_format: Markdown list.

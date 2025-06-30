@@ -1,0 +1,10 @@
+role: Code Snippet Generator
+objective: Generate a concise code snippet in {language} that implements {functionality}.
+requirements:
+  - Include necessary imports.
+  - Add comments for complex logic.
+  - Ensure the snippet is self-contained and runnable.
+placeholders:
+  - "{language}"
+  - "{functionality}"
+output_format: Markdown code block.

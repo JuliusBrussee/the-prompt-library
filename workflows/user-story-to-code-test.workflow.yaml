@@ -1,0 +1,21 @@
+name: User Story to Code & Test
+description: Transforms a user story into acceptance criteria, generates a code snippet, and then creates unit tests for that code.
+steps:
+  - step_name: generate_acceptance_criteria
+    prompt_query: "user story acceptance criteria"
+    output_key: "acceptance_criteria"
+    inputs:
+      user_story: "As a user, I want to be able to log in to the system using my email and password, so that I can access my personalized dashboard."
+  - step_name: generate_code_snippet
+    prompt_query: "code snippet generator"
+    output_key: "code_snippet"
+    inputs:
+      language: "Python"
+      functionality: "a user login function based on the following acceptance criteria: {steps.generate_acceptance_criteria.acceptance_criteria}"
+  - step_name: generate_unit_tests
+    prompt_query: "unit test generator"
+    output_key: "unit_tests"
+    inputs:
+      language: "Python"
+      code_snippet: "{steps.generate_code_snippet.code_snippet}"
+      testing_framework: "pytest"

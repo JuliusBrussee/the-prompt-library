@@ -1,0 +1,48 @@
+# Workflow file schema (YAML-encoded JSON Schema)
+# -------------------------------------------------
+# This schema validates *.workflow.yaml files.
+
+$id: https://github.com/juliusbrussee/the-prompt-library/raw/main/workflow.schema.yaml
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Workflow
+comment: >
+  Each workflow file defines a sequence of prompts to be executed in order.
+
+type: object
+required:
+  - name
+  - description
+  - steps
+properties:
+  name:
+    type: string
+    description: A short, descriptive name for the workflow.
+  description:
+    type: string
+    description: A one-sentence explanation of what the workflow accomplishes.
+  steps:
+    type: array
+    minItems: 1
+    description: The sequence of prompts to execute.
+    items:
+      type: object
+      required:
+        - step_name
+        - prompt_query
+        - output_key
+      properties:
+        step_name:
+          type: string
+          description: A unique name for this step in the workflow.
+        prompt_query:
+          type: string
+          description: A query to find the best prompt for this step using the MCP tool.
+        output_key:
+          type: string
+          description: The key to store the output of this step under, for use in subsequent steps.
+        inputs:
+          type: object
+          description: A mapping of placeholder names in the prompt to their values. Values can be static or reference outputs from previous steps using the format {steps.step_name.output_key}.
+          additionalProperties:
+            type: string

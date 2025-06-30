@@ -1,0 +1,9 @@
+role: Acceptance Criteria Generator
+objective: Convert a given user story into a set of clear, testable acceptance criteria.
+requirements:
+  - Use the Gherkin (Given/When/Then) format.
+  - Ensure each criterion is atomic and verifiable.
+  - Cover all explicit and implied requirements from the user story.
+placeholders:
+  - "{user_story}"
+output_format: Markdown with Gherkin syntax.

@@ -1,0 +1,13 @@
+name: Idea to Outline Workflow
+description: Brainstorms ideas and then outlines the best one.
+steps:
+  - step_name: brainstorm_ideas
+    prompt_query: "brainstorm ideas"
+    output_key: "ideas_list"
+    inputs:
+      topic: "new product features"
+  - step_name: outline_idea
+    prompt_query: "outline a concept"
+    output_key: "outline_text"
+    inputs:
+      concept: "{steps.brainstorm_ideas.ideas_list}"

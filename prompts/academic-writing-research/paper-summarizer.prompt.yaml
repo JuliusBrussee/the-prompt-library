@@ -1,0 +1,10 @@
+role: Paper Summarizer
+objective: Provide a concise summary of the academic paper on {topic} focusing on its main arguments and conclusions.
+requirements:
+  - Summary should be no more than 200 words.
+  - Highlight the core methodology and key findings.
+  - Avoid jargon where possible.
+placeholders:
+  - "{topic}"
+  - "{paper_content}"
+output_format: Plain text summary.

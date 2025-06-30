@@ -352,6 +352,12 @@
     ]
   },
   {
+    "path": "content-writing-blogging/blog-post-outliner.prompt.yaml",
+    "role": "Blog Post Outliner",
+    "objective": "Create a detailed outline for a blog post based on the given {topic} and {key_points}.",
+    "tags": []
+  },
+  {
     "path": "content-writing-blogging/podcast-show-notes-producer.prompt.yaml",
     "role": "Podcast Show Notes Producer.",
     "objective": "INCLUDE: \u2022 100\u2011word episode summary \u2022 Timestamped highlights (mm:ss \u2013 key takeaway) at 2\u2011minute granularity \u2022 Guest bio (50 words) and two social links \u2022 Three pull\u2011quotes formatted for Twitter",
@@ -368,6 +374,12 @@
     ]
   },
   {
+    "path": "content-writing-blogging/social-media-post-generator.prompt.yaml",
+    "role": "Social Media Post Generator",
+    "objective": "Generate engaging social media posts for {platform} promoting {content_summary}.",
+    "tags": []
+  },
+  {
     "path": "content-writing-blogging/fact-checker-citation-assistant.prompt.yaml",
     "role": "Fact\u2011Checker & Citation Assistant.",
     "objective": "Validate the factual claims in **{article_text}** and supply APA 7th citations for each.",
@@ -382,6 +394,12 @@
     "tags": [
       "content-writing-blogging"
     ]
+  },
+  {
+    "path": "content-writing-blogging/blog-post-idea-generator.prompt.yaml",
+    "role": "Blog Post Idea Generator",
+    "objective": "Generate a list of compelling blog post ideas for {topic} targeting {audience}.",
+    "tags": []
   },
   {
     "path": "content-writing-blogging/brand-storytelling-architect.prompt.yaml",
@@ -440,12 +458,24 @@
     ]
   },
   {
+    "path": "coding-software-development/user-story-to-acceptance-criteria.prompt.yaml",
+    "role": "Acceptance Criteria Generator",
+    "objective": "Convert a given user story into a set of clear, testable acceptance criteria.",
+    "tags": []
+  },
+  {
     "path": "coding-software-development/api-design-architect.prompt.yaml",
     "role": "API Design Architect.",
     "objective": "Outline RESTful API endpoints for managing **{resource}** including HTTP verbs, sample request/response JSON, and authentication scheme.",
     "tags": [
       "coding-software-development"
     ]
+  },
+  {
+    "path": "coding-software-development/code-snippet-generator.prompt.yaml",
+    "role": "Code Snippet Generator",
+    "objective": "Generate a concise code snippet in {language} that implements {functionality}.",
+    "tags": []
   },
   {
     "path": "coding-software-development/design-pattern-recommender.prompt.yaml",
@@ -640,6 +670,18 @@
     ]
   },
   {
+    "path": "creative/idea-brainstormer.prompt.yaml",
+    "role": "Idea Brainstormer",
+    "objective": "Generate a list of diverse and innovative ideas for {topic}.",
+    "tags": []
+  },
+  {
+    "path": "academic-writing-research/research-question-generator.prompt.yaml",
+    "role": "Research Question Generator",
+    "objective": "Generate 3-5 novel and impactful research questions based on the provided {topic} and {key_findings}.",
+    "tags": []
+  },
+  {
     "path": "academic-writing-research/citation-style-converter.prompt.yaml",
     "role": "Citation Style Converter.",
     "objective": "Transform bibliography entries **{references}** from APA 7th to Chicago\u2011Notes style.",
@@ -718,6 +760,18 @@
     "tags": [
       "academic-writing-research"
     ]
+  },
+  {
+    "path": "academic-writing-research/key-findings-extractor.prompt.yaml",
+    "role": "Key Findings Extractor",
+    "objective": "Extract the most significant findings and their implications from the provided academic text on {topic}.",
+    "tags": []
+  },
+  {
+    "path": "academic-writing-research/paper-summarizer.prompt.yaml",
+    "role": "Paper Summarizer",
+    "objective": "Provide a concise summary of the academic paper on {topic} focusing on its main arguments and conclusions.",
+    "tags": []
   },
   {
     "path": "marketing-seo/email-subject-line-generator.prompt.yaml",
