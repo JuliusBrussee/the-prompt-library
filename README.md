@@ -18,32 +18,45 @@
 
 ---
 
-## Quick start
+## Quick Start: The MCP Tool
 
-### Finding Prompts
+The Model Context Protocol (MCP) tool is the primary way to interact with this library. It allows you to intelligently find and retrieve prompts from the command line or your own Python scripts.
 
-To find the right prompt for your needs, use the `mcp.py` script with the `find` command:
+**First, build the search index:**
 
 ```bash
-# Find prompts related to a specific topic
-$ python3 scripts/mcp.py find "data analysis"
+python3 -m mcp_tool.build_index
 ```
 
-This will search the library and return a list of matching prompts.
+### Finding and Using Prompts (CLI)
 
-### Using Prompts in Python
+Use the `find` command to search for prompts by keyword and the `get` command to retrieve the full text of the best match.
 
-Once you've identified a suitable prompt, you can use the `get_prompt` function from the `mcp` module to retrieve it in your Python scripts:
+```bash
+# Find relevant prompts
+$ python3 -m mcp_tool.mcp find "unit test"
+
+# Get the best prompt for a task, ready to use
+$ python3 -m mcp_tool.mcp get "Create a unit test for my function"
+```
+
+### Integrating with Python
+
+You can easily integrate the prompt library into your own tools. The `mcp_tool` package exposes functions to find and retrieve prompts.
 
 ```python
-from scripts.mcp import get_prompt
+from mcp_tool import get_prompt
 
-prompt = get_prompt("code documentation")
+# Get the best prompt object for a specific task
+prompt = get_prompt("generate a git commit message")
 
 if prompt:
-    # Now you can use the prompt details in your LLM workflow
-    print(f"Using prompt: {prompt['path']}")
-    # ... fill placeholders and call your model
+    print(f"Found prompt: {prompt['path']}")
+    # You can now use the prompt's details to format a request
+    # to your language model.
+    # For example, to get the full text:
+    # from mcp_tool.mcp import get_full_prompt
+    # full_prompt_text = get_full_prompt(prompt['path'])
 ```
 
 
@@ -67,7 +80,7 @@ prompt-library/
 │   ├── design/
 │   └── productivity/
 ├── data/                   # CSV / JSON bulk exports
-├── scripts/                # Helper CLI & CI scripts
+├── mcp_tool/               # Helper CLI & CI scripts
 └── docs/                   # GitHub Pages site (auto‑generated)
 ```
 
