@@ -27,4 +27,5 @@ This document outlines planned features and improvements for the prompt library 
 ### 4. Automated Prompt Testing and Quality Assurance (Implemented)
 
 - **Concept:** Built a testing framework to validate the effectiveness of prompts. For each prompt, a corresponding test file provides example inputs and defines criteria for a "good" output (e.g., using regex, keyword checks, or even another LLM to grade the result). A `mcp_tool test` command runs these tests.
+- **LLM Integration:** The testing framework now supports integration with real LLMs (Gemini, OpenAI) via API calls, configurable through CLI arguments or `mcp_config.yaml`.
 - **Benefit:** This significantly improves the reliability and maintainability of the library, ensuring prompts remain high-quality over time and making it safer to accept community contributions.

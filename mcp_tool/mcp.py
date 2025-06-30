@@ -1,9 +1,12 @@
+
+
 import os
 import json
 import argparse
 import yaml
 import re
 import itertools
+
 from .core import find_prompts, get_full_prompt
 from .interactive import run_interactive_session
 from .workflow import run_workflow
@@ -18,7 +21,18 @@ def get_prompt(query):
         return results[0]
     return None
 
+def load_config():
+    config_path = os.path.join(os.path.dirname(__file__), '..', 'mcp_config.yaml')
+    if os.path.exists(config_path):
+        with open(config_path, 'r') as f:
+            return yaml.safe_load(f)
+    return {}
+
 def main():
+    config = load_config()
+    default_provider = config.get('llm_config', {}).get('default_provider')
+    default_model = config.get('llm_config', {}).get('default_model')
+
     parser = argparse.ArgumentParser(description='Model Context Protocol (MCP) CLI')
     subparsers = parser.add_subparsers(dest='command', required=True)
 
@@ -38,6 +52,8 @@ def main():
     # Test command
     test_parser = subparsers.add_parser('test', help='Run tests for a prompt')
     test_parser.add_argument('test_path', help='Path to the .test.yaml file')
+    test_parser.add_argument('--llm-provider', default=default_provider, help='Specify LLM provider (e.g., gemini, openai)')
+    test_parser.add_argument('--llm-model', default=default_model, help='Specify LLM model (e.g., gemini-pro, gpt-3.5-turbo)')
 
     args = parser.parse_args()
 
@@ -74,7 +90,7 @@ def main():
     elif args.command == 'run-workflow':
         run_workflow(args.workflow_path)
     elif args.command == 'test':
-        run_tests(args.test_path)
+        run_tests(args.test_path, args.llm_provider, args.llm_model)
 
 if __name__ == '__main__':
     main()

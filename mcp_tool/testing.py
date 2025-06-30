@@ -1,11 +1,11 @@
-
 # mcp_tool/testing.py
 import os
 import yaml
 import re
 from .core import get_full_prompt
+from .llm_client import get_llm_client
 
-def run_tests(test_path):
+def run_tests(test_path, llm_provider: str = None, llm_model: str = None):
     """
     Runs the tests defined in a .test.yaml file.
     """
@@ -25,6 +25,15 @@ def run_tests(test_path):
         return
 
     print(f"\n--- Testing Prompt: {prompt_content.get('role')} ({prompt_file_path}) ---")
+
+    llm_client = None
+    if llm_provider:
+        try:
+            llm_client = get_llm_client(llm_provider, llm_model)
+            print(f"Using LLM: {llm_provider} ({llm_model})")
+        except (ValueError, RuntimeError) as e:
+            print(f"Error setting up LLM client: {e}. Proceeding with simulated output.")
+            llm_provider = None # Fallback to simulation
 
     all_tests_passed = True
     for i, test_case in enumerate(test_data.get('test_cases', [])):
@@ -59,21 +68,31 @@ OUTPUT FORMAT:
 """)
         print("    --------------------------------------------------")
 
-        # --- LLM Call Simulation --- 
-        # IMPORTANT: In a real scenario, you would replace this with your actual LLM API call.
-        # The 'prepared_prompt' is what you would send to your LLM.
-        # For demonstration, we'll use a simple simulated output based on inputs.
-        simulated_llm_output = f"Simulated LLM output for {test_name}. Inputs: {inputs}. "
-        if "error" in test_name.lower():
-            simulated_llm_output += "This is an error message."
-        elif "success" in test_name.lower():
-            simulated_llm_output += "Operation completed successfully."
+        llm_output = ""
+        if llm_client:
+            try:
+                llm_output = llm_client.generate_text(prepared_prompt)
+                print("    Actual LLM Output:\n")
+                print(f"""
+{llm_output}
+""")
+            except Exception as e:
+                llm_output = f"LLM Error: {e}"
+                print(f"    LLM Call Failed: {e}. Using error message for assertions.")
         else:
-            simulated_llm_output += "Generic response."
+            # Fallback to existing simulation if no LLM client or error
+            simulated_llm_output = f"Simulated LLM output for {test_name}. Inputs: {inputs}. "
+            if "error" in test_name.lower():
+                simulated_llm_output += "This is an error message."
+            elif "success" in test_name.lower():
+                simulated_llm_output += "Operation completed successfully."
+            else:
+                simulated_llm_output += "Generic response."
+            llm_output = simulated_llm_output
 
-        print("    Simulated LLM Output:\n")
-        print(f"""
-{simulated_llm_output}
+            print("    Simulated LLM Output:\n")
+            print(f"""
+{llm_output}
 """)
         print("    --------------------------------------------------")
 
@@ -89,11 +108,11 @@ OUTPUT FORMAT:
 
             result = False
             if assertion_type == 'contains':
-                result = assertion_value in simulated_llm_output
+                result = assertion_value in llm_output
             elif assertion_type == 'not_contains':
-                result = assertion_value not in simulated_llm_output
+                result = assertion_value not in llm_output
             elif assertion_type == 'regex_matches':
-                result = bool(re.search(assertion_value, simulated_llm_output))
+                result = bool(re.search(assertion_value, llm_output))
             
             if result:
                 print(f"      [PASS] Assertion '{assertion_type}' '{assertion_value}'")

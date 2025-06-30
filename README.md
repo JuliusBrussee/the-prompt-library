@@ -158,7 +158,7 @@ $ python3 -m mcp_tool.mcp run-workflow workflows/academic-research-assistant.wor
 
 ### 3. Testing Prompts (CLI)
 
-The testing framework allows you to define test cases for your prompts and validate their behavior against expected outputs. Tests are defined in `.test.yaml` files.
+The testing framework allows you to define test cases for your prompts and validate their behavior against expected outputs. Tests are defined in `.test.yaml` files. You can configure which LLM to use for testing via command-line arguments or a `mcp_config.yaml` file.
 
 **Example Test File (`tests/unit_test_generator.test.yaml`):**
 
@@ -194,45 +194,41 @@ test_cases:
 **How to Run:**
 
 ```bash
-# Run tests for a specific prompt
+# Run tests using default LLM configured in mcp_config.yaml
 $ python3 -m mcp_tool.mcp test tests/unit_test_generator.test.yaml
+
+# Run tests specifying LLM provider and model
+$ python3 -m mcp_tool.mcp test tests/unit_test_generator.test.yaml --llm-provider gemini --llm-model gemini-pro
+
+# Run tests with OpenAI
+$ python3 -m mcp_tool.mcp test tests/unit_test_generator.test.yaml --llm-provider openai --llm-model gpt-4
 ```
+
+**LLM Integration & Configuration:**
+
+To use real LLMs for testing, you need to:
+1.  **Install necessary libraries:** For Gemini, `pip install google-generativeai`. For OpenAI, `pip install openai`.
+2.  **Set API Keys:** Store your API keys as environment variables (e.g., `GEMINI_API_KEY`, `OPENAI_API_KEY`). This is the recommended secure practice.
+3.  **Configure `mcp_config.yaml` (Optional):** You can set default LLM provider and model in `mcp_config.yaml` at the project root:
+
+    ```yaml
+    # mcp_config.yaml
+    llm_config:
+      default_provider: gemini
+      default_model: gemini-pro
+    ```
 
 **Testing Framework Explanation:**
 *   `prompt_path`: The relative path to the prompt file being tested.
 *   `test_cases`: A list of individual test scenarios.
     *   `name`: A descriptive name for the test case.
-    *   `inputs`: A dictionary mapping prompt placeholders to their test values. These values will be used to prepare the prompt for the simulated LLM call.
-    *   `assertions`: A list of checks to perform on the (simulated) LLM's output.
+    *   `inputs`: A dictionary mapping prompt placeholders to their test values. These values will be used to prepare the prompt for the LLM call.
+    *   `assertions`: A list of checks to perform on the LLM's output.
         *   `type`: The type of assertion (`contains`, `not_contains`, `regex_matches`).
         *   `value`: The string or regex pattern to check against the output.
 
 **Important Note on LLM Calls:**
-The testing framework *simulates* the LLM call. In a real-world scenario, you would integrate your actual LLM API call within the `mcp_tool/testing.py` module to get real outputs for validation. The `prepared_prompt` variable within the test execution is what you would send to your LLM.
-
-### Integrating with Python
-
-You can easily integrate the prompt library into your own tools. The `mcp_tool` package exposes functions to find and retrieve prompts.
-
-```python
-from mcp_tool.core import find_prompts, get_full_prompt
-from mcp_tool.mcp import get_prompt # For getting the single best match
-
-# Find all prompts related to a query
-matching_prompts = find_prompts("marketing strategy")
-for prompt_info in matching_prompts:
-    print(f"Found: {prompt_info['role']} ({prompt_info['path']})")
-
-# Get the best prompt object for a specific task
-best_prompt_summary = get_prompt("generate a git commit message")
-
-if best_prompt_summary:
-    print(f"Best prompt: {best_prompt_summary['path']}")
-    # To get the full YAML content of the prompt:
-    full_prompt_content = get_full_prompt(best_prompt_summary['path'])
-    print(f"Objective: {full_prompt_content['objective']}")
-    # You can now use full_prompt_content to format a request to your language model.
-```
+The `mcp_tool/testing.py` module now makes actual API calls to the configured LLM. Ensure your API keys are correctly set and you are aware of any costs associated with LLM usage.
 
 
 Need live testing? Try the [GitHub Pages playground](https://juliusbrussee.github.io/prompt-library) (bring your own API key).
