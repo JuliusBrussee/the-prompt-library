@@ -1,0 +1,55 @@
+
+name: Publish Prompts
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install PyYAML
+
+      - name: Build prompts.js
+        run: |
+          python -c "
+import yaml
+import json
+import glob
+
+prompts = []
+for filepath in glob.glob('prompts/**/*.prompt.yaml', recursive=True):
+    with open(filepath, 'r') as f:
+        try:
+            data = yaml.safe_load(f)
+            prompts.append(data)
+        except yaml.YAMLError as exc:
+            print(exc)
+
+with open('docs/prompts.js', 'w') as f:
+    f.write('const prompts = ')
+    json.dump(prompts, f, indent=2)
+"
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "docs: update prompts.js"
+          file_pattern: "docs/prompts.js"
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
