@@ -1,64 +1,164 @@
+:root {
+    --background-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --card-background: #2a2a2a;
+    --border-color: #444;
+    --primary-color: #4a90e2;
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+}
 
 body {
-    font-family: sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
+    font-family: var(--font-sans);
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 20px;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 h1 {
     text-align: center;
-    color: #1c1e21;
+    font-weight: 600;
 }
 
 .search-container {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #search {
     width: 100%;
-    padding: 10px;
+    padding: 12px 15px;
     font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--card-background);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+}
+
+#tag-filters {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-filter {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tag-filter.active {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
 }
 
 .prompts-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
 .prompt-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    cursor: pointer;
-    transition: box-shadow 0.3s;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .prompt-card:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .prompt-card h3 {
     margin-top: 0;
-    color: #1c1e21;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .prompt-card p {
-    margin-bottom: 0;
+    font-family: var(--font-mono);
+    line-height: 1.6;
+    flex-grow: 1;
 }
 
 .prompt-card .tags {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 12px;
-    color: #606770;
+}
+
+.prompt-card .tags span {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-right: 5px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.prompt-card .actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.prompt-card .actions button {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.prompt-card .actions button:hover {
+    background-color: #333;
+}
+
+#toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toast {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .prompts-container {
+        grid-template-columns: 1fr;
+    }
 }
