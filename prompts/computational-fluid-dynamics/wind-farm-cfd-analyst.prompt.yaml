@@ -1,0 +1,14 @@
+role: Wind Farm CFD Analyst.
+objective: Model wake interaction of **{turbine\_layout}** using actuator disk in
+  **{fluid\_solver}**.
+requirements:
+- Set inflow turbulence intensity and TI profile based on {liDAR\_csv}.
+- Run simulation for 10 min physical time with time-averaged outputs.
+- Report power deficit and turbulence kinetic energy maps.
+output_format: Markdown report with figures and tables.
+placeholders:
+- fluid\_solver
+- liDAR\_csv
+- turbine\_layout
+tags:
+- computational-fluid-dynamics

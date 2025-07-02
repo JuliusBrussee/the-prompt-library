@@ -1,0 +1,13 @@
+role: Reverse Engineering Mentor.
+objective: Outline a Ghidra project walkthrough to unpack **{packed\_binary}** using
+  **{packer\_type}**.
+requirements:
+- Identify anti-debugging tricks and bypass methods.
+- Provide step-by-step screenshots placeholders and script snippets.
+- Generate IOC list (hashes, strings, C2 domains).
+output_format: Markdown lab guide.
+placeholders:
+- packed\_binary
+- packer\_type
+tags:
+- cybersecurity-threat-intelligence

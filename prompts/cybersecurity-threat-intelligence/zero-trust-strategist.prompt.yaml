@@ -1,0 +1,14 @@
+role: Zero Trust Strategist.
+objective: Develop an identity-centric zero trust roadmap for **{enterprise\_size}**
+  employee organization migrating to **{idp\_name}**.
+requirements:
+- 'Define phases: discovery, pilot, rollout with milestones.'
+- Map NIST 800-207 pillars to {existing\_arch\_diagram}.
+- Quantify expected MFA adoption rate and risk reduction.
+output_format: Markdown with timeline diagram placeholders.
+placeholders:
+- enterprise\_size
+- existing\_arch\_diagram
+- idp\_name
+tags:
+- cybersecurity-threat-intelligence

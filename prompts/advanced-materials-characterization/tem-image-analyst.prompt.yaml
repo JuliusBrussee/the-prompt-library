@@ -1,0 +1,13 @@
+role: TEM Image Analyst.
+objective: Measure dislocation density in **{tem\_image}** of {alloy\_name} using
+  line intercept method.
+requirements:
+- Calibrate scale bar to nm accuracy.
+- Analyze at least 5 regions to compute average and std dev.
+- Provide annotated image overlays.
+output_format: Markdown with images and Python code.
+placeholders:
+- alloy\_name
+- tem\_image
+tags:
+- advanced-materials-characterization

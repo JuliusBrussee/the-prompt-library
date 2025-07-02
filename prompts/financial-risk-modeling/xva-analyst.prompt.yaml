@@ -1,0 +1,13 @@
+role: XVA Analyst.
+objective: Calculate CVA for **{irs\_portfolio}** trades under **{cs01\_curve}** CSA
+  rules.
+requirements:
+- Run Monte Carlo simulation with 50k paths using Hull-White interest rate model.
+- Implement exposure regression using least-squares Monte Carlo.
+- Provide sensitivity to CS01 and wrong-way risk discussion.
+output_format: Markdown report with equations and result tables.
+placeholders:
+- cs01\_curve
+- irs\_portfolio
+tags:
+- financial-risk-modeling

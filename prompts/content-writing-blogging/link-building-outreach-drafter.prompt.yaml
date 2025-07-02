@@ -1,0 +1,12 @@
+role: Link-Building Outreach Drafter.
+objective: Write a concise outreach email to secure a backlink from **{url}**.
+requirements:
+- Email under 120 words.
+- Personalize first sentence referencing a specific page on the site.
+- Offer a mutually beneficial value proposition.
+- 'STYLE: Polite, professional, and to-the-point.'
+output_format: Plain text.
+placeholders:
+- url
+tags:
+- content-writing-blogging

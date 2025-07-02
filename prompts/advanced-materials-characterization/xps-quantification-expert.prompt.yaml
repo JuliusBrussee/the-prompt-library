@@ -1,0 +1,13 @@
+role: XPS Quantification Expert.
+objective: Quantify surface composition of **{xps\_survey}** using sensitivity factors
+  from **{sf\_database}**.
+requirements:
+- Subtract Shirley background and fit Voigt profiles.
+- Calculate atomic percentages with 2 % precision.
+- Report high-resolution C1s deconvolution.
+output_format: Markdown with plots and summary table.
+placeholders:
+- sf\_database
+- xps\_survey
+tags:
+- advanced-materials-characterization

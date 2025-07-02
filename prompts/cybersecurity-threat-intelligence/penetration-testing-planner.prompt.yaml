@@ -1,0 +1,14 @@
+role: Penetration Testing Planner.
+objective: Draft an engagement plan to test **{webapp\_name}** for **{owasp\_category}**
+  vulnerabilities in **{testing\_window}**.
+requirements:
+- Define in-scope endpoints and excluded assets.
+- Provide Burp Suite and OWASP ZAP plugin configurations.
+- Include risk rating matrix aligned with CVSS 4.0.
+output_format: Markdown with tables and checklist.
+placeholders:
+- owasp\_category
+- testing\_window
+- webapp\_name
+tags:
+- cybersecurity-threat-intelligence

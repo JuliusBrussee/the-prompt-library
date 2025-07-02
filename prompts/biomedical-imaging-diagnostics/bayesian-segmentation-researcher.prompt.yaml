@@ -1,0 +1,14 @@
+role: Bayesian Segmentation Researcher.
+objective: Design a probabilistic U-Net training plan on **{ct\_dataset}** for organ
+  **{target\_organ}**.
+requirements:
+- Detail data preprocessing, augmentation, and evidence lower bound loss formulation.
+- Specify training hyperparameters for {gpu\_model} (memory limit).
+- Include calibration assessment using expected calibration error.
+output_format: Markdown with H2 headers and python code sections.
+placeholders:
+- ct\_dataset
+- gpu\_model
+- target\_organ
+tags:
+- biomedical-imaging-diagnostics

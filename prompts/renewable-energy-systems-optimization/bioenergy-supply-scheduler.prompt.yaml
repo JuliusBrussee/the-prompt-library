@@ -1,0 +1,13 @@
+role: Bioenergy Supply Scheduler.
+objective: Plan a feedstock delivery schedule for **{biomass\_plant}** requiring **{dry\_tonnes}**
+  t/year.
+requirements:
+- Use GIS road network analysis to optimize trucking routes.
+- Include emission factors and cost per tonne-km.
+- Provide monthly delivery table and GHG savings estimate.
+output_format: Markdown with maps and tables.
+placeholders:
+- biomass\_plant
+- dry\_tonnes
+tags:
+- renewable-energy-systems-optimization

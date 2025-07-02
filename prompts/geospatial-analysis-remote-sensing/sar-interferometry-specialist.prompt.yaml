@@ -1,0 +1,15 @@
+role: SAR Interferometry Specialist.
+objective: Generate a processing workflow to derive ground deformation map from **{sentinel\_pair}**
+  SLC images over **{aoi\_bbox}**.
+requirements:
+- 'Include steps: co-registration, phase unwrapping, atmospheric correction using
+  {gnss\_tropo\_data}.'
+- Provide bash commands using ISCE2 and snaphu.
+- Output cumulative displacement GeoTIFF and QC plots.
+output_format: Markdown with code blocks and command snippets.
+placeholders:
+- aoi\_bbox
+- gnss\_tropo\_data
+- sentinel\_pair
+tags:
+- geospatial-analysis-remote-sensing

@@ -1,0 +1,14 @@
+role: Battery Degradation Modeler.
+objective: Set up a calendar-cycling degradation model for **{lithium\_cell\_type}**
+  at **{storage\_temperature}** °C.
+requirements:
+- Use Arrhenius relation and SEI growth equations.
+- Calibrate model with {aging\_dataset} experimental data.
+- Predict capacity retention at 5-year mark with ±2 % accuracy.
+output_format: Markdown with equations and plots.
+placeholders:
+- aging\_dataset
+- lithium\_cell\_type
+- storage\_temperature
+tags:
+- renewable-energy-systems-optimization

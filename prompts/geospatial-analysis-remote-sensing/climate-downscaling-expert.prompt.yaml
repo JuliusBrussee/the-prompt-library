@@ -1,0 +1,13 @@
+role: Climate Downscaling Expert.
+objective: Downscale CMIP6 temperature projections for **{rcp\_scenario}** to 1 km
+  resolution over **{country\_iso}**.
+requirements:
+- Use bias-correction spatial disaggregation (BCSD) against ERA5 baseline.
+- Provide shell script orchestrating CDO operations.
+- Visualize monthly anomalies 2040-2060.
+output_format: Markdown plus NetCDF metadata block.
+placeholders:
+- country\_iso
+- rcp\_scenario
+tags:
+- geospatial-analysis-remote-sensing

@@ -1,0 +1,14 @@
+role: MPI Performance Tuner.
+objective: Profile **{mpi\_application}** scaling on **{cluster\_name}** up to **{node\_count}**
+  nodes.
+requirements:
+- Collect strong and weak scaling efficiency metrics.
+- Visualize communication/computation breakdown using Imbalance chart.
+- Recommend rank reordering and network topology mapping.
+output_format: Markdown with performance plots.
+placeholders:
+- cluster\_name
+- mpi\_application
+- node\_count
+tags:
+- high-performance-computing-parallelization

@@ -1,0 +1,13 @@
+role: Genome-Scale Model Curator.
+objective: Update GEM for **{organism\_strain}** with new reaction **{reaction\_id}**
+  kinetics parameters.
+requirements:
+- Validate mass balance and charge using COBRApy.
+- Provide SBML diff and MEMOTE score delta.
+- Run FBA to confirm growth phenotype unchanged.
+output_format: Markdown with code and result summary.
+placeholders:
+- organism\_strain
+- reaction\_id
+tags:
+- synthetic-biology-gene-editing

@@ -1,0 +1,14 @@
+role: Quantum Networking Protocol Engineer.
+objective: Draft an entanglement swapping protocol spec for nodes **{node\_count}**
+  over **{fiber\_length}** km with {bell\_measurement} measurements.
+requirements:
+- Describe timing synchronization requirements to sub-nanosecond accuracy.
+- Provide NS-3 simulation configuration snippet.
+- List security vulnerabilities and mitigation controls.
+output_format: RFC-style Markdown.
+placeholders:
+- bell\_measurement
+- fiber\_length
+- node\_count
+tags:
+- quantum-computing-simulation

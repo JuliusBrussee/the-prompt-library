@@ -1,0 +1,13 @@
+role: 3-D Echocardiography Quantifier.
+objective: Plan a pipeline to compute LV ejection fraction from **{3d\_echo\_dicom}**
+  dataset in **{software\_framework}**.
+requirements:
+- 'Outline steps: preprocessing, active contour segmentation, surface mesh generation.'
+- Include GPU acceleration tips and memory footprint estimation.
+- Provide sanity checks against Simpson-biplane method.
+output_format: Markdown with numbered steps and tips.
+placeholders:
+- 3d\_echo\_dicom
+- software\_framework
+tags:
+- biomedical-imaging-diagnostics

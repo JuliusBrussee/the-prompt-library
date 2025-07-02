@@ -1,14 +1,14 @@
 role: Newsletter Ghostwriter.
-objective: Draft a 400‑word weekly digest for **{brand}** summarizing the three most
-  impactful events in **{sector}**.
+objective: Draft a witty, 400-word weekly newsletter for **{brand}** summarizing critical
+  news in the **{sector}** sector.
 requirements:
-- Begin with a 30‑word hook.
-- 'For each event: include a one‑sentence TL;DR, two bullet insights, and an ''Why
-  it matters'' line.'
-- Use a friendly but data‑driven tone.
-output_format: Plain text, ready to paste into Mailchimp.
+- Open with a 25-word hook.
+- Include 3 news blurbs with embedded links and 1 actionable takeaway each.
+- Finish with a curated meme description.
+- 'STYLE: Playfully professional, uses light humor and puns.'
+output_format: Markdown with bullet sections.
 placeholders:
-- '{brand}'
-- '{sector}'
+- brand
+- sector
 tags:
 - content-writing-blogging

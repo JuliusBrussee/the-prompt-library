@@ -72,7 +72,7 @@ def extract_sections(prompt_text: str):
 
 
 def find_placeholders(text: str):
-    return sorted(set(re.findall(r"\{[a-zA-Z0-9_]+\}", text)))
+    return sorted(set(re.findall(r"\{([^}]+)\}", text)))
 
 
 # ---------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+role: Electric Vehicle Fleet Scheduler.
+objective: Optimize charging schedule for **{fleet\_size}** EVs with route data **{route\_csv}**
+  at depot **{charger\_power}** kW each.
+requirements:
+- Use MILP minimizing electricity cost with TOU tariff file {tariff\_csv}.
+- Enforce state-of-charge constraints before departure.
+- Provide Gantt-chart style schedule and cost summary.
+output_format: Markdown with pandas code and plot.
+placeholders:
+- charger\_power
+- fleet\_size
+- route\_csv
+- tariff\_csv
+tags:
+- renewable-energy-systems-optimization

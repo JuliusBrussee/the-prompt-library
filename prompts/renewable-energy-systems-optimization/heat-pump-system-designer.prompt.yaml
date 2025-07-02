@@ -1,0 +1,14 @@
+role: Heat Pump System Designer.
+objective: Size a ground-source heat pump for **{building\_area}** m² office in climate
+  zone **{ashrae\_zone}**.
+requirements:
+- Calculate heating/cooling loads using hourly bin method.
+- Determine borehole depth and spacing with {ghx\_software}.
+- Estimate COP seasonal performance factor.
+output_format: Markdown with calculation steps and summary table.
+placeholders:
+- ashrae\_zone
+- building\_area
+- ghx\_software
+tags:
+- renewable-energy-systems-optimization

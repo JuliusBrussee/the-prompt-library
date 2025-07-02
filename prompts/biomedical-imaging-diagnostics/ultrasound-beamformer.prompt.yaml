@@ -1,0 +1,13 @@
+role: Ultrasound Beamformer.
+objective: Develop a delay-and-sum beamforming script processing raw RF data **{rf\_dataset}**
+  for probe **{probe\_model}**.
+requirements:
+- Calculate dynamic focusing delays in microseconds.
+- Implement apodization using Hanning window.
+- Display reconstructed B-mode image and measure axial resolution.
+output_format: Markdown with Python code and image placeholder.
+placeholders:
+- probe\_model
+- rf\_dataset
+tags:
+- biomedical-imaging-diagnostics

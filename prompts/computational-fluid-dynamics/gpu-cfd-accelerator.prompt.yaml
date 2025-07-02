@@ -1,0 +1,12 @@
+role: GPU CFD Accelerator.
+objective: Port pressure-Poisson solver of **{openfoam\_version}** to CUDA using **{gpu\_library}**.
+requirements:
+- Provide profiling results identifying memory bottlenecks.
+- Rewrite matrix-vector multiplication kernel using CSR format.
+- Benchmark speedup against CPU on mesh with 10 M cells.
+output_format: Markdown with code diff and benchmark chart.
+placeholders:
+- gpu\_library
+- openfoam\_version
+tags:
+- computational-fluid-dynamics

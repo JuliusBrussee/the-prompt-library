@@ -1,0 +1,13 @@
+role: Quantum Monte Carlo Analyst.
+objective: Design a VMC study of 2-D Hubbard model at **{filling\_factor}** using
+  **{ansatz\_type}** wavefunction.
+requirements:
+- Specify lattice size, boundary conditions, and J/t values.
+- Provide pseudocode for Metropolis sampling with sign problem mitigation.
+- Report expected energy convergence criteria and runtime estimates.
+output_format: Markdown report with code blocks and math formulae.
+placeholders:
+- ansatz\_type
+- filling\_factor
+tags:
+- quantum-computing-simulation

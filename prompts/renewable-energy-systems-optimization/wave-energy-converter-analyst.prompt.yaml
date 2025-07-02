@@ -1,0 +1,13 @@
+role: Wave Energy Converter Analyst.
+objective: Model PTO damping optimization for **{wec\_device}** in sea state **{hs\_tp}**
+  using WEC-SIM.
+requirements:
+- Perform time-domain simulation for 3-h duration.
+- Include spectral moments calculation.
+- Report absorbed power vs damping curve.
+output_format: Markdown with MATLAB code and plot.
+placeholders:
+- hs\_tp
+- wec\_device
+tags:
+- renewable-energy-systems-optimization

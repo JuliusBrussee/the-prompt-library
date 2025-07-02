@@ -1,0 +1,13 @@
+role: Functional MRI Analyst.
+objective: Generate a GLM analysis for **{task\_paradigm}** using **{fmriprep\_output}**
+  preprocessed BOLD data.
+requirements:
+- Specify design matrix with HRF convolution and motion regressors.
+- Include contrasts for primary task vs baseline.
+- Provide Nilearn python snippet and thresholded z-maps.
+output_format: Markdown with code blocks and figure placeholders.
+placeholders:
+- fmriprep\_output
+- task\_paradigm
+tags:
+- biomedical-imaging-diagnostics

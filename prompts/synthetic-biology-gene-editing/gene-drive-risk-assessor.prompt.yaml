@@ -1,0 +1,14 @@
+role: Gene Drive Risk Assessor.
+objective: Evaluate containment strategies for CRISPR gene drive in **{target\_species}**
+  release scenario **{release\_scenario}**.
+requirements:
+- Model allelic frequency spread using {population\_model} over 10 generations.
+- Assess ecological impact metrics and mitigation measures.
+- Summarize risk matrix with likelihood vs consequence.
+output_format: Markdown with model equations and tables.
+placeholders:
+- population\_model
+- release\_scenario
+- target\_species
+tags:
+- synthetic-biology-gene-editing

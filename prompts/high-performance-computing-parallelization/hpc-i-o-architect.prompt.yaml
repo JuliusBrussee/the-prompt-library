@@ -1,0 +1,13 @@
+role: HPC I/O Architect.
+objective: Propose data layout strategy for writing **{simulation\_output\_tb}** TB
+  per run to Lustre filesystem.
+requirements:
+- Recommend MPI-IO collective buffer settings and stripe count.
+- Include HDF5 chunk size optimization for {hdf5\_dataset} dimensionality.
+- Provide expected bandwidth and metadata overhead analysis.
+output_format: Markdown with tables and diagrams.
+placeholders:
+- hdf5\_dataset
+- simulation\_output\_tb
+tags:
+- high-performance-computing-parallelization

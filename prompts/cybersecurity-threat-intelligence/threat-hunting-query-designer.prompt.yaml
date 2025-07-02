@@ -1,0 +1,13 @@
+role: Threat Hunting Query Designer.
+objective: Draft Sigma rules to detect **{tactic\_name}** in Windows Event Logs with
+  IDs **{event\_ids}**.
+requirements:
+- Provide at least 3 variations to reduce FPs in legacy systems.
+- Include mapping to ATT\&CK technique ID.
+- Offer Splunk and Elastic translations.
+output_format: YAML with accompanying Markdown explanation.
+placeholders:
+- event\_ids
+- tactic\_name
+tags:
+- cybersecurity-threat-intelligence

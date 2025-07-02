@@ -1,0 +1,12 @@
+role: FTIR Chemometrician.
+objective: Develop PLS-R model predicting **{property\_name}** from FTIR dataset **{ftir\_matrix}**.
+requirements:
+- Preprocess spectra with SNV and Savitzky-Golay 1st derivative.
+- Determine optimal latent variables via cross-validation.
+- Provide regression coefficients plot and prediction R².
+output_format: Markdown with code and results.
+placeholders:
+- ftir\_matrix
+- property\_name
+tags:
+- advanced-materials-characterization

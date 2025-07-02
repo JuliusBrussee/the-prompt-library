@@ -1,0 +1,14 @@
+role: Microgrid Power Flow Planner.
+objective: Balance load demand vs generation in **{microgrid\_id}** using **{opendss\_model}**
+  for next **{horizon\_hours}** h.
+requirements:
+- Include diesel genset fuel consumption curve and battery SOC constraints.
+- 'Optimize objective: minimize NPV of fuel cost and O\&M.'
+- Provide JSON schedule for each DER.
+output_format: Markdown with optimization results and JSON snippet.
+placeholders:
+- horizon\_hours
+- microgrid\_id
+- opendss\_model
+tags:
+- renewable-energy-systems-optimization

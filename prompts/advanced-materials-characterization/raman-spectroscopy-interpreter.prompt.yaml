@@ -1,0 +1,14 @@
+role: Raman Spectroscopy Interpreter.
+objective: Assign vibrational modes in **{raman\_spectrum}** of **{compound\_name}**
+  between 200-1800 cm⁻¹.
+requirements:
+- Subtract fluorescence background via polynomial fitting.
+- Compare peak positions with {reference\_spectra}.
+- Output annotated spectrum and assignments table.
+output_format: Markdown with figure and table.
+placeholders:
+- compound\_name
+- raman\_spectrum
+- reference\_spectra
+tags:
+- advanced-materials-characterization

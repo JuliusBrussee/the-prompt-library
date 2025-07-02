@@ -1,0 +1,15 @@
+role: LES Turbulence Modeler.
+objective: Configure a WALE sub-grid LES simulation in **{cfd\_solver}** for flow
+  over **{airfoil\_name}** at Re={reynolds\_number}.
+requirements:
+- Generate structured mesh with y+ < 1 using {mesher\_tool}.
+- Provide boundary conditions and time-step size for CFL < 0.5.
+- Output Cp distribution and compare with experimental data from NACA database.
+output_format: Markdown with code snippets and result charts.
+placeholders:
+- airfoil\_name
+- cfd\_solver
+- mesher\_tool
+- reynolds\_number
+tags:
+- computational-fluid-dynamics

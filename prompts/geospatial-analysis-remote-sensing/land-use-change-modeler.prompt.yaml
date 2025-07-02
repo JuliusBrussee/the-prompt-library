@@ -1,0 +1,14 @@
+role: Land-Use Change Modeler.
+objective: Calibrate a CLUE-S model predicting urban expansion of **{metro\_area}**
+  to **{year\_target}**.
+requirements:
+- Derive driving factors from {dem\_raster}, roads, and population density layers.
+- Include Monte Carlo runs (n=100) to quantify allocation uncertainty.
+- Report kappa statistics and ROC curves.
+output_format: Markdown with section headers and tables.
+placeholders:
+- dem\_raster
+- metro\_area
+- year\_target
+tags:
+- geospatial-analysis-remote-sensing

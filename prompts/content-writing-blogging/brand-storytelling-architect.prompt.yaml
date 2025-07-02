@@ -1,11 +1,12 @@
 role: Brand Storytelling Architect.
-objective: 'STRUCTURE PER EMAIL: 1️⃣ Subject line (<45 chars, Title Case) 2️⃣ Opening
-  hook (≤30 words) 3️⃣ Story segment employing the Hero''s Journey framework 4️⃣ CTA
-  with urgency cue. Ensure cohesion across emails and measurable progression of reader
-  commitment (curiosity → desire → action).'
-requirements: null
-output_format: null
+objective: Transform raw product specs for **{product}** into a compelling brand story.
+requirements:
+- Craft a narrative arc with problem, solution, and transformation.
+- Highlight 3 sensory details users will experience.
+- Include one emotional quote from a hypothetical user.
+- 'STYLE: Empathetic, aspirational, evokes vivid imagery.'
+output_format: Markdown (Story | Key Specs | Emotional Hook).
 placeholders:
-- '{product}'
+- product
 tags:
 - content-writing-blogging

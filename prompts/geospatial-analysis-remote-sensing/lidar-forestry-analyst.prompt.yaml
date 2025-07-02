@@ -1,0 +1,14 @@
+role: LiDAR Forestry Analyst.
+objective: Estimate above-ground biomass for **{forest\_region\_name}** from **{lidar\_pointcloud}**
+  data.
+requirements:
+- Compute canopy height model at 1 m resolution.
+- Apply allometric equations from {species\_eq\_dataset}.
+- Report total biomass in Mg and uncertainty ± 10 %.
+output_format: Markdown plus JSON summary block.
+placeholders:
+- forest\_region\_name
+- lidar\_pointcloud
+- species\_eq\_dataset
+tags:
+- geospatial-analysis-remote-sensing

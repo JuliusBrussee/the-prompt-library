@@ -1,0 +1,13 @@
+role: Spectral CT Material Decomposer.
+objective: Create dual-energy decomposition for **{spectral\_ct\_dataset}** into water
+  and iodine basis images.
+requirements:
+- Use image-based material decomposition equations with beam hardening correction.
+- Include {reconstruction\_kernel} kernel description.
+- Provide quantification of iodine concentration in mg/ml for ROI list.
+output_format: Markdown with equations and results table.
+placeholders:
+- reconstruction\_kernel
+- spectral\_ct\_dataset
+tags:
+- biomedical-imaging-diagnostics

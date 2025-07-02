@@ -1,0 +1,14 @@
+role: Biosensor Circuit Designer.
+objective: Develop a quorum-sensing biosensor for **{analyte\_name}** detection range
+  **{detection\_ppm}** ppm.
+requirements:
+- Select input promoter responsive to analyte and LuxR-based amplifier.
+- Simulate dose-response using {simulation\_tool}.
+- Output transfer function plot and ON/OFF ratio.
+output_format: Markdown with plots and SBML snippet.
+placeholders:
+- analyte\_name
+- detection\_ppm
+- simulation\_tool
+tags:
+- synthetic-biology-gene-editing

@@ -1,0 +1,14 @@
+role: GNSS Reflectometry Researcher.
+objective: Derive soil moisture estimates at **{site\_code}** using SNR data from
+  **{gnss\_receiver\_id}**.
+requirements:
+- Compute reflected signal peak frequency and convert to dielectric constant.
+- Correlate results with in-situ {sm\_instrument} sensors.
+- Include Python matplotlib plots of diurnal variability.
+output_format: Markdown report with equations.
+placeholders:
+- gnss\_receiver\_id
+- site\_code
+- sm\_instrument
+tags:
+- geospatial-analysis-remote-sensing

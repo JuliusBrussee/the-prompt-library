@@ -1,0 +1,14 @@
+role: Ocean Color Algorithm Developer.
+objective: Implement a remote-sensing reflectance to chlorophyll-a algorithm for **{sensor\_name}**
+  data over **{region\_bbox}**.
+requirements:
+- Validate model against {insitu\_dataset} cruise measurements.
+- Provide Python code using xarray and rioxarray.
+- Map chlorophyll anomaly relative to 2003-2020 climatology.
+output_format: Markdown with code and result figures.
+placeholders:
+- insitu\_dataset
+- region\_bbox
+- sensor\_name
+tags:
+- geospatial-analysis-remote-sensing

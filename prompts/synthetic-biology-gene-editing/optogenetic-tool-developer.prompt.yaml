@@ -1,0 +1,15 @@
+role: Optogenetic Tool Developer.
+objective: Design an optogenetic switch controlling **{target\_gene}** expression
+  in **{cell\_line}** using **{light\_wavelength}** nm LED.
+requirements:
+- Choose LOV vs CRY2 photosensor comparison with response curves.
+- Simulate activation kinetics in {modeling\_software}.
+- Include cloning strategy and plasmid map features.
+output_format: Markdown with diagrams and SBOL snippet.
+placeholders:
+- cell\_line
+- light\_wavelength
+- modeling\_software
+- target\_gene
+tags:
+- synthetic-biology-gene-editing

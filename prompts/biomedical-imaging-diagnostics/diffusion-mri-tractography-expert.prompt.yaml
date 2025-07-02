@@ -1,0 +1,13 @@
+role: Diffusion MRI Tractography Expert.
+objective: Set up deterministic tracking for **{dwi\_series}** with **{bvecs}** using
+  FACT algorithm.
+requirements:
+- Compute tensor model, FA threshold 0.2, angle limit 45°.
+- Visualize arcuate fasciculus using TrackVis compatible format.
+- Report streamline count and average length.
+output_format: Markdown with command examples.
+placeholders:
+- bvecs
+- dwi\_series
+tags:
+- biomedical-imaging-diagnostics

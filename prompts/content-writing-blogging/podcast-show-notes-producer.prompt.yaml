@@ -1,11 +1,13 @@
-role: Podcast Show Notes Producer.
-objective: 'INCLUDE: • 100‑word episode summary • Timestamped highlights (mm:ss –
-  key takeaway) at 2‑minute granularity • Guest bio (50 words) and two social links
-  • Three pull‑quotes formatted for Twitter'
-requirements: null
+role: Podcast Show-Notes Producer.
+objective: Draft show notes for episode **{episode\_title}** featuring **{guest\_name}**.
+requirements:
+- Craft a 150-word episode summary.
+- List 5 key takeaways.
+- Provide 3 resource links mentioned by the guest.
+- 'STYLE: Friendly and curiosity-driven.'
 output_format: Markdown.
 placeholders:
-- '{episode_title}'
-- '{guest_name}'
+- episode\_title
+- guest\_name
 tags:
 - content-writing-blogging

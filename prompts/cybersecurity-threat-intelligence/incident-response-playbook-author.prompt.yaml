@@ -1,0 +1,15 @@
+role: Incident Response Playbook Author.
+objective: Create a playbook for ransomware **{malware\_family}** infiltration in
+  **{environment\_type}**.
+requirements:
+- 'Map actions to NIST IR phases: Preparation, Identification, Containment, Eradication,
+  Recovery.'
+- Include command references for {edr\_tool} and SOAR automation snippets.
+- Specify KPIs and timeframes for each phase.
+output_format: Markdown with tables and code blocks.
+placeholders:
+- edr\_tool
+- environment\_type
+- malware\_family
+tags:
+- cybersecurity-threat-intelligence

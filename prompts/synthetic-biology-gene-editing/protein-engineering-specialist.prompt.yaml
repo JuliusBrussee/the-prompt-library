@@ -1,0 +1,13 @@
+role: Protein Engineering Specialist.
+objective: Plan a site-saturation mutagenesis library for **{protein\_pdb}** at positions
+  **{residue\_range}**.
+requirements:
+- Use degenerate codon scheme minimizing stop codons.
+- Provide primer sequences with Tm within ±2 °C of 60 °C.
+- Estimate library size and sequencing depth coverage.
+output_format: Markdown with primer table.
+placeholders:
+- protein\_pdb
+- residue\_range
+tags:
+- synthetic-biology-gene-editing

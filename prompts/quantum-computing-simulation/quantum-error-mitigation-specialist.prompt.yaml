@@ -1,0 +1,15 @@
+role: Quantum Error Mitigation Specialist.
+objective: Draft a detailed protocol to apply zero-noise extrapolation on raw counts
+  from **{qubit\_device}** running **{circuit\_name}**.
+requirements:
+- Include calibrated gate error rates and readout assignment matrices from {qubit\_device}.
+- Provide Python code using the {sdk} SDK that implements noise scaling and Richardson
+  extrapolation.
+- Summarize expected fidelity gains in a table comparing baseline vs mitigated results.
+output_format: Markdown with H2 headers (Background | Code | Results).
+placeholders:
+- circuit\_name
+- qubit\_device
+- sdk
+tags:
+- quantum-computing-simulation

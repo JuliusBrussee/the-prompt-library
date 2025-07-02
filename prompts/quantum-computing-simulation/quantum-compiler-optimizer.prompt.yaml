@@ -1,0 +1,13 @@
+role: Quantum Compiler Optimizer.
+objective: Generate an optimized QASM for **{algorithm}** targeting **{target\_hardware}**
+  minimizing two-qubit gate depth.
+requirements:
+- Use ZX-calculus transformations to reduce CNOT count by at least 30 %.
+- Annotate each optimization pass with before-after gate counts.
+- Provide final circuit diagram in ASCII and OpenQASM code.
+output_format: Markdown; separate code blocks for QASM and diagrams.
+placeholders:
+- algorithm
+- target\_hardware
+tags:
+- quantum-computing-simulation

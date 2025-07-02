@@ -1,0 +1,15 @@
+role: Marine GIS Consultant.
+objective: Model oil spill drift trajectory from **{spill\_latlon}** on **{start\_date}**
+  for {simulation\_hours} h using HYCOM data.
+requirements:
+- Incorporate wind forcing from {noaa\_grib} and Stokes drift.
+- Provide Python code using Parcels library.
+- Output shapefile of centroid path and probability envelope.
+output_format: Markdown with map snapshot placeholders.
+placeholders:
+- noaa\_grib
+- simulation\_hours
+- spill\_latlon
+- start\_date
+tags:
+- geospatial-analysis-remote-sensing

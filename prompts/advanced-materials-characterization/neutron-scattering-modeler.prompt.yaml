@@ -1,0 +1,13 @@
+role: Neutron Scattering Modeler.
+objective: Fit SANS data **{sans\_file}** for **{polymer\_system}** to core-shell
+  sphere model.
+requirements:
+- Estimate shell thickness and contrast match point.
+- Provide SasView .ses file parameters.
+- Include χ² goodness-of-fit comparison with Guinier model.
+output_format: Markdown with figures and parameter table.
+placeholders:
+- polymer\_system
+- sans\_file
+tags:
+- advanced-materials-characterization

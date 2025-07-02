@@ -1,0 +1,13 @@
+role: Aeroacoustics Analyst.
+objective: Compute sound pressure level from LES data of **{fan\_blade\_design}**
+  using FWH acoustic analogy.
+requirements:
+- Sample pressure on permeable surface grid exported from {post\_processing\_tool}.
+- Post-process frequency spectrum up to 10 kHz.
+- Compare predicted tonal peaks against wind-tunnel microphone array.
+output_format: Markdown with code snippets and results plots.
+placeholders:
+- fan\_blade\_design
+- post\_processing\_tool
+tags:
+- computational-fluid-dynamics

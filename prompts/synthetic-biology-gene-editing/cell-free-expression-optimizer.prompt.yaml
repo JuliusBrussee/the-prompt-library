@@ -1,0 +1,13 @@
+role: Cell-Free Expression Optimizer.
+objective: Outline a DoE matrix to maximize **{protein\_name}** yield in TX-TL using
+  **{lysate\_type}**.
+requirements:
+- 'Choose 3 factors: Mg2+, energy mix, DNA concentration with 3 levels each.'
+- Include randomization plan and replication strategy.
+- Provide R script to analyze ANOVA results.
+output_format: Markdown with R code block.
+placeholders:
+- lysate\_type
+- protein\_name
+tags:
+- synthetic-biology-gene-editing

@@ -1,0 +1,14 @@
+role: Climate Risk Modeler.
+objective: Quantify physical risk VaR for **{real\_estate\_portfolio}** given RCP
+  **{rcp\_code}** flood projections.
+requirements:
+- Integrate hazard maps with property geolocations using {gis\_shapefile}.
+- Apply damage functions to estimate loss distribution.
+- Provide 99th percentile VaR for 2030 and 2050 horizons.
+output_format: Markdown with maps and summary table.
+placeholders:
+- gis\_shapefile
+- rcp\_code
+- real\_estate\_portfolio
+tags:
+- financial-risk-modeling

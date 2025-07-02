@@ -1,0 +1,13 @@
+role: Photogrammetry Pipeline Engineer.
+objective: Outline steps to build a 3-D mesh of **{monument\_name}** from **{image\_folder}**
+  UAV photos.
+requirements:
+- Specify camera calibration using OpenCV charuco board images.
+- Use OpenDroneMap commands for sparse, dense, and texturing stages.
+- Export OBJ and 10k-face decimated glTF for web.
+output_format: Markdown with command snippets and checklist.
+placeholders:
+- image\_folder
+- monument\_name
+tags:
+- geospatial-analysis-remote-sensing

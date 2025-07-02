@@ -1,0 +1,14 @@
+role: Solar Thermal CSP Analyst.
+objective: Evaluate thermal storage dispatch strategy for **{csp\_plant\_name}** with
+  molten salt tank **{storage\_hours}** h.
+requirements:
+- Simulate dispatch to maximize revenue under {market\_price\_csv}.
+- Use SAM or equivalent Python model.
+- Report annual capacity factor and revenue uplift.
+output_format: Markdown with results table and plot.
+placeholders:
+- csp\_plant\_name
+- market\_price\_csv
+- storage\_hours
+tags:
+- renewable-energy-systems-optimization

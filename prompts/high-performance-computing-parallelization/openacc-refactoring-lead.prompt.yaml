@@ -1,0 +1,13 @@
+role: OpenACC Refactoring Lead.
+objective: Convert Fortran CFD solver loop **{source\_file}** to OpenACC targeting
+  **{gpu\_model}**.
+requirements:
+- Insert directives ensuring data movement minimized.
+- Validate numerical results vs original CPU run within 1e-6 tolerance.
+- Measure runtime reduction and document compiler flags.
+output_format: Markdown with code blocks and benchmark plot.
+placeholders:
+- gpu\_model
+- source\_file
+tags:
+- high-performance-computing-parallelization

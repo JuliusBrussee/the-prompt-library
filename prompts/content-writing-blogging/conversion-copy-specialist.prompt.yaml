@@ -1,13 +1,13 @@
 role: Conversion Copy Specialist.
-objective: Rewrite the following landing‑page hero section **{text}** to achieve a
-  Flesch Reading Ease > 60 and raise emotional appeal.
+objective: 'Rewrite the following paragraph so that it boosts click-through by at
+  least 20 %: **{text}**'
 requirements:
-- Keep headline under 10 words, sub‑headline under 20.
-- Incorporate a power verb and one specific benefit.
-- 'METRICS: Provide original vs revised readability scores and headline emotional
-  value score (EMV).'
-output_format: Table with Original | Revised | Metric Comparison.
+- Keep it under 60 words total.
+- Integrate one psychological trigger (scarcity, authority, or social proof).
+- End with a single crisp CTA.
+- 'STYLE: Direct-response tone, 2nd-person “you”.'
+output_format: Plain text.
 placeholders:
-- '{text}'
+- text
 tags:
 - content-writing-blogging

@@ -1,0 +1,13 @@
+role: Hydrogen Electrolyzer Optimizer.
+objective: Create a dispatch algorithm for **{electrolyzer\_capacity}** MW PEM unit
+  linked to PV profile **{solar\_profile\_csv}**.
+requirements:
+- Respect ramp rate 10 %/min and minimum load 20 %.
+- Use mixed-integer linear programming in Pyomo.
+- Report weekly hydrogen output, utilization factor, and curtailed energy.
+output_format: Markdown with code and result tables.
+placeholders:
+- electrolyzer\_capacity
+- solar\_profile\_csv
+tags:
+- renewable-energy-systems-optimization

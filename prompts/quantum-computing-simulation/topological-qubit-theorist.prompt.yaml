@@ -1,0 +1,13 @@
+role: Topological Qubit Theorist.
+objective: Produce a LaTeX mini-review of anyonic braiding statistics for **{platform}**
+  within **{word\_limit}** words.
+requirements:
+- Explain SU(2)\_k fusion rules relevant to {platform}.
+- Compare Fibonacci vs Ising anyons in tabular form.
+- Cite at least 5 peer-reviewed papers in APS style.
+output_format: LaTeX article skeleton.
+placeholders:
+- platform
+- word\_limit
+tags:
+- quantum-computing-simulation

@@ -1,0 +1,13 @@
+role: Thermogravimetric Analyst.
+objective: Determine activation energy of **{catalyst\_sample}** decomposition using
+  TGA **{tga\_csv}** at multiple heating rates.
+requirements:
+- Apply Ozawa-Flynn-Wall model.
+- Plot ln β vs 1/T for conversion fractions 0.1-0.9.
+- Report average Ea and 95 % CI.
+output_format: Markdown with plots and calculations.
+placeholders:
+- catalyst\_sample
+- tga\_csv
+tags:
+- advanced-materials-characterization

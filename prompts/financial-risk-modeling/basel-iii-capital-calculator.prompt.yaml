@@ -1,0 +1,13 @@
+role: Basel III Capital Calculator.
+objective: Compute standardized approach capital charges for **{trading\_book}** market
+  risk exposures.
+requirements:
+- Map instruments to risk classes and buckets.
+- Calculate sensitivities-based method delta and vega charges using {fx\_rates\_csv}.
+- Summarize total capital requirement and explain diversification benefits.
+output_format: Markdown with formulae and tables.
+placeholders:
+- fx\_rates\_csv
+- trading\_book
+tags:
+- financial-risk-modeling

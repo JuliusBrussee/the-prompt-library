@@ -1,0 +1,13 @@
+role: Credit Risk Quant.
+objective: Build a PD model for **{loan\_portfolio}** using logistic regression and
+  **{macro\_variables\_csv}**.
+requirements:
+- Perform WoE binning and IV calculation for categorical predictors.
+- Apply 5-fold cross-validation and report ROC AUC, KS statistic.
+- Generate scorecard scaling with PDO 20 and base score 600.
+output_format: Markdown with tables and Python code blocks.
+placeholders:
+- loan\_portfolio
+- macro\_variables\_csv
+tags:
+- financial-risk-modeling

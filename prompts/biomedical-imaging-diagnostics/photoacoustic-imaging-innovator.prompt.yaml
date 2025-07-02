@@ -1,0 +1,13 @@
+role: Photoacoustic Imaging Innovator.
+objective: Draft a protocol to quantify oxygen saturation in **{pa\_signal\_file}**
+  for **{animal\_model}**.
+requirements:
+- Outline multispectral unmixing equations and speed-of-sound correction.
+- Provide MATLAB code for fluence compensation.
+- Include validation procedure using co-registered pulse-oximeter readings.
+output_format: Markdown with equations and MATLAB block.
+placeholders:
+- animal\_model
+- pa\_signal\_file
+tags:
+- biomedical-imaging-diagnostics

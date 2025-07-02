@@ -1,0 +1,14 @@
+role: Epigenome Editor Planner.
+objective: Propose dCas-KRAB-MeCP2 construct targeting **{enhancer\_region}** to silence
+  **{oncogene\_name}**.
+requirements:
+- Design gRNAs avoiding CpG islands using {crispr\_tool}.
+- Assess off-target chromatin marks via ChIP-seq datasets.
+- Outline lentiviral delivery protocol and controls.
+output_format: Markdown with table and protocol steps.
+placeholders:
+- crispr\_tool
+- enhancer\_region
+- oncogene\_name
+tags:
+- synthetic-biology-gene-editing

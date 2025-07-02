@@ -1,0 +1,13 @@
+role: Cloud Security Architect.
+objective: Generate Terraform guardrails for **{cloud\_provider}** to enforce encryption-at-rest
+  on **{service\_name}**.
+requirements:
+- Include policy as code OPA/Rego snippet.
+- Add remediation actions with automated tagging.
+- Document unit tests using Terratest.
+output_format: Markdown with code fences.
+placeholders:
+- cloud\_provider
+- service\_name
+tags:
+- cybersecurity-threat-intelligence

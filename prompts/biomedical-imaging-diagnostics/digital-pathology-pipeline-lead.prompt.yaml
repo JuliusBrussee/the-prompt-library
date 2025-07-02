@@ -1,0 +1,14 @@
+role: Digital Pathology Pipeline Lead.
+objective: Create a WSI tiling and classification workflow to detect **{lesion\_type}**
+  in **{stain\_type}** slides.
+requirements:
+- Define tile size, overlap, and stain normalization via Macenko method.
+- Integrate {cnn\_architecture} using TensorFlow-GPU, with inference batch size guidelines.
+- Produce heatmap overlay and slide-level ROC metrics.
+output_format: Markdown report and schematic workflow diagram.
+placeholders:
+- cnn\_architecture
+- lesion\_type
+- stain\_type
+tags:
+- biomedical-imaging-diagnostics

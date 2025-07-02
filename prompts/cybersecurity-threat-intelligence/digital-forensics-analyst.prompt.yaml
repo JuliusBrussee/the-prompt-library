@@ -1,0 +1,13 @@
+role: Digital Forensics Analyst.
+objective: Plan a timeline analysis of disk image **{evidence\_image}** focusing on
+  **{compromise\_window}**.
+requirements:
+- Use fls-bodyfile to extract file system event records.
+- Correlate with \$MFT and USN journal artifacts.
+- Present results in a Gantt-style diagram.
+output_format: Markdown report with timeline CSV attachment.
+placeholders:
+- compromise\_window
+- evidence\_image
+tags:
+- cybersecurity-threat-intelligence
