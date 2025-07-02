@@ -1,9 +1,9 @@
-
-
 const promptsContainer = document.getElementById('prompts-container');
 const searchInput = document.getElementById('search');
 const tagFiltersContainer = document.getElementById('tag-filters');
 const toastContainer = document.getElementById('toast-container');
+const randomPromptBtn = document.getElementById('random-prompt-btn');
+const logoHeader = document.querySelector('.logo');
 
 let activeTags = [];
 
@@ -111,10 +111,25 @@ const initializeTagFilters = () => {
     });
 };
 
+const displayRandomPrompt = () => {
+    const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
+    displayPrompts([randomPrompt]);
+}
+
+const resetFilters = () => {
+    searchInput.value = '';
+    activeTags = [];
+    document.querySelectorAll('.tag-filter.active').forEach(button => {
+        button.classList.remove('active');
+    });
+    filterPrompts();
+};
+
 searchInput.addEventListener('input', filterPrompts);
+randomPromptBtn.addEventListener('click', displayRandomPrompt);
+logoHeader.addEventListener('click', resetFilters);
 
 // Initial load
 const validPrompts = prompts.filter(p => p);
 initializeTagFilters();
 displayPrompts(validPrompts);
-

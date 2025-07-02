@@ -1,102 +1,223 @@
 :root {
-    --background-color: #1a1a1a;
-    --text-color: #e0e0e0;
-    --card-background: #2a2a2a;
-    --border-color: #444;
-    --primary-color: #4a90e2;
+    --gh-bg-primary: #0d1117;
+    --gh-bg-secondary: #161b22;
+    --gh-border-color: #30363d;
+    --gh-text-primary: #c9d1d9;
+    --gh-text-secondary: #8b949e;
+    --gh-accent-blue: #58a6ff;
+    --gh-button-bg: #21262d;
+    --gh-button-border: #30363d;
+    --gh-button-hover-bg: #30363d;
+    --gh-shadow-color: rgba(0, 0, 0, 0.2);
+
     --font-sans: 'Inter', sans-serif;
     --font-mono: 'IBM Plex Mono', monospace;
 }
 
 body {
     font-family: var(--font-sans);
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--gh-bg-primary);
+    color: var(--gh-text-primary);
     margin: 0;
+    overflow: hidden;
+}
+
+.page-container {
+    display: flex;
+    height: 100vh;
+    background-color: var(--gh-bg-primary);
+}
+
+.sidebar {
+    width: 280px;
+    background-color: var(--gh-bg-secondary);
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--gh-border-color);
+    box-shadow: 2px 0 10px var(--gh-shadow-color);
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar-header {
     padding: 20px;
+    border-bottom: 1px solid var(--gh-border-color);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h1 {
-    text-align: center;
+.logo {
+    font-size: 22px;
     font-weight: 600;
+    color: var(--gh-text-primary);
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.2s ease;
 }
 
-.search-container {
-    margin-bottom: 30px;
+.logo:hover {
+    color: var(--gh-accent-blue);
 }
 
-#search {
+.sidebar-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sidebar-content::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 12px 15px;
-    font-size: 16px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    background-color: var(--card-background);
-    color: var(--text-color);
-    font-family: var(--font-sans);
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color: var(--gh-button-bg);
+    color: var(--gh-text-primary);
+    border: 1px solid var(--gh-button-border);
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.sidebar-button:hover {
+    background-color: var(--gh-button-hover-bg);
+    border-color: var(--gh-accent-blue);
+    transform: translateY(-1px);
+}
+
+.sidebar-button svg {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    color: var(--gh-text-secondary);
+}
+
+.sidebar-button:hover svg {
+    color: var(--gh-accent-blue);
+}
+
+.tags-section {
+    margin-top: 20px;
+}
+
+.tags-section h2 {
+    font-size: 14px;
+    color: var(--gh-text-secondary);
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--gh-border-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 #tag-filters {
-    margin-bottom: 20px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .tag-filter {
-    background: none;
-    border: 1px solid var(--border-color);
-    color: var(--text-color);
-    padding: 8px 15px;
-    border-radius: 20px;
+    background-color: transparent;
+    color: var(--gh-text-secondary);
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-align: left;
     cursor: pointer;
-    font-family: var(--font-sans);
     font-size: 14px;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+.tag-filter:hover {
+    background-color: rgba(139, 148, 158, 0.1);
+    color: var(--gh-text-primary);
+}
+
 .tag-filter.active {
-    background-color: var(--primary-color);
+    background-color: var(--gh-accent-blue);
     color: #fff;
-    border-color: var(--primary-color);
+    font-weight: 500;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: var(--gh-bg-primary);
+}
+
+.search-container {
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid var(--gh-border-color);
+    border-radius: 6px;
+    background-color: var(--gh-bg-secondary);
+    color: var(--gh-text-primary);
+    font-family: var(--font-sans);
+    box-shadow: inset 0 1px 3px var(--gh-shadow-color);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#search:focus {
+    outline: none;
+    border-color: var(--gh-accent-blue);
+    box-shadow: inset 0 1px 3px var(--gh-shadow-color), 0 0 0 3px rgba(88, 166, 255, 0.2);
 }
 
 .prompts-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
 .prompt-card {
-    background-color: var(--card-background);
-    border: 1px solid var(--border-color);
+    background-color: var(--gh-bg-secondary);
+    border: 1px solid var(--gh-border-color);
     border-radius: 8px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 8px var(--gh-shadow-color);
 }
 
 .prompt-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px var(--gh-shadow-color);
+    background-color: #1f242c;
 }
 
 .prompt-card h3 {
     margin-top: 0;
     font-size: 18px;
     font-weight: 500;
+    color: var(--gh-text-primary);
 }
 
 .prompt-card p {
     font-family: var(--font-mono);
     line-height: 1.6;
     flex-grow: 1;
+    color: var(--gh-text-secondary);
 }
 
 .prompt-card .tags {
@@ -105,35 +226,38 @@ h1 {
 }
 
 .prompt-card .tags span {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 3px 8px;
-    border-radius: 12px;
+    background-color: rgba(88, 166, 255, 0.1);
+    color: var(--gh-accent-blue);
+    padding: 4px 10px;
+    border-radius: 15px;
     margin-right: 5px;
     font-size: 11px;
     font-weight: 500;
+    border: 1px solid rgba(88, 166, 255, 0.4);
 }
 
 .prompt-card .actions {
     margin-top: 15px;
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
 }
 
 .prompt-card .actions button {
-    background: none;
-    border: 1px solid var(--border-color);
-    color: var(--text-color);
-    padding: 8px 12px;
-    border-radius: 5px;
+    background-color: var(--gh-accent-blue);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
     cursor: pointer;
     font-family: var(--font-sans);
-    font-size: 12px;
-    transition: background-color 0.2s ease;
+    font-size: 13px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .prompt-card .actions button:hover {
-    background-color: #333;
+    background-color: #4493f8;
+    transform: translateY(-1px);
 }
 
 #toast-container {
@@ -144,20 +268,64 @@ h1 {
 }
 
 .toast {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--gh-bg-secondary);
+    color: var(--gh-text-primary);
     padding: 15px 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-top: 10px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px var(--gh-shadow-color);
+    border: 1px solid var(--gh-border-color);
 }
 
 .toast.show {
     opacity: 1;
+    transform: translateY(0);
 }
 
-@media (max-width: 600px) {
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid var(--gh-border-color);
+    text-align: center;
+    font-size: 13px;
+    color: var(--gh-text-secondary);
+}
+
+.sidebar-footer a {
+    color: var(--gh-accent-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.sidebar-footer a:hover {
+    color: #4493f8;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--gh-border-color);
+        box-shadow: 0 2px 5px var(--gh-shadow-color);
+    }
+    .sidebar-header {
+        border-bottom: none;
+    }
+    .sidebar-content {
+        padding-top: 0;
+        max-height: 200px;
+    }
+    .main-content {
+        padding-top: 10px;
+    }
     .prompts-container {
         grid-template-columns: 1fr;
     }
