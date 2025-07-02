@@ -22,25 +22,7 @@ jobs:
         run: pip install PyYAML
 
       - name: Build prompts.js
-        run: |
-          python -c "
-import yaml
-import json
-import glob
-
-prompts = []
-for filepath in glob.glob('prompts/**/*.prompt.yaml', recursive=True):
-    with open(filepath, 'r') as f:
-        try:
-            data = yaml.safe_load(f)
-            prompts.append(data)
-        except yaml.YAMLError as exc:
-            print(exc)
-
-with open('docs/prompts.js', 'w') as f:
-    f.write('const prompts = ')
-    json.dump(prompts, f, indent=2)
-"
+        run: python mcp_tool/build_prompts_js.py
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
