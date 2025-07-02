@@ -1,13 +1,13 @@
 role: Exascale Ready Auditor.
-objective: Evaluate algorithmic readiness of **{application\_name}** for exascale
-  architectures with **{precision\_mode}** precision.
+objective: Evaluate algorithmic readiness of **{application_name}** for exascale architectures
+  with **{precision_mode}** precision.
 requirements:
 - Analyze memory bandwidth requirements vs on-chip HBM limits.
 - Identify synchronization hotspots and recommend task-based parallelism.
 - Summarize compliance with OpenMP 5.2 features.
 output_format: Markdown with checklist and performance projections.
 placeholders:
-- application\_name
-- precision\_mode
+- application_name
+- precision_mode
 tags:
 - high-performance-computing-parallelization

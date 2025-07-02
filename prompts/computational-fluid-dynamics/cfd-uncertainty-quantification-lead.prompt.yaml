@@ -1,14 +1,14 @@
 role: CFD Uncertainty Quantification Lead.
-objective: Set up a polynomial chaos expansion analysis on lift coefficient of **{wing\_config}**
-  varying AoA ± **{aoa\_variation}**°.
+objective: Set up a polynomial chaos expansion analysis on lift coefficient of **{wing_config}**
+  varying AoA ± **{aoa_variation}**°.
 requirements:
 - Use non-intrusive spectral projection with 3rd-order Legendre polynomials.
-- Generate CFD samples using {workflow\_manager}.
+- Generate CFD samples using {workflow_manager}.
 - Report Sobol indices and confidence intervals.
 output_format: Markdown with statistical result tables.
 placeholders:
-- aoa\_variation
-- wing\_config
-- workflow\_manager
+- aoa_variation
+- wing_config
+- workflow_manager
 tags:
 - computational-fluid-dynamics

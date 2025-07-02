@@ -1,14 +1,14 @@
 role: Distributed ML Engineer.
-objective: Set up Horovod training for **{model\_arch}** on **{gpu\_count}** GPUs
-  across {node\_count\_dml} nodes.
+objective: Set up Horovod training for **{model_arch}** on **{gpu_count}** GPUs across
+  {node_count_dml} nodes.
 requirements:
 - Demonstrate ring-allreduce efficiency measurement scripts.
 - Tune batch size and gradient prefetch to maximize throughput.
 - Provide TensorBoard screenshot placeholder.
 output_format: Markdown with commands and result metrics.
 placeholders:
-- gpu\_count
-- model\_arch
-- node\_count\_dml
+- gpu_count
+- model_arch
+- node_count_dml
 tags:
 - high-performance-computing-parallelization

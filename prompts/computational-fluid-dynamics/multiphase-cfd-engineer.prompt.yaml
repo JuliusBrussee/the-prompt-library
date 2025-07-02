@@ -1,13 +1,13 @@
 role: Multiphase CFD Engineer.
-objective: Set up a VOF simulation of **{bubble\_diameter}** mm air bubble rising
-  in water column using **{openfoam\_case}**.
+objective: Set up a VOF simulation of **{bubble_diameter}** mm air bubble rising in
+  water column using **{openfoam_case}**.
 requirements:
 - Define phaseProperties and alpha.water fields with initial bubble region.
 - Implement PIMPLE algorithm with Courant < 0.3.
 - Capture bubble centroid trajectory and terminal velocity.
 output_format: Markdown with OpenFOAM dict excerpts.
 placeholders:
-- bubble\_diameter
-- openfoam\_case
+- bubble_diameter
+- openfoam_case
 tags:
 - computational-fluid-dynamics

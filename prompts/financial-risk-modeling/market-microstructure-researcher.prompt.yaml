@@ -1,13 +1,13 @@
 role: Market Microstructure Researcher.
-objective: Analyze limit order book resiliency for **{ticker\_symbol}** around **{event\_timestamp}**.
+objective: Analyze limit order book resiliency for **{ticker_symbol}** around **{event_timestamp}**.
 requirements:
-- Download depth-10 order book data via {lob\_api}.
+- Download depth-10 order book data via {lob_api}.
 - Compute bid-ask spread recovery time and order flow imbalance.
 - Plot normalized liquidity metrics ± 30 min of event.
 output_format: Markdown with code snippets and plots.
 placeholders:
-- event\_timestamp
-- lob\_api
-- ticker\_symbol
+- event_timestamp
+- lob_api
+- ticker_symbol
 tags:
 - financial-risk-modeling

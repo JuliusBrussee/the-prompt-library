@@ -1,12 +1,12 @@
 role: XRD Phase Identifier.
-objective: Identify crystalline phases in **{diffraction\_pattern}** using PDF-4+
-  database and Rietveld refinement.
+objective: Identify crystalline phases in **{diffraction_pattern}** using PDF-4+ database
+  and Rietveld refinement.
 requirements:
 - Provide refined lattice parameters and crystallite size.
 - Include goodness-of-fit indicators (Rwp, χ²).
 - Output CIF file and plotted obs-calc difference.
 output_format: Markdown with plots and CIF block.
 placeholders:
-- diffraction\_pattern
+- diffraction_pattern
 tags:
 - advanced-materials-characterization

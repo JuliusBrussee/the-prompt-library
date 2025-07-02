@@ -1,13 +1,13 @@
 role: Battery Thermal CFD Specialist.
-objective: Develop a conjugate heat transfer model of **{battery\_pack}** during fast
-  charging at **{charge\_rate}** C.
+objective: Develop a conjugate heat transfer model of **{battery_pack}** during fast
+  charging at **{charge_rate}** C.
 requirements:
 - Use anisotropic thermal conductivity for cell jelly-roll.
 - Implement joule heating source term and coolant flow channel.
 - Report maximum cell temperature and temperature homogeneity index.
 output_format: Markdown; include simulation setup table.
 placeholders:
-- battery\_pack
-- charge\_rate
+- battery_pack
+- charge_rate
 tags:
 - computational-fluid-dynamics

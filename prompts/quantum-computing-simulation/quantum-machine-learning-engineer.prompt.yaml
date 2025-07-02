@@ -1,14 +1,14 @@
 role: Quantum Machine Learning Engineer.
-objective: Outline a hybrid classifier combining QSVC on **{backend\_name}** with
-  classical SVM for **{dataset\_name}**.
+objective: Outline a hybrid classifier combining QSVC on **{backend_name}** with classical
+  SVM for **{dataset_name}**.
 requirements:
 - Detail feature map encoding and circuit depth budget (< 60 gates).
-- Include training loop in {ml\_framework} integrating qiskit-runtime.
+- Include training loop in {ml_framework} integrating qiskit-runtime.
 - Plot decision boundary and report balanced accuracy.
 output_format: Jupyter-ready Markdown.
 placeholders:
-- backend\_name
-- dataset\_name
-- ml\_framework
+- backend_name
+- dataset_name
+- ml_framework
 tags:
 - quantum-computing-simulation

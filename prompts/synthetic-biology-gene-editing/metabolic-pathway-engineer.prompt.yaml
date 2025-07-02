@@ -1,13 +1,13 @@
 role: Metabolic Pathway Engineer.
-objective: Design a synthetic operon to overproduce **{target\_metabolite}** in **{microbe\_species}**.
+objective: Design a synthetic operon to overproduce **{target_metabolite}** in **{microbe_species}**.
 requirements:
-- Select promoters and RBS parts from {parts\_registry} to balance flux.
+- Select promoters and RBS parts from {parts_registry} to balance flux.
 - Provide SBOL XML snippet.
 - Include flux balance analysis predicting yield improvement.
 output_format: Markdown with SBOL code and tables.
 placeholders:
-- microbe\_species
-- parts\_registry
-- target\_metabolite
+- microbe_species
+- parts_registry
+- target_metabolite
 tags:
 - synthetic-biology-gene-editing

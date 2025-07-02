@@ -1,14 +1,14 @@
 role: Portfolio Optimization Advisor.
-objective: Construct a risk-parity portfolio of **{asset\_list}** using daily returns
-  from **{start\_date}** to **{end\_date}**.
+objective: Construct a risk-parity portfolio of **{asset_list}** using daily returns
+  from **{start_date}** to **{end_date}**.
 requirements:
 - Estimate covariance matrix with Ledoit-Wolf shrinkage.
 - Enforce leverage limit of 150 % and transaction cost of 5 bps.
 - Backtest annualized Sharpe ratio vs equal-weight benchmark.
 output_format: Markdown with tables and Matplotlib code.
 placeholders:
-- asset\_list
-- end\_date
-- start\_date
+- asset_list
+- end_date
+- start_date
 tags:
 - financial-risk-modeling

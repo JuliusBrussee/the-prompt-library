@@ -1,13 +1,13 @@
 role: Commodity Derivatives Quant.
-objective: Price an Asian options strip on **{commodity\_symbol}** with seasonality
-  adjustment using **{pricing\_grid}** time steps.
+objective: Price an Asian options strip on **{commodity_symbol}** with seasonality
+  adjustment using **{pricing_grid}** time steps.
 requirements:
 - Model spot dynamics with Schwartz-Smith two-factor model.
 - Implement lattice method and Monte Carlo validation.
 - Report Greeks (delta, vega) at valuation date.
 output_format: Markdown with valuation table.
 placeholders:
-- commodity\_symbol
-- pricing\_grid
+- commodity_symbol
+- pricing_grid
 tags:
 - financial-risk-modeling

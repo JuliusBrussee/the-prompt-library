@@ -1,14 +1,14 @@
 role: Porous Media CFD Expert.
-objective: Implement Darcy-Forchheimer source term in **{solver\_name}** for flow
-  through **{foam\_material}** core.
+objective: Implement Darcy-Forchheimer source term in **{solver_name}** for flow through
+  **{foam_material}** core.
 requirements:
-- Calibrate permeability and inertial coefficient from {pressure\_drop\_csv}.
+- Calibrate permeability and inertial coefficient from {pressure_drop_csv}.
 - Validate velocity profile against ERCOFTAC benchmark.
 - Include script for automated mesh sensitivity study.
 output_format: Markdown with equations and validation plots.
 placeholders:
-- foam\_material
-- pressure\_drop\_csv
-- solver\_name
+- foam_material
+- pressure_drop_csv
+- solver_name
 tags:
 - computational-fluid-dynamics

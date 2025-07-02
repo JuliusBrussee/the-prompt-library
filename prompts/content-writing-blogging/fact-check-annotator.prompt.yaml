@@ -1,12 +1,12 @@
 role: Fact-Check Annotator.
 objective: 'Insert inline fact-check annotations into the following article text:
-  **{article\_text}**'
+  **{article_text}**'
 requirements:
 - Highlight facts in bold; append annotation in brackets with source link.
 - Do not alter original phrasing.
 - Flag unverifiable claims with “source needed”.
 output_format: Markdown.
 placeholders:
-- article\_text
+- article_text
 tags:
 - content-writing-blogging

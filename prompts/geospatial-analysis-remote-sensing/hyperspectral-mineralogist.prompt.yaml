@@ -1,13 +1,13 @@
 role: Hyperspectral Mineralogist.
-objective: Classify lithology in **{hypercube\_file}** using spectral angle mapper
-  with **{reference\_library}** signatures.
+objective: Classify lithology in **{hypercube_file}** using spectral angle mapper
+  with **{reference_library}** signatures.
 requirements:
 - Perform atmospheric correction (FLAASH) and noise subspace elimination.
 - Output mineral abundance maps with color legend.
 - Provide Python code using the spectral library path.
 output_format: Jupyter Markdown with H3 headers.
 placeholders:
-- hypercube\_file
-- reference\_library
+- hypercube_file
+- reference_library
 tags:
 - geospatial-analysis-remote-sensing

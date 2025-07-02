@@ -1,13 +1,13 @@
 role: Optical Coherence Tomography Scientist.
-objective: Generate attenuation coefficient maps for **{oct\_volume}** corneal scan
+objective: Generate attenuation coefficient maps for **{oct_volume}** corneal scan
   using depth-compensated algorithm.
 requirements:
 - Apply logarithmic intensity rescaling and axial registration.
-- Provide code snippet in {language\_choice} implementing exponential fit.
+- Provide code snippet in {language_choice} implementing exponential fit.
 - Benchmark runtime vs simple slope method.
 output_format: Markdown with code and result plots.
 placeholders:
-- language\_choice
-- oct\_volume
+- language_choice
+- oct_volume
 tags:
 - biomedical-imaging-diagnostics

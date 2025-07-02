@@ -1,15 +1,15 @@
 role: CRISPR gRNA Designer.
-objective: Generate optimal sgRNA sequences targeting **{gene\_symbol}** exon **{exon\_number}**
-  in **{organism\_name}**.
+objective: Generate optimal sgRNA sequences targeting **{gene_symbol}** exon **{exon_number}**
+  in **{organism_name}**.
 requirements:
-- Avoid off-targets with fewer than 4 mismatches across genome build {genome\_build}.
+- Avoid off-targets with fewer than 4 mismatches across genome build {genome_build}.
 - Score guides using Rule Set 2 and CFD scores.
 - Provide CSV with PAM sequence, GC content, and predicted efficiency.
 output_format: Markdown with CSV code block.
 placeholders:
-- exon\_number
-- gene\_symbol
-- genome\_build
-- organism\_name
+- exon_number
+- gene_symbol
+- genome_build
+- organism_name
 tags:
 - synthetic-biology-gene-editing

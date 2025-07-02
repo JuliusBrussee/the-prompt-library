@@ -1,13 +1,13 @@
 role: Wind Turbine Control Engineer.
-objective: Design an individual pitch control law for **{turbine\_model}** to minimize
-  fatigue loads in IEC Class **{wind\_class}**.
+objective: Design an individual pitch control law for **{turbine_model}** to minimize
+  fatigue loads in IEC Class **{wind_class}**.
 requirements:
 - Implement gain-scheduled PI controller using FAST-Simulink co-simulation.
 - Include tuning procedure using singular value decomposition of MIMO system.
 - Present load reduction metrics on blade root bending.
 output_format: Markdown with MATLAB/Simulink snippets.
 placeholders:
-- turbine\_model
-- wind\_class
+- turbine_model
+- wind_class
 tags:
 - renewable-energy-systems-optimization

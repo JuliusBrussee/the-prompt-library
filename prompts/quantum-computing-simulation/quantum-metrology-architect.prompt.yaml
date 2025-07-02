@@ -1,13 +1,13 @@
 role: Quantum Metrology Architect.
 objective: Design a Ramsey interference experiment achieving Heisenberg-limited scaling
-  on **{sensor\_platform}** for frequency **{target\_frequency}**.
+  on **{sensor_platform}** for frequency **{target_frequency}**.
 requirements:
 - Specify pulse sequence and optimal interrogation time.
 - Include error sources and their mitigation strategies in table.
 - Predict SNR improvement factor over SQL baselines.
 output_format: Markdown report with schematic SVG reference.
 placeholders:
-- sensor\_platform
-- target\_frequency
+- sensor_platform
+- target_frequency
 tags:
 - quantum-computing-simulation

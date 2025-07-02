@@ -1,5 +1,85 @@
 [
   {
+    "path": "high-performance-computing-parallelization/hybrid-parallelization-strategist.prompt.yaml",
+    "role": "Hybrid Parallelization Strategist.",
+    "objective": "Outline MPI+OpenMP strategy to solve Poisson equation in **{mesh_size}** grid points.",
+    "tags": [
+      "high-performance-computing-parallelization"
+    ]
+  },
+  {
+    "path": "high-performance-computing-parallelization/distributed-ml-engineer.prompt.yaml",
+    "role": "Distributed ML Engineer.",
+    "objective": "Set up Horovod training for **{model_arch}** on **{gpu_count}** GPUs across {node_count_dml} nodes.",
+    "tags": [
+      "high-performance-computing-parallelization"
+    ]
+  },
+  {
+    "path": "high-performance-computing-parallelization/slurm-scheduler-consultant.prompt.yaml",
+    "role": "Slurm Scheduler Consultant.",
+    "objective": "Design job submission strategy for parameter sweep **{job_script}** involving **{param_set_size}** combinations.",
+    "tags": [
+      "high-performance-computing-parallelization"
+    ]
+  },
+  {
+    "path": "high-performance-computing-parallelization/hpc-i-o-architect.prompt.yaml",
+    "role": "HPC I/O Architect.",
+    "objective": "Propose data layout strategy for writing **{simulation_output_tb}** TB per run to Lustre filesystem.",
+    "tags": [
+      "high-performance-computing-parallelization"
+    ]
+  },
+  {
+    "path": "high-performance-computing-parallelization/openacc-refactoring-lead.prompt.yaml",
+    "role": "OpenACC Refactoring Lead.",
+    "objective": "Convert Fortran CFD solver loop **{source_file}** to OpenACC targeting **{gpu_model}**.",
+    "tags": [
+      "high-performance-computing-parallelization"
+    ]
+  },
+  {
+    "path": "high-performance-computing-parallelization/checkpointing-framework-designer.prompt.yaml",
+    "role": "Checkpointing Framework Designer.",
+    "objective": "Design a scalable asynchronous checkpoint mechanism for **{simulation_code}** using SCR library.",
+    "tags": [
+      "high-performance-computing-parallelization"
+    ]
+  },
+  {
+    "path": "high-performance-computing-parallelization/mpi-performance-tuner.prompt.yaml",
+    "role": "MPI Performance Tuner.",
+    "objective": "Profile **{mpi_application}** scaling on **{cluster_name}** up to **{node_count}** nodes.",
+    "tags": [
+      "high-performance-computing-parallelization"
+    ]
+  },
+  {
+    "path": "high-performance-computing-parallelization/exascale-ready-auditor.prompt.yaml",
+    "role": "Exascale Ready Auditor.",
+    "objective": "Evaluate algorithmic readiness of **{application_name}** for exascale architectures with **{precision_mode}** precision.",
+    "tags": [
+      "high-performance-computing-parallelization"
+    ]
+  },
+  {
+    "path": "high-performance-computing-parallelization/hpc-containerization-specialist.prompt.yaml",
+    "role": "HPC Containerization Specialist.",
+    "objective": "Build an Apptainer recipe for **{bioinformatics_pipeline}** with dependencies listed in **{conda_env_yml}**.",
+    "tags": [
+      "high-performance-computing-parallelization"
+    ]
+  },
+  {
+    "path": "high-performance-computing-parallelization/gpu-kernel-optimizer.prompt.yaml",
+    "role": "GPU Kernel Optimizer.",
+    "objective": "Optimize CUDA kernel **{kernel_file}** for memory coalescing on **{gpu_arch}**.",
+    "tags": [
+      "high-performance-computing-parallelization"
+    ]
+  },
+  {
     "path": "creative-writing/writing-prompt-curator.prompt.yaml",
     "role": "Writing Prompt Curator.",
     "objective": "Provide 10 genre\u2011agnostic writing prompts around motif **{motif}**, each \u226425 words, designed to spark character\u2011driven stories.",
@@ -77,6 +157,86 @@
     "objective": "Propose two alternative endings for the story scenario **{scenario}**, each \u2264250 words and exploring divergent themes.",
     "tags": [
       "creative-writing"
+    ]
+  },
+  {
+    "path": "renewable-energy-systems-optimization/bioenergy-supply-scheduler.prompt.yaml",
+    "role": "Bioenergy Supply Scheduler.",
+    "objective": "Plan a feedstock delivery schedule for **{biomass_plant}** requiring **{dry_tonnes}** t/year.",
+    "tags": [
+      "renewable-energy-systems-optimization"
+    ]
+  },
+  {
+    "path": "renewable-energy-systems-optimization/solar-thermal-csp-analyst.prompt.yaml",
+    "role": "Solar Thermal CSP Analyst.",
+    "objective": "Evaluate thermal storage dispatch strategy for **{csp_plant_name}** with molten salt tank **{storage_hours}** h.",
+    "tags": [
+      "renewable-energy-systems-optimization"
+    ]
+  },
+  {
+    "path": "renewable-energy-systems-optimization/heat-pump-system-designer.prompt.yaml",
+    "role": "Heat Pump System Designer.",
+    "objective": "Size a ground-source heat pump for **{building_area}** m\u00b2 office in climate zone **{ashrae_zone}**.",
+    "tags": [
+      "renewable-energy-systems-optimization"
+    ]
+  },
+  {
+    "path": "renewable-energy-systems-optimization/pv-system-yield-analyst.prompt.yaml",
+    "role": "PV System Yield Analyst.",
+    "objective": "Simulate annual energy yield for **{pv_array_capacity}** kWp rooftop system in **{city_latlon}** orientation **{tilt_angle}**\u00b0.",
+    "tags": [
+      "renewable-energy-systems-optimization"
+    ]
+  },
+  {
+    "path": "renewable-energy-systems-optimization/wave-energy-converter-analyst.prompt.yaml",
+    "role": "Wave Energy Converter Analyst.",
+    "objective": "Model PTO damping optimization for **{wec_device}** in sea state **{hs_tp}** using WEC-SIM.",
+    "tags": [
+      "renewable-energy-systems-optimization"
+    ]
+  },
+  {
+    "path": "renewable-energy-systems-optimization/battery-degradation-modeler.prompt.yaml",
+    "role": "Battery Degradation Modeler.",
+    "objective": "Set up a calendar-cycling degradation model for **{lithium_cell_type}** at **{storage_temperature}** \u00b0C.",
+    "tags": [
+      "renewable-energy-systems-optimization"
+    ]
+  },
+  {
+    "path": "renewable-energy-systems-optimization/microgrid-power-flow-planner.prompt.yaml",
+    "role": "Microgrid Power Flow Planner.",
+    "objective": "Balance load demand vs generation in **{microgrid_id}** using **{opendss_model}** for next **{horizon_hours}** h.",
+    "tags": [
+      "renewable-energy-systems-optimization"
+    ]
+  },
+  {
+    "path": "renewable-energy-systems-optimization/wind-turbine-control-engineer.prompt.yaml",
+    "role": "Wind Turbine Control Engineer.",
+    "objective": "Design an individual pitch control law for **{turbine_model}** to minimize fatigue loads in IEC Class **{wind_class}**.",
+    "tags": [
+      "renewable-energy-systems-optimization"
+    ]
+  },
+  {
+    "path": "renewable-energy-systems-optimization/hydrogen-electrolyzer-optimizer.prompt.yaml",
+    "role": "Hydrogen Electrolyzer Optimizer.",
+    "objective": "Create a dispatch algorithm for **{electrolyzer_capacity}** MW PEM unit linked to PV profile **{solar_profile_csv}**.",
+    "tags": [
+      "renewable-energy-systems-optimization"
+    ]
+  },
+  {
+    "path": "renewable-energy-systems-optimization/electric-vehicle-fleet-scheduler.prompt.yaml",
+    "role": "Electric Vehicle Fleet Scheduler.",
+    "objective": "Optimize charging schedule for **{fleet_size}** EVs with route data **{route_csv}** at depot **{charger_power}** kW each.",
+    "tags": [
+      "renewable-energy-systems-optimization"
     ]
   },
   {
@@ -160,6 +320,86 @@
     ]
   },
   {
+    "path": "biomedical-imaging-diagnostics/spectral-ct-material-decomposer.prompt.yaml",
+    "role": "Spectral CT Material Decomposer.",
+    "objective": "Create dual-energy decomposition for **{spectral_ct_dataset}** into water and iodine basis images.",
+    "tags": [
+      "biomedical-imaging-diagnostics"
+    ]
+  },
+  {
+    "path": "biomedical-imaging-diagnostics/functional-mri-analyst.prompt.yaml",
+    "role": "Functional MRI Analyst.",
+    "objective": "Generate a GLM analysis for **{task_paradigm}** using **{fmriprep_output}** preprocessed BOLD data.",
+    "tags": [
+      "biomedical-imaging-diagnostics"
+    ]
+  },
+  {
+    "path": "biomedical-imaging-diagnostics/digital-pathology-pipeline-lead.prompt.yaml",
+    "role": "Digital Pathology Pipeline Lead.",
+    "objective": "Create a WSI tiling and classification workflow to detect **{lesion_type}** in **{stain_type}** slides.",
+    "tags": [
+      "biomedical-imaging-diagnostics"
+    ]
+  },
+  {
+    "path": "biomedical-imaging-diagnostics/optical-coherence-tomography-scientist.prompt.yaml",
+    "role": "Optical Coherence Tomography Scientist.",
+    "objective": "Generate attenuation coefficient maps for **{oct_volume}** corneal scan using depth-compensated algorithm.",
+    "tags": [
+      "biomedical-imaging-diagnostics"
+    ]
+  },
+  {
+    "path": "biomedical-imaging-diagnostics/diffusion-mri-tractography-expert.prompt.yaml",
+    "role": "Diffusion MRI Tractography Expert.",
+    "objective": "Set up deterministic tracking for **{dwi_series}** with **{bvecs}** using FACT algorithm.",
+    "tags": [
+      "biomedical-imaging-diagnostics"
+    ]
+  },
+  {
+    "path": "biomedical-imaging-diagnostics/ultrasound-beamformer.prompt.yaml",
+    "role": "Ultrasound Beamformer.",
+    "objective": "Develop a delay-and-sum beamforming script processing raw RF data **{rf_dataset}** for probe **{probe_model}**.",
+    "tags": [
+      "biomedical-imaging-diagnostics"
+    ]
+  },
+  {
+    "path": "biomedical-imaging-diagnostics/3-d-echocardiography-quantifier.prompt.yaml",
+    "role": "3-D Echocardiography Quantifier.",
+    "objective": "Plan a pipeline to compute LV ejection fraction from **{3d_echo_dicom}** dataset in **{software_framework}**.",
+    "tags": [
+      "biomedical-imaging-diagnostics"
+    ]
+  },
+  {
+    "path": "biomedical-imaging-diagnostics/bayesian-segmentation-researcher.prompt.yaml",
+    "role": "Bayesian Segmentation Researcher.",
+    "objective": "Design a probabilistic U-Net training plan on **{ct_dataset}** for organ **{target_organ}**.",
+    "tags": [
+      "biomedical-imaging-diagnostics"
+    ]
+  },
+  {
+    "path": "biomedical-imaging-diagnostics/radiomics-feature-engineer.prompt.yaml",
+    "role": "Radiomics Feature Engineer.",
+    "objective": "Extract IBSI-compliant texture features from **{dicom_series}** tumor ROI mask **{roi_mask}**.",
+    "tags": [
+      "biomedical-imaging-diagnostics"
+    ]
+  },
+  {
+    "path": "biomedical-imaging-diagnostics/photoacoustic-imaging-innovator.prompt.yaml",
+    "role": "Photoacoustic Imaging Innovator.",
+    "objective": "Draft a protocol to quantify oxygen saturation in **{pa_signal_file}** for **{animal_model}**.",
+    "tags": [
+      "biomedical-imaging-diagnostics"
+    ]
+  },
+  {
     "path": "data-analysis-visualization/visualization-storyboarder.prompt.yaml",
     "role": "Visualization Storyboarder.",
     "objective": "SPECIFY: chart types, key message of each, and sequencing rationale.",
@@ -237,6 +477,86 @@
     "objective": "Interpret experiment results **{ab_results}** computing lift, p\u2011value, and recommending rollout decision.",
     "tags": [
       "data-analysis-visualization"
+    ]
+  },
+  {
+    "path": "geospatial-analysis-remote-sensing/sar-interferometry-specialist.prompt.yaml",
+    "role": "SAR Interferometry Specialist.",
+    "objective": "Generate a processing workflow to derive ground deformation map from **{sentinel_pair}** SLC images over **{aoi_bbox}**.",
+    "tags": [
+      "geospatial-analysis-remote-sensing"
+    ]
+  },
+  {
+    "path": "geospatial-analysis-remote-sensing/land-use-change-modeler.prompt.yaml",
+    "role": "Land-Use Change Modeler.",
+    "objective": "Calibrate a CLUE-S model predicting urban expansion of **{metro_area}** to **{year_target}**.",
+    "tags": [
+      "geospatial-analysis-remote-sensing"
+    ]
+  },
+  {
+    "path": "geospatial-analysis-remote-sensing/urban-heat-mapping-engineer.prompt.yaml",
+    "role": "Urban Heat Mapping Engineer.",
+    "objective": "Produce a high-resolution UHI map for **{city_name}** using **{landsat_collection}** thermal bands.",
+    "tags": [
+      "geospatial-analysis-remote-sensing"
+    ]
+  },
+  {
+    "path": "geospatial-analysis-remote-sensing/ocean-color-algorithm-developer.prompt.yaml",
+    "role": "Ocean Color Algorithm Developer.",
+    "objective": "Implement a remote-sensing reflectance to chlorophyll-a algorithm for **{sensor_name}** data over **{region_bbox}**.",
+    "tags": [
+      "geospatial-analysis-remote-sensing"
+    ]
+  },
+  {
+    "path": "geospatial-analysis-remote-sensing/photogrammetry-pipeline-engineer.prompt.yaml",
+    "role": "Photogrammetry Pipeline Engineer.",
+    "objective": "Outline steps to build a 3-D mesh of **{monument_name}** from **{image_folder}** UAV photos.",
+    "tags": [
+      "geospatial-analysis-remote-sensing"
+    ]
+  },
+  {
+    "path": "geospatial-analysis-remote-sensing/marine-gis-consultant.prompt.yaml",
+    "role": "Marine GIS Consultant.",
+    "objective": "Model oil spill drift trajectory from **{spill_latlon}** on **{start_date}** for {simulation_hours} h using HYCOM data.",
+    "tags": [
+      "geospatial-analysis-remote-sensing"
+    ]
+  },
+  {
+    "path": "geospatial-analysis-remote-sensing/hyperspectral-mineralogist.prompt.yaml",
+    "role": "Hyperspectral Mineralogist.",
+    "objective": "Classify lithology in **{hypercube_file}** using spectral angle mapper with **{reference_library}** signatures.",
+    "tags": [
+      "geospatial-analysis-remote-sensing"
+    ]
+  },
+  {
+    "path": "geospatial-analysis-remote-sensing/climate-downscaling-expert.prompt.yaml",
+    "role": "Climate Downscaling Expert.",
+    "objective": "Downscale CMIP6 temperature projections for **{rcp_scenario}** to 1 km resolution over **{country_iso}**.",
+    "tags": [
+      "geospatial-analysis-remote-sensing"
+    ]
+  },
+  {
+    "path": "geospatial-analysis-remote-sensing/lidar-forestry-analyst.prompt.yaml",
+    "role": "LiDAR Forestry Analyst.",
+    "objective": "Estimate above-ground biomass for **{forest_region_name}** from **{lidar_pointcloud}** data.",
+    "tags": [
+      "geospatial-analysis-remote-sensing"
+    ]
+  },
+  {
+    "path": "geospatial-analysis-remote-sensing/gnss-reflectometry-researcher.prompt.yaml",
+    "role": "GNSS Reflectometry Researcher.",
+    "objective": "Derive soil moisture estimates at **{site_code}** using SNR data from **{gnss_receiver_id}**.",
+    "tags": [
+      "geospatial-analysis-remote-sensing"
     ]
   },
   {
@@ -321,8 +641,8 @@
   },
   {
     "path": "content-writing-blogging/seo-specialized-content-strategist.prompt.yaml",
-    "role": "SEO\u2011specialized Content Strategist.",
-    "objective": "Produce a pillar blog post outline (minimum 3,000 words) on **{topic}** targeting **{persona}** that will rank top\u20113 for the keyword cluster **{keyword_cluster}**.",
+    "role": "SEO-specialized Content Strategist.",
+    "objective": "Produce a pillar blog post outline (minimum 3,000 words) for **{persona}** that will rank top-3 for the keyword cluster **{keyword_cluster}**.",
     "tags": [
       "content-writing-blogging"
     ]
@@ -330,7 +650,7 @@
   {
     "path": "content-writing-blogging/conversion-copy-specialist.prompt.yaml",
     "role": "Conversion Copy Specialist.",
-    "objective": "Rewrite the following landing\u2011page hero section **{text}** to achieve a Flesch Reading Ease > 60 and raise emotional appeal.",
+    "objective": "Rewrite the following paragraph so that it boosts click-through by at least 20 %: **{text}**",
     "tags": [
       "content-writing-blogging"
     ]
@@ -359,8 +679,16 @@
   },
   {
     "path": "content-writing-blogging/podcast-show-notes-producer.prompt.yaml",
-    "role": "Podcast Show Notes Producer.",
-    "objective": "INCLUDE: \u2022 100\u2011word episode summary \u2022 Timestamped highlights (mm:ss \u2013 key takeaway) at 2\u2011minute granularity \u2022 Guest bio (50 words) and two social links \u2022 Three pull\u2011quotes formatted for Twitter",
+    "role": "Podcast Show-Notes Producer.",
+    "objective": "Draft show notes for episode **{episode_title}** featuring **{guest_name}**.",
+    "tags": [
+      "content-writing-blogging"
+    ]
+  },
+  {
+    "path": "content-writing-blogging/fact-check-annotator.prompt.yaml",
+    "role": "Fact-Check Annotator.",
+    "objective": "Insert inline fact-check annotations into the following article text: **{article_text}**",
     "tags": [
       "content-writing-blogging"
     ]
@@ -380,6 +708,14 @@
     "tags": []
   },
   {
+    "path": "content-writing-blogging/expert-interviewer.prompt.yaml",
+    "role": "Expert Interviewer.",
+    "objective": "Generate 7 probing questions for **{expert_role}** about **{topic}**.",
+    "tags": [
+      "content-writing-blogging"
+    ]
+  },
+  {
     "path": "content-writing-blogging/fact-checker-citation-assistant.prompt.yaml",
     "role": "Fact\u2011Checker & Citation Assistant.",
     "objective": "Validate the factual claims in **{article_text}** and supply APA 7th citations for each.",
@@ -390,7 +726,7 @@
   {
     "path": "content-writing-blogging/newsletter-ghostwriter.prompt.yaml",
     "role": "Newsletter Ghostwriter.",
-    "objective": "Draft a 400\u2011word weekly digest for **{brand}** summarizing the three most impactful events in **{sector}**.",
+    "objective": "Draft a witty, 400-word weekly newsletter for **{brand}** summarizing critical news in the **{sector}** sector.",
     "tags": [
       "content-writing-blogging"
     ]
@@ -402,9 +738,25 @@
     "tags": []
   },
   {
+    "path": "content-writing-blogging/sentence-variability-coach.prompt.yaml",
+    "role": "Sentence Variability Coach.",
+    "objective": "Rewrite the paragraph **{paragraph}** to meet Hemingway grade-5 readability.",
+    "tags": [
+      "content-writing-blogging"
+    ]
+  },
+  {
+    "path": "content-writing-blogging/link-building-outreach-drafter.prompt.yaml",
+    "role": "Link-Building Outreach Drafter.",
+    "objective": "Write a concise outreach email to secure a backlink from **{url}**.",
+    "tags": [
+      "content-writing-blogging"
+    ]
+  },
+  {
     "path": "content-writing-blogging/brand-storytelling-architect.prompt.yaml",
     "role": "Brand Storytelling Architect.",
-    "objective": "STRUCTURE PER EMAIL: 1\ufe0f\u20e3 Subject line (<45 chars, Title Case) 2\ufe0f\u20e3 Opening hook (\u226430 words) 3\ufe0f\u20e3 Story segment employing the Hero's Journey framework 4\ufe0f\u20e3 CTA with urgency cue. Ensure cohesion across emails and measurable progression of reader commitment (curiosity \u2192 desire \u2192 action).",
+    "objective": "Transform raw product specs for **{product}** into a compelling brand story.",
     "tags": [
       "content-writing-blogging"
     ]
@@ -412,9 +764,169 @@
   {
     "path": "content-writing-blogging/veteran-tech-opinion-columnist.prompt.yaml",
     "role": "Veteran Tech Opinion Columnist.",
-    "objective": "Craft a 1,200\u2011word editorial on **{topic}** for **{publication}** that translates complex AI developments into layman's terms while maintaining expert depth.",
+    "objective": "Craft a 1,200-word editorial on **{topic}** for **{publication}** that translates deeply technical developments into layman's terms while maintaining expert depth.",
     "tags": [
       "content-writing-blogging"
+    ]
+  },
+  {
+    "path": "computational-fluid-dynamics/gpu-cfd-accelerator.prompt.yaml",
+    "role": "GPU CFD Accelerator.",
+    "objective": "Port pressure-Poisson solver of **{openfoam_version}** to CUDA using **{gpu_library}**.",
+    "tags": [
+      "computational-fluid-dynamics"
+    ]
+  },
+  {
+    "path": "computational-fluid-dynamics/compressible-solver-developer.prompt.yaml",
+    "role": "Compressible Solver Developer.",
+    "objective": "Draft an equation derivation and discretization note for implementing AUSM+-up in **{code_base}**.",
+    "tags": [
+      "computational-fluid-dynamics"
+    ]
+  },
+  {
+    "path": "computational-fluid-dynamics/aeroacoustics-analyst.prompt.yaml",
+    "role": "Aeroacoustics Analyst.",
+    "objective": "Compute sound pressure level from LES data of **{fan_blade_design}** using FWH acoustic analogy.",
+    "tags": [
+      "computational-fluid-dynamics"
+    ]
+  },
+  {
+    "path": "computational-fluid-dynamics/les-turbulence-modeler.prompt.yaml",
+    "role": "LES Turbulence Modeler.",
+    "objective": "Configure a WALE sub-grid LES simulation in **{cfd_solver}** for flow over **{airfoil_name}** at Re={reynolds_number}.",
+    "tags": [
+      "computational-fluid-dynamics"
+    ]
+  },
+  {
+    "path": "computational-fluid-dynamics/porous-media-cfd-expert.prompt.yaml",
+    "role": "Porous Media CFD Expert.",
+    "objective": "Implement Darcy-Forchheimer source term in **{solver_name}** for flow through **{foam_material}** core.",
+    "tags": [
+      "computational-fluid-dynamics"
+    ]
+  },
+  {
+    "path": "computational-fluid-dynamics/multiphase-cfd-engineer.prompt.yaml",
+    "role": "Multiphase CFD Engineer.",
+    "objective": "Set up a VOF simulation of **{bubble_diameter}** mm air bubble rising in water column using **{openfoam_case}**.",
+    "tags": [
+      "computational-fluid-dynamics"
+    ]
+  },
+  {
+    "path": "computational-fluid-dynamics/wind-farm-cfd-analyst.prompt.yaml",
+    "role": "Wind Farm CFD Analyst.",
+    "objective": "Model wake interaction of **{turbine_layout}** using actuator disk in **{fluid_solver}**.",
+    "tags": [
+      "computational-fluid-dynamics"
+    ]
+  },
+  {
+    "path": "computational-fluid-dynamics/battery-thermal-cfd-specialist.prompt.yaml",
+    "role": "Battery Thermal CFD Specialist.",
+    "objective": "Develop a conjugate heat transfer model of **{battery_pack}** during fast charging at **{charge_rate}** C.",
+    "tags": [
+      "computational-fluid-dynamics"
+    ]
+  },
+  {
+    "path": "computational-fluid-dynamics/cfd-uncertainty-quantification-lead.prompt.yaml",
+    "role": "CFD Uncertainty Quantification Lead.",
+    "objective": "Set up a polynomial chaos expansion analysis on lift coefficient of **{wing_config}** varying AoA \u00b1 **{aoa_variation}**\u00b0.",
+    "tags": [
+      "computational-fluid-dynamics"
+    ]
+  },
+  {
+    "path": "computational-fluid-dynamics/thermal-comfort-simulator.prompt.yaml",
+    "role": "Thermal Comfort Simulator.",
+    "objective": "Create CFD simulation predicting PMV for **{room_geometry}** under **{hvac_setting}** conditions.",
+    "tags": [
+      "computational-fluid-dynamics"
+    ]
+  },
+  {
+    "path": "quantum-computing-simulation/nisq-benchmark-designer.prompt.yaml",
+    "role": "NISQ Benchmark Designer.",
+    "objective": "Create a benchmark suite to evaluate coherence-limited performance of **{hardware_series}** across varying circuit widths.",
+    "tags": [
+      "quantum-computing-simulation"
+    ]
+  },
+  {
+    "path": "quantum-computing-simulation/quantum-error-correction-simulator.prompt.yaml",
+    "role": "Quantum Error Correction Simulator.",
+    "objective": "Setup a surface-code simulation for **{code_distance}** distance using **{noise_model}** in Stim.",
+    "tags": [
+      "quantum-computing-simulation"
+    ]
+  },
+  {
+    "path": "quantum-computing-simulation/quantum-error-mitigation-specialist.prompt.yaml",
+    "role": "Quantum Error Mitigation Specialist.",
+    "objective": "Draft a detailed protocol to apply zero-noise extrapolation on raw counts from **{qubit_device}** running **{circuit_name}**.",
+    "tags": [
+      "quantum-computing-simulation"
+    ]
+  },
+  {
+    "path": "quantum-computing-simulation/quantum-networking-protocol-engineer.prompt.yaml",
+    "role": "Quantum Networking Protocol Engineer.",
+    "objective": "Draft an entanglement swapping protocol spec for nodes **{node_count}** over **{fiber_length}** km with {bell_measurement} measurements.",
+    "tags": [
+      "quantum-computing-simulation"
+    ]
+  },
+  {
+    "path": "quantum-computing-simulation/quantum-finance-strategist.prompt.yaml",
+    "role": "Quantum Finance Strategist.",
+    "objective": "Propose a quantum amplitude estimation workflow for pricing **{exotic_option}** using **{oracle_type}** oracle.",
+    "tags": [
+      "quantum-computing-simulation"
+    ]
+  },
+  {
+    "path": "quantum-computing-simulation/topological-qubit-theorist.prompt.yaml",
+    "role": "Topological Qubit Theorist.",
+    "objective": "Produce a LaTeX mini-review of anyonic braiding statistics for **{platform}** within **{word_limit}** words.",
+    "tags": [
+      "quantum-computing-simulation"
+    ]
+  },
+  {
+    "path": "quantum-computing-simulation/quantum-compiler-optimizer.prompt.yaml",
+    "role": "Quantum Compiler Optimizer.",
+    "objective": "Generate an optimized QASM for **{algorithm}** targeting **{target_hardware}** minimizing two-qubit gate depth.",
+    "tags": [
+      "quantum-computing-simulation"
+    ]
+  },
+  {
+    "path": "quantum-computing-simulation/quantum-metrology-architect.prompt.yaml",
+    "role": "Quantum Metrology Architect.",
+    "objective": "Design a Ramsey interference experiment achieving Heisenberg-limited scaling on **{sensor_platform}** for frequency **{target_frequency}**.",
+    "tags": [
+      "quantum-computing-simulation"
+    ]
+  },
+  {
+    "path": "quantum-computing-simulation/quantum-machine-learning-engineer.prompt.yaml",
+    "role": "Quantum Machine Learning Engineer.",
+    "objective": "Outline a hybrid classifier combining QSVC on **{backend_name}** with classical SVM for **{dataset_name}**.",
+    "tags": [
+      "quantum-computing-simulation"
+    ]
+  },
+  {
+    "path": "quantum-computing-simulation/quantum-monte-carlo-analyst.prompt.yaml",
+    "role": "Quantum Monte Carlo Analyst.",
+    "objective": "Design a VMC study of 2-D Hubbard model at **{filling_factor}** using **{ansatz_type}** wavefunction.",
+    "tags": [
+      "quantum-computing-simulation"
     ]
   },
   {
@@ -507,6 +1019,166 @@
     "objective": "Draft Conventional Commit messages for change set **{change_log}**, each with scope, type, and short imperative description.",
     "tags": [
       "coding-software-development"
+    ]
+  },
+  {
+    "path": "advanced-materials-characterization/xps-quantification-expert.prompt.yaml",
+    "role": "XPS Quantification Expert.",
+    "objective": "Quantify surface composition of **{xps_survey}** using sensitivity factors from **{sf_database}**.",
+    "tags": [
+      "advanced-materials-characterization"
+    ]
+  },
+  {
+    "path": "advanced-materials-characterization/tem-image-analyst.prompt.yaml",
+    "role": "TEM Image Analyst.",
+    "objective": "Measure dislocation density in **{tem_image}** of {alloy_name} using line intercept method.",
+    "tags": [
+      "advanced-materials-characterization"
+    ]
+  },
+  {
+    "path": "advanced-materials-characterization/raman-spectroscopy-interpreter.prompt.yaml",
+    "role": "Raman Spectroscopy Interpreter.",
+    "objective": "Assign vibrational modes in **{raman_spectrum}** of **{compound_name}** between 200-1800 cm\u207b\u00b9.",
+    "tags": [
+      "advanced-materials-characterization"
+    ]
+  },
+  {
+    "path": "advanced-materials-characterization/atomic-force-microscopy-specialist.prompt.yaml",
+    "role": "Atomic Force Microscopy Specialist.",
+    "objective": "Generate force-distance curve analysis for **{afm_forcefile}** on sample **{sample_id}**.",
+    "tags": [
+      "advanced-materials-characterization"
+    ]
+  },
+  {
+    "path": "advanced-materials-characterization/neutron-scattering-modeler.prompt.yaml",
+    "role": "Neutron Scattering Modeler.",
+    "objective": "Fit SANS data **{sans_file}** for **{polymer_system}** to core-shell sphere model.",
+    "tags": [
+      "advanced-materials-characterization"
+    ]
+  },
+  {
+    "path": "advanced-materials-characterization/nanoindentation-data-scientist.prompt.yaml",
+    "role": "Nanoindentation Data Scientist.",
+    "objective": "Process load-displacement data **{indentation_csv}** to extract hardness and modulus for **{coating_name}**.",
+    "tags": [
+      "advanced-materials-characterization"
+    ]
+  },
+  {
+    "path": "advanced-materials-characterization/ftir-chemometrician.prompt.yaml",
+    "role": "FTIR Chemometrician.",
+    "objective": "Develop PLS-R model predicting **{property_name}** from FTIR dataset **{ftir_matrix}**.",
+    "tags": [
+      "advanced-materials-characterization"
+    ]
+  },
+  {
+    "path": "advanced-materials-characterization/xrd-phase-identifier.prompt.yaml",
+    "role": "XRD Phase Identifier.",
+    "objective": "Identify crystalline phases in **{diffraction_pattern}** using PDF-4+ database and Rietveld refinement.",
+    "tags": [
+      "advanced-materials-characterization"
+    ]
+  },
+  {
+    "path": "advanced-materials-characterization/mossbauer-spectroscopy-analyst.prompt.yaml",
+    "role": "M\u00f6ssbauer Spectroscopy Analyst.",
+    "objective": "Interpret 57Fe M\u00f6ssbauer spectrum **{mossbauer_data}** of **{iron_phase}** at {temperature_k} K.",
+    "tags": [
+      "advanced-materials-characterization"
+    ]
+  },
+  {
+    "path": "advanced-materials-characterization/thermogravimetric-analyst.prompt.yaml",
+    "role": "Thermogravimetric Analyst.",
+    "objective": "Determine activation energy of **{catalyst_sample}** decomposition using TGA **{tga_csv}** at multiple heating rates.",
+    "tags": [
+      "advanced-materials-characterization"
+    ]
+  },
+  {
+    "path": "financial-risk-modeling/liquidity-risk-reporter.prompt.yaml",
+    "role": "Liquidity Risk Reporter.",
+    "objective": "Draft a LCR calculation for **{bank_name}** using daily cash-flow data **{cashflow_csv}**.",
+    "tags": [
+      "financial-risk-modeling"
+    ]
+  },
+  {
+    "path": "financial-risk-modeling/climate-risk-modeler.prompt.yaml",
+    "role": "Climate Risk Modeler.",
+    "objective": "Quantify physical risk VaR for **{real_estate_portfolio}** given RCP **{rcp_code}** flood projections.",
+    "tags": [
+      "financial-risk-modeling"
+    ]
+  },
+  {
+    "path": "financial-risk-modeling/operational-risk-scenario-builder.prompt.yaml",
+    "role": "Operational Risk Scenario Builder.",
+    "objective": "Generate stress scenarios for **{business_line}** cyber attack losses using **{loss_distribution_file}**.",
+    "tags": [
+      "financial-risk-modeling"
+    ]
+  },
+  {
+    "path": "financial-risk-modeling/portfolio-optimization-advisor.prompt.yaml",
+    "role": "Portfolio Optimization Advisor.",
+    "objective": "Construct a risk-parity portfolio of **{asset_list}** using daily returns from **{start_date}** to **{end_date}**.",
+    "tags": [
+      "financial-risk-modeling"
+    ]
+  },
+  {
+    "path": "financial-risk-modeling/commodity-derivatives-quant.prompt.yaml",
+    "role": "Commodity Derivatives Quant.",
+    "objective": "Price an Asian options strip on **{commodity_symbol}** with seasonality adjustment using **{pricing_grid}** time steps.",
+    "tags": [
+      "financial-risk-modeling"
+    ]
+  },
+  {
+    "path": "financial-risk-modeling/structural-credit-model-engineer.prompt.yaml",
+    "role": "Structural Credit Model Engineer.",
+    "objective": "Implement a Merton-KKV multi-period model for **{firm_ticker}** equity and debt structure.",
+    "tags": [
+      "financial-risk-modeling"
+    ]
+  },
+  {
+    "path": "financial-risk-modeling/credit-risk-quant.prompt.yaml",
+    "role": "Credit Risk Quant.",
+    "objective": "Build a PD model for **{loan_portfolio}** using logistic regression and **{macro_variables_csv}**.",
+    "tags": [
+      "financial-risk-modeling"
+    ]
+  },
+  {
+    "path": "financial-risk-modeling/basel-iii-capital-calculator.prompt.yaml",
+    "role": "Basel III Capital Calculator.",
+    "objective": "Compute standardized approach capital charges for **{trading_book}** market risk exposures.",
+    "tags": [
+      "financial-risk-modeling"
+    ]
+  },
+  {
+    "path": "financial-risk-modeling/market-microstructure-researcher.prompt.yaml",
+    "role": "Market Microstructure Researcher.",
+    "objective": "Analyze limit order book resiliency for **{ticker_symbol}** around **{event_timestamp}**.",
+    "tags": [
+      "financial-risk-modeling"
+    ]
+  },
+  {
+    "path": "financial-risk-modeling/xva-analyst.prompt.yaml",
+    "role": "XVA Analyst.",
+    "objective": "Calculate CVA for **{irs_portfolio}** trades under **{cs01_curve}** CSA rules.",
+    "tags": [
+      "financial-risk-modeling"
     ]
   },
   {
@@ -667,6 +1339,86 @@
     "objective": "Draft plan for testing **{feature}** with 5 participants, including tasks, success metrics, and post\u2011test interview script.",
     "tags": [
       "design-ux"
+    ]
+  },
+  {
+    "path": "synthetic-biology-gene-editing/epigenome-editor-planner.prompt.yaml",
+    "role": "Epigenome Editor Planner.",
+    "objective": "Propose dCas-KRAB-MeCP2 construct targeting **{enhancer_region}** to silence **{oncogene_name}**.",
+    "tags": [
+      "synthetic-biology-gene-editing"
+    ]
+  },
+  {
+    "path": "synthetic-biology-gene-editing/genome-scale-model-curator.prompt.yaml",
+    "role": "Genome-Scale Model Curator.",
+    "objective": "Update GEM for **{organism_strain}** with new reaction **{reaction_id}** kinetics parameters.",
+    "tags": [
+      "synthetic-biology-gene-editing"
+    ]
+  },
+  {
+    "path": "synthetic-biology-gene-editing/protein-engineering-specialist.prompt.yaml",
+    "role": "Protein Engineering Specialist.",
+    "objective": "Plan a site-saturation mutagenesis library for **{protein_pdb}** at positions **{residue_range}**.",
+    "tags": [
+      "synthetic-biology-gene-editing"
+    ]
+  },
+  {
+    "path": "synthetic-biology-gene-editing/metabolic-pathway-engineer.prompt.yaml",
+    "role": "Metabolic Pathway Engineer.",
+    "objective": "Design a synthetic operon to overproduce **{target_metabolite}** in **{microbe_species}**.",
+    "tags": [
+      "synthetic-biology-gene-editing"
+    ]
+  },
+  {
+    "path": "synthetic-biology-gene-editing/biosensor-circuit-designer.prompt.yaml",
+    "role": "Biosensor Circuit Designer.",
+    "objective": "Develop a quorum-sensing biosensor for **{analyte_name}** detection range **{detection_ppm}** ppm.",
+    "tags": [
+      "synthetic-biology-gene-editing"
+    ]
+  },
+  {
+    "path": "synthetic-biology-gene-editing/cell-free-expression-optimizer.prompt.yaml",
+    "role": "Cell-Free Expression Optimizer.",
+    "objective": "Outline a DoE matrix to maximize **{protein_name}** yield in TX-TL using **{lysate_type}**.",
+    "tags": [
+      "synthetic-biology-gene-editing"
+    ]
+  },
+  {
+    "path": "synthetic-biology-gene-editing/synthetic-promoter-miner.prompt.yaml",
+    "role": "Synthetic Promoter Miner.",
+    "objective": "Identify de-novo promoters in **{rna_seq_dataset}** for **{tissue_type}** under stress **{stress_condition}**.",
+    "tags": [
+      "synthetic-biology-gene-editing"
+    ]
+  },
+  {
+    "path": "synthetic-biology-gene-editing/crispr-grna-designer.prompt.yaml",
+    "role": "CRISPR gRNA Designer.",
+    "objective": "Generate optimal sgRNA sequences targeting **{gene_symbol}** exon **{exon_number}** in **{organism_name}**.",
+    "tags": [
+      "synthetic-biology-gene-editing"
+    ]
+  },
+  {
+    "path": "synthetic-biology-gene-editing/gene-drive-risk-assessor.prompt.yaml",
+    "role": "Gene Drive Risk Assessor.",
+    "objective": "Evaluate containment strategies for CRISPR gene drive in **{target_species}** release scenario **{release_scenario}**.",
+    "tags": [
+      "synthetic-biology-gene-editing"
+    ]
+  },
+  {
+    "path": "synthetic-biology-gene-editing/optogenetic-tool-developer.prompt.yaml",
+    "role": "Optogenetic Tool Developer.",
+    "objective": "Design an optogenetic switch controlling **{target_gene}** expression in **{cell_line}** using **{light_wavelength}** nm LED.",
+    "tags": [
+      "synthetic-biology-gene-editing"
     ]
   },
   {
@@ -851,6 +1603,86 @@
     "objective": "Create 5\u2011email onboarding sequence for **{service}** increasing activation rate; specify trigger timings and SMART goal per email.",
     "tags": [
       "marketing-seo"
+    ]
+  },
+  {
+    "path": "cybersecurity-threat-intelligence/cloud-security-architect.prompt.yaml",
+    "role": "Cloud Security Architect.",
+    "objective": "Generate Terraform guardrails for **{cloud_provider}** to enforce encryption-at-rest on **{service_name}**.",
+    "tags": [
+      "cybersecurity-threat-intelligence"
+    ]
+  },
+  {
+    "path": "cybersecurity-threat-intelligence/threat-hunting-query-designer.prompt.yaml",
+    "role": "Threat Hunting Query Designer.",
+    "objective": "Draft Sigma rules to detect **{tactic_name}** in Windows Event Logs with IDs **{event_ids}**.",
+    "tags": [
+      "cybersecurity-threat-intelligence"
+    ]
+  },
+  {
+    "path": "cybersecurity-threat-intelligence/digital-forensics-analyst.prompt.yaml",
+    "role": "Digital Forensics Analyst.",
+    "objective": "Plan a timeline analysis of disk image **{evidence_image}** focusing on **{compromise_window}**.",
+    "tags": [
+      "cybersecurity-threat-intelligence"
+    ]
+  },
+  {
+    "path": "cybersecurity-threat-intelligence/reverse-engineering-mentor.prompt.yaml",
+    "role": "Reverse Engineering Mentor.",
+    "objective": "Outline a Ghidra project walkthrough to unpack **{packed_binary}** using **{packer_type}**.",
+    "tags": [
+      "cybersecurity-threat-intelligence"
+    ]
+  },
+  {
+    "path": "cybersecurity-threat-intelligence/incident-response-playbook-author.prompt.yaml",
+    "role": "Incident Response Playbook Author.",
+    "objective": "Create a playbook for ransomware **{malware_family}** infiltration in **{environment_type}**.",
+    "tags": [
+      "cybersecurity-threat-intelligence"
+    ]
+  },
+  {
+    "path": "cybersecurity-threat-intelligence/threat-intelligence-correlator.prompt.yaml",
+    "role": "Threat Intelligence Correlator.",
+    "objective": "Compile a STIX 2.1 bundle linking **{actor_name}** campaigns with **{malware_ids}**.",
+    "tags": [
+      "cybersecurity-threat-intelligence"
+    ]
+  },
+  {
+    "path": "cybersecurity-threat-intelligence/zero-trust-strategist.prompt.yaml",
+    "role": "Zero Trust Strategist.",
+    "objective": "Develop an identity-centric zero trust roadmap for **{enterprise_size}** employee organization migrating to **{idp_name}**.",
+    "tags": [
+      "cybersecurity-threat-intelligence"
+    ]
+  },
+  {
+    "path": "cybersecurity-threat-intelligence/ics-security-engineer.prompt.yaml",
+    "role": "ICS Security Engineer.",
+    "objective": "Design a network segmentation scheme for **{scada_vendor}** PLCs controlling **{process_name}**.",
+    "tags": [
+      "cybersecurity-threat-intelligence"
+    ]
+  },
+  {
+    "path": "cybersecurity-threat-intelligence/security-data-lake-builder.prompt.yaml",
+    "role": "Security Data Lake Builder.",
+    "objective": "Create an OpenSearch index policy to retain **{log_type}** logs for **{retention_days}** days with ILM rollover.",
+    "tags": [
+      "cybersecurity-threat-intelligence"
+    ]
+  },
+  {
+    "path": "cybersecurity-threat-intelligence/penetration-testing-planner.prompt.yaml",
+    "role": "Penetration Testing Planner.",
+    "objective": "Draft an engagement plan to test **{webapp_name}** for **{owasp_category}** vulnerabilities in **{testing_window}**.",
+    "tags": [
+      "cybersecurity-threat-intelligence"
     ]
   }
 ]

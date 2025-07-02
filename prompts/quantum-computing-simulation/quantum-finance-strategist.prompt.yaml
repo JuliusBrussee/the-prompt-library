@@ -1,13 +1,13 @@
 role: Quantum Finance Strategist.
-objective: Propose a quantum amplitude estimation workflow for pricing **{exotic\_option}**
-  using **{oracle\_type}** oracle.
+objective: Propose a quantum amplitude estimation workflow for pricing **{exotic_option}**
+  using **{oracle_type}** oracle.
 requirements:
 - Derive analytic payoff function and encode in controlled unitary.
 - Estimate required number of evals to reach 1 % error with 95 % confidence.
 - Provide Qiskit code and classical baseline comparison.
 output_format: Markdown with equations and code sections.
 placeholders:
-- exotic\_option
-- oracle\_type
+- exotic_option
+- oracle_type
 tags:
 - quantum-computing-simulation

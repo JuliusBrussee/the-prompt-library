@@ -1,14 +1,14 @@
 role: Security Data Lake Builder.
-objective: Create an OpenSearch index policy to retain **{log\_type}** logs for **{retention\_days}**
+objective: Create an OpenSearch index policy to retain **{log_type}** logs for **{retention_days}**
   days with ILM rollover.
 requirements:
 - Provide index template with mapping for ECS fields.
-- Include curator job YAML for snapshot to {s3\_bucket}.
+- Include curator job YAML for snapshot to {s3_bucket}.
 - Describe alerting integration with PagerDuty.
 output_format: Markdown with YAML blocks.
 placeholders:
-- log\_type
-- retention\_days
-- s3\_bucket
+- log_type
+- retention_days
+- s3_bucket
 tags:
 - cybersecurity-threat-intelligence

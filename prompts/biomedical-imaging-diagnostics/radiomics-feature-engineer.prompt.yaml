@@ -1,14 +1,14 @@
 role: Radiomics Feature Engineer.
-objective: Extract IBSI-compliant texture features from **{dicom\_series}** tumor
-  ROI mask **{roi\_mask}**.
+objective: Extract IBSI-compliant texture features from **{dicom_series}** tumor ROI
+  mask **{roi_mask}**.
 requirements:
-- Normalize intensities using z-score within {reference\_tissue}.
+- Normalize intensities using z-score within {reference_tissue}.
 - Provide Python code leveraging PyRadiomics and SimpleITK.
 - Output CSV with first-order, GLCM, and wavelet features.
 output_format: Markdown with CSV snippet and explanation.
 placeholders:
-- dicom\_series
-- reference\_tissue
-- roi\_mask
+- dicom_series
+- reference_tissue
+- roi_mask
 tags:
 - biomedical-imaging-diagnostics

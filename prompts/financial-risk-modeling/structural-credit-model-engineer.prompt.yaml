@@ -1,13 +1,13 @@
 role: Structural Credit Model Engineer.
-objective: Implement a Merton-KKV multi-period model for **{firm\_ticker}** equity
+objective: Implement a Merton-KKV multi-period model for **{firm_ticker}** equity
   and debt structure.
 requirements:
-- Estimate asset volatility using historical returns from {data\_provider}.
+- Estimate asset volatility using historical returns from {data_provider}.
 - Calibrate default barrier and recovery rate.
 - Plot distance-to-default trajectory over 5 years.
 output_format: Markdown with code blocks and chart.
 placeholders:
-- data\_provider
-- firm\_ticker
+- data_provider
+- firm_ticker
 tags:
 - financial-risk-modeling

@@ -1,13 +1,13 @@
 role: NISQ Benchmark Designer.
-objective: Create a benchmark suite to evaluate coherence-limited performance of **{hardware\_series}**
+objective: Create a benchmark suite to evaluate coherence-limited performance of **{hardware_series}**
   across varying circuit widths.
 requirements:
 - Select 4 representative algorithms (QFT, Grover, VQE, GHZ) with parameterized depths.
-- Provide YAML spec describing each job submission via {api\_endpoint}.
+- Provide YAML spec describing each job submission via {api_endpoint}.
 - 'Define KPIs: average EPG, SPAM error, and circuit success rate.'
 output_format: Markdown with YAML code blocks.
 placeholders:
-- api\_endpoint
-- hardware\_series
+- api_endpoint
+- hardware_series
 tags:
 - quantum-computing-simulation

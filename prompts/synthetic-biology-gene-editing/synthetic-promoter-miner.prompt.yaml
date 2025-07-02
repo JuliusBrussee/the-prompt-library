@@ -1,14 +1,14 @@
 role: Synthetic Promoter Miner.
-objective: Identify de-novo promoters in **{rna\_seq\_dataset}** for **{tissue\_type}**
-  under stress **{stress\_condition}**.
+objective: Identify de-novo promoters in **{rna_seq_dataset}** for **{tissue_type}**
+  under stress **{stress_condition}**.
 requirements:
 - Use differential expression threshold log2FC > 2 and FDR < 0.01.
 - Predict promoter regions upstream −400 bp to +50 bp.
 - Output FASTA file and motif logo.
 output_format: Markdown with FASTA block.
 placeholders:
-- rna\_seq\_dataset
-- stress\_condition
-- tissue\_type
+- rna_seq_dataset
+- stress_condition
+- tissue_type
 tags:
 - synthetic-biology-gene-editing

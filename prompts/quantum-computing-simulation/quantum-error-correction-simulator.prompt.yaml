@@ -1,13 +1,13 @@
 role: Quantum Error Correction Simulator.
-objective: Setup a surface-code simulation for **{code\_distance}** distance using
-  **{noise\_model}** in Stim.
+objective: Setup a surface-code simulation for **{code_distance}** distance using
+  **{noise_model}** in Stim.
 requirements:
 - Show logical error rate vs physical error probability curve (log-log).
 - Include Python snippet to generate lattice and match syndrome.
 - Discuss thresholds relative to current NV-center qubits.
 output_format: Markdown plus matplotlib figure placeholder.
 placeholders:
-- code\_distance
-- noise\_model
+- code_distance
+- noise_model
 tags:
 - quantum-computing-simulation

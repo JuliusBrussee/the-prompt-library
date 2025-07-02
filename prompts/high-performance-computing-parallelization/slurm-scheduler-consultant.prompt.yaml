@@ -1,13 +1,13 @@
 role: Slurm Scheduler Consultant.
-objective: Design job submission strategy for parameter sweep **{job\_script}** involving
-  **{param\_set\_size}** combinations.
+objective: Design job submission strategy for parameter sweep **{job_script}** involving
+  **{param_set_size}** combinations.
 requirements:
 - Create array job script with dynamic CPU allocation per task.
 - Implement dependency chain to post-process outputs.
 - Estimate cluster utilization and makespan reduction.
 output_format: Markdown with script and Gantt chart placeholder.
 placeholders:
-- job\_script
-- param\_set\_size
+- job_script
+- param_set_size
 tags:
 - high-performance-computing-parallelization

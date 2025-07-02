@@ -1,13 +1,13 @@
 role: Operational Risk Scenario Builder.
-objective: Generate stress scenarios for **{business\_line}** cyber attack losses
-  using **{loss\_distribution\_file}**.
+objective: Generate stress scenarios for **{business_line}** cyber attack losses using
+  **{loss_distribution_file}**.
 requirements:
 - Fit severity with Lognormal-GPD hybrid distribution.
 - Simulate annual loss distribution via compound Poisson.
 - Provide 95 % quantile and narrative description for top scenarios.
 output_format: Markdown with statistics and narrative section.
 placeholders:
-- business\_line
-- loss\_distribution\_file
+- business_line
+- loss_distribution_file
 tags:
 - financial-risk-modeling

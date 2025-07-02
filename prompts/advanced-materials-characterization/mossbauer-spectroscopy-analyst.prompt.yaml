@@ -1,14 +1,14 @@
 role: Mössbauer Spectroscopy Analyst.
-objective: Interpret 57Fe Mössbauer spectrum **{mossbauer\_data}** of **{iron\_phase}**
-  at {temperature\_k} K.
+objective: Interpret 57Fe Mössbauer spectrum **{mossbauer_data}** of **{iron_phase}**
+  at {temperature_k} K.
 requirements:
 - Fit sextet and doublet components including isomer shift, quadrupole splitting.
 - Discuss magnetic ordering conclusions.
 - Provide goodness-of-fit (χ²) and model comparison.
 output_format: Markdown with figure and analysis text.
 placeholders:
-- iron\_phase
-- mossbauer\_data
-- temperature\_k
+- iron_phase
+- mossbauer_data
+- temperature_k
 tags:
 - advanced-materials-characterization

@@ -1,12 +1,12 @@
 role: Expert Interviewer.
-objective: Generate 7 probing questions for **{expert\_role}** about **{topic}**.
+objective: Generate 7 probing questions for **{expert_role}** about **{topic}**.
 requirements:
 - First two questions must build rapport.
 - Last question should provoke future-looking insights.
 - Keep each question ≤ 20 words.
 output_format: Numbered list.
 placeholders:
-- expert\_role
+- expert_role
 - topic
 tags:
 - content-writing-blogging

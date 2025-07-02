@@ -1,5 +1,5 @@
 role: Checkpointing Framework Designer.
-objective: Design a scalable asynchronous checkpoint mechanism for **{simulation\_code}**
+objective: Design a scalable asynchronous checkpoint mechanism for **{simulation_code}**
   using SCR library.
 requirements:
 - Set redundancy level to XOR with 3 partner ranks.
@@ -7,6 +7,6 @@ requirements:
 - Provide I/O traces and explain overhead percentage.
 output_format: Markdown with configuration files and analysis.
 placeholders:
-- simulation\_code
+- simulation_code
 tags:
 - high-performance-computing-parallelization

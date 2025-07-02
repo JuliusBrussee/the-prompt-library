@@ -8,12 +8,12 @@ REQUIREMENTS:
 STYLE: Authoritative yet conversational, active voice, AP style.
 OUTPUT FORMAT: Markdown with H2 headers (Background | Stakeholder Insights | Forecasts | Takeaways).",topic; publication
 Content Writing & Blogging,"ROLE: SEO-specialized Content Strategist.
-OBJECTIVE: Produce a pillar blog post outline (minimum 3,000 words) for **{persona}** that will rank top-3 for the keyword cluster **{keyword\_cluster}**.
+OBJECTIVE: Produce a pillar blog post outline (minimum 3,000 words) for **{persona}** that will rank top-3 for the keyword cluster **{keyword_cluster}**.
 REQUIREMENTS:
 • Identify 8 sub-topics mapped to search intent stages (TOFU, MOFU, BOFU).
 • Provide suggested word counts, keyword density (%), and internal link anchors.
 • Recommend one interactive element (quiz, calculator, visualization) to improve dwell time.
-OUTPUT FORMAT: Markdown table.",topic; persona; keyword\_cluster
+OUTPUT FORMAT: Markdown table.",topic; persona; keyword_cluster
 Content Writing & Blogging,"ROLE: Newsletter Ghostwriter.
 OBJECTIVE: Draft a witty, 400-word weekly newsletter for **{brand}** summarizing critical news in the **{sector}** sector.
 REQUIREMENTS:
@@ -46,27 +46,27 @@ REQUIREMENTS:
 • Keep passive voice < 5 %.
 OUTPUT FORMAT: Plain text.",paragraph
 Content Writing & Blogging,"ROLE: Podcast Show-Notes Producer.
-OBJECTIVE: Draft show notes for episode **{episode\_title}** featuring **{guest\_name}**.
+OBJECTIVE: Draft show notes for episode **{episode_title}** featuring **{guest_name}**.
 REQUIREMENTS:
 • Craft a 150-word episode summary.
 • List 5 key takeaways.
 • Provide 3 resource links mentioned by the guest.
 STYLE: Friendly and curiosity-driven.
-OUTPUT FORMAT: Markdown.",episode\_title; guest\_name
+OUTPUT FORMAT: Markdown.",episode_title; guest_name
 Content Writing & Blogging,"ROLE: Expert Interviewer.
-OBJECTIVE: Generate 7 probing questions for **{expert\_role}** about **{topic}**.
+OBJECTIVE: Generate 7 probing questions for **{expert_role}** about **{topic}**.
 REQUIREMENTS:
 • First two questions must build rapport.
 • Last question should provoke future-looking insights.
 • Keep each question ≤ 20 words.
-OUTPUT FORMAT: Numbered list.",expert\_role; topic
+OUTPUT FORMAT: Numbered list.",expert_role; topic
 Content Writing & Blogging,"ROLE: Fact-Check Annotator.
-OBJECTIVE: Insert inline fact-check annotations into the following article text: **{article\_text}**
+OBJECTIVE: Insert inline fact-check annotations into the following article text: **{article_text}**
 REQUIREMENTS:
 • Highlight facts in bold; append annotation in brackets with source link.
 • Do not alter original phrasing.
 • Flag unverifiable claims with “source needed”.
-OUTPUT FORMAT: Markdown.",article\_text
+OUTPUT FORMAT: Markdown.",article_text
 Content Writing & Blogging,"ROLE: Link-Building Outreach Drafter.
 OBJECTIVE: Write a concise outreach email to secure a backlink from **{url}**.
 REQUIREMENTS:
@@ -76,702 +76,792 @@ REQUIREMENTS:
 STYLE: Polite, professional, and to-the-point.
 OUTPUT FORMAT: Plain text.",url
 Quantum Computing & Simulation,"ROLE: Quantum Error Mitigation Specialist.
-OBJECTIVE: Draft a detailed protocol to apply zero-noise extrapolation on raw counts from **{qubit\_device}** running **{circuit\_name}**.
+OBJECTIVE: Draft a detailed protocol to apply zero-noise extrapolation on raw counts from **{qubit_device}** running **{circuit_name}**.
 REQUIREMENTS:
-• Include calibrated gate error rates and readout assignment matrices from {qubit\_device}.
+• Include calibrated gate error rates and readout assignment matrices from {qubit_device}.
 • Provide Python code using the {sdk} SDK that implements noise scaling and Richardson extrapolation.
 • Summarize expected fidelity gains in a table comparing baseline vs mitigated results.
-OUTPUT FORMAT: Markdown with H2 headers (Background | Code | Results).",qubit\_device; circuit\_name; sdk
+OUTPUT FORMAT: Markdown with H2 headers (Background | Code | Results).",qubit_device; circuit_name; sdk
 Quantum Computing & Simulation,"ROLE: Quantum Compiler Optimizer.
-OBJECTIVE: Generate an optimized QASM for **{algorithm}** targeting **{target\_hardware}** minimizing two-qubit gate depth.
+OBJECTIVE: Generate an optimized QASM for **{algorithm}** targeting **{target_hardware}** minimizing two-qubit gate depth.
 REQUIREMENTS:
 • Use ZX-calculus transformations to reduce CNOT count by at least 30 %.
 • Annotate each optimization pass with before-after gate counts.
 • Provide final circuit diagram in ASCII and OpenQASM code.
-OUTPUT FORMAT: Markdown; separate code blocks for QASM and diagrams.",algorithm; target\_hardware
+OUTPUT FORMAT: Markdown; separate code blocks for QASM and diagrams.",algorithm; target_hardware
 Quantum Computing & Simulation,"ROLE: Topological Qubit Theorist.
-OBJECTIVE: Produce a LaTeX mini-review of anyonic braiding statistics for **{platform}** within **{word\_limit}** words.
+OBJECTIVE: Produce a LaTeX mini-review of anyonic braiding statistics for **{platform}** within **{word_limit}** words.
 REQUIREMENTS:
-• Explain SU(2)\_k fusion rules relevant to {platform}.
+• Explain SU(2)_k fusion rules relevant to {platform}.
 • Compare Fibonacci vs Ising anyons in tabular form.
 • Cite at least 5 peer-reviewed papers in APS style.
-OUTPUT FORMAT: LaTeX article skeleton.",platform; word\_limit
+OUTPUT FORMAT: LaTeX article skeleton.",platform; word_limit
 Quantum Computing & Simulation,"ROLE: Quantum Monte Carlo Analyst.
-OBJECTIVE: Design a VMC study of 2-D Hubbard model at **{filling\_factor}** using **{ansatz\_type}** wavefunction.
+OBJECTIVE: Design a VMC study of 2-D Hubbard model at **{filling_factor}** using **{ansatz_type}** wavefunction.
 REQUIREMENTS:
 • Specify lattice size, boundary conditions, and J/t values.
 • Provide pseudocode for Metropolis sampling with sign problem mitigation.
 • Report expected energy convergence criteria and runtime estimates.
-OUTPUT FORMAT: Markdown report with code blocks and math formulae.",filling\_factor; ansatz\_type
+OUTPUT FORMAT: Markdown report with code blocks and math formulae.",filling_factor; ansatz_type
 Quantum Computing & Simulation,"ROLE: Quantum Machine Learning Engineer.
-OBJECTIVE: Outline a hybrid classifier combining QSVC on **{backend\_name}** with classical SVM for **{dataset\_name}**.
+OBJECTIVE: Outline a hybrid classifier combining QSVC on **{backend_name}** with classical SVM for **{dataset_name}**.
 REQUIREMENTS:
 • Detail feature map encoding and circuit depth budget (< 60 gates).
-• Include training loop in {ml\_framework} integrating qiskit-runtime.
+• Include training loop in {ml_framework} integrating qiskit-runtime.
 • Plot decision boundary and report balanced accuracy.
-OUTPUT FORMAT: Jupyter-ready Markdown.",backend\_name; dataset\_name; ml\_framework
+OUTPUT FORMAT: Jupyter-ready Markdown.",backend_name; dataset_name; ml_framework
 Quantum Computing & Simulation,"ROLE: NISQ Benchmark Designer.
-OBJECTIVE: Create a benchmark suite to evaluate coherence-limited performance of **{hardware\_series}** across varying circuit widths.
+OBJECTIVE: Create a benchmark suite to evaluate coherence-limited performance of **{hardware_series}** across varying circuit widths.
 REQUIREMENTS:
 • Select 4 representative algorithms (QFT, Grover, VQE, GHZ) with parameterized depths.
-• Provide YAML spec describing each job submission via {api\_endpoint}.
+• Provide YAML spec describing each job submission via {api_endpoint}.
 • Define KPIs: average EPG, SPAM error, and circuit success rate.
-OUTPUT FORMAT: Markdown with YAML code blocks.",hardware\_series; api\_endpoint
+OUTPUT FORMAT: Markdown with YAML code blocks.",hardware_series; api_endpoint
 Quantum Computing & Simulation,"ROLE: Quantum Error Correction Simulator.
-OBJECTIVE: Setup a surface-code simulation for **{code\_distance}** distance using **{noise\_model}** in Stim.
+OBJECTIVE: Setup a surface-code simulation for **{code_distance}** distance using **{noise_model}** in Stim.
 REQUIREMENTS:
 • Show logical error rate vs physical error probability curve (log-log).
 • Include Python snippet to generate lattice and match syndrome.
 • Discuss thresholds relative to current NV-center qubits.
-OUTPUT FORMAT: Markdown plus matplotlib figure placeholder.",code\_distance; noise\_model
+OUTPUT FORMAT: Markdown plus matplotlib figure placeholder.",code_distance; noise_model
 Quantum Computing & Simulation,"ROLE: Quantum Finance Strategist.
-OBJECTIVE: Propose a quantum amplitude estimation workflow for pricing **{exotic\_option}** using **{oracle\_type}** oracle.
+OBJECTIVE: Propose a quantum amplitude estimation workflow for pricing **{exotic_option}** using **{oracle_type}** oracle.
 REQUIREMENTS:
 • Derive analytic payoff function and encode in controlled unitary.
 • Estimate required number of evals to reach 1 % error with 95 % confidence.
 • Provide Qiskit code and classical baseline comparison.
-OUTPUT FORMAT: Markdown with equations and code sections.",exotic\_option; oracle\_type
+OUTPUT FORMAT: Markdown with equations and code sections.",exotic_option; oracle_type
 Quantum Computing & Simulation,"ROLE: Quantum Metrology Architect.
-OBJECTIVE: Design a Ramsey interference experiment achieving Heisenberg-limited scaling on **{sensor\_platform}** for frequency **{target\_frequency}**.
+OBJECTIVE: Design a Ramsey interference experiment achieving Heisenberg-limited scaling on **{sensor_platform}** for frequency **{target_frequency}**.
 REQUIREMENTS:
 • Specify pulse sequence and optimal interrogation time.
 • Include error sources and their mitigation strategies in table.
 • Predict SNR improvement factor over SQL baselines.
-OUTPUT FORMAT: Markdown report with schematic SVG reference.",sensor\_platform; target\_frequency
+OUTPUT FORMAT: Markdown report with schematic SVG reference.",sensor_platform; target_frequency
 Quantum Computing & Simulation,"ROLE: Quantum Networking Protocol Engineer.
-OBJECTIVE: Draft an entanglement swapping protocol spec for nodes **{node\_count}** over **{fiber\_length}** km with {bell\_measurement} measurements.
+OBJECTIVE: Draft an entanglement swapping protocol spec for nodes **{node_count}** over **{fiber_length}** km with {bell_measurement} measurements.
 REQUIREMENTS:
 • Describe timing synchronization requirements to sub-nanosecond accuracy.
 • Provide NS-3 simulation configuration snippet.
 • List security vulnerabilities and mitigation controls.
-OUTPUT FORMAT: RFC-style Markdown.",node\_count; fiber\_length; bell\_measurement
+OUTPUT FORMAT: RFC-style Markdown.",node_count; fiber_length; bell_measurement
 Geospatial Analysis & Remote Sensing,"ROLE: SAR Interferometry Specialist.
-OBJECTIVE: Generate a processing workflow to derive ground deformation map from **{sentinel\_pair}** SLC images over **{aoi\_bbox}**.
+OBJECTIVE: Generate a processing workflow to derive ground deformation map from **{sentinel_pair}** SLC images over **{aoi_bbox}**.
 REQUIREMENTS:
-• Include steps: co-registration, phase unwrapping, atmospheric correction using {gnss\_tropo\_data}.
+• Include steps: co-registration, phase unwrapping, atmospheric correction using {gnss_tropo_data}.
 • Provide bash commands using ISCE2 and snaphu.
 • Output cumulative displacement GeoTIFF and QC plots.
-OUTPUT FORMAT: Markdown with code blocks and command snippets.",sentinel\_pair; aoi\_bbox; gnss\_tropo\_data
+OUTPUT FORMAT: Markdown with code blocks and command snippets.",sentinel_pair; aoi_bbox; gnss_tropo_data
 Geospatial Analysis & Remote Sensing,"ROLE: Hyperspectral Mineralogist.
-OBJECTIVE: Classify lithology in **{hypercube\_file}** using spectral angle mapper with **{reference\_library}** signatures.
+OBJECTIVE: Classify lithology in **{hypercube_file}** using spectral angle mapper with **{reference_library}** signatures.
 REQUIREMENTS:
 • Perform atmospheric correction (FLAASH) and noise subspace elimination.
 • Output mineral abundance maps with color legend.
 • Provide Python code using the spectral library path.
-OUTPUT FORMAT: Jupyter Markdown with H3 headers.",hypercube\_file; reference\_library
+OUTPUT FORMAT: Jupyter Markdown with H3 headers.",hypercube_file; reference_library
 Geospatial Analysis & Remote Sensing,"ROLE: LiDAR Forestry Analyst.
-OBJECTIVE: Estimate above-ground biomass for **{forest\_region\_name}** from **{lidar\_pointcloud}** data.
+OBJECTIVE: Estimate above-ground biomass for **{forest_region_name}** from **{lidar_pointcloud}** data.
 REQUIREMENTS:
 • Compute canopy height model at 1 m resolution.
-• Apply allometric equations from {species\_eq\_dataset}.
+• Apply allometric equations from {species_eq_dataset}.
 • Report total biomass in Mg and uncertainty ± 10 %.
-OUTPUT FORMAT: Markdown plus JSON summary block.",forest\_region\_name; lidar\_pointcloud; species\_eq\_dataset
+OUTPUT FORMAT: Markdown plus JSON summary block.",forest_region_name; lidar_pointcloud; species_eq_dataset
 Geospatial Analysis & Remote Sensing,"ROLE: Urban Heat Mapping Engineer.
-OBJECTIVE: Produce a high-resolution UHI map for **{city\_name}** using **{landsat\_collection}** thermal bands.
+OBJECTIVE: Produce a high-resolution UHI map for **{city_name}** using **{landsat_collection}** thermal bands.
 REQUIREMENTS:
 • Perform radiometric calibration and emissivity correction.
-• Validate surface temperature with {met\_station\_csv} readings.
+• Validate surface temperature with {met_station_csv} readings.
 • Highlight hotspots exceeding 2 °C over baseline.
-OUTPUT FORMAT: ArcGIS-ready GeoPackage and Markdown report.",city\_name; landsat\_collection; met\_station\_csv
+OUTPUT FORMAT: ArcGIS-ready GeoPackage and Markdown report.",city_name; landsat_collection; met_station_csv
 Geospatial Analysis & Remote Sensing,"ROLE: Marine GIS Consultant.
-OBJECTIVE: Model oil spill drift trajectory from **{spill\_latlon}** on **{start\_date}** for {simulation\_hours} h using HYCOM data.
+OBJECTIVE: Model oil spill drift trajectory from **{spill_latlon}** on **{start_date}** for {simulation_hours} h using HYCOM data.
 REQUIREMENTS:
-• Incorporate wind forcing from {noaa\_grib} and Stokes drift.
+• Incorporate wind forcing from {noaa_grib} and Stokes drift.
 • Provide Python code using Parcels library.
 • Output shapefile of centroid path and probability envelope.
-OUTPUT FORMAT: Markdown with map snapshot placeholders.",spill\_latlon; start\_date; simulation\_hours; noaa\_grib
+OUTPUT FORMAT: Markdown with map snapshot placeholders.",spill_latlon; start_date; simulation_hours; noaa_grib
 Geospatial Analysis & Remote Sensing,"ROLE: Climate Downscaling Expert.
-OBJECTIVE: Downscale CMIP6 temperature projections for **{rcp\_scenario}** to 1 km resolution over **{country\_iso}**.
+OBJECTIVE: Downscale CMIP6 temperature projections for **{rcp_scenario}** to 1 km resolution over **{country_iso}**.
 REQUIREMENTS:
 • Use bias-correction spatial disaggregation (BCSD) against ERA5 baseline.
 • Provide shell script orchestrating CDO operations.
 • Visualize monthly anomalies 2040-2060.
-OUTPUT FORMAT: Markdown plus NetCDF metadata block.",rcp\_scenario; country\_iso
+OUTPUT FORMAT: Markdown plus NetCDF metadata block.",rcp_scenario; country_iso
 Geospatial Analysis & Remote Sensing,"ROLE: GNSS Reflectometry Researcher.
-OBJECTIVE: Derive soil moisture estimates at **{site\_code}** using SNR data from **{gnss\_receiver\_id}**.
+OBJECTIVE: Derive soil moisture estimates at **{site_code}** using SNR data from **{gnss_receiver_id}**.
 REQUIREMENTS:
 • Compute reflected signal peak frequency and convert to dielectric constant.
-• Correlate results with in-situ {sm\_instrument} sensors.
+• Correlate results with in-situ {sm_instrument} sensors.
 • Include Python matplotlib plots of diurnal variability.
-OUTPUT FORMAT: Markdown report with equations.",site\_code; gnss\_receiver\_id; sm\_instrument
+OUTPUT FORMAT: Markdown report with equations.",site_code; gnss_receiver_id; sm_instrument
 Geospatial Analysis & Remote Sensing,"ROLE: Photogrammetry Pipeline Engineer.
-OBJECTIVE: Outline steps to build a 3-D mesh of **{monument\_name}** from **{image\_folder}** UAV photos.
+OBJECTIVE: Outline steps to build a 3-D mesh of **{monument_name}** from **{image_folder}** UAV photos.
 REQUIREMENTS:
 • Specify camera calibration using OpenCV charuco board images.
 • Use OpenDroneMap commands for sparse, dense, and texturing stages.
 • Export OBJ and 10k-face decimated glTF for web.
-OUTPUT FORMAT: Markdown with command snippets and checklist.",monument\_name; image\_folder
+OUTPUT FORMAT: Markdown with command snippets and checklist.",monument_name; image_folder
 Geospatial Analysis & Remote Sensing,"ROLE: Land-Use Change Modeler.
-OBJECTIVE: Calibrate a CLUE-S model predicting urban expansion of **{metro\_area}** to **{year\_target}**.
+OBJECTIVE: Calibrate a CLUE-S model predicting urban expansion of **{metro_area}** to **{year_target}**.
 REQUIREMENTS:
-• Derive driving factors from {dem\_raster}, roads, and population density layers.
+• Derive driving factors from {dem_raster}, roads, and population density layers.
 • Include Monte Carlo runs (n=100) to quantify allocation uncertainty.
 • Report kappa statistics and ROC curves.
-OUTPUT FORMAT: Markdown with section headers and tables.",metro\_area; year\_target; dem\_raster
+OUTPUT FORMAT: Markdown with section headers and tables.",metro_area; year_target; dem_raster
 Geospatial Analysis & Remote Sensing,"ROLE: Ocean Color Algorithm Developer.
-OBJECTIVE: Implement a remote-sensing reflectance to chlorophyll-a algorithm for **{sensor\_name}** data over **{region\_bbox}**.
+OBJECTIVE: Implement a remote-sensing reflectance to chlorophyll-a algorithm for **{sensor_name}** data over **{region_bbox}**.
 REQUIREMENTS:
-• Validate model against {insitu\_dataset} cruise measurements.
+• Validate model against {insitu_dataset} cruise measurements.
 • Provide Python code using xarray and rioxarray.
 • Map chlorophyll anomaly relative to 2003-2020 climatology.
-OUTPUT FORMAT: Markdown with code and result figures.",sensor\_name; region\_bbox; insitu\_dataset
+OUTPUT FORMAT: Markdown with code and result figures.",sensor_name; region_bbox; insitu_dataset
 Biomedical Imaging & Diagnostics,"ROLE: Radiomics Feature Engineer.
-OBJECTIVE: Extract IBSI-compliant texture features from **{dicom\_series}** tumor ROI mask **{roi\_mask}**.
+OBJECTIVE: Extract IBSI-compliant texture features from **{dicom_series}** tumor ROI mask **{roi_mask}**.
 REQUIREMENTS:
-• Normalize intensities using z-score within {reference\_tissue}.
+• Normalize intensities using z-score within {reference_tissue}.
 • Provide Python code leveraging PyRadiomics and SimpleITK.
 • Output CSV with first-order, GLCM, and wavelet features.
-OUTPUT FORMAT: Markdown with CSV snippet and explanation.",dicom\_series; roi\_mask; reference\_tissue
+OUTPUT FORMAT: Markdown with CSV snippet and explanation.",dicom_series; roi_mask; reference_tissue
 Biomedical Imaging & Diagnostics,"ROLE: Bayesian Segmentation Researcher.
-OBJECTIVE: Design a probabilistic U-Net training plan on **{ct\_dataset}** for organ **{target\_organ}**.
+OBJECTIVE: Design a probabilistic U-Net training plan on **{ct_dataset}** for organ **{target_organ}**.
 REQUIREMENTS:
 • Detail data preprocessing, augmentation, and evidence lower bound loss formulation.
-• Specify training hyperparameters for {gpu\_model} (memory limit).
+• Specify training hyperparameters for {gpu_model} (memory limit).
 • Include calibration assessment using expected calibration error.
-OUTPUT FORMAT: Markdown with H2 headers and python code sections.",ct\_dataset; target\_organ; gpu\_model
+OUTPUT FORMAT: Markdown with H2 headers and python code sections.",ct_dataset; target_organ; gpu_model
 Biomedical Imaging & Diagnostics,"ROLE: Digital Pathology Pipeline Lead.
-OBJECTIVE: Create a WSI tiling and classification workflow to detect **{lesion\_type}** in **{stain\_type}** slides.
+OBJECTIVE: Create a WSI tiling and classification workflow to detect **{lesion_type}** in **{stain_type}** slides.
 REQUIREMENTS:
 • Define tile size, overlap, and stain normalization via Macenko method.
-• Integrate {cnn\_architecture} using TensorFlow-GPU, with inference batch size guidelines.
+• Integrate {cnn_architecture} using TensorFlow-GPU, with inference batch size guidelines.
 • Produce heatmap overlay and slide-level ROC metrics.
-OUTPUT FORMAT: Markdown report and schematic workflow diagram.",lesion\_type; stain\_type; cnn\_architecture
+OUTPUT FORMAT: Markdown report and schematic workflow diagram.",lesion_type; stain_type; cnn_architecture
 Biomedical Imaging & Diagnostics,"ROLE: Functional MRI Analyst.
-OBJECTIVE: Generate a GLM analysis for **{task\_paradigm}** using **{fmriprep\_output}** preprocessed BOLD data.
+OBJECTIVE: Generate a GLM analysis for **{task_paradigm}** using **{fmriprep_output}** preprocessed BOLD data.
 REQUIREMENTS:
 • Specify design matrix with HRF convolution and motion regressors.
 • Include contrasts for primary task vs baseline.
 • Provide Nilearn python snippet and thresholded z-maps.
-OUTPUT FORMAT: Markdown with code blocks and figure placeholders.",task\_paradigm; fmriprep\_output
+OUTPUT FORMAT: Markdown with code blocks and figure placeholders.",task_paradigm; fmriprep_output
 Biomedical Imaging & Diagnostics,"ROLE: Photoacoustic Imaging Innovator.
-OBJECTIVE: Draft a protocol to quantify oxygen saturation in **{pa\_signal\_file}** for **{animal\_model}**.
+OBJECTIVE: Draft a protocol to quantify oxygen saturation in **{pa_signal_file}** for **{animal_model}**.
 REQUIREMENTS:
 • Outline multispectral unmixing equations and speed-of-sound correction.
 • Provide MATLAB code for fluence compensation.
 • Include validation procedure using co-registered pulse-oximeter readings.
-OUTPUT FORMAT: Markdown with equations and MATLAB block.",pa\_signal\_file; animal\_model
+OUTPUT FORMAT: Markdown with equations and MATLAB block.",pa_signal_file; animal_model
 Biomedical Imaging & Diagnostics,"ROLE: Ultrasound Beamformer.
-OBJECTIVE: Develop a delay-and-sum beamforming script processing raw RF data **{rf\_dataset}** for probe **{probe\_model}**.
+OBJECTIVE: Develop a delay-and-sum beamforming script processing raw RF data **{rf_dataset}** for probe **{probe_model}**.
 REQUIREMENTS:
 • Calculate dynamic focusing delays in microseconds.
 • Implement apodization using Hanning window.
 • Display reconstructed B-mode image and measure axial resolution.
-OUTPUT FORMAT: Markdown with Python code and image placeholder.",rf\_dataset; probe\_model
+OUTPUT FORMAT: Markdown with Python code and image placeholder.",rf_dataset; probe_model
 Biomedical Imaging & Diagnostics,"ROLE: 3-D Echocardiography Quantifier.
-OBJECTIVE: Plan a pipeline to compute LV ejection fraction from **{3d\_echo\_dicom}** dataset in **{software\_framework}**.
+OBJECTIVE: Plan a pipeline to compute LV ejection fraction from **{3d_echo_dicom}** dataset in **{software_framework}**.
 REQUIREMENTS:
 • Outline steps: preprocessing, active contour segmentation, surface mesh generation.
 • Include GPU acceleration tips and memory footprint estimation.
 • Provide sanity checks against Simpson-biplane method.
-OUTPUT FORMAT: Markdown with numbered steps and tips.",3d\_echo\_dicom; software\_framework
+OUTPUT FORMAT: Markdown with numbered steps and tips.",3d_echo_dicom; software_framework
 Biomedical Imaging & Diagnostics,"ROLE: Optical Coherence Tomography Scientist.
-OBJECTIVE: Generate attenuation coefficient maps for **{oct\_volume}** corneal scan using depth-compensated algorithm.
+OBJECTIVE: Generate attenuation coefficient maps for **{oct_volume}** corneal scan using depth-compensated algorithm.
 REQUIREMENTS:
 • Apply logarithmic intensity rescaling and axial registration.
-• Provide code snippet in {language\_choice} implementing exponential fit.
+• Provide code snippet in {language_choice} implementing exponential fit.
 • Benchmark runtime vs simple slope method.
-OUTPUT FORMAT: Markdown with code and result plots.",oct\_volume; language\_choice
+OUTPUT FORMAT: Markdown with code and result plots.",oct_volume; language_choice
 Biomedical Imaging & Diagnostics,"ROLE: Diffusion MRI Tractography Expert.
-OBJECTIVE: Set up deterministic tracking for **{dwi\_series}** with **{bvecs}** using FACT algorithm.
+OBJECTIVE: Set up deterministic tracking for **{dwi_series}** with **{bvecs}** using FACT algorithm.
 REQUIREMENTS:
 • Compute tensor model, FA threshold 0.2, angle limit 45°.
 • Visualize arcuate fasciculus using TrackVis compatible format.
 • Report streamline count and average length.
-OUTPUT FORMAT: Markdown with command examples.",dwi\_series; bvecs
+OUTPUT FORMAT: Markdown with command examples.",dwi_series; bvecs
 Biomedical Imaging & Diagnostics,"ROLE: Spectral CT Material Decomposer.
-OBJECTIVE: Create dual-energy decomposition for **{spectral\_ct\_dataset}** into water and iodine basis images.
+OBJECTIVE: Create dual-energy decomposition for **{spectral_ct_dataset}** into water and iodine basis images.
 REQUIREMENTS:
 • Use image-based material decomposition equations with beam hardening correction.
-• Include {reconstruction\_kernel} kernel description.
+• Include {reconstruction_kernel} kernel description.
 • Provide quantification of iodine concentration in mg/ml for ROI list.
-OUTPUT FORMAT: Markdown with equations and results table.",spectral\_ct\_dataset; reconstruction\_kernel
+OUTPUT FORMAT: Markdown with equations and results table.",spectral_ct_dataset; reconstruction_kernel
 Computational Fluid Dynamics,"ROLE: LES Turbulence Modeler.
-OBJECTIVE: Configure a WALE sub-grid LES simulation in **{cfd\_solver}** for flow over **{airfoil\_name}** at Re={reynolds\_number}.
+OBJECTIVE: Configure a WALE sub-grid LES simulation in **{cfd_solver}** for flow over **{airfoil_name}** at Re={reynolds_number}.
 REQUIREMENTS:
-• Generate structured mesh with y+ < 1 using {mesher\_tool}.
+• Generate structured mesh with y+ < 1 using {mesher_tool}.
 • Provide boundary conditions and time-step size for CFL < 0.5.
 • Output Cp distribution and compare with experimental data from NACA database.
-OUTPUT FORMAT: Markdown with code snippets and result charts.",cfd\_solver; airfoil\_name; reynolds\_number; mesher\_tool
+OUTPUT FORMAT: Markdown with code snippets and result charts.",cfd_solver; airfoil_name; reynolds_number; mesher_tool
 Computational Fluid Dynamics,"ROLE: Multiphase CFD Engineer.
-OBJECTIVE: Set up a VOF simulation of **{bubble\_diameter}** mm air bubble rising in water column using **{openfoam\_case}**.
+OBJECTIVE: Set up a VOF simulation of **{bubble_diameter}** mm air bubble rising in water column using **{openfoam_case}**.
 REQUIREMENTS:
 • Define phaseProperties and alpha.water fields with initial bubble region.
 • Implement PIMPLE algorithm with Courant < 0.3.
 • Capture bubble centroid trajectory and terminal velocity.
-OUTPUT FORMAT: Markdown with OpenFOAM dict excerpts.",bubble\_diameter; openfoam\_case
+OUTPUT FORMAT: Markdown with OpenFOAM dict excerpts.",bubble_diameter; openfoam_case
 Computational Fluid Dynamics,"ROLE: Compressible Solver Developer.
-OBJECTIVE: Draft an equation derivation and discretization note for implementing AUSM+-up in **{code\_base}**.
+OBJECTIVE: Draft an equation derivation and discretization note for implementing AUSM+-up in **{code_base}**.
 REQUIREMENTS:
 • Include finite-volume formulation on unstructured meshes.
 • Provide pseudocode for flux calculation and eigenvalue evaluation.
 • Discuss stability criteria for transonic nozzle flow.
-OUTPUT FORMAT: LaTeX technical note.",code\_base
+OUTPUT FORMAT: LaTeX technical note.",code_base
 Computational Fluid Dynamics,"ROLE: Wind Farm CFD Analyst.
-OBJECTIVE: Model wake interaction of **{turbine\_layout}** using actuator disk in **{fluid\_solver}**.
+OBJECTIVE: Model wake interaction of **{turbine_layout}** using actuator disk in **{fluid_solver}**.
 REQUIREMENTS:
-• Set inflow turbulence intensity and TI profile based on {liDAR\_csv}.
+• Set inflow turbulence intensity and TI profile based on {liDAR_csv}.
 • Run simulation for 10 min physical time with time-averaged outputs.
 • Report power deficit and turbulence kinetic energy maps.
-OUTPUT FORMAT: Markdown report with figures and tables.",turbine\_layout; fluid\_solver; liDAR\_csv
+OUTPUT FORMAT: Markdown report with figures and tables.",turbine_layout; fluid_solver; liDAR_csv
 Computational Fluid Dynamics,"ROLE: Thermal Comfort Simulator.
-OBJECTIVE: Create CFD simulation predicting PMV for **{room\_geometry}** under **{hvac\_setting}** conditions.
+OBJECTIVE: Create CFD simulation predicting PMV for **{room_geometry}** under **{hvac_setting}** conditions.
 REQUIREMENTS:
 • Couple radiation model with SST k-ω turbulence.
-• Include human body heat flux as boundary condition using {met\_rate} met.
+• Include human body heat flux as boundary condition using {met_rate} met.
 • Compare predicted PMV with ASHRAE acceptable range.
-OUTPUT FORMAT: Markdown with section headers and plots.",room\_geometry; hvac\_setting; met\_rate
+OUTPUT FORMAT: Markdown with section headers and plots.",room_geometry; hvac_setting; met_rate
 Computational Fluid Dynamics,"ROLE: Battery Thermal CFD Specialist.
-OBJECTIVE: Develop a conjugate heat transfer model of **{battery\_pack}** during fast charging at **{charge\_rate}** C.
+OBJECTIVE: Develop a conjugate heat transfer model of **{battery_pack}** during fast charging at **{charge_rate}** C.
 REQUIREMENTS:
 • Use anisotropic thermal conductivity for cell jelly-roll.
 • Implement joule heating source term and coolant flow channel.
 • Report maximum cell temperature and temperature homogeneity index.
-OUTPUT FORMAT: Markdown; include simulation setup table.",battery\_pack; charge\_rate
+OUTPUT FORMAT: Markdown; include simulation setup table.",battery_pack; charge_rate
 Computational Fluid Dynamics,"ROLE: Aeroacoustics Analyst.
-OBJECTIVE: Compute sound pressure level from LES data of **{fan\_blade\_design}** using FWH acoustic analogy.
+OBJECTIVE: Compute sound pressure level from LES data of **{fan_blade_design}** using FWH acoustic analogy.
 REQUIREMENTS:
-• Sample pressure on permeable surface grid exported from {post\_processing\_tool}.
+• Sample pressure on permeable surface grid exported from {post_processing_tool}.
 • Post-process frequency spectrum up to 10 kHz.
 • Compare predicted tonal peaks against wind-tunnel microphone array.
-OUTPUT FORMAT: Markdown with code snippets and results plots.",fan\_blade\_design; post\_processing\_tool
+OUTPUT FORMAT: Markdown with code snippets and results plots.",fan_blade_design; post_processing_tool
 Computational Fluid Dynamics,"ROLE: Porous Media CFD Expert.
-OBJECTIVE: Implement Darcy-Forchheimer source term in **{solver\_name}** for flow through **{foam\_material}** core.
+OBJECTIVE: Implement Darcy-Forchheimer source term in **{solver_name}** for flow through **{foam_material}** core.
 REQUIREMENTS:
-• Calibrate permeability and inertial coefficient from {pressure\_drop\_csv}.
+• Calibrate permeability and inertial coefficient from {pressure_drop_csv}.
 • Validate velocity profile against ERCOFTAC benchmark.
 • Include script for automated mesh sensitivity study.
-OUTPUT FORMAT: Markdown with equations and validation plots.",solver\_name; foam\_material; pressure\_drop\_csv
+OUTPUT FORMAT: Markdown with equations and validation plots.",solver_name; foam_material; pressure_drop_csv
 Computational Fluid Dynamics,"ROLE: CFD Uncertainty Quantification Lead.
-OBJECTIVE: Set up a polynomial chaos expansion analysis on lift coefficient of **{wing\_config}** varying AoA ± **{aoa\_variation}**°.
+OBJECTIVE: Set up a polynomial chaos expansion analysis on lift coefficient of **{wing_config}** varying AoA ± **{aoa_variation}**°.
 REQUIREMENTS:
 • Use non-intrusive spectral projection with 3rd-order Legendre polynomials.
-• Generate CFD samples using {workflow\_manager}.
+• Generate CFD samples using {workflow_manager}.
 • Report Sobol indices and confidence intervals.
-OUTPUT FORMAT: Markdown with statistical result tables.",wing\_config; aoa\_variation; workflow\_manager
+OUTPUT FORMAT: Markdown with statistical result tables.",wing_config; aoa_variation; workflow_manager
 Computational Fluid Dynamics,"ROLE: GPU CFD Accelerator.
-OBJECTIVE: Port pressure-Poisson solver of **{openfoam\_version}** to CUDA using **{gpu\_library}**.
+OBJECTIVE: Port pressure-Poisson solver of **{openfoam_version}** to CUDA using **{gpu_library}**.
 REQUIREMENTS:
 • Provide profiling results identifying memory bottlenecks.
 • Rewrite matrix-vector multiplication kernel using CSR format.
 • Benchmark speedup against CPU on mesh with 10 M cells.
-OUTPUT FORMAT: Markdown with code diff and benchmark chart.",openfoam\_version; gpu\_library
+OUTPUT FORMAT: Markdown with code diff and benchmark chart.",openfoam_version; gpu_library
 Financial Risk Modeling,"ROLE: Credit Risk Quant.
-OBJECTIVE: Build a PD model for **{loan\_portfolio}** using logistic regression and **{macro\_variables\_csv}**.
+OBJECTIVE: Build a PD model for **{loan_portfolio}** using logistic regression and **{macro_variables_csv}**.
 REQUIREMENTS:
 • Perform WoE binning and IV calculation for categorical predictors.
 • Apply 5-fold cross-validation and report ROC AUC, KS statistic.
 • Generate scorecard scaling with PDO 20 and base score 600.
-OUTPUT FORMAT: Markdown with tables and Python code blocks.",loan\_portfolio; macro\_variables\_csv
+OUTPUT FORMAT: Markdown with tables and Python code blocks.",loan_portfolio; macro_variables_csv
 Financial Risk Modeling,"ROLE: XVA Analyst.
-OBJECTIVE: Calculate CVA for **{irs\_portfolio}** trades under **{cs01\_curve}** CSA rules.
+OBJECTIVE: Calculate CVA for **{irs_portfolio}** trades under **{cs01_curve}** CSA rules.
 REQUIREMENTS:
 • Run Monte Carlo simulation with 50k paths using Hull-White interest rate model.
 • Implement exposure regression using least-squares Monte Carlo.
 • Provide sensitivity to CS01 and wrong-way risk discussion.
-OUTPUT FORMAT: Markdown report with equations and result tables.",irs\_portfolio; cs01\_curve
+OUTPUT FORMAT: Markdown report with equations and result tables.",irs_portfolio; cs01_curve
 Financial Risk Modeling,"ROLE: Market Microstructure Researcher.
-OBJECTIVE: Analyze limit order book resiliency for **{ticker\_symbol}** around **{event\_timestamp}**.
+OBJECTIVE: Analyze limit order book resiliency for **{ticker_symbol}** around **{event_timestamp}**.
 REQUIREMENTS:
-• Download depth-10 order book data via {lob\_api}.
+• Download depth-10 order book data via {lob_api}.
 • Compute bid-ask spread recovery time and order flow imbalance.
 • Plot normalized liquidity metrics ± 30 min of event.
-OUTPUT FORMAT: Markdown with code snippets and plots.",ticker\_symbol; event\_timestamp; lob\_api
+OUTPUT FORMAT: Markdown with code snippets and plots.",ticker_symbol; event_timestamp; lob_api
 Financial Risk Modeling,"ROLE: Portfolio Optimization Advisor.
-OBJECTIVE: Construct a risk-parity portfolio of **{asset\_list}** using daily returns from **{start\_date}** to **{end\_date}**.
+OBJECTIVE: Construct a risk-parity portfolio of **{asset_list}** using daily returns from **{start_date}** to **{end_date}**.
 REQUIREMENTS:
 • Estimate covariance matrix with Ledoit-Wolf shrinkage.
 • Enforce leverage limit of 150 % and transaction cost of 5 bps.
 • Backtest annualized Sharpe ratio vs equal-weight benchmark.
-OUTPUT FORMAT: Markdown with tables and Matplotlib code.",asset\_list; start\_date; end\_date
+OUTPUT FORMAT: Markdown with tables and Matplotlib code.",asset_list; start_date; end_date
 Financial Risk Modeling,"ROLE: Climate Risk Modeler.
-OBJECTIVE: Quantify physical risk VaR for **{real\_estate\_portfolio}** given RCP **{rcp\_code}** flood projections.
+OBJECTIVE: Quantify physical risk VaR for **{real_estate_portfolio}** given RCP **{rcp_code}** flood projections.
 REQUIREMENTS:
-• Integrate hazard maps with property geolocations using {gis\_shapefile}.
+• Integrate hazard maps with property geolocations using {gis_shapefile}.
 • Apply damage functions to estimate loss distribution.
 • Provide 99th percentile VaR for 2030 and 2050 horizons.
-OUTPUT FORMAT: Markdown with maps and summary table.",real\_estate\_portfolio; rcp\_code; gis\_shapefile
+OUTPUT FORMAT: Markdown with maps and summary table.",real_estate_portfolio; rcp_code; gis_shapefile
 Financial Risk Modeling,"ROLE: Basel III Capital Calculator.
-OBJECTIVE: Compute standardized approach capital charges for **{trading\_book}** market risk exposures.
+OBJECTIVE: Compute standardized approach capital charges for **{trading_book}** market risk exposures.
 REQUIREMENTS:
 • Map instruments to risk classes and buckets.
-• Calculate sensitivities-based method delta and vega charges using {fx\_rates\_csv}.
+• Calculate sensitivities-based method delta and vega charges using {fx_rates_csv}.
 • Summarize total capital requirement and explain diversification benefits.
-OUTPUT FORMAT: Markdown with formulae and tables.",trading\_book; fx\_rates\_csv
+OUTPUT FORMAT: Markdown with formulae and tables.",trading_book; fx_rates_csv
 Financial Risk Modeling,"ROLE: Structural Credit Model Engineer.
-OBJECTIVE: Implement a Merton-KKV multi-period model for **{firm\_ticker}** equity and debt structure.
+OBJECTIVE: Implement a Merton-KKV multi-period model for **{firm_ticker}** equity and debt structure.
 REQUIREMENTS:
-• Estimate asset volatility using historical returns from {data\_provider}.
+• Estimate asset volatility using historical returns from {data_provider}.
 • Calibrate default barrier and recovery rate.
 • Plot distance-to-default trajectory over 5 years.
-OUTPUT FORMAT: Markdown with code blocks and chart.",firm\_ticker; data\_provider
+OUTPUT FORMAT: Markdown with code blocks and chart.",firm_ticker; data_provider
 Financial Risk Modeling,"ROLE: Commodity Derivatives Quant.
-OBJECTIVE: Price an Asian options strip on **{commodity\_symbol}** with seasonality adjustment using **{pricing\_grid}** time steps.
+OBJECTIVE: Price an Asian options strip on **{commodity_symbol}** with seasonality adjustment using **{pricing_grid}** time steps.
 REQUIREMENTS:
 • Model spot dynamics with Schwartz-Smith two-factor model.
 • Implement lattice method and Monte Carlo validation.
 • Report Greeks (delta, vega) at valuation date.
-OUTPUT FORMAT: Markdown with valuation table.",commodity\_symbol; pricing\_grid
+OUTPUT FORMAT: Markdown with valuation table.",commodity_symbol; pricing_grid
 Financial Risk Modeling,"ROLE: Operational Risk Scenario Builder.
-OBJECTIVE: Generate stress scenarios for **{business\_line}** cyber attack losses using **{loss\_distribution\_file}**.
+OBJECTIVE: Generate stress scenarios for **{business_line}** cyber attack losses using **{loss_distribution_file}**.
 REQUIREMENTS:
 • Fit severity with Lognormal-GPD hybrid distribution.
 • Simulate annual loss distribution via compound Poisson.
 • Provide 95 % quantile and narrative description for top scenarios.
-OUTPUT FORMAT: Markdown with statistics and narrative section.",business\_line; loss\_distribution\_file
+OUTPUT FORMAT: Markdown with statistics and narrative section.",business_line; loss_distribution_file
 Financial Risk Modeling,"ROLE: Liquidity Risk Reporter.
-OBJECTIVE: Draft a LCR calculation for **{bank\_name}** using daily cash-flow data **{cashflow\_csv}**.
+OBJECTIVE: Draft a LCR calculation for **{bank_name}** using daily cash-flow data **{cashflow_csv}**.
 REQUIREMENTS:
 • Classify inflows/outflows into HQLA categories per Basel guidelines.
 • Compute 30-day stressed net cash outflow and LCR ratio.
 • Visualize time series of HQLA buffer vs requirement.
-OUTPUT FORMAT: Markdown with tables and line chart.",bank\_name; cashflow\_csv
+OUTPUT FORMAT: Markdown with tables and line chart.",bank_name; cashflow_csv
 Cybersecurity & Threat Intelligence,"ROLE: Incident Response Playbook Author.
-OBJECTIVE: Create a playbook for ransomware **{malware\_family}** infiltration in **{environment\_type}**.
+OBJECTIVE: Create a playbook for ransomware **{malware_family}** infiltration in **{environment_type}**.
 REQUIREMENTS:
 • Map actions to NIST IR phases: Preparation, Identification, Containment, Eradication, Recovery.
-• Include command references for {edr\_tool} and SOAR automation snippets.
+• Include command references for {edr_tool} and SOAR automation snippets.
 • Specify KPIs and timeframes for each phase.
-OUTPUT FORMAT: Markdown with tables and code blocks.",malware\_family; environment\_type; edr\_tool
+OUTPUT FORMAT: Markdown with tables and code blocks.",malware_family; environment_type; edr_tool
 Cybersecurity & Threat Intelligence,"ROLE: Threat Hunting Query Designer.
-OBJECTIVE: Draft Sigma rules to detect **{tactic\_name}** in Windows Event Logs with IDs **{event\_ids}**.
+OBJECTIVE: Draft Sigma rules to detect **{tactic_name}** in Windows Event Logs with IDs **{event_ids}**.
 REQUIREMENTS:
 • Provide at least 3 variations to reduce FPs in legacy systems.
-• Include mapping to ATT\&CK technique ID.
+• Include mapping to ATT&CK technique ID.
 • Offer Splunk and Elastic translations.
-OUTPUT FORMAT: YAML with accompanying Markdown explanation.",tactic\_name; event\_ids
+OUTPUT FORMAT: YAML with accompanying Markdown explanation.",tactic_name; event_ids
 Cybersecurity & Threat Intelligence,"ROLE: Reverse Engineering Mentor.
-OBJECTIVE: Outline a Ghidra project walkthrough to unpack **{packed\_binary}** using **{packer\_type}**.
+OBJECTIVE: Outline a Ghidra project walkthrough to unpack **{packed_binary}** using **{packer_type}**.
 REQUIREMENTS:
 • Identify anti-debugging tricks and bypass methods.
 • Provide step-by-step screenshots placeholders and script snippets.
 • Generate IOC list (hashes, strings, C2 domains).
-OUTPUT FORMAT: Markdown lab guide.",packed\_binary; packer\_type
+OUTPUT FORMAT: Markdown lab guide.",packed_binary; packer_type
 Cybersecurity & Threat Intelligence,"ROLE: Cloud Security Architect.
-OBJECTIVE: Generate Terraform guardrails for **{cloud\_provider}** to enforce encryption-at-rest on **{service\_name}**.
+OBJECTIVE: Generate Terraform guardrails for **{cloud_provider}** to enforce encryption-at-rest on **{service_name}**.
 REQUIREMENTS:
 • Include policy as code OPA/Rego snippet.
 • Add remediation actions with automated tagging.
 • Document unit tests using Terratest.
-OUTPUT FORMAT: Markdown with code fences.",cloud\_provider; service\_name
+OUTPUT FORMAT: Markdown with code fences.",cloud_provider; service_name
 Cybersecurity & Threat Intelligence,"ROLE: Digital Forensics Analyst.
-OBJECTIVE: Plan a timeline analysis of disk image **{evidence\_image}** focusing on **{compromise\_window}**.
+OBJECTIVE: Plan a timeline analysis of disk image **{evidence_image}** focusing on **{compromise_window}**.
 REQUIREMENTS:
 • Use fls-bodyfile to extract file system event records.
-• Correlate with \$MFT and USN journal artifacts.
+• Correlate with $MFT and USN journal artifacts.
 • Present results in a Gantt-style diagram.
-OUTPUT FORMAT: Markdown report with timeline CSV attachment.",evidence\_image; compromise\_window
+OUTPUT FORMAT: Markdown report with timeline CSV attachment.",evidence_image; compromise_window
 Cybersecurity & Threat Intelligence,"ROLE: Threat Intelligence Correlator.
-OBJECTIVE: Compile a STIX 2.1 bundle linking **{actor\_name}** campaigns with **{malware\_ids}**.
+OBJECTIVE: Compile a STIX 2.1 bundle linking **{actor_name}** campaigns with **{malware_ids}**.
 REQUIREMENTS:
 • Include attack patterns, infrastructure, and victims objects.
 • Ensure relationship object types are correctly typed and dated.
 • Export JSON file validated against Oasis schema.
-OUTPUT FORMAT: JSON plus Markdown summary.",actor\_name; malware\_ids
+OUTPUT FORMAT: JSON plus Markdown summary.",actor_name; malware_ids
 Cybersecurity & Threat Intelligence,"ROLE: Penetration Testing Planner.
-OBJECTIVE: Draft an engagement plan to test **{webapp\_name}** for **{owasp\_category}** vulnerabilities in **{testing\_window}**.
+OBJECTIVE: Draft an engagement plan to test **{webapp_name}** for **{owasp_category}** vulnerabilities in **{testing_window}**.
 REQUIREMENTS:
 • Define in-scope endpoints and excluded assets.
 • Provide Burp Suite and OWASP ZAP plugin configurations.
 • Include risk rating matrix aligned with CVSS 4.0.
-OUTPUT FORMAT: Markdown with tables and checklist.",webapp\_name; owasp\_category; testing\_window
+OUTPUT FORMAT: Markdown with tables and checklist.",webapp_name; owasp_category; testing_window
 Cybersecurity & Threat Intelligence,"ROLE: ICS Security Engineer.
-OBJECTIVE: Design a network segmentation scheme for **{scada\_vendor}** PLCs controlling **{process\_name}**.
+OBJECTIVE: Design a network segmentation scheme for **{scada_vendor}** PLCs controlling **{process_name}**.
 REQUIREMENTS:
 • Specify Purdue Model zones and conduits.
-• Include firewall ACL examples for {firewall\_model}.
+• Include firewall ACL examples for {firewall_model}.
 • Document latency impact and redundancy considerations.
-OUTPUT FORMAT: Markdown architecture diagram placeholders.",scada\_vendor; process\_name; firewall\_model
+OUTPUT FORMAT: Markdown architecture diagram placeholders.",scada_vendor; process_name; firewall_model
 Cybersecurity & Threat Intelligence,"ROLE: Security Data Lake Builder.
-OBJECTIVE: Create an OpenSearch index policy to retain **{log\_type}** logs for **{retention\_days}** days with ILM rollover.
+OBJECTIVE: Create an OpenSearch index policy to retain **{log_type}** logs for **{retention_days}** days with ILM rollover.
 REQUIREMENTS:
 • Provide index template with mapping for ECS fields.
-• Include curator job YAML for snapshot to {s3\_bucket}.
+• Include curator job YAML for snapshot to {s3_bucket}.
 • Describe alerting integration with PagerDuty.
-OUTPUT FORMAT: Markdown with YAML blocks.",log\_type; retention\_days; s3\_bucket
+OUTPUT FORMAT: Markdown with YAML blocks.",log_type; retention_days; s3_bucket
 Cybersecurity & Threat Intelligence,"ROLE: Zero Trust Strategist.
-OBJECTIVE: Develop an identity-centric zero trust roadmap for **{enterprise\_size}** employee organization migrating to **{idp\_name}**.
+OBJECTIVE: Develop an identity-centric zero trust roadmap for **{enterprise_size}** employee organization migrating to **{idp_name}**.
 REQUIREMENTS:
 • Define phases: discovery, pilot, rollout with milestones.
-• Map NIST 800-207 pillars to {existing\_arch\_diagram}.
+• Map NIST 800-207 pillars to {existing_arch_diagram}.
 • Quantify expected MFA adoption rate and risk reduction.
-OUTPUT FORMAT: Markdown with timeline diagram placeholders.",enterprise\_size; idp\_name; existing\_arch\_diagram
+OUTPUT FORMAT: Markdown with timeline diagram placeholders.",enterprise_size; idp_name; existing_arch_diagram
 Synthetic Biology & Gene Editing,"ROLE: CRISPR gRNA Designer.
-OBJECTIVE: Generate optimal sgRNA sequences targeting **{gene\_symbol}** exon **{exon\_number}** in **{organism\_name}**.
+OBJECTIVE: Generate optimal sgRNA sequences targeting **{gene_symbol}** exon **{exon_number}** in **{organism_name}**.
 REQUIREMENTS:
-• Avoid off-targets with fewer than 4 mismatches across genome build {genome\_build}.
+• Avoid off-targets with fewer than 4 mismatches across genome build {genome_build}.
 • Score guides using Rule Set 2 and CFD scores.
 • Provide CSV with PAM sequence, GC content, and predicted efficiency.
-OUTPUT FORMAT: Markdown with CSV code block.",gene\_symbol; exon\_number; organism\_name; genome\_build
+OUTPUT FORMAT: Markdown with CSV code block.",gene_symbol; exon_number; organism_name; genome_build
 Synthetic Biology & Gene Editing,"ROLE: Metabolic Pathway Engineer.
-OBJECTIVE: Design a synthetic operon to overproduce **{target\_metabolite}** in **{microbe\_species}**.
+OBJECTIVE: Design a synthetic operon to overproduce **{target_metabolite}** in **{microbe_species}**.
 REQUIREMENTS:
-• Select promoters and RBS parts from {parts\_registry} to balance flux.
+• Select promoters and RBS parts from {parts_registry} to balance flux.
 • Provide SBOL XML snippet.
 • Include flux balance analysis predicting yield improvement.
-OUTPUT FORMAT: Markdown with SBOL code and tables.",target\_metabolite; microbe\_species; parts\_registry
+OUTPUT FORMAT: Markdown with SBOL code and tables.",target_metabolite; microbe_species; parts_registry
 Synthetic Biology & Gene Editing,"ROLE: Protein Engineering Specialist.
-OBJECTIVE: Plan a site-saturation mutagenesis library for **{protein\_pdb}** at positions **{residue\_range}**.
+OBJECTIVE: Plan a site-saturation mutagenesis library for **{protein_pdb}** at positions **{residue_range}**.
 REQUIREMENTS:
 • Use degenerate codon scheme minimizing stop codons.
 • Provide primer sequences with Tm within ±2 °C of 60 °C.
 • Estimate library size and sequencing depth coverage.
-OUTPUT FORMAT: Markdown with primer table.",protein\_pdb; residue\_range
+OUTPUT FORMAT: Markdown with primer table.",protein_pdb; residue_range
 Synthetic Biology & Gene Editing,"ROLE: Cell-Free Expression Optimizer.
-OBJECTIVE: Outline a DoE matrix to maximize **{protein\_name}** yield in TX-TL using **{lysate\_type}**.
+OBJECTIVE: Outline a DoE matrix to maximize **{protein_name}** yield in TX-TL using **{lysate_type}**.
 REQUIREMENTS:
 • Choose 3 factors: Mg2+, energy mix, DNA concentration with 3 levels each.
 • Include randomization plan and replication strategy.
 • Provide R script to analyze ANOVA results.
-OUTPUT FORMAT: Markdown with R code block.",protein\_name; lysate\_type
+OUTPUT FORMAT: Markdown with R code block.",protein_name; lysate_type
 Synthetic Biology & Gene Editing,"ROLE: Biosensor Circuit Designer.
-OBJECTIVE: Develop a quorum-sensing biosensor for **{analyte\_name}** detection range **{detection\_ppm}** ppm.
+OBJECTIVE: Develop a quorum-sensing biosensor for **{analyte_name}** detection range **{detection_ppm}** ppm.
 REQUIREMENTS:
 • Select input promoter responsive to analyte and LuxR-based amplifier.
-• Simulate dose-response using {simulation\_tool}.
+• Simulate dose-response using {simulation_tool}.
 • Output transfer function plot and ON/OFF ratio.
-OUTPUT FORMAT: Markdown with plots and SBML snippet.",analyte\_name; detection\_ppm; simulation\_tool
+OUTPUT FORMAT: Markdown with plots and SBML snippet.",analyte_name; detection_ppm; simulation_tool
 Synthetic Biology & Gene Editing,"ROLE: Gene Drive Risk Assessor.
-OBJECTIVE: Evaluate containment strategies for CRISPR gene drive in **{target\_species}** release scenario **{release\_scenario}**.
+OBJECTIVE: Evaluate containment strategies for CRISPR gene drive in **{target_species}** release scenario **{release_scenario}**.
 REQUIREMENTS:
-• Model allelic frequency spread using {population\_model} over 10 generations.
+• Model allelic frequency spread using {population_model} over 10 generations.
 • Assess ecological impact metrics and mitigation measures.
 • Summarize risk matrix with likelihood vs consequence.
-OUTPUT FORMAT: Markdown with model equations and tables.",target\_species; release\_scenario; population\_model
+OUTPUT FORMAT: Markdown with model equations and tables.",target_species; release_scenario; population_model
 Synthetic Biology & Gene Editing,"ROLE: Synthetic Promoter Miner.
-OBJECTIVE: Identify de-novo promoters in **{rna\_seq\_dataset}** for **{tissue\_type}** under stress **{stress\_condition}**.
+OBJECTIVE: Identify de-novo promoters in **{rna_seq_dataset}** for **{tissue_type}** under stress **{stress_condition}**.
 REQUIREMENTS:
 • Use differential expression threshold log2FC > 2 and FDR < 0.01.
 • Predict promoter regions upstream −400 bp to +50 bp.
 • Output FASTA file and motif logo.
-OUTPUT FORMAT: Markdown with FASTA block.",rna\_seq\_dataset; tissue\_type; stress\_condition
+OUTPUT FORMAT: Markdown with FASTA block.",rna_seq_dataset; tissue_type; stress_condition
 Synthetic Biology & Gene Editing,"ROLE: Genome-Scale Model Curator.
-OBJECTIVE: Update GEM for **{organism\_strain}** with new reaction **{reaction\_id}** kinetics parameters.
+OBJECTIVE: Update GEM for **{organism_strain}** with new reaction **{reaction_id}** kinetics parameters.
 REQUIREMENTS:
 • Validate mass balance and charge using COBRApy.
 • Provide SBML diff and MEMOTE score delta.
 • Run FBA to confirm growth phenotype unchanged.
-OUTPUT FORMAT: Markdown with code and result summary.",organism\_strain; reaction\_id
+OUTPUT FORMAT: Markdown with code and result summary.",organism_strain; reaction_id
 Synthetic Biology & Gene Editing,"ROLE: Optogenetic Tool Developer.
-OBJECTIVE: Design an optogenetic switch controlling **{target\_gene}** expression in **{cell\_line}** using **{light\_wavelength}** nm LED.
+OBJECTIVE: Design an optogenetic switch controlling **{target_gene}** expression in **{cell_line}** using **{light_wavelength}** nm LED.
 REQUIREMENTS:
 • Choose LOV vs CRY2 photosensor comparison with response curves.
-• Simulate activation kinetics in {modeling\_software}.
+• Simulate activation kinetics in {modeling_software}.
 • Include cloning strategy and plasmid map features.
-OUTPUT FORMAT: Markdown with diagrams and SBOL snippet.",target\_gene; cell\_line; light\_wavelength; modeling\_software
+OUTPUT FORMAT: Markdown with diagrams and SBOL snippet.",target_gene; cell_line; light_wavelength; modeling_software
 Synthetic Biology & Gene Editing,"ROLE: Epigenome Editor Planner.
-OBJECTIVE: Propose dCas-KRAB-MeCP2 construct targeting **{enhancer\_region}** to silence **{oncogene\_name}**.
+OBJECTIVE: Propose dCas-KRAB-MeCP2 construct targeting **{enhancer_region}** to silence **{oncogene_name}**.
 REQUIREMENTS:
-• Design gRNAs avoiding CpG islands using {crispr\_tool}.
+• Design gRNAs avoiding CpG islands using {crispr_tool}.
 • Assess off-target chromatin marks via ChIP-seq datasets.
 • Outline lentiviral delivery protocol and controls.
-OUTPUT FORMAT: Markdown with table and protocol steps.",enhancer\_region; oncogene\_name; crispr\_tool
+OUTPUT FORMAT: Markdown with table and protocol steps.",enhancer_region; oncogene_name; crispr_tool
 Renewable Energy Systems Optimization,"ROLE: PV System Yield Analyst.
-OBJECTIVE: Simulate annual energy yield for **{pv\_array\_capacity}** kWp rooftop system in **{city\_latlon}** orientation **{tilt\_angle}**°.
+OBJECTIVE: Simulate annual energy yield for **{pv_array_capacity}** kWp rooftop system in **{city_latlon}** orientation **{tilt_angle}**°.
 REQUIREMENTS:
 • Use PVLIB with TMY data and losses (soiling, mismatch) totaling 8 %.
 • Provide hourly output CSV and monthly summary bar chart.
-• Estimate LCOE with given CAPEX {capex\_per\_kw} €/kW.
-OUTPUT FORMAT: Markdown with code and results plots.",pv\_array\_capacity; city\_latlon; tilt\_angle; capex\_per\_kw
+• Estimate LCOE with given CAPEX {capex_per_kw} €/kW.
+OUTPUT FORMAT: Markdown with code and results plots.",pv_array_capacity; city_latlon; tilt_angle; capex_per_kw
 Renewable Energy Systems Optimization,"ROLE: Wind Turbine Control Engineer.
-OBJECTIVE: Design an individual pitch control law for **{turbine\_model}** to minimize fatigue loads in IEC Class **{wind\_class}**.
+OBJECTIVE: Design an individual pitch control law for **{turbine_model}** to minimize fatigue loads in IEC Class **{wind_class}**.
 REQUIREMENTS:
 • Implement gain-scheduled PI controller using FAST-Simulink co-simulation.
 • Include tuning procedure using singular value decomposition of MIMO system.
 • Present load reduction metrics on blade root bending.
-OUTPUT FORMAT: Markdown with MATLAB/Simulink snippets.",turbine\_model; wind\_class
+OUTPUT FORMAT: Markdown with MATLAB/Simulink snippets.",turbine_model; wind_class
 Renewable Energy Systems Optimization,"ROLE: Hydrogen Electrolyzer Optimizer.
-OBJECTIVE: Create a dispatch algorithm for **{electrolyzer\_capacity}** MW PEM unit linked to PV profile **{solar\_profile\_csv}**.
+OBJECTIVE: Create a dispatch algorithm for **{electrolyzer_capacity}** MW PEM unit linked to PV profile **{solar_profile_csv}**.
 REQUIREMENTS:
 • Respect ramp rate 10 %/min and minimum load 20 %.
 • Use mixed-integer linear programming in Pyomo.
 • Report weekly hydrogen output, utilization factor, and curtailed energy.
-OUTPUT FORMAT: Markdown with code and result tables.",electrolyzer\_capacity; solar\_profile\_csv
+OUTPUT FORMAT: Markdown with code and result tables.",electrolyzer_capacity; solar_profile_csv
 Renewable Energy Systems Optimization,"ROLE: Battery Degradation Modeler.
-OBJECTIVE: Set up a calendar-cycling degradation model for **{lithium\_cell\_type}** at **{storage\_temperature}** °C.
+OBJECTIVE: Set up a calendar-cycling degradation model for **{lithium_cell_type}** at **{storage_temperature}** °C.
 REQUIREMENTS:
 • Use Arrhenius relation and SEI growth equations.
-• Calibrate model with {aging\_dataset} experimental data.
+• Calibrate model with {aging_dataset} experimental data.
 • Predict capacity retention at 5-year mark with ±2 % accuracy.
-OUTPUT FORMAT: Markdown with equations and plots.",lithium\_cell\_type; storage\_temperature; aging\_dataset
+OUTPUT FORMAT: Markdown with equations and plots.",lithium_cell_type; storage_temperature; aging_dataset
 Renewable Energy Systems Optimization,"ROLE: Microgrid Power Flow Planner.
-OBJECTIVE: Balance load demand vs generation in **{microgrid\_id}** using **{opendss\_model}** for next **{horizon\_hours}** h.
+OBJECTIVE: Balance load demand vs generation in **{microgrid_id}** using **{opendss_model}** for next **{horizon_hours}** h.
 REQUIREMENTS:
 • Include diesel genset fuel consumption curve and battery SOC constraints.
-• Optimize objective: minimize NPV of fuel cost and O\&M.
+• Optimize objective: minimize NPV of fuel cost and O&M.
 • Provide JSON schedule for each DER.
-OUTPUT FORMAT: Markdown with optimization results and JSON snippet.",microgrid\_id; opendss\_model; horizon\_hours
+OUTPUT FORMAT: Markdown with optimization results and JSON snippet.",microgrid_id; opendss_model; horizon_hours
 Renewable Energy Systems Optimization,"ROLE: Wave Energy Converter Analyst.
-OBJECTIVE: Model PTO damping optimization for **{wec\_device}** in sea state **{hs\_tp}** using WEC-SIM.
+OBJECTIVE: Model PTO damping optimization for **{wec_device}** in sea state **{hs_tp}** using WEC-SIM.
 REQUIREMENTS:
 • Perform time-domain simulation for 3-h duration.
 • Include spectral moments calculation.
 • Report absorbed power vs damping curve.
-OUTPUT FORMAT: Markdown with MATLAB code and plot.",wec\_device; hs\_tp
+OUTPUT FORMAT: Markdown with MATLAB code and plot.",wec_device; hs_tp
 Renewable Energy Systems Optimization,"ROLE: Bioenergy Supply Scheduler.
-OBJECTIVE: Plan a feedstock delivery schedule for **{biomass\_plant}** requiring **{dry\_tonnes}** t/year.
+OBJECTIVE: Plan a feedstock delivery schedule for **{biomass_plant}** requiring **{dry_tonnes}** t/year.
 REQUIREMENTS:
 • Use GIS road network analysis to optimize trucking routes.
 • Include emission factors and cost per tonne-km.
 • Provide monthly delivery table and GHG savings estimate.
-OUTPUT FORMAT: Markdown with maps and tables.",biomass\_plant; dry\_tonnes
+OUTPUT FORMAT: Markdown with maps and tables.",biomass_plant; dry_tonnes
 Renewable Energy Systems Optimization,"ROLE: Heat Pump System Designer.
-OBJECTIVE: Size a ground-source heat pump for **{building\_area}** m² office in climate zone **{ashrae\_zone}**.
+OBJECTIVE: Size a ground-source heat pump for **{building_area}** m² office in climate zone **{ashrae_zone}**.
 REQUIREMENTS:
 • Calculate heating/cooling loads using hourly bin method.
-• Determine borehole depth and spacing with {ghx\_software}.
+• Determine borehole depth and spacing with {ghx_software}.
 • Estimate COP seasonal performance factor.
-OUTPUT FORMAT: Markdown with calculation steps and summary table.",building\_area; ashrae\_zone; ghx\_software
+OUTPUT FORMAT: Markdown with calculation steps and summary table.",building_area; ashrae_zone; ghx_software
 Renewable Energy Systems Optimization,"ROLE: Electric Vehicle Fleet Scheduler.
-OBJECTIVE: Optimize charging schedule for **{fleet\_size}** EVs with route data **{route\_csv}** at depot **{charger\_power}** kW each.
+OBJECTIVE: Optimize charging schedule for **{fleet_size}** EVs with route data **{route_csv}** at depot **{charger_power}** kW each.
 REQUIREMENTS:
-• Use MILP minimizing electricity cost with TOU tariff file {tariff\_csv}.
+• Use MILP minimizing electricity cost with TOU tariff file {tariff_csv}.
 • Enforce state-of-charge constraints before departure.
 • Provide Gantt-chart style schedule and cost summary.
-OUTPUT FORMAT: Markdown with pandas code and plot.",fleet\_size; route\_csv; charger\_power; tariff\_csv
+OUTPUT FORMAT: Markdown with pandas code and plot.",fleet_size; route_csv; charger_power; tariff_csv
 Renewable Energy Systems Optimization,"ROLE: Solar Thermal CSP Analyst.
-OBJECTIVE: Evaluate thermal storage dispatch strategy for **{csp\_plant\_name}** with molten salt tank **{storage\_hours}** h.
+OBJECTIVE: Evaluate thermal storage dispatch strategy for **{csp_plant_name}** with molten salt tank **{storage_hours}** h.
 REQUIREMENTS:
-• Simulate dispatch to maximize revenue under {market\_price\_csv}.
+• Simulate dispatch to maximize revenue under {market_price_csv}.
 • Use SAM or equivalent Python model.
 • Report annual capacity factor and revenue uplift.
-OUTPUT FORMAT: Markdown with results table and plot.",csp\_plant\_name; storage\_hours; market\_price\_csv
+OUTPUT FORMAT: Markdown with results table and plot.",csp_plant_name; storage_hours; market_price_csv
 Advanced Materials Characterization,"ROLE: XRD Phase Identifier.
-OBJECTIVE: Identify crystalline phases in **{diffraction\_pattern}** using PDF-4+ database and Rietveld refinement.
+OBJECTIVE: Identify crystalline phases in **{diffraction_pattern}** using PDF-4+ database and Rietveld refinement.
 REQUIREMENTS:
 • Provide refined lattice parameters and crystallite size.
 • Include goodness-of-fit indicators (Rwp, χ²).
 • Output CIF file and plotted obs-calc difference.
-OUTPUT FORMAT: Markdown with plots and CIF block.",diffraction\_pattern
+OUTPUT FORMAT: Markdown with plots and CIF block.",diffraction_pattern
 Advanced Materials Characterization,"ROLE: TEM Image Analyst.
-OBJECTIVE: Measure dislocation density in **{tem\_image}** of {alloy\_name} using line intercept method.
+OBJECTIVE: Measure dislocation density in **{tem_image}** of {alloy_name} using line intercept method.
 REQUIREMENTS:
 • Calibrate scale bar to nm accuracy.
 • Analyze at least 5 regions to compute average and std dev.
 • Provide annotated image overlays.
-OUTPUT FORMAT: Markdown with images and Python code.",tem\_image; alloy\_name
+OUTPUT FORMAT: Markdown with images and Python code.",tem_image; alloy_name
 Advanced Materials Characterization,"ROLE: Atomic Force Microscopy Specialist.
-OBJECTIVE: Generate force-distance curve analysis for **{afm\_forcefile}** on sample **{sample\_id}**.
+OBJECTIVE: Generate force-distance curve analysis for **{afm_forcefile}** on sample **{sample_id}**.
 REQUIREMENTS:
 • Fit Hertz-Sneddon model to determine elastic modulus.
 • Correct baseline drift and cantilever deflection sensitivity.
 • Report modulus histogram with n>200 curves.
-OUTPUT FORMAT: Markdown with plots and table.",afm\_forcefile; sample\_id
+OUTPUT FORMAT: Markdown with plots and table.",afm_forcefile; sample_id
 Advanced Materials Characterization,"ROLE: Raman Spectroscopy Interpreter.
-OBJECTIVE: Assign vibrational modes in **{raman\_spectrum}** of **{compound\_name}** between 200-1800 cm⁻¹.
+OBJECTIVE: Assign vibrational modes in **{raman_spectrum}** of **{compound_name}** between 200-1800 cm⁻¹.
 REQUIREMENTS:
 • Subtract fluorescence background via polynomial fitting.
-• Compare peak positions with {reference\_spectra}.
+• Compare peak positions with {reference_spectra}.
 • Output annotated spectrum and assignments table.
-OUTPUT FORMAT: Markdown with figure and table.",raman\_spectrum; compound\_name; reference\_spectra
+OUTPUT FORMAT: Markdown with figure and table.",raman_spectrum; compound_name; reference_spectra
 Advanced Materials Characterization,"ROLE: Nanoindentation Data Scientist.
-OBJECTIVE: Process load-displacement data **{indentation\_csv}** to extract hardness and modulus for **{coating\_name}**.
+OBJECTIVE: Process load-displacement data **{indentation_csv}** to extract hardness and modulus for **{coating_name}**.
 REQUIREMENTS:
 • Apply Oliver-Pharr method with area function calibration.
 • Exclude pop-ins and surface roughness outliers.
 • Plot hardness vs depth and summary statistics.
-OUTPUT FORMAT: Markdown with code and plots.",indentation\_csv; coating\_name
+OUTPUT FORMAT: Markdown with code and plots.",indentation_csv; coating_name
 Advanced Materials Characterization,"ROLE: Neutron Scattering Modeler.
-OBJECTIVE: Fit SANS data **{sans\_file}** for **{polymer\_system}** to core-shell sphere model.
+OBJECTIVE: Fit SANS data **{sans_file}** for **{polymer_system}** to core-shell sphere model.
 REQUIREMENTS:
 • Estimate shell thickness and contrast match point.
 • Provide SasView .ses file parameters.
 • Include χ² goodness-of-fit comparison with Guinier model.
-OUTPUT FORMAT: Markdown with figures and parameter table.",sans\_file; polymer\_system
+OUTPUT FORMAT: Markdown with figures and parameter table.",sans_file; polymer_system
 Advanced Materials Characterization,"ROLE: XPS Quantification Expert.
-OBJECTIVE: Quantify surface composition of **{xps\_survey}** using sensitivity factors from **{sf\_database}**.
+OBJECTIVE: Quantify surface composition of **{xps_survey}** using sensitivity factors from **{sf_database}**.
 REQUIREMENTS:
 • Subtract Shirley background and fit Voigt profiles.
 • Calculate atomic percentages with 2 % precision.
 • Report high-resolution C1s deconvolution.
-OUTPUT FORMAT: Markdown with plots and summary table.",xps\_survey; sf\_database
+OUTPUT FORMAT: Markdown with plots and summary table.",xps_survey; sf_database
 Advanced Materials Characterization,"ROLE: Thermogravimetric Analyst.
-OBJECTIVE: Determine activation energy of **{catalyst\_sample}** decomposition using TGA **{tga\_csv}** at multiple heating rates.
+OBJECTIVE: Determine activation energy of **{catalyst_sample}** decomposition using TGA **{tga_csv}** at multiple heating rates.
 REQUIREMENTS:
 • Apply Ozawa-Flynn-Wall model.
 • Plot ln β vs 1/T for conversion fractions 0.1-0.9.
 • Report average Ea and 95 % CI.
-OUTPUT FORMAT: Markdown with plots and calculations.",catalyst\_sample; tga\_csv
+OUTPUT FORMAT: Markdown with plots and calculations.",catalyst_sample; tga_csv
 Advanced Materials Characterization,"ROLE: FTIR Chemometrician.
-OBJECTIVE: Develop PLS-R model predicting **{property\_name}** from FTIR dataset **{ftir\_matrix}**.
+OBJECTIVE: Develop PLS-R model predicting **{property_name}** from FTIR dataset **{ftir_matrix}**.
 REQUIREMENTS:
 • Preprocess spectra with SNV and Savitzky-Golay 1st derivative.
 • Determine optimal latent variables via cross-validation.
 • Provide regression coefficients plot and prediction R².
-OUTPUT FORMAT: Markdown with code and results.",property\_name; ftir\_matrix
+OUTPUT FORMAT: Markdown with code and results.",property_name; ftir_matrix
 Advanced Materials Characterization,"ROLE: Mössbauer Spectroscopy Analyst.
-OBJECTIVE: Interpret 57Fe Mössbauer spectrum **{mossbauer\_data}** of **{iron\_phase}** at {temperature\_k} K.
+OBJECTIVE: Interpret 57Fe Mössbauer spectrum **{mossbauer_data}** of **{iron_phase}** at {temperature_k} K.
 REQUIREMENTS:
 • Fit sextet and doublet components including isomer shift, quadrupole splitting.
 • Discuss magnetic ordering conclusions.
 • Provide goodness-of-fit (χ²) and model comparison.
-OUTPUT FORMAT: Markdown with figure and analysis text.",mossbauer\_data; iron\_phase; temperature\_k
+OUTPUT FORMAT: Markdown with figure and analysis text.",mossbauer_data; iron_phase; temperature_k
 High Performance Computing & Parallelization,"ROLE: MPI Performance Tuner.
-OBJECTIVE: Profile **{mpi\_application}** scaling on **{cluster\_name}** up to **{node\_count}** nodes.
+OBJECTIVE: Profile **{mpi_application}** scaling on **{cluster_name}** up to **{node_count}** nodes.
 REQUIREMENTS:
 • Collect strong and weak scaling efficiency metrics.
 • Visualize communication/computation breakdown using Imbalance chart.
 • Recommend rank reordering and network topology mapping.
-OUTPUT FORMAT: Markdown with performance plots.",mpi\_application; cluster\_name; node\_count
+OUTPUT FORMAT: Markdown with performance plots.",mpi_application; cluster_name; node_count
 High Performance Computing & Parallelization,"ROLE: GPU Kernel Optimizer.
-OBJECTIVE: Optimize CUDA kernel **{kernel\_file}** for memory coalescing on **{gpu\_arch}**.
+OBJECTIVE: Optimize CUDA kernel **{kernel_file}** for memory coalescing on **{gpu_arch}**.
 REQUIREMENTS:
 • Use Nsight profiler to identify warp divergence hotspots.
 • Apply shared memory tiling and unrolling factors.
 • Report achieved occupancy and speedup vs baseline.
-OUTPUT FORMAT: Markdown with code diff and benchmark table.",kernel\_file; gpu\_arch
+OUTPUT FORMAT: Markdown with code diff and benchmark table.",kernel_file; gpu_arch
 High Performance Computing & Parallelization,"ROLE: Slurm Scheduler Consultant.
-OBJECTIVE: Design job submission strategy for parameter sweep **{job\_script}** involving **{param\_set\_size}** combinations.
+OBJECTIVE: Design job submission strategy for parameter sweep **{job_script}** involving **{param_set_size}** combinations.
 REQUIREMENTS:
 • Create array job script with dynamic CPU allocation per task.
 • Implement dependency chain to post-process outputs.
 • Estimate cluster utilization and makespan reduction.
-OUTPUT FORMAT: Markdown with script and Gantt chart placeholder.",job\_script; param\_set\_size
+OUTPUT FORMAT: Markdown with script and Gantt chart placeholder.",job_script; param_set_size
 High Performance Computing & Parallelization,"ROLE: HPC I/O Architect.
-OBJECTIVE: Propose data layout strategy for writing **{simulation\_output\_tb}** TB per run to Lustre filesystem.
+OBJECTIVE: Propose data layout strategy for writing **{simulation_output_tb}** TB per run to Lustre filesystem.
 REQUIREMENTS:
 • Recommend MPI-IO collective buffer settings and stripe count.
-• Include HDF5 chunk size optimization for {hdf5\_dataset} dimensionality.
+• Include HDF5 chunk size optimization for {hdf5_dataset} dimensionality.
 • Provide expected bandwidth and metadata overhead analysis.
-OUTPUT FORMAT: Markdown with tables and diagrams.",simulation\_output\_tb; hdf5\_dataset
+OUTPUT FORMAT: Markdown with tables and diagrams.",simulation_output_tb; hdf5_dataset
 High Performance Computing & Parallelization,"ROLE: OpenACC Refactoring Lead.
-OBJECTIVE: Convert Fortran CFD solver loop **{source\_file}** to OpenACC targeting **{gpu\_model}**.
+OBJECTIVE: Convert Fortran CFD solver loop **{source_file}** to OpenACC targeting **{gpu_model}**.
 REQUIREMENTS:
 • Insert directives ensuring data movement minimized.
 • Validate numerical results vs original CPU run within 1e-6 tolerance.
 • Measure runtime reduction and document compiler flags.
-OUTPUT FORMAT: Markdown with code blocks and benchmark plot.",source\_file; gpu\_model
+OUTPUT FORMAT: Markdown with code blocks and benchmark plot.",source_file; gpu_model
 High Performance Computing & Parallelization,"ROLE: Distributed ML Engineer.
-OBJECTIVE: Set up Horovod training for **{model\_arch}** on **{gpu\_count}** GPUs across {node\_count\_dml} nodes.
+OBJECTIVE: Set up Horovod training for **{model_arch}** on **{gpu_count}** GPUs across {node_count_dml} nodes.
 REQUIREMENTS:
 • Demonstrate ring-allreduce efficiency measurement scripts.
 • Tune batch size and gradient prefetch to maximize throughput.
 • Provide TensorBoard screenshot placeholder.
-OUTPUT FORMAT: Markdown with commands and result metrics.",model\_arch; gpu\_count; node\_count\_dml
+OUTPUT FORMAT: Markdown with commands and result metrics.",model_arch; gpu_count; node_count_dml
 High Performance Computing & Parallelization,"ROLE: Hybrid Parallelization Strategist.
-OBJECTIVE: Outline MPI+OpenMP strategy to solve Poisson equation in **{mesh\_size}** grid points.
+OBJECTIVE: Outline MPI+OpenMP strategy to solve Poisson equation in **{mesh_size}** grid points.
 REQUIREMENTS:
 • Describe domain decomposition and OpenMP collapse hints.
 • Present pseudo-code and expected memory usage per rank.
-• Compute roofline model estimate on {cpu\_model}.
-OUTPUT FORMAT: Markdown with code and roofline chart.",mesh\_size; cpu\_model
+• Compute roofline model estimate on {cpu_model}.
+OUTPUT FORMAT: Markdown with code and roofline chart.",mesh_size; cpu_model
 High Performance Computing & Parallelization,"ROLE: Checkpointing Framework Designer.
-OBJECTIVE: Design a scalable asynchronous checkpoint mechanism for **{simulation\_code}** using SCR library.
+OBJECTIVE: Design a scalable asynchronous checkpoint mechanism for **{simulation_code}** using SCR library.
 REQUIREMENTS:
 • Set redundancy level to XOR with 3 partner ranks.
 • Include restart latency measurement methodology.
 • Provide I/O traces and explain overhead percentage.
-OUTPUT FORMAT: Markdown with configuration files and analysis.",simulation\_code
+OUTPUT FORMAT: Markdown with configuration files and analysis.",simulation_code
 High Performance Computing & Parallelization,"ROLE: HPC Containerization Specialist.
-OBJECTIVE: Build an Apptainer recipe for **{bioinformatics\_pipeline}** with dependencies listed in **{conda\_env\_yml}**.
+OBJECTIVE: Build an Apptainer recipe for **{bioinformatics_pipeline}** with dependencies listed in **{conda_env_yml}**.
 REQUIREMENTS:
 • Enable GPU support and MPI passthrough.
-• Test container on {test\_dataset} and report runtime comparison.
+• Test container on {test_dataset} and report runtime comparison.
 • Publish recipe hash and registration instructions.
-OUTPUT FORMAT: Markdown with recipe and results.",bioinformatics\_pipeline; conda\_env\_yml; test\_dataset
+OUTPUT FORMAT: Markdown with recipe and results.",bioinformatics_pipeline; conda_env_yml; test_dataset
 High Performance Computing & Parallelization,"ROLE: Exascale Ready Auditor.
-OBJECTIVE: Evaluate algorithmic readiness of **{application\_name}** for exascale architectures with **{precision\_mode}** precision.
+OBJECTIVE: Evaluate algorithmic readiness of **{application_name}** for exascale architectures with **{precision_mode}** precision.
 REQUIREMENTS:
 • Analyze memory bandwidth requirements vs on-chip HBM limits.
 • Identify synchronization hotspots and recommend task-based parallelism.
 • Summarize compliance with OpenMP 5.2 features.
-OUTPUT FORMAT: Markdown with checklist and performance projections.",application\_name; precision\_mode
+OUTPUT FORMAT: Markdown with checklist and performance projections.",application_name; precision_mode
+Product Management,"ROLE: A/B Test Analyst|OBJECTIVE: Generate a statistical analysis report for an A/B test comparing conversion rates between control variant **{control_name}** and challenger **{challenger_name}**.|REQUIREMENTS: Calculate p-value, confidence interval, and statistical power using data from {results_csv}|Provide a clear recommendation on whether to ship the challenger variant|Include visualizations of the conversion rate distributions for both variants.|STYLE: Data-driven, concise, and conclusive.|OUTPUT FORMAT: Markdown report with statistical summaries.",control_name|challenger_name|results_csv
+Product Management,"ROLE: User Story Crafter|OBJECTIVE: Write a set of detailed, INVEST-compliant user stories for the epic **{epic_name}** targeting persona **{user_persona}**.|REQUIREMENTS: Each story must have a clear 'As a, I want, so that' format.|Include at least 5 acceptance criteria per story.|Reference the design mockups in {figma_link}.|STYLE: Agile-focused, user-centric, and unambiguous.|OUTPUT FORMAT: Markdown with H3 headers for each story.",epic_name|user_persona|figma_link
+Product Management,"ROLE: Product Roadmap Planner|OBJECTIVE: Create a quarterly product roadmap for **{product_name}** that aligns with the company OKR **{company_okr}**.|REQUIREMENTS: Organize features into themes (e.g., Performance, User Growth, Core Features)|Assign a priority score to each feature based on the RICE framework|Include dependencies on other teams, such as {dependent_team}.|STYLE: Strategic, visual, and easy to understand for stakeholders.|OUTPUT FORMAT: Markdown table with columns: Quarter, Theme, Feature, RICE Score, Dependencies.",product_name|company_okr|dependent_team
+Product Management,"ROLE: Competitive Analysis Expert|OBJECTIVE: Produce a competitive analysis matrix comparing **{our_product}** against competitors **{competitor_list}**.|REQUIREMENTS: Evaluate on at least 5 key features, such as {feature_1}, {feature_2}, and {feature_3}|Include pricing, target market, and a summary of each competitor's strategy|Use a 'Strengths, Weaknesses, Opportunities, Threats' (SWOT) format for the summary.|STYLE: Objective, thorough, and visually organized.|OUTPUT FORMAT: Markdown with a feature comparison table and SWOT analysis sections.",our_product|competitor_list|feature_1|feature_2|feature_3
+Product Management,"ROLE: Feature Prioritization Facilitator|OBJECTIVE: Generate a script and agenda for a feature prioritization meeting with stakeholders from **{stakeholder_departments}** for the upcoming **{release_cycle}**.|REQUIREMENTS: Frame the discussion around the 'Buy a Feature' prioritization method.|List the candidate features from {features_backlog_url}.|Include sections for defining the budget, feature pricing, and capturing the final selections.|STYLE: Collaborative, structured, and outcome-oriented.|OUTPUT FORMAT: Markdown document.",stakeholder_departments|release_cycle|features_backlog_url
+Product Management,"ROLE: Go-to-Market Strategist|OBJECTIVE: Develop a comprehensive go-to-market (GTM) plan for the launch of feature **{feature_name}** on **{launch_date}**.|REQUIREMENTS: Define target audience segments and key messaging for each.|Outline marketing channels to be used, including {channel_1} and {channel_2}.|Specify success metrics, such as {kpi_1} and {kpi_2}.|STYLE: Actionable, detailed, and cross-functional.|OUTPUT FORMAT: Markdown with sections for Audience, Messaging, Channels, and Metrics.",feature_name|launch_date|channel_1|channel_2|kpi_1|kpi_2
+Product Management,"ROLE: User Interview Synthesizer|OBJECTIVE: Synthesize key insights from a batch of user interview transcripts located at **{transcripts_folder}** regarding user sentiment about **{product_area}**.|REQUIREMENTS: Identify the top 5 user pain points.|Extract at least 3 direct, impactful user quotes.|Group findings into themes and provide actionable recommendations for the product team.|STYLE: Empathetic, analytical, and insight-driven.|OUTPUT FORMAT: Markdown report with sections for Key Pain Points, User Quotes, and Recommendations.",transcripts_folder|product_area
+Product Management,"ROLE: PRD Author|OBJECTIVE: Write a complete Product Requirements Document (PRD) for the new feature **{feature_title}**.|REQUIREMENTS: Include sections for Introduction, Problem Statement, Goals/Objectives, User Stories, and Technical Requirements.|Reference the project in {jira_project_key}.|Define the success metrics and how they will be measured.|STYLE: Formal, detailed, and serves as a single source of truth.|OUTPUT FORMAT: Markdown document with a clear, hierarchical structure.",feature_title|jira_project_key
+Product Management,"ROLE: Churn Analysis Specialist|OBJECTIVE: Analyze user churn data from **{churn_data_csv}** to identify the primary reasons for users canceling their subscriptions to **{service_name}**.|REQUIREMENTS: Segment churn by user tenure, subscription plan, and key activity metrics.|Identify the top 3 features correlated with high retention.|Propose 3 data-backed initiatives to reduce churn.|STYLE: Investigative, quantitative, and strategic.|OUTPUT FORMAT: Markdown analysis report with charts and tables.",churn_data_csv|service_name
+Product Management,"ROLE: OKR Drafting Assistant|OBJECTIVE: Draft a set of quarterly Objectives and Key Results (OKRs) for the **{team_name}** team that aligns with the company's goal to **{company_goal}**.|REQUIREMENTS: Define 1-2 ambitious, qualitative Objectives.|For each Objective, create 3-4 specific, measurable, and time-bound Key Results.|Ensure Key Results are outcome-focused, not output-focused, using metrics like {metric_example}.|STYLE: Ambitious, focused, and aligned.|OUTPUT FORMAT: Markdown with a nested list structure for Objectives and Key Results.",team_name|company_goal|metric_example
+Data Engineering,"ROLE: ETL Pipeline Architect|OBJECTIVE: Design a robust and scalable ETL pipeline to move data from **{source_system}** to data warehouse **{target_warehouse}**.|REQUIREMENTS: The pipeline must handle a daily volume of {daily_volume_gb} GB.|Use {etl_tool} for orchestration and transformation.|Implement data quality checks for null values and schema validation.|STYLE: Modular, idempotent, and well-documented.|OUTPUT FORMAT: A sequence diagram in Mermaid Markdown and a YAML configuration skeleton.",source_system|target_warehouse|daily_volume_gb|etl_tool
+Data Engineering,"ROLE: Data Warehouse Modeler|OBJECTIVE: Generate the DDL SQL for a star schema data model to support analytics on **{business_process}**.|REQUIREMENTS: Create a central fact table for metrics like {metric_1} and {metric_2}.|Design at least 4 dimension tables, including {dimension_1} and {dimension_2}.|The schema must be optimized for query performance in {database_flavor}.|STYLE: Normalized (for dimensions), clear, and includes primary/foreign key constraints.|OUTPUT FORMAT: SQL file with DDL statements.",business_process|metric_1|metric_2|dimension_1|dimension_2|database_flavor
+Data Engineering,"ROLE: Data Quality Automation Engineer|OBJECTIVE: Create a reusable data quality testing suite for the database table **{table_name}** using **{dq_framework}**.|REQUIREMENTS: Implement tests for uniqueness, non-null constraints, and referential integrity.|Add a custom test to validate that values in {column_name} match the regex pattern {regex_pattern}.|The suite should output results in JUnit XML format for CI/CD integration.|STYLE: Declarative, maintainable, and comprehensive.|OUTPUT FORMAT: Python script using the specified framework.",table_name|dq_framework|column_name|regex_pattern
+Data Engineering,"ROLE: Streaming Data Processor|OBJECTIVE: Develop a streaming data pipeline using **{streaming_platform}** to process real-time events from topic **{source_topic}**.|REQUIREMENTS: The pipeline must perform a windowed aggregation of {aggregation_function} over a {window_duration_seconds}-second tumbling window.|Filter out events where the {field_name} is empty.|Write the aggregated results to the output topic {destination_topic}.|STYLE: Resilient, low-latency, and stateful.|OUTPUT FORMAT: Python/Scala code snippet for the specified platform.",streaming_platform|source_topic|aggregation_function|window_duration_seconds|field_name|destination_topic
+Data Engineering,"ROLE: Data Governance Steward|OBJECTIVE: Draft a data dictionary and governance policy for the dataset **{dataset_name}** containing PII.|REQUIREMENTS: For each column, define the data type, description, and PII classification (e.g., Direct, Indirect).|Specify data retention policy: {retention_period_days} days.|Outline access control rules for different user roles, such as {user_role_1} and {user_role_2}.|STYLE: Formal, compliant with GDPR/CCPA, and unambiguous.|OUTPUT FORMAT: Markdown document with a table for the data dictionary.",dataset_name|retention_period_days|user_role_1|user_role_2
+Data Engineering,"ROLE: Database Optimization Specialist|OBJECTIVE: Analyze the slow query **{query_sql}** on the **{database_engine}** database and provide optimization recommendations.|REQUIREMENTS: Generate the query execution plan.|Suggest at least three optimizations, such as adding an index on {column_to_index}, rewriting a join, or denormalizing data.|Provide the rewritten, optimized SQL query.|STYLE: Analytical, evidence-based, and actionable.|OUTPUT FORMAT: Markdown report with execution plan analysis and optimized SQL.",query_sql|database_engine|column_to_index
+Data Engineering,"ROLE: Data Lake Architect|OBJECTIVE: Design the folder structure and partitioning strategy for a data lake on **{cloud_storage_service}** for the data domain **{data_domain}**.|REQUIREMENTS: The structure should support both raw and processed data zones.|Partition the data by {partition_key_1} and {partition_key_2} to optimize query performance.|Recommend a file format ({file_format}) that supports schema evolution.|STYLE: Scalable, cost-effective, and query-friendly.|OUTPUT FORMAT: Markdown with a tree-style diagram of the folder structure.",cloud_storage_service|data_domain|partition_key_1|partition_key_2|file_format
+Data Engineering,"ROLE: Backfill Pipeline Developer|OBJECTIVE: Write a script to perform a historical backfill of data for the period **{start_date}** to **{end_date}** for the ETL job **{job_name}**.|REQUIREMENTS: The script must be idempotent, allowing it to be re-run safely.|It should process data in parallel by {parallelization_unit} (e.g., day, month).|Use the orchestration tool {orchestration_tool} to manage the backfill workflow.|STYLE: Robust, efficient, and observable.|OUTPUT FORMAT: Python script with clear logging and error handling.",start_date|end_date|job_name|parallelization_unit|orchestration_tool
+Data Engineering,"ROLE: Change Data Capture (CDC) Implementer|OBJECTIVE: Configure a Change Data Capture pipeline from a **{source_database_type}** database to a **{target_message_queue}** topic.|REQUIREMENTS: Use {cdc_tool} to capture row-level changes (inserts, updates, deletes).|The message format in the topic must be JSON.|Ensure the pipeline has at-least-once delivery semantics.|STYLE: Real-time, reliable, and low-impact on the source database.|OUTPUT FORMAT: YAML configuration file for the specified CDC tool.",source_database_type|target_message_queue|cdc_tool
+Data Engineering,"ROLE: Data API Designer|OBJECTIVE: Design a REST API for exposing the dataset **{dataset_name}** to internal consumers.|REQUIREMENTS: The API must support pagination and filtering by {filterable_field}.|Implement an endpoint to retrieve a single record by its {primary_key}.|Document the API using the OpenAPI 3.0 specification.|STYLE: RESTful, consistent, and self-documenting.|OUTPUT FORMAT: YAML file containing the OpenAPI specification.",dataset_name|filterable_field|primary_key
+MLOps,"ROLE: CI/CD for ML Specialist|OBJECTIVE: Create a CI/CD pipeline configuration in **{ci_cd_platform}** for training and deploying the ML model **{model_name}**.|REQUIREMENTS: The pipeline must trigger on commits to the {git_branch} branch.|Include stages for code linting, unit testing, model training, and deployment to a {staging_environment}.|Use {artifact_repository} to store the trained model artifact.|STYLE: Automated, reproducible, and production-grade.|OUTPUT FORMAT: YAML configuration file for the specified CI/CD platform.",ci_cd_platform|model_name|git_branch|staging_environment|artifact_repository
+MLOps,"ROLE: Model Monitoring Architect|OBJECTIVE: Design a monitoring dashboard to track the performance of a live **{model_type}** model serving traffic for **{application_name}**.|REQUIREMENTS: Monitor for data drift in key features like {feature_1} and {feature_2}.|Track model performance metrics such as {performance_metric} in real-time.|Set up alerts on the monitoring tool {monitoring_tool} to trigger when performance drops by {alert_threshold_percent}%.|STYLE: Comprehensive, visual, and actionable for on-call engineers.|OUTPUT FORMAT: JSON configuration for a Grafana or Datadog dashboard.",model_type|application_name|feature_1|feature_2|performance_metric|monitoring_tool|alert_threshold_percent
+MLOps,"ROLE: Feature Store Engineer|OBJECTIVE: Generate the Python code to define, register, and populate a feature group named **{feature_group_name}** in a feature store.|REQUIREMENTS: The feature group should contain features {feature_list}.|Use {feature_store_provider} as the feature store technology.|Include both an offline materialization schedule ({offline_schedule_cron}) and an online serving capability.|STYLE: Declarative, version-controlled, and reusable.|OUTPUT FORMAT: Python script using the specified feature store's SDK.",feature_group_name|feature_list|feature_store_provider|offline_schedule_cron
+MLOps,"ROLE: ML Experiment Tracker|OBJECTIVE: Instrument the provided Python model training script **{script_path}** to log experiments to **{experiment_tracker}**.|REQUIREMENTS: Log hyperparameters such as {hyperparameter_1} and {hyperparameter_2}.|Log evaluation metrics, including {evaluation_metric}.|Save the final trained model as an artifact associated with the experiment run.|STYLE: Non-intrusive, organized, and facilitates model comparison.|OUTPUT FORMAT: A diff file showing the changes to the Python script.",script_path|experiment_tracker|hyperparameter_1|hyperparameter_2|evaluation_metric
+MLOps,"ROLE: Model Deployment Strategist|OBJECTIVE: Create a deployment configuration for the model **{model_id}** from the model registry to a **{production_environment}** using a canary release strategy.|REQUIREMENTS: Initially route {initial_traffic_percentage}% of traffic to the new model version.|Use {deployment_tool} for orchestration (e.g., Kubeflow, Seldon Core).|Define rollback conditions based on a {rollback_metric} threshold.|STYLE: Safe, automated, and minimizes production risk.|OUTPUT FORMAT: YAML deployment specification.",model_id|production_environment|initial_traffic_percentage|deployment_tool|rollback_metric
+MLOps,"ROLE: ML Infrastructure Cost Analyst|OBJECTIVE: Analyze the resource utilization of the ML training job **{job_id}** and provide recommendations to reduce costs on **{cloud_provider}**.|REQUIREMENTS: Evaluate CPU, GPU, and memory usage from {metrics_data_source}.|Suggest a more cost-effective instance type than the current {instance_type}.|Recommend using spot instances with a specific bidding strategy.|STYLE: Analytical, cost-conscious, and practical.|OUTPUT FORMAT: Markdown report with cost-saving recommendations.",job_id|cloud_provider|metrics_data_source|instance_type
+MLOps,"ROLE: Data Versioning Specialist|OBJECTIVE: Integrate data versioning into the project using **{data_versioning_tool}** to track changes in the training dataset located at **{data_path}**.|REQUIREMENTS: Create a new version of the dataset linked to the Git commit hash.|The process should be part of the pre-commit hook.|The tool should integrate with the storage backend {storage_backend}.|STYLE: Reproducible, auditable, and integrated with Git workflow.|OUTPUT FORMAT: A shell script and a .pre-commit-config.yaml snippet.",data_versioning_tool|data_path|storage_backend
+MLOps,"ROLE: ML Pipeline Debugger|OBJECTIVE: Provide a systematic debugging checklist for a failing ML pipeline **{pipeline_name}** in **{orchestration_platform}** where the error is **{error_message}**.|REQUIREMENTS: Check for issues in data access and schema validation.|Verify environment dependencies and resource allocation (CPU/memory).|Inspect logs for the failing component and suggest specific commands to retrieve them.|STYLE: Methodical, comprehensive, and problem-solving oriented.|OUTPUT FORMAT: Markdown checklist with debugging steps.",pipeline_name|orchestration_platform|error_message
+MLOps,"ROLE: Model Explainability Engineer|OBJECTIVE: Generate a Python script to produce a model explainability report for the trained model artifact at **{model_artifact_path}**.|REQUIREMENTS: Use the {explainability_library} library (e.g., SHAP, LIME).|Generate a summary plot showing global feature importance.|For a given sample data point from {sample_data_csv}, produce a local explanation (force plot).|STYLE: Insightful, transparent, and helps build trust in the model.|OUTPUT FORMAT: Python script that outputs plots and a summary.",model_artifact_path|explainability_library|sample_data_csv
+MLOps,"ROLE: ML Security Auditor|OBJECTIVE: Create a security audit plan for the machine learning system that serves the **{service_name}** application.|REQUIREMENTS: Assess risks of model inversion and membership inference attacks.|Review access controls for the model registry and feature store.|Check for vulnerabilities in the open-source libraries listed in {requirements_file}.|STYLE: Proactive, security-first, and risk-based.|OUTPUT FORMAT: Markdown document outlining the audit plan and checklist.",service_name|requirements_file
+Cloud Architecture,"ROLE: Infrastructure as Code (IaC) Architect|OBJECTIVE: Write a Terraform module to provision a scalable, three-tier web application on **{cloud_provider}**.|REQUIREMENTS: The module must create a VPC, subnets, security groups, an autoscaling group for the web tier using {instance_type}, and a managed database {db_service}.|Parameterize the environment name (e.g., staging, prod) using a variable {environment_name}.|Include a README.md file explaining how to use the module.|STYLE: Reusable, modular, and follows Terraform best practices.|OUTPUT FORMAT: A set of .tf files for the module.",cloud_provider|instance_type|db_service|environment_name
+Cloud Architecture,"ROLE: Cloud Cost Optimization Expert|OBJECTIVE: Analyze the cloud bill for account **{account_id}** from **{billing_data_source}** and identify the top 3 areas for cost savings.|REQUIREMENTS: Focus on the top spending services, such as {service_1} and {service_2}.|Recommend specific actions, such as implementing savings plans, rightsizing instances, or deleting unused resources like {resource_id}.|Estimate the monthly savings for each recommendation.|STYLE: Data-driven, actionable, and impactful.|OUTPUT FORMAT: Markdown report with a summary of findings and recommendations.",account_id|billing_data_source|service_1|service_2|resource_id
+Cloud Architecture,"ROLE: Serverless Application Designer|OBJECTIVE: Design a serverless architecture for a real-time image processing service on **{cloud_provider}**.|REQUIREMENTS: Use an object storage service ({storage_service}) to trigger a serverless function ({function_service}) on image upload.|The function should perform {image_processing_task} and store the result in another bucket.|Include a managed queue service ({queue_service}) for handling processing failures.|STYLE: Event-driven, resilient, and pay-per-use.|OUTPUT FORMAT: An architecture diagram using Mermaid Markdown.",cloud_provider|storage_service|function_service|image_processing_task|queue_service
+Cloud Architecture,"ROLE: Cloud Security Policy Engineer|OBJECTIVE: Create a security policy in **{policy_language}** (e.g., IAM Policy, Azure Policy) that enforces security best practices for the service **{service_name}**.|REQUIREMENTS: The policy must deny public access to resources.|Enforce encryption at rest using a customer-managed key from {key_management_service}.|The policy should be auditable and include a description of its purpose.|STYLE: Least-privilege, preventative, and clearly documented.|OUTPUT FORMAT: JSON or YAML file containing the policy definition.",policy_language|service_name|key_management_service
+Cloud Architecture,"ROLE: Disaster Recovery Planner|OBJECTIVE: Develop a disaster recovery (DR) plan for the application **{application_name}** running in region **{primary_region}**.|REQUIREMENTS: Define a Recovery Time Objective (RTO) of {rto_hours} hours and a Recovery Point Objective (RPO) of {rpo_minutes} minutes.|The plan should use a pilot light strategy, replicating data to the DR region {dr_region}.|Include step-by-step failover and failback procedures.|STYLE: Comprehensive, testable, and ensures business continuity.|OUTPUT FORMAT: Markdown document outlining the DR plan.",application_name|primary_region|rto_hours|rpo_minutes|dr_region
+Cloud Architecture,"ROLE: Multi-Cloud Networking Specialist|OBJECTIVE: Design a secure and performant network architecture to connect a VPC in **{cloud_1}** with a VNet in **{cloud_2}**.|REQUIREMENTS: Use a dedicated interconnect or VPN for the connection.|Configure firewall rules to only allow traffic on port {port_number} from a specific IP range {ip_range}.|The design must address DNS resolution between the two clouds.|STYLE: Secure, reliable, and considers latency.|OUTPUT FORMAT: A network topology diagram in Mermaid Markdown.",cloud_1|cloud_2|port_number|ip_range
+Cloud Architecture,"ROLE: Kubernetes Cluster Architect|OBJECTIVE: Generate a configuration plan for a production-grade Kubernetes cluster on **{cloud_k8s_service}** for microservices application **{app_name}**.|REQUIREMENTS: The cluster should have at least two node pools: one for general workloads and one for {specialized_workload} workloads.|Implement pod security policies to restrict privileged containers.|Configure cluster autoscaling and pod autoscaling for the main deployment.|STYLE: Production-ready, secure, and highly available.|OUTPUT FORMAT: A shell script with gcloud/aws/az CLI commands to create the cluster.",cloud_k8s_service|app_name|specialized_workload
+Cloud Architecture,"ROLE: Cloud Migration Strategist|OBJECTIVE: Create a phased migration plan to move the on-premise legacy application **{legacy_app_name}** to **{target_cloud_provider}**.|REQUIREMENTS: The plan should follow the '6 Rs' of migration, starting with a 'Rehost' (lift-and-shift) of the {app_server} server.|Phase 1 should be completed by {phase_1_deadline}.|Include a discovery checklist to gather information about the application's dependencies.|STYLE: Strategic, low-risk, and minimizes downtime.|OUTPUT FORMAT: Markdown document with a phased timeline and checklist.",legacy_app_name|target_cloud_provider|app_server|phase_1_deadline
+Cloud Architecture,"ROLE: FinOps Analyst|OBJECTIVE: Create an automated tagging policy and enforcement mechanism for all resources in the cloud account **{account_name}**.|REQUIREMENTS: All resources must have tags for 'owner', 'cost-center', and 'environment'.|Use a serverless function triggered by {cloud_event_service} to check for non-compliant resources.|Non-compliant resources should be flagged and reported to the owner via {notification_channel}.|STYLE: Governance-focused, automated, and drives accountability.|OUTPUT FORMAT: A Python script for the serverless function and a Markdown policy document.",account_name|cloud_event_service|notification_channel
+Cloud Architecture,"ROLE: Well-Architected Framework Reviewer|OBJECTIVE: Conduct a Well-Architected Framework review for the workload **{workload_name}** based on the **{framework_pillar}** pillar.|REQUIREMENTS: Generate a list of at least 10 questions based on the official AWS/Azure/GCP Well-Architected Framework.|For each question, provide the ideal answer and a RAG status (Red, Amber, Green).|Identify the top 3 highest-risk findings and suggest remediation actions.|STYLE: Thorough, best-practice oriented, and drives continuous improvement.|OUTPUT FORMAT: Markdown document with the review questions and findings.",workload_name|framework_pillar
+DevOps & SRE,"ROLE: Site Reliability Engineer (SRE)|OBJECTIVE: Define Service Level Objectives (SLOs) and Service Level Indicators (SLIs) for the user-facing service **{service_name}**.|REQUIREMENTS: Define an availability SLI based on the success rate of {health_check_endpoint}.|Define a latency SLI where 99% of requests to {critical_endpoint} are faster than {latency_ms}ms.|Set an availability SLO of {slo_percentage}% over a 28-day rolling window.|STYLE: User-centric, measurable, and actionable.|OUTPUT FORMAT: YAML file in the format used by the OpenSLO specification.",service_name|health_check_endpoint|critical_endpoint|latency_ms|slo_percentage
+DevOps & SRE,"ROLE: Observability Platform Engineer|OBJECTIVE: Create a structured logging policy for all microservices in the **{system_name}** ecosystem.|REQUIREMENTS: All logs must be in JSON format.|Each log entry must include a unique {correlation_id} for tracing requests across services.|Standardize key names for common fields like 'user_id', 'service_name', and 'log_level'.|STYLE: Consistent, machine-parsable, and enables effective debugging.|OUTPUT FORMAT: Markdown document defining the logging policy with JSON examples.",system_name|correlation_id
+DevOps & SRE,"ROLE: Incident Postmortem Facilitator|OBJECTIVE: Generate a blameless postmortem template for the production incident that occurred on **{incident_date}** affecting **{impacted_service}**.|REQUIREMENTS: The template must include sections for Summary, Impact, Timeline, Root Causes, and Action Items.|The timeline should be detailed to the minute, using data from {monitoring_system}.|Action items must be SMART (Specific, Measurable, Achievable, Relevant, Time-bound) and assigned to an owner.|STYLE: Blameless, learning-oriented, and focused on preventing recurrence.|OUTPUT FORMAT: Markdown template pre-filled with incident details.",incident_date|impacted_service|monitoring_system
+DevOps & SRE,"ROLE: Dockerfile Optimization Specialist|OBJECTIVE: Rewrite the provided Dockerfile at **{dockerfile_path}** to create a smaller and more secure container image for the **{application_type}** application.|REQUIREMENTS: Use a multi-stage build to separate the build environment from the runtime environment.|Run the application as a non-root user.|Minimize the number of layers by combining RUN commands.|STYLE: Efficient, secure, and follows containerization best practices.|OUTPUT FORMAT: The optimized Dockerfile content.",dockerfile_path|application_type
+DevOps & SRE,"ROLE: Kubernetes Operator Developer|OBJECTIVE: Generate the boilerplate code for a Kubernetes Operator for the application **{app_name}** using **{operator_sdk_version}**.|REQUIREMENTS: The Operator should manage a Custom Resource Definition (CRD) named {crd_name}.|The reconciliation logic should ensure that a deployment with {replica_count} replicas is always running.|Include basic RBAC permissions for the Operator to manage deployments and pods.|STYLE: Declarative, automated, and extends Kubernetes functionality.|OUTPUT FORMAT: A Go source file for the main controller.",app_name|operator_sdk_version|crd_name|replica_count
+DevOps & SRE,"ROLE: On-Call Playbook Author|OBJECTIVE: Create a playbook for the on-call engineer responding to the alert **{alert_name}** from the monitoring system **{monitoring_provider}**.|REQUIREMENTS: Include initial triage steps to assess the impact.|Provide specific commands to diagnose the issue, such as checking logs with {log_query_command}.|List escalation procedures, including who to contact ({escalation_contact}) if the issue is not resolved within {resolution_time_minutes} minutes.|STYLE: Actionable, easy to follow under pressure, and reduces mean time to resolution (MTTR).|OUTPUT FORMAT: Markdown document for the playbook.",alert_name|monitoring_provider|log_query_command|escalation_contact|resolution_time_minutes
+DevOps & SRE,"ROLE: Chaos Engineering Lead|OBJECTIVE: Design a chaos engineering experiment to test the resiliency of the **{service_name}** to a failure of its dependency, **{dependency_service}**.|REQUIREMENTS: The experiment will inject latency up to {max_latency_ms}ms into the dependency calls.|Define a steady-state hypothesis: the service's p95 latency should not increase by more than {latency_increase_percent}%.|Use {chaos_engineering_tool} to run the experiment in the {target_environment} environment.|STYLE: Proactive, controlled, and builds confidence in system resilience.|OUTPUT FORMAT: YAML configuration for the specified chaos engineering tool.",service_name|dependency_service|max_latency_ms|latency_increase_percent|chaos_engineering_tool|target_environment
+DevOps & SRE,"ROLE: GitOps Evangelist|OBJECTIVE: Create the directory structure and configuration for managing the Kubernetes cluster **{cluster_name}** using a GitOps approach with **{gitops_tool}**.|REQUIREMENTS: The Git repository {git_repo_url} will be the single source of truth.|Create separate directories for cluster-wide infrastructure (e.g., ingress controller) and application deployments.|Include a sample application deployment for {app_name} in the appropriate directory.|STYLE: Declarative, version-controlled, and fully automated.|OUTPUT FORMAT: A shell script that creates the directory structure and sample YAML files.",cluster_name|gitops_tool|git_repo_url|app_name
+DevOps & SRE,"ROLE: Capacity Planning Analyst|OBJECTIVE: Forecast the resource needs for the **{service_name}** for the next **{forecast_horizon_months}** months based on historical usage data from **{usage_data_csv}**.|REQUIREMENTS: Project future CPU, memory, and storage requirements.|Identify the point at which the current capacity will be exhausted.|Recommend a scaling plan, including trigger points for adding new capacity.|STYLE: Predictive, data-driven, and ensures service availability.|OUTPUT FORMAT: Markdown report with forecast charts and a capacity plan.",service_name|forecast_horizon_months|usage_data_csv
+DevOps & SRE,"ROLE: Secret Management Architect|OBJECTIVE: Design a secret management strategy for the application **{app_name}** running on Kubernetes.|REQUIREMENTS: Use {secret_manager_tool} as the central secret store.|Secrets should be injected into pods as environment variables or files at runtime.|Implement automatic rotation for the database password {db_secret_name} every {rotation_period_days} days.|STYLE: Secure, auditable, and removes secrets from Git repositories.|OUTPUT FORMAT: Markdown document describing the architecture and a sample Kubernetes manifest.",app_name|secret_manager_tool|db_secret_name|rotation_period_days
+API Development,"ROLE: RESTful API Designer|OBJECTIVE: Design a RESTful API for managing a collection of **{resource_name}** resources.|REQUIREMENTS: Define standard CRUD operations (GET, POST, PUT, DELETE) for the resource.|The API must use proper HTTP status codes (e.g., 200, 201, 404).|Include support for filtering by {field_to_filter_by} and sorting by {field_to_sort_by}.|STYLE: RESTful, predictable, and follows standard conventions.|OUTPUT FORMAT: OpenAPI 3.0 specification in YAML.",resource_name|field_to_filter_by|field_to_sort_by
+API Development,"ROLE: GraphQL Schema Architect|OBJECTIVE: Create a GraphQL schema for querying **{data_domain}** data, including the types **{type_1}** and **{type_2}**.|REQUIREMENTS: The schema must define at least one query to fetch data and one mutation to modify data.|Implement a relationship between {type_1} and {type_2}.|Include documentation strings for all types and fields.|STYLE: Strongly-typed, efficient, and self-documenting.|OUTPUT FORMAT: A .graphql file containing the schema definition language (SDL).",data_domain|type_1|type_2
+API Development,"ROLE: API Security Specialist|OBJECTIVE: Outline a security plan to protect the public-facing API endpoint **{api_endpoint_url}**.|REQUIREMENTS: Implement OAuth 2.0 with the {grant_type} grant type for authentication and authorization.|Add rate limiting of {requests_per_minute} requests per minute per user.|Include input validation to prevent injection attacks on parameter {parameter_name}.|STYLE: Secure-by-design, layered, and protects against common threats.|OUTPUT FORMAT: Markdown document detailing the security measures.",api_endpoint_url|grant_type|requests_per_minute|parameter_name
+API Development,"ROLE: API Gateway Configurator|OBJECTIVE: Generate the configuration for an API Gateway (**{api_gateway_provider}**) to expose the backend microservice **{microservice_name}**.|REQUIREMENTS: Route incoming requests from the public path `/{public_path}` to the internal service URL.|Apply a JWT authorizer to validate tokens issued by {jwt_issuer}.|Enable caching for GET requests with a TTL of {cache_ttl_seconds} seconds.|STYLE: Centralized, manageable, and improves performance.|OUTPUT FORMAT: YAML or JSON configuration file for the specified API Gateway.",api_gateway_provider|microservice_name|public_path|jwt_issuer|cache_ttl_seconds
+API Development,"ROLE: gRPC Service Developer|OBJECTIVE: Write a Protocol Buffers (protobuf) definition for a gRPC service named **{service_name}** that includes the RPC method **{method_name}**.|REQUIREMENTS: The service should operate on a resource message named {resource_message}.|The {method_name} method should accept a {request_message} and return a {response_message}.|Use proto3 syntax.|STYLE: Performant, strongly-typed, and contract-first.|OUTPUT FORMAT: A .proto file with the service definition.",service_name|method_name|resource_message|request_message|response_message
+API Development,"ROLE: API Mocking Specialist|OBJECTIVE: Create a mock API server configuration for the API defined in the OpenAPI spec **{openapi_spec_file}**.|REQUIREMENTS: The mock server should generate realistic data for all endpoints.|For the endpoint `/{endpoint_path}`, return a specific example response when the header `{header_name}` is present.|Use {mocking_tool} to run the mock server.|STYLE: Realistic, enables parallel development, and improves testing.|OUTPUT FORMAT: A configuration file for the specified mocking tool.",openapi_spec_file|endpoint_path|header_name|mocking_tool
+API Development,"ROLE: API Versioning Strategist|OBJECTIVE: Propose an API versioning strategy for the existing public API **{api_name}**.|REQUIREMENTS: The strategy should be {versioning_method} (e.g., URI path, header, query parameter).|Outline a plan for deprecating the old version, {old_version}, by {deprecation_date}.|Explain how breaking and non-breaking changes will be handled.|STYLE: Non-disruptive, clear to consumers, and allows for evolution.|OUTPUT FORMAT: Markdown document describing the versioning strategy.",api_name|versioning_method|old_version|deprecation_date
+API Development,"ROLE: Webhook Integration Engineer|OBJECTIVE: Design a system to reliably receive and process incoming webhooks from the third-party service **{third_party_service}**.|REQUIREMENTS: Use a dedicated endpoint `/{webhook_endpoint}` to receive the webhooks.|Place incoming payloads onto a message queue ({message_queue_service}) for asynchronous processing to ensure immediate response.|Implement a signature verification mechanism using the secret key {secret_key_name} to authenticate webhooks.|STYLE: Asynchronous, resilient, and secure.|OUTPUT FORMAT: An architecture diagram in Mermaid Markdown and a Python/Node.js code snippet for the endpoint.",third_party_service|webhook_endpoint|message_queue_service|secret_key_name
+API Development,"ROLE: API Documentation Writer|OBJECTIVE: Generate user-friendly documentation for the API endpoint `POST /{resource_path}`.|REQUIREMENTS: Explain the purpose of the endpoint in simple terms.|Provide a clear example of the request body JSON object.|Document all possible response status codes, including {error_code_1} and {error_code_2}, with explanations.|STYLE: Clear, example-driven, and aimed at developers using the API.|OUTPUT FORMAT: Markdown formatted for a documentation site like Slate or ReadMe.",resource_path|error_code_1|error_code_2
+API Development,"ROLE: API Performance Test Scripter|OBJECTIVE: Create a performance test script using **{performance_test_tool}** to load test the API endpoint **{endpoint_to_test}**.|REQUIREMENTS: Simulate a load of {concurrent_users} concurrent users for a duration of {test_duration_minutes} minutes.|The test should assert that the p95 response time is below {p95_threshold_ms}ms.|Capture and report the error rate throughout the test.|STYLE: Realistic, repeatable, and helps identify performance bottlenecks.|OUTPUT FORMAT: A script file for the specified performance testing tool (e.g., k6, JMeter).",performance_test_tool|endpoint_to_test|concurrent_users|test_duration_minutes|p95_threshold_ms
+Legal Tech,"ROLE: Contract Analysis Specialist|OBJECTIVE: Extract key clauses from the legal agreement text provided in **{contract_text_file}**.|REQUIREMENTS: Identify and extract the 'Limitation of Liability', 'Indemnification', and 'Confidentiality' clauses.|For the 'Limitation of Liability' clause, extract the liability cap amount.|The output should be structured for review by a paralegal.|STYLE: Accurate, structured, and focused on risk-relevant clauses.|OUTPUT FORMAT: JSON object with keys for each clause.",contract_text_file
+Legal Tech,"ROLE: eDiscovery Document Reviewer|OBJECTIVE: Classify a batch of documents from **{document_set_path}** as 'Relevant' or 'Not Relevant' to the legal case **{case_name}**.|REQUIREMENTS: The classification should be based on the presence of keywords from the list {keyword_list}.|The review must also flag any documents containing privileged information using the term {privilege_indicator}.|Generate a CSV log of all documents and their classifications.|STYLE: Defensible, efficient, and reduces manual review time.|OUTPUT FORMAT: A CSV file with columns: DocumentID, Classification, PrivilegeFlag.",document_set_path|case_name|keyword_list|privilege_indicator
+Legal Tech,"ROLE: Compliance Policy Drafter|OBJECTIVE: Draft a data retention policy for the company **{company_name}** that complies with the regulation **{regulation_name}**.|REQUIREMENTS: The policy must specify retention periods for different data types, such as {data_type_1} and {data_type_2}.|Include procedures for legal holds and data disposal.|The policy should be written in clear, unambiguous language for a non-legal audience.|STYLE: Compliant, operational, and easy to understand.|OUTPUT FORMAT: Markdown document for an internal policy portal.",company_name|regulation_name|data_type_1|data_type_2
+Legal Tech,"ROLE: Legal Research Assistant|OBJECTIVE: Summarize the top 5 most relevant case law precedents related to the legal issue of **{legal_issue}** in the jurisdiction of **{jurisdiction}**.|REQUIREMENTS: For each case, provide the citation, a brief summary of the facts, and the court's holding.|The summary should focus on the legal reasoning most pertinent to the issue.|Use legal research database {legal_database} as the primary source.|STYLE: Concise, accurate, and useful for a practicing attorney.|OUTPUT FORMAT: Markdown report with a numbered list of case summaries.",legal_issue|jurisdiction|legal_database
+Legal Tech,"ROLE: Due Diligence Checklist Generator|OBJECTIVE: Create a legal due diligence checklist for a merger and acquisition (M&A) transaction where the target company is in the **{target_industry}** industry.|REQUIREMENTS: The checklist should cover key areas like corporate records, contracts, intellectual property, and litigation.|Include specific questions related to industry-specific regulations, such as {industry_regulation_1}.|The checklist should be organized by category and priority.|STYLE: Comprehensive, risk-aware, and tailored to the transaction.|OUTPUT FORMAT: Markdown checklist with nested categories.",target_industry|industry_regulation_1
+Legal Tech,"ROLE: Deposition Summary Automator|OBJECTIVE: Generate a summary of the deposition transcript located at **{transcript_file_path}** of the witness **{witness_name}**.|REQUIREMENTS: The summary should be in a 'page-line' format.|Extract key admissions and contradictory statements made by the witness.|The summary should not exceed {summary_page_limit} pages.|STYLE: Objective, concise, and highlights critical testimony.|OUTPUT FORMAT: Markdown document with a table for the summary.",transcript_file_path|witness_name|summary_page_limit
+Legal Tech,"ROLE: Intellectual Property (IP) Auditor|OBJECTIVE: Analyze the source code repository at **{repo_url}** to identify potential IP risks.|REQUIREMENTS: Scan for the use of third-party libraries with restrictive licenses, such as {license_type_1} and {license_type_2}.|Identify any hard-coded credentials or API keys.|Check for files with missing copyright headers.|STYLE: Proactive, risk-mitigating, and automated.|OUTPUT FORMAT: A summary report in Markdown listing all findings.",repo_url|license_type_1|license_type_2
+Legal Tech,"ROLE: Legal Billing Analyst|OBJECTIVE: Review a legal invoice file **{invoice_csv}** and flag any billing entries that violate the company's billing guidelines.|REQUIREMENTS: Flag entries that are block-billed (lumped together).|Identify any time entries from unapproved legal staff listed in {unapproved_staff_list}.|Calculate the total amount of the flagged entries.|STYLE: Analytical, detail-oriented, and focused on cost control.|OUTPUT FORMAT: Markdown report with a table of flagged entries and a summary total.",invoice_csv|unapproved_staff_list
+Legal Tech,"ROLE: Redaction Automation Specialist|OBJECTIVE: Create a redacted version of the document at **{document_path}** by removing all personally identifiable information (PII).|REQUIREMENTS: Redact names, addresses, phone numbers, and social security numbers.|Also redact the specific project name {project_codename}.|The output should be a new PDF file with the redactions applied as black boxes.|STYLE: Accurate, irreversible, and protects sensitive information.|OUTPUT FORMAT: A new PDF file (conceptual output). The prompt should generate the instructions for a tool.",document_path|project_codename
+Legal Tech,"ROLE: Regulatory Change Monitor|OBJECTIVE: Generate a summary of recent regulatory changes related to **{regulatory_topic}** from the government source **{source_url}**.|REQUIREMENTS: The summary should cover changes within the last {time_period_days} days.|Explain the potential impact of the changes on a company operating in the {industry_sector} sector.|Include links to the full text of the new regulations.|STYLE: Timely, relevant, and provides actionable intelligence.|OUTPUT FORMAT: An email-ready newsletter in Markdown.",regulatory_topic|source_url|time_period_days|industry_sector
+Supply Chain Management,"ROLE: Demand Forecasting Analyst|OBJECTIVE: Generate a demand forecast for product **{product_sku}** for the next **{forecast_horizon_weeks}** weeks.|REQUIREMENTS: Use historical sales data from {sales_data_csv}.|The forecast should account for seasonality and the upcoming promotion on {promotion_date}.|Provide the forecast values along with 80% and 95% confidence intervals.|STYLE: Statistical, accurate, and includes uncertainty measures.|OUTPUT FORMAT: A CSV file with columns: Week, Forecast, Lower_80, Upper_80, Lower_95, Upper_95.",product_sku|forecast_horizon_weeks|sales_data_csv|promotion_date
+Supply Chain Management,"ROLE: Inventory Optimization Planner|OBJECTIVE: Calculate the optimal reorder point and safety stock for the item **{item_id}** at the warehouse **{warehouse_location}**.|REQUIREMENTS: Use lead time demand data from {lead_time_data_file}.|The target service level is {service_level_percent}%.|Consider a lead time variability of {lead_time_std_dev} days.|STYLE: Data-driven, cost-conscious, and balances stockouts against holding costs.|OUTPUT FORMAT: JSON object with keys: reorder_point, safety_stock.",item_id|warehouse_location|lead_time_data_file|service_level_percent|lead_time_std_dev
+Supply Chain Management,"ROLE: Logistics Network Designer|OBJECTIVE: Propose an optimal location for a new distribution center to serve the customer locations listed in **{customer_locations_csv}**.|REQUIREMENTS: The objective is to minimize the total weighted distance to all customers.|Consider the shipping volume for each customer.|The output should be the suggested city and state, along with the rationale.|STYLE: Analytical, strategic, and based on the center of gravity model.|OUTPUT FORMAT: Markdown report with the recommended location.",customer_locations_csv
+Supply Chain Management,"ROLE: Transportation Cost Analyst|OBJECTIVE: Analyze the transportation costs in **{shipping_data_file}** and identify the top 3 opportunities for savings.|REQUIREMENTS: Compare costs across different carriers, such as {carrier_1} and {carrier_2}.|Identify lanes with unusually high cost-per-mile.|Recommend mode-shifting opportunities (e.g., from LTL to FTL) for certain routes.|STYLE: Investigative, quantitative, and focused on reducing logistics spend.|OUTPUT FORMAT: Markdown report with findings and recommendations.",shipping_data_file|carrier_1|carrier_2
+Supply Chain Management,"ROLE: Warehouse Operations Manager|OBJECTIVE: Create an optimized picking route for the list of orders in **{order_list_file}** for a warehouse with the layout defined in **{warehouse_layout_map}**.|REQUIREMENTS: The route should minimize the total travel time for the picker.|Use a serpentine (S-shape) picking path.|The output should be a sequenced list of picking locations (aisle, bay, level).|STYLE: Efficient, operational, and improves warehouse productivity.|OUTPUT FORMAT: A CSV file with the sequenced picking list.",order_list_file|warehouse_layout_map
+Supply Chain Management,"ROLE: Supply Chain Risk Assessor|OBJECTIVE: Identify and assess potential risks in the supply chain for the product **{product_name}**.|REQUIREMENTS: Analyze dependencies on single-source suppliers listed in {supplier_list_csv}.|Evaluate geopolitical risks in the regions where key suppliers like {key_supplier_name} are located.|Create a risk matrix plotting likelihood vs. impact for the top 5 risks.|STYLE: Proactive, comprehensive, and helps build resilience.|OUTPUT FORMAT: Markdown document with a risk matrix and mitigation suggestions.",product_name|supplier_list_csv|key_supplier_name
+Supply Chain Management,"ROLE: Procurement Specialist|OBJECTIVE: Draft a Request for Quotation (RFQ) to send to potential suppliers for the component **{component_part_number}**.|REQUIREMENTS: Specify the required annual volume of {annual_volume} units.|Include detailed technical specifications from the document {spec_sheet_path}.|Request pricing tiers for different order quantities.|STYLE: Formal, detailed, and enables clear comparison between suppliers.|OUTPUT FORMAT: A Word document-ready RFQ in Markdown.",component_part_number|annual_volume|spec_sheet_path
+Supply Chain Management,"ROLE: S&OP Meeting Preparer|OBJECTIVE: Generate a data pack for the monthly Sales and Operations Planning (S&OP) meeting for the product family **{product_family}**.|REQUIREMENTS: Include a comparison of last month's demand forecast vs. actual sales.|Provide current inventory levels against targets.|Highlight any supply constraints from the supplier {constrained_supplier}.|STYLE: Data-rich, concise, and facilitates executive decision-making.|OUTPUT FORMAT: A PowerPoint-ready presentation in Markdown (using slide separators).",product_family|constrained_supplier
+Supply Chain Management,"ROLE: Sustainability Analyst|OBJECTIVE: Calculate the carbon footprint for the supply chain of product **{product_sku}** from raw material to final delivery.|REQUIREMENTS: Use emission factors from {emission_factors_db}.|Break down the emissions by transportation, manufacturing, and warehousing.|The analysis should cover the entire lifecycle as defined in {lifecycle_stages_doc}.|STYLE: Eco-conscious, quantitative, and identifies hotspots for reduction.|OUTPUT FORMAT: Markdown report with a summary of CO2e emissions.",product_sku|emission_factors_db|lifecycle_stages_doc
+Supply Chain Management,"ROLE: Trade Compliance Officer|OBJECTIVE: Determine the correct Harmonized System (HS) code for the product **{product_description}** being exported from **{export_country}** to **{import_country}**.|REQUIREMENTS: Provide the 6-digit HS code.|Justify the classification based on the General Rules of Interpretation.|List any import duties or tariffs associated with that code for the destination country.|STYLE: Accurate, compliant, and essential for international trade.|OUTPUT FORMAT: Markdown note with the HS code and justification.",product_description|export_country|import_country
+UX/UI Design,"ROLE: UI Component Generator|OBJECTIVE: Generate the HTML and CSS code for a reusable **{component_name}** component based on the design specifications.|REQUIREMENTS: The component must be responsive and work on screen sizes from {min_width}px to {max_width}px.|Follow the BEM (Block, Element, Modifier) naming convention for CSS classes.|The design should adhere to the style guide defined by the brand color {brand_color_hex}.|STYLE: Pixel-perfect, clean code, and production-ready.|OUTPUT FORMAT: An HTML file with embedded CSS.",component_name|min_width|max_width|brand_color_hex
+UX/UI Design,"ROLE: Accessibility Auditor|OBJECTIVE: Audit the web page at **{page_url}** for compliance with WCAG 2.1 AA accessibility standards.|REQUIREMENTS: Check for issues with color contrast, missing alt text for images, and keyboard navigation.|Use an automated tool like {accessibility_tool} as a starting point.|Provide a prioritized list of issues to fix, with code snippets for remediation.|STYLE: User-advocate, thorough, and focused on inclusivity.|OUTPUT FORMAT: Markdown report with a list of accessibility violations and fixes.",page_url|accessibility_tool
+UX/UI Design,"ROLE: User Flow Mapper|OBJECTIVE: Create a user flow diagram for a user trying to complete the task of **{user_task}** in the application **{app_name}**.|REQUIREMENTS: The diagram should show all steps, decision points, and screens the user interacts with.|Start from the entry point {entry_point} and end at the success screen.|Identify at least two potential points of friction or drop-off in the flow.|STYLE: Visual, user-centric, and helps identify usability issues.|OUTPUT FORMAT: A diagram using Mermaid Markdown's graph syntax.",user_task|app_name|entry_point
+UX/UI Design,"ROLE: Design System Documenter|OBJECTIVE: Write the documentation for the **{component_name}** component in our design system.|REQUIREMENTS: Include sections for 'When to use', 'When not to use', and 'Anatomy'.|Provide at least 3 examples of the component in different states (e.g., default, hover, disabled).|Reference the corresponding component in the Figma library {figma_component_link}.|STYLE: Clear, comprehensive, and enables consistent use of the component.|OUTPUT FORMAT: Markdown page for the design system website.",component_name|figma_component_link
+UX/UI Design,"ROLE: Usability Test Script Writer|OBJECTIVE: Create a script for a moderated usability test to evaluate the new feature **{feature_name}**.|REQUIREMENTS: The script should include an introduction, pre-test questions about user habits, a list of tasks for the user to perform, and post-test follow-up questions.|The primary task should be to {primary_user_goal}.|The target user persona for the test is {user_persona_name}.|STYLE: Unbiased, open-ended, and encourages users to think aloud.|OUTPUT FORMAT: Markdown document containing the full test script.",feature_name|primary_user_goal|user_persona_name
+UX/UI Design,"ROLE: Microcopy Writer|OBJECTIVE: Write clear and concise microcopy for the user interface element **{ui_element_name}** (e.g., a button, an error message).|REQUIREMENTS: The copy should guide the user and align with the brand voice, which is {brand_voice_description}.|For the error state, explain what went wrong and how to fix it.|The copy for the button must be a strong call to action and under {word_limit} words.|STYLE: Conversational, helpful, and concise.|OUTPUT FORMAT: A JSON object with keys for each state (e.g., 'label', 'error_message', 'tooltip').",ui_element_name|brand_voice_description|word_limit
+UX/UI Design,"ROLE: Persona Creator|OBJECTIVE: Create a detailed user persona for the target audience of the product **{product_name}**.|REQUIREMENTS: The persona should be based on user research findings summarized in {research_summary_doc}.|Include demographic information, goals, frustrations, and a short bio.|Give the persona a name, like {persona_name}, and a stock photo.|STYLE: Empathetic, research-backed, and brings the user to life.|OUTPUT FORMAT: Markdown file with a standard persona layout.",product_name|research_summary_doc|persona_name
+UX/UI Design,"ROLE: Information Architect|OBJECTIVE: Propose a new sitemap and navigation structure for the website **{website_name}** to improve findability.|REQUIREMENTS: The structure should be based on the results of a card sorting exercise detailed in {card_sorting_results}.|The main navigation should have no more than {max_nav_items} top-level items.|Create a visual sitemap diagram.|STYLE: Logical, user-centered, and scalable.|OUTPUT FORMAT: A tree diagram using Mermaid Markdown.",website_name|card_sorting_results|max_nav_items
+UX/UI Design,"ROLE: Visual Asset Exporter|OBJECTIVE: Generate instructions for exporting all necessary image assets for the screen design located on the Figma page **{figma_page_link}**.|REQUIREMENTS: Export all icons in SVG format.|Export all raster images (e.g., photos) in JPG and WebP formats at 2x resolution.|The assets should be named according to the convention {naming_convention}.|STYLE: Precise, organized, and bridges the gap between design and development.|OUTPUT FORMAT: Markdown checklist for a developer to follow.",figma_page_link|naming_convention
+UX/UI Design,"ROLE: Interaction Design Specialist|OBJECTIVE: Describe the interaction and animation for the UI element **{element_name}** as it transitions between its states.|REQUIREMENTS: The transition from default to hover state should take {duration_ms}ms.|Use an {easing_function} easing function for a natural feel.|The description should be detailed enough for a developer to implement using a library like {animation_library}.|STYLE: Dynamic, functional, and enhances the user experience.|OUTPUT FORMAT: A detailed description in Markdown, similar to a spec.",element_name|duration_ms|easing_function|animation_library

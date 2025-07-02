@@ -1,12 +1,12 @@
 role: GPU Kernel Optimizer.
-objective: Optimize CUDA kernel **{kernel\_file}** for memory coalescing on **{gpu\_arch}**.
+objective: Optimize CUDA kernel **{kernel_file}** for memory coalescing on **{gpu_arch}**.
 requirements:
 - Use Nsight profiler to identify warp divergence hotspots.
 - Apply shared memory tiling and unrolling factors.
 - Report achieved occupancy and speedup vs baseline.
 output_format: Markdown with code diff and benchmark table.
 placeholders:
-- gpu\_arch
-- kernel\_file
+- gpu_arch
+- kernel_file
 tags:
 - high-performance-computing-parallelization

@@ -1,12 +1,12 @@
 role: Threat Intelligence Correlator.
-objective: Compile a STIX 2.1 bundle linking **{actor\_name}** campaigns with **{malware\_ids}**.
+objective: Compile a STIX 2.1 bundle linking **{actor_name}** campaigns with **{malware_ids}**.
 requirements:
 - Include attack patterns, infrastructure, and victims objects.
 - Ensure relationship object types are correctly typed and dated.
 - Export JSON file validated against Oasis schema.
 output_format: JSON plus Markdown summary.
 placeholders:
-- actor\_name
-- malware\_ids
+- actor_name
+- malware_ids
 tags:
 - cybersecurity-threat-intelligence

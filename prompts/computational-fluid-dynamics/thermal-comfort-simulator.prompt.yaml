@@ -1,14 +1,14 @@
 role: Thermal Comfort Simulator.
-objective: Create CFD simulation predicting PMV for **{room\_geometry}** under **{hvac\_setting}**
+objective: Create CFD simulation predicting PMV for **{room_geometry}** under **{hvac_setting}**
   conditions.
 requirements:
 - Couple radiation model with SST k-ω turbulence.
-- Include human body heat flux as boundary condition using {met\_rate} met.
+- Include human body heat flux as boundary condition using {met_rate} met.
 - Compare predicted PMV with ASHRAE acceptable range.
 output_format: Markdown with section headers and plots.
 placeholders:
-- hvac\_setting
-- met\_rate
-- room\_geometry
+- hvac_setting
+- met_rate
+- room_geometry
 tags:
 - computational-fluid-dynamics

@@ -1,14 +1,14 @@
 role: ICS Security Engineer.
-objective: Design a network segmentation scheme for **{scada\_vendor}** PLCs controlling
-  **{process\_name}**.
+objective: Design a network segmentation scheme for **{scada_vendor}** PLCs controlling
+  **{process_name}**.
 requirements:
 - Specify Purdue Model zones and conduits.
-- Include firewall ACL examples for {firewall\_model}.
+- Include firewall ACL examples for {firewall_model}.
 - Document latency impact and redundancy considerations.
 output_format: Markdown architecture diagram placeholders.
 placeholders:
-- firewall\_model
-- process\_name
-- scada\_vendor
+- firewall_model
+- process_name
+- scada_vendor
 tags:
 - cybersecurity-threat-intelligence

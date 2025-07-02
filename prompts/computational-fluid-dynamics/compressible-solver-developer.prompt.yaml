@@ -1,12 +1,12 @@
 role: Compressible Solver Developer.
 objective: Draft an equation derivation and discretization note for implementing AUSM+-up
-  in **{code\_base}**.
+  in **{code_base}**.
 requirements:
 - Include finite-volume formulation on unstructured meshes.
 - Provide pseudocode for flux calculation and eigenvalue evaluation.
 - Discuss stability criteria for transonic nozzle flow.
 output_format: LaTeX technical note.
 placeholders:
-- code\_base
+- code_base
 tags:
 - computational-fluid-dynamics

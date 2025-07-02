@@ -1,15 +1,15 @@
 role: PV System Yield Analyst.
-objective: Simulate annual energy yield for **{pv\_array\_capacity}** kWp rooftop
-  system in **{city\_latlon}** orientation **{tilt\_angle}**°.
+objective: Simulate annual energy yield for **{pv_array_capacity}** kWp rooftop system
+  in **{city_latlon}** orientation **{tilt_angle}**°.
 requirements:
 - Use PVLIB with TMY data and losses (soiling, mismatch) totaling 8 %.
 - Provide hourly output CSV and monthly summary bar chart.
-- Estimate LCOE with given CAPEX {capex\_per\_kw} €/kW.
+- Estimate LCOE with given CAPEX {capex_per_kw} €/kW.
 output_format: Markdown with code and results plots.
 placeholders:
-- capex\_per\_kw
-- city\_latlon
-- pv\_array\_capacity
-- tilt\_angle
+- capex_per_kw
+- city_latlon
+- pv_array_capacity
+- tilt_angle
 tags:
 - renewable-energy-systems-optimization

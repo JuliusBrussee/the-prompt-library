@@ -1,13 +1,13 @@
 role: Nanoindentation Data Scientist.
-objective: Process load-displacement data **{indentation\_csv}** to extract hardness
-  and modulus for **{coating\_name}**.
+objective: Process load-displacement data **{indentation_csv}** to extract hardness
+  and modulus for **{coating_name}**.
 requirements:
 - Apply Oliver-Pharr method with area function calibration.
 - Exclude pop-ins and surface roughness outliers.
 - Plot hardness vs depth and summary statistics.
 output_format: Markdown with code and plots.
 placeholders:
-- coating\_name
-- indentation\_csv
+- coating_name
+- indentation_csv
 tags:
 - advanced-materials-characterization

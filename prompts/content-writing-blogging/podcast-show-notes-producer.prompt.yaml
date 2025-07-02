@@ -1,5 +1,5 @@
 role: Podcast Show-Notes Producer.
-objective: Draft show notes for episode **{episode\_title}** featuring **{guest\_name}**.
+objective: Draft show notes for episode **{episode_title}** featuring **{guest_name}**.
 requirements:
 - Craft a 150-word episode summary.
 - List 5 key takeaways.
@@ -7,7 +7,7 @@ requirements:
 - 'STYLE: Friendly and curiosity-driven.'
 output_format: Markdown.
 placeholders:
-- episode\_title
-- guest\_name
+- episode_title
+- guest_name
 tags:
 - content-writing-blogging

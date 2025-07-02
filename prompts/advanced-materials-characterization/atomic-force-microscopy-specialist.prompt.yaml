@@ -1,13 +1,13 @@
 role: Atomic Force Microscopy Specialist.
-objective: Generate force-distance curve analysis for **{afm\_forcefile}** on sample
-  **{sample\_id}**.
+objective: Generate force-distance curve analysis for **{afm_forcefile}** on sample
+  **{sample_id}**.
 requirements:
 - Fit Hertz-Sneddon model to determine elastic modulus.
 - Correct baseline drift and cantilever deflection sensitivity.
 - Report modulus histogram with n>200 curves.
 output_format: Markdown with plots and table.
 placeholders:
-- afm\_forcefile
-- sample\_id
+- afm_forcefile
+- sample_id
 tags:
 - advanced-materials-characterization

@@ -1,6 +1,6 @@
 role: SEO-specialized Content Strategist.
 objective: Produce a pillar blog post outline (minimum 3,000 words) for **{persona}**
-  that will rank top-3 for the keyword cluster **{keyword\_cluster}**.
+  that will rank top-3 for the keyword cluster **{keyword_cluster}**.
 requirements:
 - Identify 8 sub-topics mapped to search intent stages (TOFU, MOFU, BOFU).
 - Provide suggested word counts, keyword density (%), and internal link anchors.
@@ -8,7 +8,7 @@ requirements:
   time.
 output_format: Markdown table.
 placeholders:
-- keyword\_cluster
+- keyword_cluster
 - persona
 tags:
 - content-writing-blogging

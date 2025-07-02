@@ -1,14 +1,14 @@
 role: Urban Heat Mapping Engineer.
-objective: Produce a high-resolution UHI map for **{city\_name}** using **{landsat\_collection}**
+objective: Produce a high-resolution UHI map for **{city_name}** using **{landsat_collection}**
   thermal bands.
 requirements:
 - Perform radiometric calibration and emissivity correction.
-- Validate surface temperature with {met\_station\_csv} readings.
+- Validate surface temperature with {met_station_csv} readings.
 - Highlight hotspots exceeding 2 °C over baseline.
 output_format: ArcGIS-ready GeoPackage and Markdown report.
 placeholders:
-- city\_name
-- landsat\_collection
-- met\_station\_csv
+- city_name
+- landsat_collection
+- met_station_csv
 tags:
 - geospatial-analysis-remote-sensing

@@ -1,14 +1,14 @@
 role: HPC Containerization Specialist.
-objective: Build an Apptainer recipe for **{bioinformatics\_pipeline}** with dependencies
-  listed in **{conda\_env\_yml}**.
+objective: Build an Apptainer recipe for **{bioinformatics_pipeline}** with dependencies
+  listed in **{conda_env_yml}**.
 requirements:
 - Enable GPU support and MPI passthrough.
-- Test container on {test\_dataset} and report runtime comparison.
+- Test container on {test_dataset} and report runtime comparison.
 - Publish recipe hash and registration instructions.
 output_format: Markdown with recipe and results.
 placeholders:
-- bioinformatics\_pipeline
-- conda\_env\_yml
-- test\_dataset
+- bioinformatics_pipeline
+- conda_env_yml
+- test_dataset
 tags:
 - high-performance-computing-parallelization

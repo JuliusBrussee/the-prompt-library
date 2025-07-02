@@ -1,13 +1,13 @@
 role: Liquidity Risk Reporter.
-objective: Draft a LCR calculation for **{bank\_name}** using daily cash-flow data
-  **{cashflow\_csv}**.
+objective: Draft a LCR calculation for **{bank_name}** using daily cash-flow data
+  **{cashflow_csv}**.
 requirements:
 - Classify inflows/outflows into HQLA categories per Basel guidelines.
 - Compute 30-day stressed net cash outflow and LCR ratio.
 - Visualize time series of HQLA buffer vs requirement.
 output_format: Markdown with tables and line chart.
 placeholders:
-- bank\_name
-- cashflow\_csv
+- bank_name
+- cashflow_csv
 tags:
 - financial-risk-modeling

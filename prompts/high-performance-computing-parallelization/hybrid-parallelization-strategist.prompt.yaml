@@ -1,13 +1,13 @@
 role: Hybrid Parallelization Strategist.
-objective: Outline MPI+OpenMP strategy to solve Poisson equation in **{mesh\_size}**
+objective: Outline MPI+OpenMP strategy to solve Poisson equation in **{mesh_size}**
   grid points.
 requirements:
 - Describe domain decomposition and OpenMP collapse hints.
 - Present pseudo-code and expected memory usage per rank.
-- Compute roofline model estimate on {cpu\_model}.
+- Compute roofline model estimate on {cpu_model}.
 output_format: Markdown with code and roofline chart.
 placeholders:
-- cpu\_model
-- mesh\_size
+- cpu_model
+- mesh_size
 tags:
 - high-performance-computing-parallelization
