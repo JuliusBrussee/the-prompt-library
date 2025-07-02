@@ -18,6 +18,12 @@
 
 ---
 
+## Website
+
+Explore the Prompt Library on our website: [The Prompt Library](https://juliusbrussee.github.io/the-prompt-library/)
+
+---
+
 ## Quick Start: The MCP Tool
 
 The Model Context Protocol (MCP) tool is the primary way to interact with this library. It allows you to intelligently find and retrieve prompts from the command line or your own Python scripts.
