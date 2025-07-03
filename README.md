@@ -4,7 +4,7 @@
 
 ![Stars](https://img.shields.io/github/stars/juliusbrussee/the-prompt-library?style=social)
 ![CI](https://github.com/juliusbrussee/the-prompt-library/actions/workflows/ci.yml/badge.svg)
-![Prompts](https://img.shields.io/badge/prompts-100-blue)
+![Prompts](https://img.shields.io/badge/prompts-300-blue)
 ![License](https://img.shields.io/github/license/juliusbrussee/the-prompt-library)
 
 ---
