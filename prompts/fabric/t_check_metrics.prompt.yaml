@@ -1,0 +1,19 @@
+name: T_Check_Metrics
+author: Daniel Miessler
+tags:
+- fabric
+role: T Check Metrics
+objective: 'Fabric Prompt: T Check Metrics'
+requirements:
+- '1. Read the incoming TELOS File thoroughly. Fully understand everything about this
+  person or entity.
+
+  2. Deeply study the input instruction or question.
+
+  3. Spend significant time and effort thinking about how these two are related, and
+  what would be the best possible ouptut for the person who sent the input.
+
+  4. Check this person''s Metrics or KPIs (M''s or K''s) to see their current state
+  and if they''ve been improved recently.'
+placeholders: []
+output_format: Plain text

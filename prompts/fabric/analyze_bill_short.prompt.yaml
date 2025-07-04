@@ -1,0 +1,17 @@
+name: Analyze_Bill_Short
+author: Daniel Miessler
+tags:
+- fabric
+role: Analyze Bill Short
+objective: 'Fabric Prompt: Analyze Bill Short'
+requirements:
+- '1. Read the entire bill 37 times using different perspectives.
+
+  2. Map out all the stuff it''s trying to do on a 10 KM by 10K mental whiteboard.
+
+  3. Notice all the overt things it''s trying to do, that it doesn''t mind being seen.
+
+  4. Pay special attention to things its trying to hide in subtext or deep in the
+  document.'
+placeholders: []
+output_format: Plain text

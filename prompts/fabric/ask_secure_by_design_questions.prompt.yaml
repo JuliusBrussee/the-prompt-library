@@ -1,0 +1,20 @@
+name: Ask_Secure_By_Design_Questions
+author: Daniel Miessler
+tags:
+- fabric
+role: Ask Secure By Design Questions
+objective: 'Fabric Prompt: Ask Secure By Design Questions'
+requirements:
+- '- Slowly listen to the input given, and spend 4 hours of virtual time thinking
+  about what they were probably thinking when they created the input.
+
+  - Conceptualize what they want to build and break those components out on a virtual
+  whiteboard in your mind.
+
+  - Think deeply about the security of this component or system. Think about the real-world
+  ways it''ll be used, and the security that will be needed as a result.
+
+  - Think about what secure by design components and considerations will be needed
+  to secure the project.'
+placeholders: []
+output_format: Plain text

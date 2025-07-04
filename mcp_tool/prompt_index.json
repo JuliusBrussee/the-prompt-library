@@ -640,6 +640,2004 @@
     ]
   },
   {
+    "path": "scraped/write_essay.prompt.yaml",
+    "role": "Write Essay",
+    "objective": "You are an expert on writing clear and illuminating essays on the topic of the input provided",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_book_ideas.prompt.yaml",
+    "role": "Extract Book Ideas",
+    "objective": "You take a book name as an input and output a full summary of the book's most important content using the steps and instructions below",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_ai_jobs_analysis.prompt.yaml",
+    "role": "Create Ai Jobs Analysis",
+    "objective": "Fabric Prompt: Create Ai Jobs Analysis",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_story_explanation.prompt.yaml",
+    "role": "Create Story Explanation",
+    "objective": "// How the task will be approached",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_check_metrics.prompt.yaml",
+    "role": "T Check Metrics",
+    "objective": "Fabric Prompt: T Check Metrics",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/explain_code.prompt.yaml",
+    "role": "Explain Code",
+    "objective": "You are an expert coder that takes code and documentation as input and do your best to explain it",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_git_changes.prompt.yaml",
+    "role": "Summarize Git Changes",
+    "objective": "You are an expert project manager and developer, and you specialize in creating super clean updates for what changed a Github project in the last 7 days",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/explain_project.prompt.yaml",
+    "role": "Explain Project",
+    "objective": "You are an expert at explaining projects and how to use them",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_find_neglected_goals.prompt.yaml",
+    "role": "T Find Neglected Goals",
+    "objective": "Fabric Prompt: T Find Neglected Goals",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_academic_paper.prompt.yaml",
+    "role": "Create Academic Paper",
+    "objective": "You are an expert creator of Latex academic papers with clear explanation of concepts laid out high-quality and authoritative looking LateX",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_main_activities.prompt.yaml",
+    "role": "Extract Main Activities",
+    "objective": "Fabric Prompt: Extract Main Activities",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/identify_dsrp_systems.prompt.yaml",
+    "role": "Identify Dsrp Systems",
+    "objective": "As a creative and divergent thinker, your ability to explore connections, challenge assumptions, and discover new possibilities is essential",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_bill_short.prompt.yaml",
+    "role": "Analyze Bill Short",
+    "objective": "Fabric Prompt: Analyze Bill Short",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize.prompt.yaml",
+    "role": "Summarize",
+    "objective": "You are an expert content summarizer",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/judge_output.prompt.yaml",
+    "role": "Judge Output",
+    "objective": "You are a Honeycomb query evaluator with advanced capabilities to judge if a query is good or not",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/show_fabric_options_markmap.prompt.yaml",
+    "role": "Show Fabric Options Markmap",
+    "objective": "FABRIC PROJECT DESCRIPTION",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_terraform_plan.prompt.yaml",
+    "role": "Analyze Terraform Plan",
+    "objective": "You are an expert Terraform plan analyser",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/capture_thinkers_work.prompt.yaml",
+    "role": "Capture Thinkers Work",
+    "objective": "You take a philosopher, professional, notable figure, thinker, writer, author, philosophers, or philosophy as input, and you output a template about what it/they taught",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/explain_docs.prompt.yaml",
+    "role": "Explain Docs",
+    "objective": "You are an expert at capturing, understanding, and explaining the most important parts of instructions, documentation, or other formats of input that describe how to use a tool",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_5_sentence_summary.prompt.yaml",
+    "role": "Create 5 Sentence Summary",
+    "objective": "Fabric Prompt: Create 5 Sentence Summary",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_algorithm_update_recommendations.prompt.yaml",
+    "role": "Extract Algorithm Update Recommendations",
+    "objective": "You are an expert interpreter of the algorithms described for doing things within content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/write_pull-request.prompt.yaml",
+    "role": "Write Pull Request",
+    "objective": "You are an experienced software engineer about to open a PR",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_visualization.prompt.yaml",
+    "role": "Create Visualization",
+    "objective": "You are an expert at data and concept visualization and in turning complex ideas into a form that can be visualized using ASCII art",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_patterns.prompt.yaml",
+    "role": "Extract Patterns",
+    "objective": "You take a collection of ideas or data or observations and you look for the most interesting and surprising patterns",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_presentation.prompt.yaml",
+    "role": "Analyze Presentation",
+    "objective": "Fabric Prompt: Analyze Presentation",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_debate.prompt.yaml",
+    "role": "Summarize Debate",
+    "objective": "// How the task will be approached",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_book_recommendations.prompt.yaml",
+    "role": "Extract Book Recommendations",
+    "objective": "You take a book name as an input and output a full summary of the book's most important content using the steps and instructions below",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_incident.prompt.yaml",
+    "role": "Analyze Incident",
+    "objective": "Cybersecurity Hack Article Analysis: Efficient Data Extraction",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/clean_text.prompt.yaml",
+    "role": "Clean Text",
+    "objective": "You are an expert at cleaning up broken and, malformatted, text, for example: line breaks in weird places, etc",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_user_story.prompt.yaml",
+    "role": "Create User Story",
+    "objective": "You are an expert on writing concise, clear, and illuminating technical user stories for new features in complex software programs",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/official_pattern_template.prompt.yaml",
+    "role": "Official Pattern Template",
+    "objective": "// Deep, repeated consumption of the input",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/refine_design_document.prompt.yaml",
+    "role": "Refine Design Document",
+    "objective": "You are an expert in software, cloud and cybersecurity architecture",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_logs.prompt.yaml",
+    "role": "Analyze Logs",
+    "objective": "You are a system administrator and service reliability engineer at a large tech company",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/export_data_as_csv.prompt.yaml",
+    "role": "Export Data As Csv",
+    "objective": "Fabric Prompt: Export Data As Csv",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_upgrade_pack.prompt.yaml",
+    "role": "Create Upgrade Pack",
+    "objective": "You are an expert at extracting world model and task algorithm updates from input",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_coding_project.prompt.yaml",
+    "role": "Create Coding Project",
+    "objective": "You are an elite programmer",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/provide_guidance.prompt.yaml",
+    "role": "Provide Guidance",
+    "objective": "You are an all-knowing psychiatrist, psychologist, and life coach and you provide honest and concise advice to people based on the question asked combined with the context provided",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/enrich_blog_post.prompt.yaml",
+    "role": "Enrich Blog Post",
+    "objective": "// How the task will be approached",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_ideas.prompt.yaml",
+    "role": "Extract Ideas",
+    "objective": "You are an advanced AI with a 2,128 IQ and you are an expert in understanding any input and extracting the most important ideas from it",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/compare_and_contrast.prompt.yaml",
+    "role": "Compare And Contrast",
+    "objective": "Please be brief",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_find_negative_thinking.prompt.yaml",
+    "role": "T Find Negative Thinking",
+    "objective": "Fabric Prompt: T Find Negative Thinking",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/write_nuclei_template_rule.prompt.yaml",
+    "role": "Write Nuclei Template Rule",
+    "objective": "You are an expert at writing YAML Nuclei templates, used by Nuclei, a tool by ProjectDiscovery",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_video_chapters.prompt.yaml",
+    "role": "Create Video Chapters",
+    "objective": "You are an expert conversation topic and timestamp creator",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/find_female_life_partner.prompt.yaml",
+    "role": "Find Female Life Partner",
+    "objective": "You are a relationship and marriage and life happiness expert AI with a 4,227 IQ",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/find_hidden_message.prompt.yaml",
+    "role": "Find Hidden Message",
+    "objective": "Fabric Prompt: Find Hidden Message",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_summary.prompt.yaml",
+    "role": "Create Summary",
+    "objective": "You are an expert content summarizer",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_micro_summary.prompt.yaml",
+    "role": "Create Micro Summary",
+    "objective": "You are an expert content summarizer",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_primary_solution.prompt.yaml",
+    "role": "Extract Primary Solution",
+    "objective": "Fabric Prompt: Extract Primary Solution",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_military_strategy.prompt.yaml",
+    "role": "Analyze Military Strategy",
+    "objective": "You are a military historian and strategic analyst specializing in dissecting historical battles",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/improve_academic_writing.prompt.yaml",
+    "role": "Improve Academic Writing",
+    "objective": "You are an academic writing expert",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/identify_job_stories.prompt.yaml",
+    "role": "Identify Job Stories",
+    "objective": "You are a versatile and perceptive Job Story Generator",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_prose_json.prompt.yaml",
+    "role": "Analyze Prose Json",
+    "objective": "You are an expert writer and editor and you excel at evaluating the quality of writing and other content and providing various ratings and recommendations about how to improve it from a novelty, clarity, and overall messaging standpoint",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/find_logical_fallacies.prompt.yaml",
+    "role": "Find Logical Fallacies",
+    "objective": "You are an expert on all the different types of fallacies that are often used in argument and identifying them in input",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_prompt.prompt.yaml",
+    "role": "Summarize Prompt",
+    "objective": "You are an expert prompt summarizer",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_instructions.prompt.yaml",
+    "role": "Extract Instructions",
+    "objective": "You are an expert at extracting clear, concise step-by-step instructions from instructional video transcripts",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_alpha.prompt.yaml",
+    "role": "Extract Alpha",
+    "objective": "You're an expert at finding Alpha in content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_controversial_ideas.prompt.yaml",
+    "role": "Extract Controversial Ideas",
+    "objective": "You are super-intelligent AI system that extracts the most controversial statements out of inputs",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_cyber_summary.prompt.yaml",
+    "role": "Create Cyber Summary",
+    "objective": "// Create the virtual whiteboard in your mind",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/translate.prompt.yaml",
+    "role": "Translate",
+    "objective": "You are an expert translator who takes sentences or documentation as input and do your best to translate them as accurately and perfectly as possible into the language specified by its language code {{lang_code}}, e",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_hormozi_offer.prompt.yaml",
+    "role": "Create Hormozi Offer",
+    "objective": "Introduction: $100M Offers",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/improve_prompt.prompt.yaml",
+    "role": "Improve Prompt",
+    "objective": "You are an expert LLM prompt writing service",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_ctf_writeup.prompt.yaml",
+    "role": "Extract Ctf Writeup",
+    "objective": "You are a seasoned cyber security veteran",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/explain_math.prompt.yaml",
+    "role": "Explain Math",
+    "objective": "I want you to act as a math teacher",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_threat_report_trends.prompt.yaml",
+    "role": "Analyze Threat Report Trends",
+    "objective": "You are a super-intelligent cybersecurity expert",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_flash_cards.prompt.yaml",
+    "role": "Create Flash Cards",
+    "objective": "Fabric Prompt: Create Flash Cards",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/to_flashcards.prompt.yaml",
+    "role": "To Flashcards",
+    "objective": "You are a professional Anki card creator, able to create Anki cards from texts",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_better_frame.prompt.yaml",
+    "role": "Create Better Frame",
+    "objective": "You are an expert at finding better, positive mental frames for seeing the world as described in the ESSAY below",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/convert_to_markdown.prompt.yaml",
+    "role": "Convert To Markdown",
+    "objective": "You are an expert format converter specializing in converting content to clean Markdown",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_describe_life_outlook.prompt.yaml",
+    "role": "T Describe Life Outlook",
+    "objective": "Fabric Prompt: T Describe Life Outlook",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/recommend_talkpanel_topics.prompt.yaml",
+    "role": "Recommend Talkpanel Topics",
+    "objective": "Fabric Prompt: Recommend Talkpanel Topics",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_business_ideas.prompt.yaml",
+    "role": "Extract Business Ideas",
+    "objective": "You are a business idea extraction assistant",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_prose.prompt.yaml",
+    "role": "Analyze Prose",
+    "objective": "You are an expert writer and editor and you excel at evaluating the quality of writing and other content and providing various ratings and recommendations about how to improve it from a novelty, clarity, and overall messaging standpoint",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_mistakes.prompt.yaml",
+    "role": "Analyze Mistakes",
+    "objective": "You are an advanced AI with a 2,128 IQ and you are an expert in understanding and analyzing thinking patterns, mistakes that came out of them, and anticipating additional mistakes that could exist in current thinking",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/improve_writing.prompt.yaml",
+    "role": "Improve Writing",
+    "objective": "You are a writing expert",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/sanitize_broken_html_to_markdown.prompt.yaml",
+    "role": "Sanitize Broken Html To Markdown",
+    "objective": "// How the task will be approached",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_visualize_mission_goals_projects.prompt.yaml",
+    "role": "T Visualize Mission Goals Projects",
+    "objective": "Fabric Prompt: T Visualize Mission Goals Projects",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_email_headers.prompt.yaml",
+    "role": "Analyze Email Headers",
+    "objective": "You are a cybersecurity and email expert",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_questions.prompt.yaml",
+    "role": "Extract Questions",
+    "objective": "Fabric Prompt: Extract Questions",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/md_callout.prompt.yaml",
+    "role": "Md Callout",
+    "objective": "IDENTITY and GOAL:",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_spiritual_text.prompt.yaml",
+    "role": "Analyze Spiritual Text",
+    "objective": "You are an expert analyzer of spiritual texts",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_prediction_block.prompt.yaml",
+    "role": "Create Prediction Block",
+    "objective": "// How the task will be approached",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_create_h3_career.prompt.yaml",
+    "role": "T Create H3 Career",
+    "objective": "Fabric Prompt: T Create H3 Career",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/write_micro_essay.prompt.yaml",
+    "role": "Write Micro Essay",
+    "objective": "You are an expert on writing concise, clear, and illuminating essays on the topic of the input provided",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_videoid.prompt.yaml",
+    "role": "Extract Videoid",
+    "objective": "You are an expert at extracting video IDs from any URL so they can be passed on to other applications",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/ai.prompt.yaml",
+    "role": "Ai",
+    "objective": "You are an expert at interpreting the heart and spirit of a question and answering in an insightful manner",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_quiz.prompt.yaml",
+    "role": "Create Quiz",
+    "objective": "You are an expert on the subject defined in the input section provided below",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_mcp_servers.prompt.yaml",
+    "role": "Extract Mcp Servers",
+    "objective": "You are an expert at analyzing content related to MCP (Model Context Protocol) servers",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_wisdom.prompt.yaml",
+    "role": "Extract Wisdom",
+    "objective": "You extract surprising, insightful, and interesting information from text content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/improve_report_finding.prompt.yaml",
+    "role": "Improve Report Finding",
+    "objective": "You are a extremely experienced 'jack-of-all-trades' cyber security consultant that is diligent, concise but informative and professional",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/youtube_summary.prompt.yaml",
+    "role": "Youtube Summary",
+    "objective": "You are an AI assistant specialized in creating concise, informative summaries of YouTube video content based on transcripts",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_recommendations.prompt.yaml",
+    "role": "Extract Recommendations",
+    "objective": "You are an expert interpreter of the recommendations present within a piece of content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_prd.prompt.yaml",
+    "role": "Create Prd",
+    "objective": "You are a Product Requirements Document (PRD) Generator",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_git_diff_commit.prompt.yaml",
+    "role": "Create Git Diff Commit",
+    "objective": "You are an expert project manager and developer, and you specialize in creating super clean updates for what changed in a Git diff",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_threat_scenarios.prompt.yaml",
+    "role": "Create Threat Scenarios",
+    "objective": "You are an expert in risk and threat management and cybersecurity",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/explain_terms.prompt.yaml",
+    "role": "Explain Terms",
+    "objective": "Fabric Prompt: Explain Terms",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_keynote.prompt.yaml",
+    "role": "Create Keynote",
+    "objective": "You are an expert at creating TED-quality keynote presentations from the input provided",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_product_features.prompt.yaml",
+    "role": "Extract Product Features",
+    "objective": "You extract the list of product features from the input",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_network_threat_landscape.prompt.yaml",
+    "role": "Create Network Threat Landscape",
+    "objective": "You are a network security consultant that has been tasked with analysing open ports and services provided by the user",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_primary_problem.prompt.yaml",
+    "role": "Extract Primary Problem",
+    "objective": "Fabric Prompt: Extract Primary Problem",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_mermaid_visualization.prompt.yaml",
+    "role": "Create Mermaid Visualization",
+    "objective": "You are an expert at data and concept visualization and in turning complex ideas into a form that can be visualized using Mermaid (markdown) syntax",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_insights.prompt.yaml",
+    "role": "Extract Insights",
+    "objective": "You are an expert at extracting the most surprising, powerful, and interesting insights from content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_personality.prompt.yaml",
+    "role": "Analyze Personality",
+    "objective": "Fabric Prompt: Analyze Personality",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/recommend_pipeline_upgrades.prompt.yaml",
+    "role": "Recommend Pipeline Upgrades",
+    "objective": "Fabric Prompt: Recommend Pipeline Upgrades",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_coding_feature.prompt.yaml",
+    "role": "Create Coding Feature",
+    "objective": "You are an elite programmer",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_newsletter.prompt.yaml",
+    "role": "Summarize Newsletter",
+    "objective": "You are an advanced AI newsletter content extraction service that extracts the most meaningful and interesting and useful content from an incoming newsletter",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/suggest_pattern.prompt.yaml",
+    "role": "Suggest Pattern",
+    "objective": "You are an AI assistant tasked with creating a new feature for a fabric command-line tool",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_tags.prompt.yaml",
+    "role": "Create Tags",
+    "objective": "You identify tags from text content for the mind mapping tools",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_domains.prompt.yaml",
+    "role": "Extract Domains",
+    "objective": "You extract domains and URLs from input like articles and newsletters for the purpose of understanding the sources that were used for their content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/write_semgrep_rule.prompt.yaml",
+    "role": "Write Semgrep Rule",
+    "objective": "You are an expert at writing Semgrep rules",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_threat_report.prompt.yaml",
+    "role": "Analyze Threat Report",
+    "objective": "You are a super-intelligent cybersecurity expert",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/dialog_with_socrates.prompt.yaml",
+    "role": "Dialog With Socrates",
+    "objective": "You are a modern day philosopher who desires to engage in deep, meaningful conversations",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_reading_plan.prompt.yaml",
+    "role": "Create Reading Plan",
+    "objective": "You take guidance and/or an author name as input and design a perfect three-phase reading plan for the user using the STEPS below",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_prose_pinker.prompt.yaml",
+    "role": "Analyze Prose Pinker",
+    "objective": "You are an expert at assessing prose and making recommendations based on Steven Pinker's book, The Sense of Style",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/write_hackerone_report.prompt.yaml",
+    "role": "Write Hackerone Report",
+    "objective": "Fabric Prompt: Write Hackerone Report",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_jokes.prompt.yaml",
+    "role": "Extract Jokes",
+    "objective": "You extract jokes from text content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_extract_panel_topics.prompt.yaml",
+    "role": "T Extract Panel Topics",
+    "objective": "Fabric Prompt: T Extract Panel Topics",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_micro.prompt.yaml",
+    "role": "Summarize Micro",
+    "objective": "You are an expert content summarizer",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_cfp_submission.prompt.yaml",
+    "role": "Analyze Cfp Submission",
+    "objective": "You are an AI assistant specialized in reviewing speaking session submissions for conferences",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/identify_dsrp_distinctions.prompt.yaml",
+    "role": "Identify Dsrp Distinctions",
+    "objective": "As a creative and divergent thinker, your ability to explore connections, challenge assumptions, and discover new possibilities is essential",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/prepare_7s_strategy.prompt.yaml",
+    "role": "Prepare 7S Strategy",
+    "objective": "Fabric Prompt: Prepare 7S Strategy",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_sponsors.prompt.yaml",
+    "role": "Extract Sponsors",
+    "objective": "You are an expert at extracting the sponsors and potential sponsors from a given transcript, such a from a podcast, video transcript, essay, or whatever",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_idea_compass.prompt.yaml",
+    "role": "Create Idea Compass",
+    "objective": "You are a curious and organized thinker who aims to develop a structured and interconnected system of thoughts and ideas",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_diy.prompt.yaml",
+    "role": "Create Diy",
+    "objective": "You are an AI assistant tasked with creating \"Do It Yourself\" tutorial patterns",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_investigation_visualization.prompt.yaml",
+    "role": "Create Investigation Visualization",
+    "objective": "Fabric Prompt: Create Investigation Visualization",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/label_and_rate.prompt.yaml",
+    "role": "Label And Rate",
+    "objective": "IDENTITY and GOAL:",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_give_encouragement.prompt.yaml",
+    "role": "T Give Encouragement",
+    "objective": "Fabric Prompt: T Give Encouragement",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/get_wow_per_minute.prompt.yaml",
+    "role": "Get Wow Per Minute",
+    "objective": "Thus, WPM is how often per minute someone is getting surprise, novelty, insight, value, or wisdom per minute across all minutes of the content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/get_youtube_rss.prompt.yaml",
+    "role": "Get Youtube Rss",
+    "objective": "Here is the structure for YouTube RSS URLs and their relation to the channel ID and or channel URL:",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_design_document.prompt.yaml",
+    "role": "Create Design Document",
+    "objective": "You are an expert in software, cloud and cybersecurity architecture",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_tech_impact.prompt.yaml",
+    "role": "Analyze Tech Impact",
+    "objective": "You are a technology impact analysis service, focused on determining the societal impact of technology projects",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_bill.prompt.yaml",
+    "role": "Analyze Bill",
+    "objective": "Fabric Prompt: Analyze Bill",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_recursive_outline.prompt.yaml",
+    "role": "Create Recursive Outline",
+    "objective": "You are an AI assistant specialized in task decomposition and recursive outlining",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/solve_with_cot.prompt.yaml",
+    "role": "Solve With Cot",
+    "objective": "Always use these tags in your responses",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_proposition.prompt.yaml",
+    "role": "Analyze Proposition",
+    "objective": "You are an AI assistant whose primary responsibility is to analyze a federal, state, or local ballot proposition",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_latest_video.prompt.yaml",
+    "role": "Extract Latest Video",
+    "objective": "You are an expert at extracting the latest video URL from a YouTube RSS feed",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/identify_dsrp_perspectives.prompt.yaml",
+    "role": "Identify Dsrp Perspectives",
+    "objective": "As a creative and divergent thinker, your ability to explore connections, challenge assumptions, and discover new possibilities is essential",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_malware.prompt.yaml",
+    "role": "Analyze Malware",
+    "objective": "You are a malware analysis expert and you are able to understand malware for any kind of platform including, Windows, MacOS, Linux or android",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_create_opening_sentences.prompt.yaml",
+    "role": "T Create Opening Sentences",
+    "objective": "Fabric Prompt: T Create Opening Sentences",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/answer_interview_question.prompt.yaml",
+    "role": "Answer Interview Question",
+    "objective": "Fabric Prompt: Answer Interview Question",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_show_intro.prompt.yaml",
+    "role": "Create Show Intro",
+    "objective": "You are an expert podcast and media producer specializing in creating the most compelling and interesting short intros that are read before the start of a show",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_references.prompt.yaml",
+    "role": "Extract References",
+    "objective": "You are an expert extractor of references to art, stories, books, literature, papers, and other sources of learning from content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_graph_from_input.prompt.yaml",
+    "role": "Create Graph From Input",
+    "objective": "Fabric Prompt: Create Graph From Input",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/rate_ai_response.prompt.yaml",
+    "role": "Rate Ai Response",
+    "objective": "Fabric Prompt: Rate Ai Response",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_find_blindspots.prompt.yaml",
+    "role": "T Find Blindspots",
+    "objective": "Fabric Prompt: T Find Blindspots",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_core_message.prompt.yaml",
+    "role": "Extract Core Message",
+    "objective": "Fabric Prompt: Extract Core Message",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_threat_model_plans.prompt.yaml",
+    "role": "T Threat Model Plans",
+    "objective": "Fabric Prompt: T Threat Model Plans",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_debate.prompt.yaml",
+    "role": "Analyze Debate",
+    "objective": "You are a neutral and objective entity whose sole purpose is to help humans understand debates to broaden their own views",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_formal_email.prompt.yaml",
+    "role": "Create Formal Email",
+    "objective": "You are an expert in formal communication with extensive knowledge in business etiquette and professional writing",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_patent.prompt.yaml",
+    "role": "Analyze Patent",
+    "objective": "Fabric Prompt: Analyze Patent",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_song_meaning.prompt.yaml",
+    "role": "Extract Song Meaning",
+    "objective": "// Study the input you have",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/write_essay_pg.prompt.yaml",
+    "role": "Write Essay Pg",
+    "objective": "You are an expert on writing concise, clear, and illuminating essays on the topic of the input provided",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_pull-requests.prompt.yaml",
+    "role": "Summarize Pull Requests",
+    "objective": "You are an expert at summarizing pull requests to a given coding project",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/ask_secure_by_design_questions.prompt.yaml",
+    "role": "Ask Secure By Design Questions",
+    "objective": "Fabric Prompt: Ask Secure By Design Questions",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_mermaid_visualization_for_github.prompt.yaml",
+    "role": "Create Mermaid Visualization For Github",
+    "objective": "You are an expert at data and concept visualization and in turning complex ideas into a form that can be visualized using Mermaid (markdown) syntax",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_art_prompt.prompt.yaml",
+    "role": "Create Art Prompt",
+    "objective": "You are an expert artist and AI whisperer",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_aphorisms.prompt.yaml",
+    "role": "Create Aphorisms",
+    "objective": "You are an expert finder and printer of existing, known aphorisms",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_skills.prompt.yaml",
+    "role": "Extract Skills",
+    "objective": "You are an expert in extracting skill terms from the job description provided",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_year_in_review.prompt.yaml",
+    "role": "T Year In Review",
+    "objective": "Fabric Prompt: T Year In Review",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_predictions.prompt.yaml",
+    "role": "Extract Predictions",
+    "objective": "You fully digest input and extract the predictions made within",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/transcribe_minutes.prompt.yaml",
+    "role": "Transcribe Minutes",
+    "objective": "You extract minutes from a transcribed meeting",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/review_design.prompt.yaml",
+    "role": "Review Design",
+    "objective": "You are an expert solution architect",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/ask_uncle_duke.prompt.yaml",
+    "role": "Ask Uncle Duke",
+    "objective": "Fabric Prompt: Ask Uncle Duke",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/rate_value.prompt.yaml",
+    "role": "Rate Value",
+    "objective": "You are an expert parser and rater of value in content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_sigma_rules.prompt.yaml",
+    "role": "Create Sigma Rules",
+    "objective": "You are an expert cybersecurity detection engineer for a SIEM company",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/recommend_artists.prompt.yaml",
+    "role": "Recommend Artists",
+    "objective": "Fabric Prompt: Recommend Artists",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_product_feedback.prompt.yaml",
+    "role": "Analyze Product Feedback",
+    "objective": "You are an AI assistant specialized in analyzing user feedback for products",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_sales_call.prompt.yaml",
+    "role": "Analyze Sales Call",
+    "objective": "SALES FUNDAMENTALS (i",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/identify_dsrp_relationships.prompt.yaml",
+    "role": "Identify Dsrp Relationships",
+    "objective": "As a creative and divergent thinker, your ability to explore connections, challenge assumptions, and discover new possibilities is essential",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_newsletter_entry.prompt.yaml",
+    "role": "Create Newsletter Entry",
+    "objective": "You are a custom GPT designed to create newsletter sections in the style of Frontend Weekly",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_answers.prompt.yaml",
+    "role": "Analyze Answers",
+    "objective": "You are a PHD expert on the subject defined in the input section provided below",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_candidates.prompt.yaml",
+    "role": "Analyze Candidates",
+    "objective": "You are an AI assistant whose primary responsibility is to create a pattern that analyzes and compares two running candidates",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_insights_dm.prompt.yaml",
+    "role": "Extract Insights Dm",
+    "objective": "// How the task will be approached",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_board_meeting.prompt.yaml",
+    "role": "Summarize Board Meeting",
+    "objective": "You are a professional meeting secretary specializing in corporate governance documentation",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_most_redeeming_thing.prompt.yaml",
+    "role": "Extract Most Redeeming Thing",
+    "objective": "Fabric Prompt: Extract Most Redeeming Thing",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_legislation.prompt.yaml",
+    "role": "Summarize Legislation",
+    "objective": "Fabric Prompt: Summarize Legislation",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_poc.prompt.yaml",
+    "role": "Extract Poc",
+    "objective": "You are a super powerful AI cybersecurity expert system specialized in finding and extracting proof of concept URLs and other vulnerability validation methods from submitted security/bug bounty reports",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_interviewer_techniques.prompt.yaml",
+    "role": "Analyze Interviewer Techniques",
+    "objective": "// How the task will be approached",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_risk.prompt.yaml",
+    "role": "Analyze Risk",
+    "objective": "You are tasked with conducting a risk assessment of a third-party vendor, which involves analyzing their compliance with security and privacy standards",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_pattern.prompt.yaml",
+    "role": "Create Pattern",
+    "objective": "You are an AI assistant whose primary responsibility is to interpret LLM/AI prompts and deliver responses based on pre-defined structures",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/agility_story.prompt.yaml",
+    "role": "Agility Story",
+    "objective": "You are an expert in the Agile framework",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/raw_query.prompt.yaml",
+    "role": "Raw Query",
+    "objective": "You are a universal AI that yields the best possible result given the input",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_logo.prompt.yaml",
+    "role": "Create Logo",
+    "objective": "You create simple, elegant, and impactful company logos based on the input given to you",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_ttrc_graph.prompt.yaml",
+    "role": "Create Ttrc Graph",
+    "objective": "Fabric Prompt: Create Ttrc Graph",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_loe_document.prompt.yaml",
+    "role": "Create Loe Document",
+    "objective": "You are an expert in software, cloud, and cybersecurity architecture",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_recipe.prompt.yaml",
+    "role": "Extract Recipe",
+    "objective": "You are a passionate chef",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_analyze_challenge_handling.prompt.yaml",
+    "role": "T Analyze Challenge Handling",
+    "objective": "Fabric Prompt: T Analyze Challenge Handling",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_paper.prompt.yaml",
+    "role": "Analyze Paper",
+    "objective": "You are a research paper analysis service focused on determining the primary findings of the paper and analyzing its scientific rigor and quality",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_meeting.prompt.yaml",
+    "role": "Summarize Meeting",
+    "objective": "You are an AI assistant specialized in analyzing meeting transcripts and extracting key information",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_wisdom_nometa.prompt.yaml",
+    "role": "Extract Wisdom Nometa",
+    "objective": "You extract surprising, insightful, and interesting information from text content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/tweet.prompt.yaml",
+    "role": "Tweet",
+    "objective": "Title: A Comprehensive Guide to Crafting Engaging Tweets with Emojis",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_ttrc_narrative.prompt.yaml",
+    "role": "Create Ttrc Narrative",
+    "objective": "Fabric Prompt: Create Ttrc Narrative",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/review_code.prompt.yaml",
+    "role": "Review Code",
+    "objective": "Fabric Prompt: Review Code",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/write_latex.prompt.yaml",
+    "role": "Write Latex",
+    "objective": "You are an expert at outputting syntactically correct LaTeX for a new",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_paper.prompt.yaml",
+    "role": "Summarize Paper",
+    "objective": "You are an excellent academic paper reviewer",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_wisdom_agents.prompt.yaml",
+    "role": "Extract Wisdom Agents",
+    "objective": "Fabric Prompt: Extract Wisdom Agents",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_security_update.prompt.yaml",
+    "role": "Create Security Update",
+    "objective": "You are an expert at creating concise security updates for newsletters according to the STEPS below",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_stride_threat_model.prompt.yaml",
+    "role": "Create Stride Threat Model",
+    "objective": "You are an expert in risk and threat management and cybersecurity",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_markmap_visualization.prompt.yaml",
+    "role": "Create Markmap Visualization",
+    "objective": "You are an expert at data and concept visualization and in turning complex ideas into a form that can be visualized using MarkMap",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_extract_intro_sentences.prompt.yaml",
+    "role": "T Extract Intro Sentences",
+    "objective": "Fabric Prompt: T Extract Intro Sentences",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_paper_simple.prompt.yaml",
+    "role": "Analyze Paper Simple",
+    "objective": "You are a research paper analysis service focused on determining the primary findings of the paper and analyzing its scientific rigor and quality",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_article_wisdom.prompt.yaml",
+    "role": "Extract Article Wisdom",
+    "objective": "You extract surprising, insightful, and interesting information from text content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/t_red_team_thinking.prompt.yaml",
+    "role": "T Red Team Thinking",
+    "objective": "Fabric Prompt: T Red Team Thinking",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/coding_master.prompt.yaml",
+    "role": "Coding Master",
+    "objective": "You are an expert in understanding and digesting computer coding and computer languages",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/rate_content.prompt.yaml",
+    "role": "Rate Content",
+    "objective": "You are an ultra-wise and brilliant classifier and judge of content",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_git_diff.prompt.yaml",
+    "role": "Summarize Git Diff",
+    "objective": "You are an expert project manager and developer, and you specialize in creating super clean updates for what changed in a Git diff",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_main_idea.prompt.yaml",
+    "role": "Extract Main Idea",
+    "objective": "You extract the primary and/or most surprising, insightful, and interesting idea from any input",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_rpg_summary.prompt.yaml",
+    "role": "Create Rpg Summary",
+    "objective": "You are an expert summarizer of in-personal personal role-playing game sessions",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_threat_report_cmds.prompt.yaml",
+    "role": "Analyze Threat Report Cmds",
+    "objective": "You are tasked with interpreting and responding to cybersecurity-related prompts by synthesizing information from a diverse panel of experts in the field",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/check_agreement.prompt.yaml",
+    "role": "Check Agreement",
+    "objective": "You are an expert at analyzing contracts and agreements and looking for gotchas",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_rpg_session.prompt.yaml",
+    "role": "Summarize Rpg Session",
+    "objective": "You are an expert summarizer of in-personal personal role-playing game sessions",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/humanize.prompt.yaml",
+    "role": "Humanize",
+    "objective": "You are a real person whose job is to make text sound natural, conversational, and relatable, just like how an average person talks or writes",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_report_finding.prompt.yaml",
+    "role": "Create Report Finding",
+    "objective": "You are a extremely experienced 'jack-of-all-trades' cyber security consultant that is diligent, concise but informative and professional",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_extraordinary_claims.prompt.yaml",
+    "role": "Extract Extraordinary Claims",
+    "objective": "Fabric Prompt: Extract Extraordinary Claims",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/extract_wisdom_dm.prompt.yaml",
+    "role": "Extract Wisdom Dm",
+    "objective": "// How the task will be approached",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_command.prompt.yaml",
+    "role": "Create Command",
+    "objective": "You are a penetration tester that is extremely good at reading and understanding command line help instructions",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_mnemonic_phrases.prompt.yaml",
+    "role": "Create Mnemonic Phrases",
+    "objective": "As a creative language assistant, you are responsible for creating memorable mnemonic bridges in the form of sentences from given words",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_comments.prompt.yaml",
+    "role": "Analyze Comments",
+    "objective": "Read all the comments",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_npc.prompt.yaml",
+    "role": "Create Npc",
+    "objective": "You are an expert NPC generator for D&D 5th edition",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/analyze_claims.prompt.yaml",
+    "role": "Analyze Claims",
+    "objective": "You are an objectively minded and centrist-oriented analyzer of truth claims and arguments",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/summarize_lecture.prompt.yaml",
+    "role": "Summarize Lecture",
+    "objective": "As an organized, high-skill expert lecturer, your role is to extract the most relevant topics from a lecture transcript and provide a structured summary using bullet points and lists of definitions for each subject",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/rate_ai_result.prompt.yaml",
+    "role": "Rate Ai Result",
+    "objective": "Fabric Prompt: Rate Ai Result",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
+    "path": "scraped/create_excalidraw_visualization.prompt.yaml",
+    "role": "Create Excalidraw Visualization",
+    "objective": "Here is the official schema documentation for creating Excalidraw diagrams",
+    "tags": [
+      "scraped",
+      "fabric"
+    ]
+  },
+  {
     "path": "content-writing-blogging/seo-specialized-content-strategist.prompt.yaml",
     "role": "SEO-specialized Content Strategist.",
     "objective": "Produce a pillar blog post outline (minimum 3,000 words) for **{persona}** that will rank top-3 for the keyword cluster **{keyword_cluster}**.",

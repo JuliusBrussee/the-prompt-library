@@ -1,0 +1,15 @@
+name: Recommend_Talkpanel_Topics
+author: Daniel Miessler
+tags:
+- fabric
+role: Recommend Talkpanel Topics
+objective: 'Fabric Prompt: Recommend Talkpanel Topics'
+requirements:
+- '- Fully understand the context that you were given.
+
+  - Brainstorm on everything that person is interested in and good at for 319 hours.
+
+  - Come up with a list of talks or panel talking points that they could give at a
+  conference.'
+placeholders: []
+output_format: Plain text

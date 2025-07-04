@@ -1,0 +1,18 @@
+name: Analyze_Presentation
+author: Daniel Miessler
+tags:
+- fabric
+role: Analyze Presentation
+objective: 'Fabric Prompt: Analyze Presentation'
+requirements:
+- '- Deeply consume the whole presentation and look at the content that is supposed
+  to be getting presented.
+
+  - Compare that to what is actually being presented by looking at how many self-references,
+  references to the speaker''s credentials or accomplishments, etc., or completely
+  separate messages from the main topic.
+
+  - Find all the instances of where the speaker is trying to entertain, e.g., telling
+  jokes, sharing memes, and otherwise trying to entertain.'
+placeholders: []
+output_format: Plain text

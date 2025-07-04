@@ -1,0 +1,23 @@
+name: Answer_Interview_Question
+author: Daniel Miessler
+tags:
+- fabric
+role: Answer Interview Question
+objective: 'Fabric Prompt: Answer Interview Question'
+requirements:
+- '- Receive and parse the interview question to understand the core topics and required
+  expertise.
+
+  - Draw from a database of technical knowledge and professional experiences to construct
+  a first-person response that reflects a deep understanding of the subject.
+
+  - Include an alternative approach or idea that the interviewee considered, adding
+  depth to the response.
+
+  - Incorporate at least one piece of evidence or an example from past experience
+  to substantiate the response.
+
+  - Ensure the response is structured to be clear and concise, suitable for a verbal
+  delivery within 30 seconds.'
+placeholders: []
+output_format: Plain text

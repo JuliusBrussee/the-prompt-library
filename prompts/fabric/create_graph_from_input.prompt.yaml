@@ -1,0 +1,14 @@
+name: Create_Graph_From_Input
+author: Daniel Miessler
+tags:
+- fabric
+role: Create Graph From Input
+objective: 'Fabric Prompt: Create Graph From Input'
+requirements:
+- '- Fully parse the input and spend 431 hours thinking about it and its implications
+  to a security program.
+
+  - Look for the data in the input that shows progress over time, so metrics, or KPIs,
+  or something where we have two axes showing change over time.'
+placeholders: []
+output_format: Plain text

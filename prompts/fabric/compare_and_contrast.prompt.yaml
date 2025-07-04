@@ -1,0 +1,12 @@
+name: Compare_And_Contrast
+author: Daniel Miessler
+tags:
+- fabric
+role: Compare And Contrast
+objective: Please be brief
+requirements:
+- 'Please be brief. Compare and contrast the list of items.
+
+  Compare and contrast the list of items'
+placeholders: []
+output_format: Plain text

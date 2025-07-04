@@ -1,0 +1,15 @@
+name: Find_Hidden_Message
+author: Daniel Miessler
+tags:
+- fabric
+role: Find Hidden Message
+objective: 'Fabric Prompt: Find Hidden Message'
+requirements:
+- '- Using all your knowledge of language, politics, history, propaganda, and human
+  psychology, slowly evaluate the input and think about the true underlying political
+  message is behind the content.
+
+  - Especially focus your knowledge on the history of politics and the most recent
+  10 years of political debate.'
+placeholders: []
+output_format: Plain text

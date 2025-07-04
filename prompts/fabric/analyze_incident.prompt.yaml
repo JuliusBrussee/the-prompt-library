@@ -1,0 +1,32 @@
+name: Analyze_Incident
+author: Daniel Miessler
+tags:
+- fabric
+role: Analyze Incident
+objective: 'Cybersecurity Hack Article Analysis: Efficient Data Extraction'
+requirements:
+- "Cybersecurity Hack Article Analysis: Efficient Data Extraction\nObjective: To swiftly\
+  \ and effectively gather essential information from articles about cybersecurity\
+  \ breaches, prioritizing conciseness and order.\nInstructions:\nFor each article,\
+  \ extract the specified information below, presenting it in an organized and succinct\
+  \ format. Ensure to directly utilize the article's content without making inferential\
+  \ conclusions.\n- Attack Date: YYYY-MM-DD\n- Summary: A concise overview in one\
+  \ sentence.\n- Key Details:\n    - Attack Type: Main method used (e.g., \"Ransomware\"\
+  ).\n    - Vulnerable Component: The exploited element (e.g., \"Email system\").\n\
+  \    - Attacker Information: \n        - Name/Organization: When available (e.g.,\
+  \ \"APT28\").\n        - Country of Origin: If identified (e.g., \"China\").\n \
+  \   - Target Information:\n        - Name: The targeted entity.\n        - Country:\
+  \ Location of impact (e.g., \"USA\").\n        - Size: Entity size (e.g., \"Large\
+  \ enterprise\").\n        - Industry: Affected sector (e.g., \"Healthcare\").\n\
+  \    - Incident Details:\n        - CVE's: Identified CVEs (e.g., CVE-XXX, CVE-XXX).\n\
+  \        - Accounts Compromised: Quantity (e.g., \"5000\").\n        - Business\
+  \ Impact: Brief description (e.g., \"Operational disruption\").\n        - Impact\
+  \ Explanation: In one sentence.\n        - Root Cause: Principal reason (e.g., \"\
+  Unpatched software\").\n- Analysis & Recommendations:\n    - MITRE ATT&CK Analysis:\
+  \ Applicable tactics/techniques (e.g., \"T1566, T1486\").\n    - Atomic Red Team\
+  \ Atomics: Recommended tests (e.g., \"T1566.001\").\n    - Remediation:\n      \
+  \  - Recommendation: Summary of action (e.g., \"Implement MFA\").\n        - Action\
+  \ Plan: Stepwise approach (e.g., \"1. Update software, 2. Train staff\").\n    -\
+  \ Lessons Learned: Brief insights gained that could prevent future incidents."
+placeholders: []
+output_format: Plain text

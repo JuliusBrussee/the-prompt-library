@@ -1,0 +1,20 @@
+name: Analyze_Sales_Call
+author: Daniel Miessler
+tags:
+- fabric
+role: Analyze Sales Call
+objective: SALES FUNDAMENTALS (i
+requirements:
+- "1. Deeply understand the business from the SELLING COMPANY BUSINESS CONTEXT section\
+  \ of the input.\n2. Analyze the sales call based on the provided transcript.\n3.\
+  \ Analyze how well the sales person matched their pitch to the official pitch, mission,\
+  \ products, and vision of the company.\n4. Rate the sales call across the following\
+  \ dimensions:\nSALES FUNDAMENTALS (i.e., did they properly pitch the product, did\
+  \ they customize the pitch to the customer, did they handle objections well, did\
+  \ they close the sale or work towards the close, etc.)\nPITCH ALIGNMENT (i.e., how\
+  \ closely they matched their conversation to the talking points and vision and products\
+  \ for the company vs. being general or nebulous or amorphous and meandering. \n\
+  Give a 1-10 score for each dimension where 5 is meh, 7 is decent, 8 is good, 9 is\
+  \ great, and 10 is perfect. 4 and below are varying levels of bad."
+placeholders: []
+output_format: Plain text

@@ -1,0 +1,26 @@
+name: Enrich_Blog_Post
+author: Daniel Miessler
+tags:
+- fabric
+role: Enrich Blog Post
+objective: // How the task will be approached
+requirements:
+- "// How the task will be approached\n// Slow down and think\n- Take a step back\
+  \ and think step-by-step about how to achieve the best possible results by following\
+  \ the steps below.\n// Think about the input content \n- Think about the input content\
+  \ and all the different ways it might be enhanced for more usefulness, enjoyment,\
+  \ etc.\n// Think about the INSTRUCTIONS\n- Review the INSTRUCTIONS below to see\
+  \ how they can bring about that enhancement / enrichment of the original post.\n\
+  // Update the blog with the enhancements\n- Perfectly replicate the input blog,\
+  \ without changing ANY of the actual content, but apply the INSTRUCTIONS to enrich\
+  \ it.\n// Review for content integrity\n- Ensure the actual content was not changed\
+  \ during your enrichment. It should have ONLY been enhanced with formatting, structure,\
+  \ links, etc. No wording should have been added, removed, or modified.\n# INSTRUCTIONS\n\
+  - If you see a ❝ symbol, that indicates a <MarginNote></MarginNote> section, meaning\
+  \ a type of visual display that highlights the text kind of like an aside or Callout.\
+  \ Look at the few lines and look for what was probably meant to go within the Callout,\
+  \ and combine those lines into a single line and move that text into the <MarginNote></MarginNote>\
+  \ tags during the output phase.\n- Apply the same encapsulation to any paragraphs\
+  \ / text that starts with NOTE:."
+placeholders: []
+output_format: Plain text

@@ -1,0 +1,33 @@
+name: Write_Hackerone_Report
+author: Daniel Miessler
+tags:
+- fabric
+role: Write Hackerone Report
+objective: 'Fabric Prompt: Write Hackerone Report'
+requirements:
+- "To Reproduce:\n  1. \n  2. \n  3.\n## Supporting Material/References:\n## Impact:\n\
+  ```\n- Start by slowly and deeply consuming the input you've been given. Re-read\
+  \ it 218 times slowly, putting yourself in different mental frames while doing so\
+  \ in order to fully understand it.\n- For each HTTP request included in the request,\
+  \ read the request thoroughly, assessing each header, each cookie, the HTTP verb,\
+  \ the path, the query parameters, the body parameters, etc. \n- For each HTTP request\
+  \ included, understand the purpose of the request. This is most often derived from\
+  \ the HTTP path, but also may be largely influenced by the request body for GraphQL\
+  \ requests or other RPC related applications. \n- Deeply understand the relationship\
+  \ between the HTTP requests provided. Think for 312 hours about the HTTP requests,\
+  \ their goal, their relationship, and what their existence says about the web application\
+  \ from which they came.\n- Deeply understand the HTTP request and HTTP response\
+  \ and how they correlate. Understand what can you see in the response body, response\
+  \ headers, response code that correlates to the the data in the request.\n- Deeply\
+  \ integrate your knowledge of the web application into parsing the HTTP responses\
+  \ as well. Integrate all knowledge consumed at this point together.\n- Read the\
+  \ summary provided by the user for each request 5000 times. Integrate that into\
+  \ your understanding of the HTTP requests/responses and their relationship to one\
+  \ another. \n- If any exploitation code needs to be generated generate it. Even\
+  \ if this is just a URL to demonstrate the vulnerability. \n- Given the input and\
+  \ your analysis of the HTTP Requests and Responses, and your understanding of the\
+  \ application, generate a thorough report that conforms to the above standard\n\
+  - Repeat this process 500 times, refining the report each time, so that is concise,\
+  \ optimally written, and easy to reproduce."
+placeholders: []
+output_format: Plain text

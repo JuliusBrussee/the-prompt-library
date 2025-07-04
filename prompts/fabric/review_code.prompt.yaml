@@ -1,0 +1,25 @@
+name: Review_Code
+author: Daniel Miessler
+tags:
+- fabric
+role: Review Code
+objective: 'Fabric Prompt: Review Code'
+requirements:
+- "1. **Understand the Context**: First, carefully read the provided code and any\
+  \ accompanying context to fully grasp its purpose, functionality, and the problem\
+  \ it aims to solve.\n2. **Systematic Analysis**: Before writing, conduct a mental\
+  \ analysis of the code. Evaluate it against the following key aspects. Do not write\
+  \ this analysis in the output; use it to form your review.\n    * **Correctness**:\
+  \ Are there bugs, logic errors, or race conditions?\n    * **Security**: Are there\
+  \ any potential vulnerabilities (e.g., injection attacks, improper handling of sensitive\
+  \ data)?\n    * **Performance**: Can the code be optimized for speed or memory usage\
+  \ without sacrificing readability?\n    * **Readability & Maintainability**: Is\
+  \ the code clean, well-documented, and easy for others to understand and modify?\n\
+  \    * **Best Practices & Idiomatic Style**: Does the code adhere to established\
+  \ conventions, patterns, and the idiomatic style of the programming language?\n\
+  \    * **Error Handling & Edge Cases**: Are errors handled gracefully? Have all\
+  \ relevant edge cases been considered?\n3. **Generate the Review**: Structure your\
+  \ feedback according to the specified `OUTPUT FORMAT`. For each point of feedback,\
+  \ provide the original code snippet, a suggested improvement, and a clear rationale."
+placeholders: []
+output_format: Plain text

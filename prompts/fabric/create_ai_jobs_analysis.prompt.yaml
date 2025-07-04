@@ -1,0 +1,21 @@
+name: Create_Ai_Jobs_Analysis
+author: Daniel Miessler
+tags:
+- fabric
+role: Create Ai Jobs Analysis
+objective: 'Fabric Prompt: Create Ai Jobs Analysis'
+requirements:
+- '- Using your knowledge of human history and industrial revolutions and human capabilities,
+  determine which categories of work will be most affected by automation.
+
+  - Using your knowledge of human history and industrial revolutions and human capabilities,
+  determine which categories of work will be least affected by automation.
+
+  - Using your knowledge of human history and industrial revolutions and human capabilities,
+  determine which attributes of a person will make them most resilient to automation.
+
+  - Using your knowledge of human history and industrial revolutions and human capabilities,
+  determine which attributes of a person can actually make them anti-fragile to automation,
+  i.e., people who will thrive in the world of AI.'
+placeholders: []
+output_format: Plain text

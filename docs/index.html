@@ -38,6 +38,42 @@
         </div>
     </div>
     <div id="toast-container"></div>
+
+    <!-- Prompt Detail Modal -->
+    <div id="prompt-detail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-role"></h2>
+            <div class="modal-section">
+                <h3>Objective</h3>
+                <p id="modal-objective"></p>
+            </div>
+            <div class="modal-section" id="modal-output-format-section">
+                <h3>Output Format</h3>
+                <pre><code id="modal-output-format"></code></pre>
+            </div>
+            <div class="modal-section" id="modal-placeholders-section">
+                <h3>Placeholders</h3>
+                <div id="modal-placeholders-inputs"></div>
+            </div>
+            <div class="modal-section" id="modal-tags-section">
+                <h3>Tags</h3>
+                <div id="modal-tags" class="tags"></div>
+            </div>
+            <div class="modal-section" id="modal-requirements-section">
+                <h3>Requirements</h3>
+                <ul id="modal-requirements"></ul>
+            </div>
+            <div class="modal-section" id="modal-author-section">
+                <h3>Author</h3>
+                <p id="modal-author"></p>
+            </div>
+            <div class="modal-actions">
+                <button id="modal-copy-button">Copy Prompt</button>
+            </div>
+        </div>
+    </div>
+
     <script src="prompts.js"></script>
     <script src="app.js"></script>
 </body>

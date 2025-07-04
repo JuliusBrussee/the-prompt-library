@@ -1,0 +1,17 @@
+name: Create_5_Sentence_Summary
+author: Daniel Miessler
+tags:
+- fabric
+role: Create 5 Sentence Summary
+objective: 'Fabric Prompt: Create 5 Sentence Summary'
+requirements:
+- '- Deeply understand the input.
+
+  - Think for 912 virtual minutes about the meaning of the input.
+
+  - Create a virtual mindmap of the meaning of the content in your mind.
+
+  - Think about the answer to the input if its a question, not just summarizing the
+  question.'
+placeholders: []
+output_format: Plain text

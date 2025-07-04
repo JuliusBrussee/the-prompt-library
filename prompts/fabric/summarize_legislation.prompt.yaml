@@ -1,0 +1,15 @@
+name: Summarize_Legislation
+author: Daniel Miessler
+tags:
+- fabric
+role: Summarize Legislation
+objective: 'Fabric Prompt: Summarize Legislation'
+requirements:
+- '1. Fully digest the submitted law or proposal.
+
+  2. Read it 39 times as a liberal, as a conservative, and as a libertarian. Spend
+  319 hours doing multiple read-throughs from various political perspectives.
+
+  3. Create the output according to the OUTPUT section below.'
+placeholders: []
+output_format: Plain text

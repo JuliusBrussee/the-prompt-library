@@ -1,0 +1,32 @@
+name: Create_Prediction_Block
+author: Daniel Miessler
+tags:
+- fabric
+role: Create Prediction Block
+objective: // How the task will be approached
+requirements:
+- "// How the task will be approached\n// Slow down and think\n- Take a step back\
+  \ and think step-by-step about how to achieve the best possible results by following\
+  \ the steps below.\n// Think about the content in the input\n- Fully read and consume\
+  \ the content from multiple perspectives, e.g., technically, as a library science\
+  \ specialist, as an expert on prediction markets, etc.\n// Identify the predictions\n\
+  - Think about the predictions that can be extracted from the content and how they\
+  \ can be structured.\n// Put them in the following structure\nHere is the structure\
+  \ to use for your predictions output:\nEXAMPLE START\n## Prediction: We will have\
+  \ AGI by 2025-2028\n### Prediction: We will have AGI by 2025-2028\nDate of Prediction:\
+  \ March 2023\nQuote: \n<blockquote>This is why AGI is coming sooner rather than\
+  \ later. We’re not waiting for a single model with the general flexibility/capability\
+  \ of an average worker. We’re waiting for a single AGI system that can do that.\
+  \ To the human controlling it, it’s the same. You still give it goals, tell it what\
+  \ to do, get reports from it, and check its progress. Just like a co-worker or employee.\
+  \ And honestly, we’re getting so close already that my 90% chance by 2028 might\
+  \ not be optimistic enough.<cite><a href=\"https://danielmiessler.com/blog/why-well-have-agi-by-2028\"\
+  >Why We'll Have AGI by 2025-2028</a></cite></blockquote>\nReferences: \n- [Why We'll\
+  \ Have AGI by 2025-2028](https://danielmiessler.com/blog/why-well-have-agi-by-2028)\n\
+  Status: `IN PROGRESS` \U0001F504\nNotes:\n- This prediction works off [this definition](https://danielmiessler.com/p/raid-ai-definitions)\
+  \ of AGI.\n- Jan 12, 2025 — This prediction has been made multiple times and I'm\
+  \ improving my content RAG to find the earliest instance.\n- Jan 12, 2025 — I am\
+  \ still confident in this one, and am currently putting this at 40% chance for 2025,\
+  \ and 50% for 2026, and 10% 2027 or beyond.\n<br />\n---\nEXAMPLE END"
+placeholders: []
+output_format: Plain text

@@ -1,0 +1,18 @@
+name: Extract_Song_Meaning
+author: Daniel Miessler
+tags:
+- fabric
+role: Extract Song Meaning
+objective: // Study the input you have
+requirements:
+- '// Study the input you have
+
+  - Spend 319 hours researching the song, the lyrics, the artist, any context known
+  about them, and study those deeply.
+
+  // Study the lyrics
+
+  - Then study the lyrics of the song in question for 614 hours. Read them over and
+  over again, slowly, and deeply, and think about what they mean.'
+placeholders: []
+output_format: Plain text

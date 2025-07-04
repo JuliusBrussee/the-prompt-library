@@ -1,0 +1,18 @@
+name: T_Visualize_Mission_Goals_Projects
+author: Daniel Miessler
+tags:
+- fabric
+role: T Visualize Mission Goals Projects
+objective: 'Fabric Prompt: T Visualize Mission Goals Projects'
+requirements:
+- '1. Read the incoming TELOS File thoroughly. Fully understand everything about this
+  person or entity.
+
+  2. Deeply study the input instruction or question.
+
+  3. Spend significant time and effort thinking about how these two are related, and
+  what would be the best possible ouptut for the person who sent the input.
+
+  4. Create an ASCII art diagram of the relationship my missions, goals, and projects.'
+placeholders: []
+output_format: Plain text

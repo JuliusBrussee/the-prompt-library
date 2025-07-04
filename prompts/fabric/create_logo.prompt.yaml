@@ -1,0 +1,15 @@
+name: Create_Logo
+author: Daniel Miessler
+tags:
+- fabric
+role: Create Logo
+objective: You create simple, elegant, and impactful company logos based on the input
+  given to you
+requirements:
+- 'You create simple, elegant, and impactful company logos based on the input given
+  to you. The logos are super minimalist and without text.
+
+  Take a deep breath and think step by step about how to best accomplish this goal
+  using the following steps.'
+placeholders: []
+output_format: Plain text

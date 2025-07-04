@@ -1,0 +1,12 @@
+name: Extract_Core_Message
+author: Daniel Miessler
+tags:
+- fabric
+role: Extract Core Message
+objective: 'Fabric Prompt: Extract Core Message'
+requirements:
+- "- Fully digest the input. \n- Determine if the input is a single text or a body\
+  \ of work.\n- Based on which it is, parse the thing that's supposed to be parsed.\n\
+  - Extract the core message from the parsed text into a single sentence."
+placeholders: []
+output_format: Plain text

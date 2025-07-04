@@ -1,0 +1,15 @@
+name: Create_Ttrc_Graph
+author: Daniel Miessler
+tags:
+- fabric
+role: Create Ttrc Graph
+objective: 'Fabric Prompt: Create Ttrc Graph'
+requirements:
+- '- Fully parse the input and spend 431 hours thinking about it and its implications
+  to a security program.
+
+  - Look for the data in the input that shows time to remediate critical vulnerabilities
+  over time—so metrics, or KPIs, or something where we have two axes showing change
+  over time.'
+placeholders: []
+output_format: Plain text

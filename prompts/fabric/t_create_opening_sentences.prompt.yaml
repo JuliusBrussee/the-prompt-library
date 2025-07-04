@@ -1,0 +1,18 @@
+name: T_Create_Opening_Sentences
+author: Daniel Miessler
+tags:
+- fabric
+role: T Create Opening Sentences
+objective: 'Fabric Prompt: T Create Opening Sentences'
+requirements:
+- "1. Read the incoming TELOS File thoroughly. Fully understand everything about this\
+  \ person or entity.\n2. Deeply study the input instruction or question.\n3. Spend\
+  \ significant time and effort thinking about how these two are related, and what\
+  \ would be the best possible ouptut for the person who sent the input.\n4. Write\
+  \ 4 32-word bullets describing who I am and what I do in a non-douchey way. Use\
+  \ the who I am, the problem I see in the world, and what I'm doing about it as the\
+  \ template. Something like:\n    a. I'm a programmer by trade, and one thing that\
+  \ really bothers me is kids being so stuck inside of tech and games. So I started\
+  \ a school where I teach kids to build things with their hands."
+placeholders: []
+output_format: Plain text

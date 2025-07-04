@@ -1,0 +1,14 @@
+name: Extract_Questions
+author: Daniel Miessler
+tags:
+- fabric
+role: Extract Questions
+objective: 'Fabric Prompt: Extract Questions'
+requirements:
+- '- Deeply study the content and analyze the flow of the conversation so that you
+  can see the interplay between the various people. This will help you determine who
+  the interviewer is and who is being interviewed.
+
+  - Extract all the questions asked by the interviewer.'
+placeholders: []
+output_format: Plain text

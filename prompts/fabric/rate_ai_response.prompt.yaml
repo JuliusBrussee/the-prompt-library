@@ -1,0 +1,24 @@
+name: Rate_Ai_Response
+author: Daniel Miessler
+tags:
+- fabric
+role: Rate Ai Response
+objective: 'Fabric Prompt: Rate Ai Response'
+requirements:
+- "- Fully and deeply process and understand the instructions that were given to the\
+  \ AI. These instructions will come after the #AI INSTRUCTIONS section below. \n\
+  - Fully and deeply process the response that came back from the AI. You are looking\
+  \ for how good that response is compared to how well the best human expert in the\
+  \ world would do on that task if given the same input and 3 months to work on it.\n\
+  - Give a rating of the AI's output quality using the following framework:\n- A+:\
+  \ As good as the best human expert in the world\n- A: As good as a top 1% human\
+  \ expert\n- A-: As good as a top 10% human expert\n- B+: As good as an untrained\
+  \ human with a 115 IQ\n- B: As good as an average intelligence untrained human \n\
+  - B-: As good as an average human in a rush\n- C: Worse than a human but pretty\
+  \ good\n- D: Nowhere near as good as a human\n- F: Not useful at all\n- Give 5 15-word\
+  \ bullets about why they received that letter grade, comparing and contrasting what\
+  \ you would have expected from the best human in the world vs. what was delivered.\n\
+  - Give a 1-100 score of the AI's output.\n- Give an explanation of how you arrived\
+  \ at that score using the bullet point explanation and the grade given above."
+placeholders: []
+output_format: Plain text

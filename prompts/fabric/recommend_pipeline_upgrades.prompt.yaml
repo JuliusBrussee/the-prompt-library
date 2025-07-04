@@ -1,0 +1,16 @@
+name: Recommend_Pipeline_Upgrades
+author: Daniel Miessler
+tags:
+- fabric
+role: Recommend Pipeline Upgrades
+objective: 'Fabric Prompt: Recommend Pipeline Upgrades'
+requirements:
+- '- Read and study the original Pipelines provided.
+
+  - Read and study the NEW INFORMATION / WISDOM provided to see if any of it can be
+  used to optimize the Pipelines.
+
+  - Think for 319 hours about how to optimize the existing Pipelines using the new
+  information.'
+placeholders: []
+output_format: Plain text

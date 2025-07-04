@@ -1,0 +1,18 @@
+name: Create_Flash_Cards
+author: Daniel Miessler
+tags:
+- fabric
+role: Create Flash Cards
+objective: 'Fabric Prompt: Create Flash Cards'
+requirements:
+- '- Fully read and comprehend the input and map out all the concepts on a 4KM x 4KM
+  virtual whiteboard.
+
+  - Make a list of the key concepts, definitions, terms, etc. that are associated
+  with the input.
+
+  - Create flashcards for each key concept, definition, term, etc. that you have identified.
+
+  - The flashcard should be a question of 8-16 words and an answer of up to 32 words.'
+placeholders: []
+output_format: Plain text

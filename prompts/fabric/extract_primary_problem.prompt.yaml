@@ -1,0 +1,13 @@
+name: Extract_Primary_Problem
+author: Daniel Miessler
+tags:
+- fabric
+role: Extract Primary Problem
+objective: 'Fabric Prompt: Extract Primary Problem'
+requirements:
+- "- Fully digest the input. \n- Determine if the input is a single text or a body\
+  \ of work.\n- Based on which it is, parse the thing that's supposed to be parsed.\n\
+  - Extract the primary problem with the world from the parsed text into a single\
+  \ sentence."
+placeholders: []
+output_format: Plain text

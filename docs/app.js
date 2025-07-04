@@ -55,8 +55,18 @@ const displayPrompts = (filteredPrompts) => {
         card.appendChild(title);
 
         const objective = document.createElement('p');
-        objective.textContent = prompt.objective;
+        const TRUNCATE_LENGTH = 150; // Define your desired truncate length
+        objective.textContent = prompt.objective.length > TRUNCATE_LENGTH ?
+                                prompt.objective.substring(0, TRUNCATE_LENGTH) + '...' :
+                                prompt.objective;
+        objective.dataset.fullObjective = prompt.objective; // Store full objective
+        objective.classList.add('objective-text'); // Add a class for styling
+
         card.appendChild(objective);
+
+        card.addEventListener('click', () => {
+            openPromptDetailModal(prompt);
+        });
 
         if (prompt.tags && prompt.tags.length > 0) {
             const tagsContainer = document.createElement('div');
@@ -75,7 +85,8 @@ const displayPrompts = (filteredPrompts) => {
         copyButton.textContent = 'Copy Prompt';
         copyButton.addEventListener('click', (e) => {
             e.stopPropagation();
-            const textToCopy = `Role: ${prompt.role}\nObjective: ${prompt.objective}`;
+            const textToCopy = `Role: ${prompt.role}
+Objective: ${prompt.objective}`;
             navigator.clipboard.writeText(textToCopy).then(() => {
                 showToast('Prompt copied to clipboard!');
             }, () => {
@@ -88,6 +99,142 @@ const displayPrompts = (filteredPrompts) => {
         promptsContainer.appendChild(card);
     });
 };
+
+const promptDetailModal = document.getElementById('prompt-detail-modal');
+const closeModalButton = promptDetailModal.querySelector('.close-button');
+const modalRole = document.getElementById('modal-role');
+const modalObjective = document.getElementById('modal-objective');
+const modalOutputFormatSection = document.getElementById('modal-output-format-section');
+const modalOutputFormat = document.getElementById('modal-output-format');
+const modalPlaceholdersSection = document.getElementById('modal-placeholders-section');
+const modalPlaceholdersInputs = document.getElementById('modal-placeholders-inputs');
+const modalTagsSection = document.getElementById('modal-tags-section');
+const modalTags = document.getElementById('modal-tags');
+const modalAuthorSection = document.getElementById('modal-author-section');
+const modalRequirementsSection = document.getElementById('modal-requirements-section');
+const modalRequirements = document.getElementById('modal-requirements');
+const modalAuthor = document.getElementById('modal-author');
+const modalCopyButton = document.getElementById('modal-copy-button');
+
+const openPromptDetailModal = (prompt) => {
+    modalRole.textContent = prompt.role;
+    modalObjective.textContent = prompt.objective;
+
+    // Output Format
+    if (prompt.output_format) {
+        modalOutputFormat.textContent = prompt.output_format;
+        modalOutputFormatSection.style.display = 'block';
+    } else {
+        modalOutputFormatSection.style.display = 'none';
+    }
+
+    // Placeholders
+    modalPlaceholdersInputs.innerHTML = '';
+    if (prompt.placeholders && prompt.placeholders.length > 0) {
+        prompt.placeholders.forEach(ph => {
+            const div = document.createElement('div');
+            div.className = 'placeholder-input-group';
+
+            const label = document.createElement('label');
+            label.textContent = ph + ':';
+            label.setAttribute('for', `ph-${ph}`);
+            div.appendChild(label);
+
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.id = `ph-${ph}`;
+            input.placeholder = `Enter value for ${ph}`;
+            input.dataset.placeholderName = ph; // Store original placeholder name
+            div.appendChild(input);
+
+            modalPlaceholdersInputs.appendChild(div);
+        });
+        modalPlaceholdersSection.style.display = 'block';
+    } else {
+        modalPlaceholdersSection.style.display = 'none';
+    }
+
+    // Tags
+    modalTags.innerHTML = '';
+    if (prompt.tags && prompt.tags.length > 0) {
+        prompt.tags.forEach(tag => {
+            const span = document.createElement('span');
+            span.textContent = tag;
+            modalTags.appendChild(span);
+        });
+        modalTagsSection.style.display = 'block';
+    } else {
+        modalTagsSection.style.display = 'none';
+    }
+
+    // Requirements
+    const modalRequirementsSection = document.getElementById('modal-requirements-section');
+    const modalRequirements = document.getElementById('modal-requirements');
+    modalRequirements.innerHTML = '';
+    if (prompt.requirements && prompt.requirements.length > 0) {
+        prompt.requirements.forEach(req => {
+            const li = document.createElement('li');
+            li.textContent = req;
+            modalRequirements.appendChild(li);
+        });
+        modalRequirementsSection.style.display = 'block';
+    } else {
+        modalRequirementsSection.style.display = 'none';
+    }
+
+    // Author
+    if (prompt.author) {
+        modalAuthor.textContent = prompt.author;
+        modalAuthorSection.style.display = 'block';
+    } else {
+        modalAuthorSection.style.display = 'none';
+    }
+
+    // Copy button logic for modal
+    modalCopyButton.onclick = () => {
+        let roleToCopy = prompt.role;
+        let objectiveToCopy = prompt.objective;
+        let requirementsToCopy = prompt.requirements ? [...prompt.requirements] : []; // Create a copy
+
+        // Get placeholder values and substitute
+        const placeholderInputs = modalPlaceholdersInputs.querySelectorAll('input');
+        placeholderInputs.forEach(input => {
+            const placeholderName = input.dataset.placeholderName;
+            const inputValue = input.value.trim();
+            if (inputValue) {
+                const regex = new RegExp(`\{${placeholderName}\}`, 'g');
+                roleToCopy = roleToCopy.replace(regex, inputValue);
+                objectiveToCopy = objectiveToCopy.replace(regex, inputValue);
+                requirementsToCopy = requirementsToCopy.map(req => req.replace(regex, inputValue));
+            }
+        });
+
+        const textToCopy = `Role: ${roleToCopy}
+Objective: ${objectiveToCopy}
+${prompt.output_format ? `Output Format: ${prompt.output_format}
+` : ''}${requirementsToCopy && requirementsToCopy.length > 0 ? `Requirements: ${requirementsToCopy.join(', ')}
+` : ''}${prompt.tags && prompt.tags.length > 0 ? `Tags: ${prompt.tags.join(', ')}
+` : ''}${prompt.author ? `Author: ${prompt.author}` : ''}`;
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            showToast('Prompt copied to clipboard!');
+        }, () => {
+            showToast('Failed to copy prompt.');
+        });
+    };
+
+    promptDetailModal.style.display = 'flex'; // Use flex to center content
+};
+
+const closePromptDetailModal = () => {
+    promptDetailModal.style.display = 'none';
+};
+
+closeModalButton.addEventListener('click', closePromptDetailModal);
+window.addEventListener('click', (event) => {
+    if (event.target == promptDetailModal) {
+        closePromptDetailModal();
+    }
+});
 
 const initializeTagFilters = () => {
     const allTags = [...new Set(prompts.flatMap(p => p && p.tags || []))];

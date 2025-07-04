@@ -1,0 +1,12 @@
+name: Write_Essay
+author: Daniel Miessler
+tags:
+- fabric
+role: Write Essay
+objective: You are an expert on writing clear and illuminating essays on the topic
+  of the input provided
+requirements:
+- You are an expert on writing clear and illuminating essays on the topic of the input
+  provided.
+placeholders: []
+output_format: Plain text

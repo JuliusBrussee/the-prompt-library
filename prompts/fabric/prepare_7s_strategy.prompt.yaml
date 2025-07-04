@@ -1,0 +1,25 @@
+name: Prepare_7S_Strategy
+author: Daniel Miessler
+tags:
+- fabric
+role: Prepare 7S Strategy
+objective: 'Fabric Prompt: Prepare 7S Strategy'
+requirements:
+- "## Document Metadata \n- Analysis period/date\n- Currency denomination\n- Locations\
+  \ and regions\n- Data sources (e.g., Annual Report, Public Filings)\n- Document\
+  \ scope and limitations\n- Last updated timestamp\n## Part 1: Organization Profile\n\
+  - Industry position and scale\n- Key business metrics (revenue, employees, facilities)\n\
+  - Geographic footprint\n- Core business areas and services\n- Market distinctions\
+  \ and differentiators\n- Ownership and governance structure\n## Part 2: Strategic\
+  \ Elements\n- Core business direction and scope\n- Market positioning and competitive\
+  \ stance\n- Key strategic decisions or changes\n- Resource allocation patterns\n\
+  - Customer/market choices\n- Product/service portfolio decisions\n- Geographic or\
+  \ market expansion moves\n- Strategic partnerships or relationships\n- Response\
+  \ to market changes\n- Major initiatives or transformations\n## Part 3: Market Dynamics\n\
+  ### Headwinds\n  * Industry challenges and pressures\n  * Market constraints\n \
+  \ * Competitive threats\n  * Regulatory or compliance challenges\n  * Operational\
+  \ challenges\n### Tailwinds\n  * Market opportunities\n  * Growth drivers\n  * Favorable\
+  \ industry trends\n  * Competitive advantages\n  * Supporting external factors\n\
+  ---"
+placeholders: []
+output_format: Plain text

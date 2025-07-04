@@ -1,0 +1,12 @@
+name: Extract_Jokes
+author: Daniel Miessler
+tags:
+- fabric
+role: Extract Jokes
+objective: You extract jokes from text content
+requirements:
+- 'You extract jokes from text content. You are interested only in jokes.
+
+  You create bullet points that capture the joke and punchline.'
+placeholders: []
+output_format: Plain text

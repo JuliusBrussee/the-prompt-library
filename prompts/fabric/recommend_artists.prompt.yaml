@@ -1,0 +1,41 @@
+name: Recommend_Artists
+author: Daniel Miessler
+tags:
+- fabric
+role: Recommend Artists
+objective: 'Fabric Prompt: Recommend Artists'
+requirements:
+- '- Look at the whole list of artists.
+
+  - Look at my list of favorite styles and artists below.
+
+  - Recommend similar artists, and the reason you think I will like them.
+
+  # MY FAVORITE STYLES AND ARTISTS
+
+  ### Styles
+
+  - Dark menacing techno
+
+  - Hard techno
+
+  - Intricate minimal techno
+
+  - Hardstyle that sounds dangerous
+
+  ### Artists
+
+  - Sarah Landry
+
+  - Fisher
+
+  - Boris Brejcha
+
+  - Technoboy
+
+  - Optimize your selections based on how much I''ll love the artists, not anything
+  else.
+
+  - If the artist themselves are playing, make sure you have them on the schedule.'
+placeholders: []
+output_format: Plain text

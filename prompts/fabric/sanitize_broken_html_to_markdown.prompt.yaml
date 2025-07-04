@@ -1,0 +1,25 @@
+name: Sanitize_Broken_Html_To_Markdown
+author: Daniel Miessler
+tags:
+- fabric
+role: Sanitize Broken Html To Markdown
+objective: // How the task will be approached
+requirements:
+- '// How the task will be approached
+
+  // Slow down and think
+
+  - Take a step back and think step-by-step about how to achieve the best possible
+  results by following the steps below.
+
+  // Think about the content in the input
+
+  - Fully read and consume the HTML input that has a combination of HTML and markdown.
+
+  // Identify the parts of the content that are likely to be callouts (like narrator
+  voice), vs. blockquotes, vs regular text, etc. Get this from the text itself.
+
+  - Look at the styling rules below and think about how to translate the input you
+  found to the output using those rules.'
+placeholders: []
+output_format: Plain text

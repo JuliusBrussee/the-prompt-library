@@ -1,0 +1,15 @@
+name: Extract_Main_Activities
+author: Daniel Miessler
+tags:
+- fabric
+role: Extract Main Activities
+objective: 'Fabric Prompt: Extract Main Activities'
+requirements:
+- '- Fully understand the input transcript or log.
+
+  - Extract the key events and map them on a 24KM x 24KM virtual whiteboard.
+
+  - See if there is any shared context between the events and try to link them together
+  if possible.'
+placeholders: []
+output_format: Plain text

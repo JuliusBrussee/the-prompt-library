@@ -1,0 +1,21 @@
+name: Get_Youtube_Rss
+author: Daniel Miessler
+tags:
+- fabric
+role: Get Youtube Rss
+objective: 'Here is the structure for YouTube RSS URLs and their relation to the channel
+  ID and or channel URL:'
+requirements:
+- 'Here is the structure for YouTube RSS URLs and their relation to the channel ID
+  and or channel URL:
+
+  If the channel URL is https://www.youtube.com/channel/UCnCikd0s4i9KoDtaHPlK-JA,
+  the RSS URL is https://www.youtube.com/feeds/videos.xml?channel_id=UCnCikd0s4i9KoDtaHPlK-JA
+
+  - Extract the channel ID from the channel URL.
+
+  - Construct the RSS URL using the channel ID.
+
+  - Output the RSS URL.'
+placeholders: []
+output_format: Plain text

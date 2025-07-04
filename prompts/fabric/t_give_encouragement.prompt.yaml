@@ -1,0 +1,20 @@
+name: T_Give_Encouragement
+author: Daniel Miessler
+tags:
+- fabric
+role: T Give Encouragement
+objective: 'Fabric Prompt: T Give Encouragement'
+requirements:
+- '1. Read the incoming TELOS File thoroughly. Fully understand everything about this
+  person or entity.
+
+  2. Deeply study the input instruction or question.
+
+  3. Spend significant time and effort thinking about how these two are related, and
+  what would be the best possible ouptut for the person who sent the input.
+
+  4. Write 8 16-word bullets looking at what I''m trying to do, and any progress I''ve
+  made, and give some encouragement on the positive aspects and recommendations to
+  continue the work.'
+placeholders: []
+output_format: Plain text

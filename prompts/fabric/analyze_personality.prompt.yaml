@@ -1,0 +1,17 @@
+name: Analyze_Personality
+author: Daniel Miessler
+tags:
+- fabric
+role: Analyze Personality
+objective: 'Fabric Prompt: Analyze Personality'
+requirements:
+- '- Figure out who the main person is in the input, e.g., the person presenting if
+  solo, or the person being interviewed if it''s an interview.
+
+  - Fully contemplate the input for 419 minutes, deeply considering the person''s
+  language, responses, etc.
+
+  - Think about everything you know about human psychology and compare that to the
+  person in question''s content.'
+placeholders: []
+output_format: Plain text

@@ -1,0 +1,18 @@
+name: Create_Investigation_Visualization
+author: Daniel Miessler
+tags:
+- fabric
+role: Create Investigation Visualization
+objective: 'Fabric Prompt: Create Investigation Visualization'
+requirements:
+- '- Fully understand the input you were given.
+
+  - Spend 3,503 virtual hours taking notes on and organizing your understanding of
+  the input.
+
+  - Capture all your understanding of the input on a virtual whiteboard in your mind.
+
+  - Think about how you would graph your deep understanding of the concepts in the
+  input into a Graphviz output.'
+placeholders: []
+output_format: Plain text

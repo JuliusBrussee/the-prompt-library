@@ -1,0 +1,13 @@
+name: Export_Data_As_Csv
+author: Daniel Miessler
+tags:
+- fabric
+role: Export Data As Csv
+objective: 'Fabric Prompt: Export Data As Csv'
+requirements:
+- '- Read the whole input and understand the context of everything.
+
+  - Find all mention of data structures, e.g., projects, teams, budgets, metrics,
+  KPIs, etc., and think about the name of those fields and the data in each field.'
+placeholders: []
+output_format: Plain text
