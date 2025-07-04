@@ -7,3 +7,4 @@ requirements:
 placeholders:
   - "{topic}"
 output_format: Markdown list with bolded idea names.
+author: Julius Brussee

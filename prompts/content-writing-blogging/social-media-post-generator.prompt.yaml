@@ -8,3 +8,4 @@ placeholders:
   - "{platform}"
   - "{content_summary}"
 output_format: Markdown list of posts.
+author: Julius Brussee

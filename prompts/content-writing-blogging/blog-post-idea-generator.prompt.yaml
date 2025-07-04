@@ -8,3 +8,4 @@ placeholders:
   - "{topic}"
   - "{audience}"
 output_format: Markdown list.
+author: Julius Brussee

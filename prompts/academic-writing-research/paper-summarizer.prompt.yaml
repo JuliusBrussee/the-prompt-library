@@ -8,3 +8,4 @@ placeholders:
   - "{topic}"
   - "{paper_content}"
 output_format: Plain text summary.
+author: Julius Brussee

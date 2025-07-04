@@ -7,3 +7,4 @@ requirements:
 placeholders:
   - "{user_story}"
 output_format: Markdown with Gherkin syntax.
+author: Julius Brussee

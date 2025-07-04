@@ -20,6 +20,7 @@ required:
   - requirements
   - placeholders
   - output_format
+  - author
 properties:
   role:
     type: string
@@ -28,6 +29,11 @@ properties:
       Keep it short but vivid (e.g., "Veteran Tech Opinion Columnist").
     examples:
       - "Newsletter Ghostwriter"
+  author:
+    type: string
+    description: "The original author of the prompt."
+    examples:
+      - "Julius Brussee"
   objective:
     type: string
     description: |

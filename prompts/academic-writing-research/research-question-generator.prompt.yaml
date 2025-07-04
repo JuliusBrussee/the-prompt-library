@@ -8,3 +8,4 @@ placeholders:
   - "{topic}"
   - "{key_findings}"
 output_format: Markdown list of questions.
+author: Julius Brussee

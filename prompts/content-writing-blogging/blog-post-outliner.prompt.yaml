@@ -8,3 +8,4 @@ placeholders:
   - "{topic}"
   - "{key_points}"
 output_format: Markdown outline with headings and bullet points.
+author: Julius Brussee

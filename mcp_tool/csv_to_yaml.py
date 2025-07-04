@@ -29,13 +29,14 @@ SECTION_PATTERNS = {
     "objective": re.compile(r"^OBJECTIVE:\s*(.*)", re.IGNORECASE),
     "requirements": re.compile(r"^REQUIREMENTS?:", re.IGNORECASE),
     "output_format": re.compile(r"^OUTPUT(?: FORMAT)?:\s*(.*)", re.IGNORECASE),
+    "author": re.compile(r"^AUTHOR:\s*(.*)", re.IGNORECASE),
 }
 
 
 def extract_sections(prompt_text: str):
     """Parse the structured prompt and return a dict with schema keys."""
     lines = prompt_text.strip().splitlines()
-    data = {k: None for k in ["role", "objective", "requirements", "output_format"]}
+    data = {k: None for k in ["role", "objective", "requirements", "output_format", "author"]}
     current_section = None
     buffer = []
 
@@ -65,6 +66,10 @@ def extract_sections(prompt_text: str):
             flush()
             current_section = "output_format"
             data["output_format"] = match.group(1).strip()
+        elif match := SECTION_PATTERNS["author"].match(line):
+            flush()
+            current_section = "author"
+            data["author"] = match.group(1).strip()
         else:
             buffer.append(line)
     flush()
@@ -85,16 +90,18 @@ def main(csv_path: str, base_dir: str = "."):
         sys.exit(f"CSV not found: {csv_file}")
 
     df = pd.read_csv(csv_file)
-    required_cols = {"Category", "Prompt"}
+    required_cols = {"Category", "Prompt", "author"}
     if not required_cols.issubset(df.columns):
         sys.exit(f"CSV must have columns: {', '.join(required_cols)}")
 
     for _, row in df.iterrows():
         category = slugify(row["Category"], separator="-").lower()
         prompt_text = row["Prompt"]
+        author = row["author"]
 
         # Parse structured text into fields
         sections = extract_sections(prompt_text)
+        sections["author"] = author
         sections["placeholders"] = find_placeholders(prompt_text)
         sections["tags"] = [category]
 
