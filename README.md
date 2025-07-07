@@ -284,6 +284,15 @@ If you’re unsure, create a Discussion first.
 
 ---
 
+## Disclaimers
+
+This project incorporates prompts from other open-source projects. We are grateful to the creators for their work and have included their licenses and copyright notices where applicable.
+
+*   **Daniel Miessler's Fabric:** A significant portion of the prompts in this library are from Daniel Miessler's [Fabric](https://github.com/danielmiessler/fabric) project, which is licensed under the MIT License. We have included the MIT license in this repository to comply with the terms of the license.
+
+
+---
+
 ## License
 
 MIT © Julius Brussee
