@@ -26,6 +26,51 @@ Explore the Prompt Library on our website: [The Prompt Library](https://juliusbr
 
 ## Quick Start: The MCP Tool (WIP)
 
+### MCP Server
+
+The Prompt Library now includes an MCP server that exposes the library's functionality over the Model Context Protocol. This allows you to connect to the library from any MCP-compatible client, such as Claude for Desktop.
+
+**Running the Server**
+
+1.  **Install Dependencies:** Make sure you have `uv` installed and have run `uv add -r mcp_tool/requirements.txt` in your virtual environment.
+
+2.  **Start the Server:**
+
+    ```bash
+    uv run -m mcp_tool.mcp_server
+    ```
+
+**Available Tools**
+
+The server exposes the following tools:
+
+*   `list_prompts()`: Lists all available prompts in the library.
+*   `get_prompt(id: str)`: Retrieves the full details of a specific prompt by its ID.
+*   `search_prompts(query: str)`: Searches for prompts using a query.
+
+**Connecting with a Client**
+
+To connect with a client like Claude for Desktop, you'll need to configure the client to connect to the server. Here is an example configuration for `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "prompt-library": {
+      "command": "uv",
+      "args": [
+        "run",
+        "-m",
+        "mcp_tool.mcp_server"
+      ],
+      "cwd": "/ABSOLUTE/PATH/TO/the-prompt-library"
+    }
+  }
+}
+```
+
+Make sure to replace `/ABSOLUTE/PATH/TO/the-prompt-library` with the actual absolute path to your project directory.
+
+
 The Model Context Protocol (MCP) tool is the primary way to interact with this library. It allows you to intelligently find and retrieve prompts from the command line or your own Python scripts.
 
 **First, build the search index:**
