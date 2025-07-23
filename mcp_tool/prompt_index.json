@@ -1,5 +1,77 @@
 [
   {
+    "path": "vscodeagent/prompt.prompt.yaml",
+    "role": "AI Assistant (VSCode Agent)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "vscodeagent"
+    ]
+  },
+  {
+    "path": "xcode/playgroundaction.prompt.yaml",
+    "role": "AI Assistant (Xcode)",
+    "objective": "Assist the user based on the prompt: PlaygroundAction",
+    "tags": [
+      "xcode"
+    ]
+  },
+  {
+    "path": "xcode/system.prompt.yaml",
+    "role": "AI Assistant (Xcode)",
+    "objective": "Assist the user based on the prompt: System",
+    "tags": [
+      "xcode"
+    ]
+  },
+  {
+    "path": "xcode/previewaction.prompt.yaml",
+    "role": "AI Assistant (Xcode)",
+    "objective": "Assist the user based on the prompt: PreviewAction",
+    "tags": [
+      "xcode"
+    ]
+  },
+  {
+    "path": "xcode/messageaction.prompt.yaml",
+    "role": "AI Assistant (Xcode)",
+    "objective": "Assist the user based on the prompt: MessageAction",
+    "tags": [
+      "xcode"
+    ]
+  },
+  {
+    "path": "xcode/documentaction.prompt.yaml",
+    "role": "AI Assistant (Xcode)",
+    "objective": "Assist the user based on the prompt: DocumentAction",
+    "tags": [
+      "xcode"
+    ]
+  },
+  {
+    "path": "xcode/explainaction.prompt.yaml",
+    "role": "AI Assistant (Xcode)",
+    "objective": "Assist the user based on the prompt: ExplainAction",
+    "tags": [
+      "xcode"
+    ]
+  },
+  {
+    "path": "\u200espawn/prompt.prompt.yaml",
+    "role": "AI Assistant (\u200e Spawn)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "\u200espawn"
+    ]
+  },
+  {
+    "path": "opensourceprompts/prompt.prompt.yaml",
+    "role": "AI Assistant (Codex CLI)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "opensourceprompts"
+    ]
+  },
+  {
     "path": "high-performance-computing-parallelization/hybrid-parallelization-strategist.prompt.yaml",
     "role": "Hybrid Parallelization Strategist.",
     "objective": "Outline MPI+OpenMP strategy to solve Poisson equation in **{mesh_size}** grid points.",
@@ -240,6 +312,54 @@
     ]
   },
   {
+    "path": "cursor/memory-rating-prompt.prompt.yaml",
+    "role": "",
+    "objective": "",
+    "tags": [
+      "cursor"
+    ]
+  },
+  {
+    "path": "cursor/chat-prompt.prompt.yaml",
+    "role": "AI Assistant (Cursor Prompts)",
+    "objective": "Assist the user based on the prompt: Chat Prompt",
+    "tags": [
+      "cursor"
+    ]
+  },
+  {
+    "path": "cursor/memory-prompt.prompt.yaml",
+    "role": "AI Assistant (Cursor Prompts)",
+    "objective": "Assist the user based on the prompt: Memory Prompt",
+    "tags": [
+      "cursor"
+    ]
+  },
+  {
+    "path": "cursor/agent-prompt-v1.0.prompt.yaml",
+    "role": "AI Assistant (Cursor Prompts)",
+    "objective": "Assist the user based on the prompt: Agent Prompt v1.0",
+    "tags": [
+      "cursor"
+    ]
+  },
+  {
+    "path": "cursor/agent-prompt.prompt.yaml",
+    "role": "AI Assistant (Cursor Prompts)",
+    "objective": "Assist the user based on the prompt: Agent Prompt",
+    "tags": [
+      "cursor"
+    ]
+  },
+  {
+    "path": "cursor/agent-prompt-v1.2.prompt.yaml",
+    "role": "AI Assistant (Cursor Prompts)",
+    "objective": "Assist the user based on the prompt: Agent Prompt v1.2",
+    "tags": [
+      "cursor"
+    ]
+  },
+  {
     "path": "education-tutoring/formative-assessment-designer.prompt.yaml",
     "role": "Formative Assessment Designer.",
     "objective": "Design a formative assessment to gauge understanding of **{lesson_objective}** using exit tickets.",
@@ -317,6 +437,54 @@
     "objective": "Create a 4\u2011week lesson plan to teach **{subject}** to **{level}** students incorporating Bloom\u2019s Taxonomy.",
     "tags": [
       "education-tutoring"
+    ]
+  },
+  {
+    "path": "cursorprompts/memory-rating-prompt.prompt.yaml",
+    "role": "",
+    "objective": "",
+    "tags": [
+      "cursorprompts"
+    ]
+  },
+  {
+    "path": "cursorprompts/chat-prompt.prompt.yaml",
+    "role": "AI Assistant (Cursor Prompts)",
+    "objective": "Assist the user based on the prompt: Chat Prompt",
+    "tags": [
+      "cursorprompts"
+    ]
+  },
+  {
+    "path": "cursorprompts/memory-prompt.prompt.yaml",
+    "role": "AI Assistant (Cursor Prompts)",
+    "objective": "Assist the user based on the prompt: Memory Prompt",
+    "tags": [
+      "cursorprompts"
+    ]
+  },
+  {
+    "path": "cursorprompts/agent-prompt-v1.0.prompt.yaml",
+    "role": "AI Assistant (Cursor Prompts)",
+    "objective": "Assist the user based on the prompt: Agent Prompt v1.0",
+    "tags": [
+      "cursorprompts"
+    ]
+  },
+  {
+    "path": "cursorprompts/agent-prompt.prompt.yaml",
+    "role": "AI Assistant (Cursor Prompts)",
+    "objective": "Assist the user based on the prompt: Agent Prompt",
+    "tags": [
+      "cursorprompts"
+    ]
+  },
+  {
+    "path": "cursorprompts/agent-prompt-v1.2.prompt.yaml",
+    "role": "AI Assistant (Cursor Prompts)",
+    "objective": "Assist the user based on the prompt: Agent Prompt v1.2",
+    "tags": [
+      "cursorprompts"
     ]
   },
   {
@@ -640,6 +808,14 @@
     ]
   },
   {
+    "path": "trae/chat-prompt.prompt.yaml",
+    "role": "AI Assistant (Trae)",
+    "objective": "Assist the user based on the prompt: Chat Prompt",
+    "tags": [
+      "trae"
+    ]
+  },
+  {
     "path": "content-writing-blogging/seo-specialized-content-strategist.prompt.yaml",
     "role": "SEO-specialized Content Strategist.",
     "objective": "Produce a pillar blog post outline (minimum 3,000 words) for **{persona}** that will rank top-3 for the keyword cluster **{keyword_cluster}**.",
@@ -675,7 +851,9 @@
     "path": "content-writing-blogging/blog-post-outliner.prompt.yaml",
     "role": "Blog Post Outliner",
     "objective": "Create a detailed outline for a blog post based on the given {topic} and {key_points}.",
-    "tags": []
+    "tags": [
+      "content-writing-blogging"
+    ]
   },
   {
     "path": "content-writing-blogging/podcast-show-notes-producer.prompt.yaml",
@@ -705,7 +883,9 @@
     "path": "content-writing-blogging/social-media-post-generator.prompt.yaml",
     "role": "Social Media Post Generator",
     "objective": "Generate engaging social media posts for {platform} promoting {content_summary}.",
-    "tags": []
+    "tags": [
+      "content-writing-blogging"
+    ]
   },
   {
     "path": "content-writing-blogging/expert-interviewer.prompt.yaml",
@@ -735,7 +915,9 @@
     "path": "content-writing-blogging/blog-post-idea-generator.prompt.yaml",
     "role": "Blog Post Idea Generator",
     "objective": "Generate a list of compelling blog post ideas for {topic} targeting {audience}.",
-    "tags": []
+    "tags": [
+      "content-writing-blogging"
+    ]
   },
   {
     "path": "content-writing-blogging/sentence-variability-coach.prompt.yaml",
@@ -930,6 +1112,30 @@
     ]
   },
   {
+    "path": "manusagenttools&prompt/modules.prompt.yaml",
+    "role": "AI Assistant (Manus Agent Tools & Prompt)",
+    "objective": "Assist the user based on the prompt: Modules",
+    "tags": [
+      "manusagenttools&prompt"
+    ]
+  },
+  {
+    "path": "manusagenttools&prompt/prompt.prompt.yaml",
+    "role": "AI Assistant (Manus Agent Tools & Prompt)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "manusagenttools&prompt"
+    ]
+  },
+  {
+    "path": "manusagenttools&prompt/agent-loop.prompt.yaml",
+    "role": "AI Assistant (Manus Agent Tools & Prompt)",
+    "objective": "Assist the user based on the prompt: Agent loop",
+    "tags": [
+      "manusagenttools&prompt"
+    ]
+  },
+  {
     "path": "coding-software-development/memory-optimization-advisor.prompt.yaml",
     "role": "Memory Optimization Advisor.",
     "objective": "Recommend three strategies to reduce RAM usage in **{language}** application processing large arrays **{use_case}**.",
@@ -973,7 +1179,9 @@
     "path": "coding-software-development/user-story-to-acceptance-criteria.prompt.yaml",
     "role": "Acceptance Criteria Generator",
     "objective": "Convert a given user story into a set of clear, testable acceptance criteria.",
-    "tags": []
+    "tags": [
+      "coding-software-development"
+    ]
   },
   {
     "path": "coding-software-development/api-design-architect.prompt.yaml",
@@ -987,7 +1195,9 @@
     "path": "coding-software-development/code-snippet-generator.prompt.yaml",
     "role": "Code Snippet Generator",
     "objective": "Generate a concise code snippet in {language} that implements {functionality}.",
-    "tags": []
+    "tags": [
+      "coding-software-development"
+    ]
   },
   {
     "path": "coding-software-development/design-pattern-recommender.prompt.yaml",
@@ -1019,6 +1229,14 @@
     "objective": "Draft Conventional Commit messages for change set **{change_log}**, each with scope, type, and short imperative description.",
     "tags": [
       "coding-software-development"
+    ]
+  },
+  {
+    "path": "v0promptsandtools/prompt.prompt.yaml",
+    "role": "AI Assistant (v0 Prompts and Tools)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "v0promptsandtools"
     ]
   },
   {
@@ -1102,6 +1320,14 @@
     ]
   },
   {
+    "path": "perplexity/prompt.prompt.yaml",
+    "role": "AI Assistant (Perplexity)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "perplexity"
+    ]
+  },
+  {
     "path": "financial-risk-modeling/liquidity-risk-reporter.prompt.yaml",
     "role": "Liquidity Risk Reporter.",
     "objective": "Draft a LCR calculation for **{bank_name}** using daily cash-flow data **{cashflow_csv}**.",
@@ -1179,6 +1405,54 @@
     "objective": "Calculate CVA for **{irs_portfolio}** trades under **{cs01_curve}** CSA rules.",
     "tags": [
       "financial-risk-modeling"
+    ]
+  },
+  {
+    "path": "cluely/enterprise-prompt.prompt.yaml",
+    "role": "AI Assistant (Cluely)",
+    "objective": "Assist the user based on the prompt: Enterprise Prompt",
+    "tags": [
+      "cluely"
+    ]
+  },
+  {
+    "path": "cluely/default-prompt.prompt.yaml",
+    "role": "Cluely",
+    "objective": "to analyze and solve problems asked by the user or shown on the screen. Your responses must be specific, accurate, and actionable.",
+    "tags": [
+      "cluely"
+    ]
+  },
+  {
+    "path": "replit/prompt.prompt.yaml",
+    "role": "AI Assistant (Replit)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "replit"
+    ]
+  },
+  {
+    "path": "lovable/prompt.prompt.yaml",
+    "role": "AI Assistant (Lovable)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "lovable"
+    ]
+  },
+  {
+    "path": "windsurf/tools-wave-11.prompt.yaml",
+    "role": "AI Assistant (Windsurf)",
+    "objective": "Assist the user based on the prompt: Tools Wave 11",
+    "tags": [
+      "windsurf"
+    ]
+  },
+  {
+    "path": "windsurf/prompt-wave-11.prompt.yaml",
+    "role": "AI Assistant (Windsurf)",
+    "objective": "Assist the user based on the prompt: Prompt Wave 11",
+    "tags": [
+      "windsurf"
     ]
   },
   {
@@ -1262,6 +1536,14 @@
     ]
   },
   {
+    "path": "dia/prompt.prompt.yaml",
+    "role": "AI Assistant (dia)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "dia"
+    ]
+  },
+  {
     "path": "design-ux/design-system-guide-writer.prompt.yaml",
     "role": "Design System Guide Writer.",
     "objective": "Write button component guidelines for **{framework}** design system including states, spacing, and naming convention.",
@@ -1342,6 +1624,14 @@
     ]
   },
   {
+    "path": "devinai/prompt.prompt.yaml",
+    "role": "AI Assistant (Devin AI)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "devinai"
+    ]
+  },
+  {
     "path": "synthetic-biology-gene-editing/epigenome-editor-planner.prompt.yaml",
     "role": "Epigenome Editor Planner.",
     "objective": "Propose dCas-KRAB-MeCP2 construct targeting **{enhancer_region}** to silence **{oncogene_name}**.",
@@ -1419,6 +1709,14 @@
     "objective": "Design an optogenetic switch controlling **{target_gene}** expression in **{cell_line}** using **{light_wavelength}** nm LED.",
     "tags": [
       "synthetic-biology-gene-editing"
+    ]
+  },
+  {
+    "path": "junie/prompt.prompt.yaml",
+    "role": "AI Assistant (Junie)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "junie"
     ]
   },
   {
@@ -3198,16 +3496,44 @@
     ]
   },
   {
+    "path": "orchids.app/system-prompt.prompt.yaml",
+    "role": "AI Assistant (Orchids.app)",
+    "objective": "Assist the user based on the prompt: System Prompt",
+    "tags": [
+      "orchids.app"
+    ]
+  },
+  {
+    "path": "orchids.app/decision-making-prompt.prompt.yaml",
+    "role": "AI Assistant (Orchids.app)",
+    "objective": "Assist the user based on the prompt: Decision-making prompt",
+    "tags": [
+      "orchids.app"
+    ]
+  },
+  {
     "path": "creative/idea-brainstormer.prompt.yaml",
     "role": "Idea Brainstormer",
     "objective": "Generate a list of diverse and innovative ideas for {topic}.",
-    "tags": []
+    "tags": [
+      "creative"
+    ]
+  },
+  {
+    "path": "-spawn/prompt.prompt.yaml",
+    "role": "AI Assistant (-Spawn)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "-spawn"
+    ]
   },
   {
     "path": "academic-writing-research/research-question-generator.prompt.yaml",
     "role": "Research Question Generator",
     "objective": "Generate 3-5 novel and impactful research questions based on the provided {topic} and {key_findings}.",
-    "tags": []
+    "tags": [
+      "academic-writing-research"
+    ]
   },
   {
     "path": "academic-writing-research/citation-style-converter.prompt.yaml",
@@ -3293,13 +3619,33 @@
     "path": "academic-writing-research/key-findings-extractor.prompt.yaml",
     "role": "Key Findings Extractor",
     "objective": "Extract the most significant findings and their implications from the provided academic text on {topic}.",
-    "tags": []
+    "tags": [
+      "academic-writing-research"
+    ]
   },
   {
     "path": "academic-writing-research/paper-summarizer.prompt.yaml",
     "role": "Paper Summarizer",
     "objective": "Provide a concise summary of the academic paper on {topic} focusing on its main arguments and conclusions.",
-    "tags": []
+    "tags": [
+      "academic-writing-research"
+    ]
+  },
+  {
+    "path": "warp.dev/prompt.prompt.yaml",
+    "role": "AI Assistant (Warp.dev)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "warp.dev"
+    ]
+  },
+  {
+    "path": "same.dev/prompt.prompt.yaml",
+    "role": "AI Assistant (Same.dev)",
+    "objective": "Assist the user based on the prompt: Prompt",
+    "tags": [
+      "same.dev"
+    ]
   },
   {
     "path": "marketing-seo/email-subject-line-generator.prompt.yaml",

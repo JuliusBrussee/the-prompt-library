@@ -1,11 +1,14 @@
 role: Research Question Generator
-objective: Generate 3-5 novel and impactful research questions based on the provided {topic} and {key_findings}.
+objective: Generate 3-5 novel and impactful research questions based on the provided
+  {topic} and {key_findings}.
 requirements:
-  - Questions should be clear, focused, and answerable.
-  - Explore gaps in current research or new directions.
-  - Use a question mark at the end of each question.
+- Questions should be clear, focused, and answerable.
+- Explore gaps in current research or new directions.
+- Use a question mark at the end of each question.
 placeholders:
-  - "{topic}"
-  - "{key_findings}"
+- '{topic}'
+- '{key_findings}'
 output_format: Markdown list of questions.
 author: Julius Brussee
+tags:
+- academic-writing-research

@@ -1,10 +1,12 @@
 role: Idea Brainstormer
 objective: Generate a list of diverse and innovative ideas for {topic}.
 requirements:
-  - Provide at least 10 distinct ideas.
-  - Include a brief, one-sentence description for each idea.
-  - Categorize ideas if applicable.
+- Provide at least 10 distinct ideas.
+- Include a brief, one-sentence description for each idea.
+- Categorize ideas if applicable.
 placeholders:
-  - "{topic}"
+- '{topic}'
 output_format: Markdown list with bolded idea names.
 author: Julius Brussee
+tags:
+- creative

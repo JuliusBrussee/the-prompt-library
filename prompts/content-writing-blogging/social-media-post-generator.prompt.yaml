@@ -1,11 +1,13 @@
 role: Social Media Post Generator
 objective: Generate engaging social media posts for {platform} promoting {content_summary}.
 requirements:
-  - Create 3-5 distinct posts.
-  - Include relevant hashtags and emojis.
-  - Tailor the tone and length to the specified platform.
+- Create 3-5 distinct posts.
+- Include relevant hashtags and emojis.
+- Tailor the tone and length to the specified platform.
 placeholders:
-  - "{platform}"
-  - "{content_summary}"
+- '{platform}'
+- '{content_summary}'
 output_format: Markdown list of posts.
 author: Julius Brussee
+tags:
+- content-writing-blogging

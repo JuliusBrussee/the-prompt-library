@@ -169,7 +169,17 @@ const openPromptDetailModal = (prompt) => {
 
     // Requirements
     const modalRequirementsSection = document.getElementById('modal-requirements-section');
-    const modalRequirements = document.getElementById('modal-requirements');
+const modalRequirements = document.getElementById('modal-requirements');
+const modalSystemInstructionsSection = document.getElementById('modal-system-instructions-section');
+const modalSystemInstructions = document.getElementById('modal-system-instructions');
+
+// System Instructions or Requirements
+if (prompt.system_instructions) {
+    modalSystemInstructions.textContent = prompt.system_instructions;
+    modalSystemInstructionsSection.style.display = 'block';
+    modalRequirementsSection.style.display = 'none'; // Hide requirements if system_instructions is present
+} else {
+    modalSystemInstructionsSection.style.display = 'none'; // Hide system_instructions if not present
     modalRequirements.innerHTML = '';
     if (prompt.requirements && prompt.requirements.length > 0) {
         prompt.requirements.forEach(req => {
@@ -181,6 +191,7 @@ const openPromptDetailModal = (prompt) => {
     } else {
         modalRequirementsSection.style.display = 'none';
     }
+}
 
     // Author
     if (prompt.author) {
@@ -212,6 +223,7 @@ const openPromptDetailModal = (prompt) => {
         const textToCopy = `Role: ${roleToCopy}
 Objective: ${objectiveToCopy}
 ${prompt.output_format ? `Output Format: ${prompt.output_format}
+` : ''}${prompt.system_instructions ? `System Instructions: ${prompt.system_instructions}
 ` : ''}${requirementsToCopy && requirementsToCopy.length > 0 ? `Requirements: ${requirementsToCopy.join(', ')}
 ` : ''}${prompt.tags && prompt.tags.length > 0 ? `Tags: ${prompt.tags.join(', ')}
 ` : ''}${prompt.author ? `Author: ${prompt.author}` : ''}`;

@@ -68,4 +68,9 @@ properties:
       Optional list of lowercase keywords for search, filters, or analytics.
     items:
       type: string
+  system_instructions:
+    type: string
+    description: |
+      The core system instructions for an AI agent prompt.
+      This field is used instead of 'requirements' for AI agent prompts.
 additionalProperties: false

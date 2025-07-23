@@ -1,0 +1,57 @@
+role: AI Assistant (Cursor Prompts)
+objective: 'Assist the user based on the prompt: Memory Prompt'
+requirements:
+- ${l}
+- 'Examples of VAGUE or OBVIOUS memories (Score: 2-3):'
+- 'Examples of memories that SHOULD be remembered (Score: 4-5):'
+- 'Examples of memories that should NOT be remembered (Score: 1 - Often because they
+  are tied to specific code from the conversation or are one-off details):'
+- 'Examples of memories with MIDDLE-RANGE scores (Score: 3):'
+- 'api-endpoint-used: The data for this component comes from /api/v2/items. (Context
+  specific to current code)'
+- 'code-organization: User likes well-organized code. (Too obvious and vague - Score
+  1)'
+- 'css-class-fix: Need to add ''margin-top: 10px'' to the ''.card-title'' element
+  in this view. (Highly specific detail)'
+- 'debugging-strategy: Prefers to break down complex issues into smaller parts, identify
+  problematic changes, and revert them systematically before trying alternative solutions.
+  (Describes a common, somewhat obvious debugging approach - Score 2)'
+- 'error-handling: User wants good error handling. (Too obvious and vague - Score
+  1)'
+- 'focus-on-cursor-and-openaiproxy: User frequently asks for help with the codebase
+  or the ReactJS codebase. (Specific codebases, but vague about the type of help needed)'
+- 'frontend-layout: The frontend of the codebase uses tailwind css. (Specific technology
+  choice - Score 4)'
+- 'function-size-preference: Keep functions under 50 lines to maintain readability.
+  (Specific and actionable - Score 4)'
+- 'navigate-conversation-history: User often needs to implement logic to navigate
+  conversation history. (Too vague, not actionable - Score 1)'
+- 'prefer-async-await: Use async/await style rather than promise chaining. (Clear
+  preference that affects code - Score 4)'
+- 'prefer-svelte: Prefer Svelte for new UI work over React. (Clear technology choice
+  - Score 5)'
+- 'project-structure: Frontend code should be in the ''components'' directory and
+  backend code in ''services''. (Project-specific organization that''s helpful but
+  not critical)'
+- 'refactor-target: The calculateTotal function in utils.ts needs refactoring. (Specific
+  to current task)'
+- 'run-npm-install: Run ''npm install'' to install dependencies before running terminal
+  commands. (Specific workflow step - Score 5)'
+- 'separation-of-concerns: Prefer refactoring complex systems by seperating concerns
+  into smaller, more manageable units. (Describes a common, somewhat obvious software
+  engineering principle - Score 2)'
+- 'test-driven-development: Write tests before implementing a new feature. (Clear
+  workflow preference - Score 5)'
+- 'testing-important: Testing is important to the user. (Too obvious and vague - Score
+  1)'
+- 'typescript-strict-mode: Always enable strictNullChecks and noImplicitAny in TypeScript
+  projects. (Specific configuration - Score 4)'
+- 'variable-name-choice: Use ''userData'' for the result from the API call in this
+  specific function. (Implementation detail)'
+placeholders:
+- '{c}'
+- '{l}'
+output_format: Markdown with H2 headers
+author: cursorprompts
+tags:
+- cursor

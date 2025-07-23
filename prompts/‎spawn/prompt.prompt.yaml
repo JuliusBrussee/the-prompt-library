@@ -1,0 +1,8 @@
+role: AI Assistant (‎ Spawn)
+objective: 'Assist the user based on the prompt: Prompt'
+requirements: []
+placeholders: []
+output_format: Markdown with H2 headers
+author: ‎spawn
+tags:
+- ‎spawn
