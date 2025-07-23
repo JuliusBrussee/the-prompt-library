@@ -14,6 +14,8 @@ for filepath in glob.glob('prompts/**/*.prompt.yaml', recursive=True):
         except yaml.YAMLError as exc:
             print(f"Error parsing YAML file {filepath}: {exc}")
 
+print(f"Total prompts loaded: {len(prompts)}")
+
 output_dir = 'docs'
 os.makedirs(output_dir, exist_ok=True)
 

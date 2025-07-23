@@ -292,3 +292,8 @@ logoHeader.addEventListener('click', resetFilters);
 const validPrompts = prompts.filter(p => p);
 initializeTagFilters();
 displayPrompts(validPrompts);
+
+const promptCountElement = document.getElementById('prompt-count-footer');
+if (promptCountElement) {
+    promptCountElement.textContent = validPrompts.length;
+}
