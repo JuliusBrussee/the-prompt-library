@@ -3,7 +3,7 @@
 > **A curated collection of production‑ready AI prompts, organised for humans and machines alike.**
 
 ![Stars](https://img.shields.io/github/stars/juliusbrussee/the-prompt-library?style=social)
-![Prompts](https://img.shields.io/badge/prompts-300-blue)
+![Prompts](https://img.shields.io/badge/prompts-476-blue)
 ![License](https://img.shields.io/github/license/juliusbrussee/the-prompt-library)
 
 ---
