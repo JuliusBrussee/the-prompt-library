@@ -95,7 +95,7 @@ python3 -m mcp_tool.workflow run workflows/user-story-to-code-test.workflow.yaml
 python3 -m mcp_tool.workflow run workflows/content-marketing-campaign.workflow.yaml
 ```
 
-### 3. Test Prompts
+### 3. Test Prompts (WIP)
 
 The testing framework validates a prompt's output against a set of assertions using a real LLM. Tests are defined in `.test.yaml` files in the `/tests` directory.
 
