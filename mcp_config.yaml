@@ -1,4 +1,4 @@
-# Default MCP Configuration
+# Default LLM Configuration
 # This file allows you to set default LLM providers and models for testing.
 
 llm_config:

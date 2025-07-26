@@ -119,13 +119,44 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-.gemini/settings.json
-mcp_tool/__init__.py
-mcp_tool/__pycache__/__init__.cpython-313.pyc
-mcp_tool/__pycache__/build_index.cpython-313.pyc
-mcp_tool/__pycache__/core.cpython-313.pyc
-mcp_tool/__pycache__/interactive.cpython-313.pyc
-mcp_tool/__pycache__/llm_client.cpython-313.pyc
-mcp_tool/__pycache__/mcp.cpython-313.pyc
-mcp_tool/__pycache__/testing.cpython-313.pyc
-mcp_tool/__pycache__/workflow.cpython-313.pyc
+# Gemini settings
+.gemini/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local development
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Data files
+
+# Temp files
+src/prompt_toolkit/temp_scripts/
+tests/temp/
+
+# Documentation build output
+docs/public/
+docs/src/
+
+# Environment folders from root
+/bin/
+/include/
+
+# macOS
+.DS_Store
+
+
+
+# Python project config
+pyproject.toml
+uv.lock
