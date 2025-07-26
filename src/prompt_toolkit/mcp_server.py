@@ -34,29 +34,29 @@ async def list_prompts() -> str:
         return f"An unexpected error occurred: {e}"
 
 @mcp.tool()
-async def get_prompt(id: str) -> str:
-    """Get the full details of a specific prompt by its ID.
-
+async def get_prompt(query: str) -> str:
+    """Get the full details of a specific prompt by its query.
     Args:
-        id: The unique identifier of the prompt (e.g., 'academic-paraphrase-checker').
+        query: The query to search for the prompt.
     """
     try:
-        index = get_prompt_index()
-        prompt_info = next((p for p in index if p.get('id') == id), None)
+        matches = find_prompts(query)
+        if not matches:
+            return f"Error: Prompt with query '{query}' not found."
 
-        if not prompt_info:
-            return f"Error: Prompt with ID '{id}' not found."
-
+        # Return the top match
+        prompt_info = matches[0]
         prompt_path = prompt_info.get('path')
         if not prompt_path:
-            return f"Error: Path not found for prompt with ID '{id}'."
+            return f"Error: Path not found for prompt with query '{query}'."
 
         full_prompt = get_full_prompt(prompt_path)
         return json.dumps(full_prompt, indent=2)
     except FileNotFoundError:
-        return f"Error: The file for prompt ID '{id}' was not found at the expected path."
+        return f"Error: The file for prompt with query '{query}' was not found at the expected path."
     except Exception as e:
-        return f"An unexpected error occurred while fetching prompt '{id}': {e}"
+        return f"An unexpected error occurred while fetching prompt '{query}': {e}"
+
 
 @mcp.tool()
 async def search_prompts(query: str) -> str:
