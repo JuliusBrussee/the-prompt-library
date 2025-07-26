@@ -13,6 +13,7 @@
 *   **Ready-to-Run:** Each prompt is a self-contained YAML file with a clear `role`, `objective`, and `requirements`.
 *   **Searchable & Hackable:** Browse prompts on the website or access them programmatically with the provided tools.
 *   **Quality-Gated:** Every contribution is linted and validated by CI to maintain high standards.
+*   **Includes AI System Prompts:** Contains system prompts from a variety of AI models, including Codex, ChatGPT, Claude, Cluely, Lovable, and more.
 *   **Community-Driven:** Contributions are welcome via Discussions, Issues, or Pull Requests.
 
 ---
