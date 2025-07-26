@@ -17,9 +17,20 @@
             </div>
             
             <div class="sidebar-content">
-                <button id="random-prompt-btn" class="sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shuffle"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
-                    <span>Random Prompt</span>
+                <div class="sidebar-controls">
+                    <button id="sort-by-btn" class="sidebar-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                        <span>Sort By</span>
+                    </button>
+                    <div id="sort-by-dropdown" class="dropdown-content">
+                      <a href="#" data-sort="default">Default</a>
+                      <a href="#" data-sort="reverse">Reverse</a>
+                      <a href="#" data-sort="usage">Most Used</a>
+                    </div>
+                  </div>
+                <button id="clear-filters-btn" class="sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                    <span>Clear Filters</span>
                 </button>
                 <div class="tags-section">
                     <h2>Tags</h2>
@@ -27,6 +38,10 @@
                 </div>
             </div>
             <div class="sidebar-footer">
+                <button id="random-prompt-btn" class="sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shuffle"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
+                    <span>Random Prompt</span>
+                </button>
                 <p>Created by <a href="https://github.com/JuliusBrussee/the-prompt-library" target="_blank">Julius Brussee</a></p>
                 <p class="subtle-count">Total Prompts: <span id="prompt-count-footer"></span></p>
             </div>

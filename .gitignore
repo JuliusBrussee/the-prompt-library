@@ -119,3 +119,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.gemini/settings.json
+mcp_tool/__init__.py
+mcp_tool/__pycache__/__init__.cpython-313.pyc
+mcp_tool/__pycache__/build_index.cpython-313.pyc
+mcp_tool/__pycache__/core.cpython-313.pyc
+mcp_tool/__pycache__/interactive.cpython-313.pyc
+mcp_tool/__pycache__/llm_client.cpython-313.pyc
+mcp_tool/__pycache__/mcp.cpython-313.pyc
+mcp_tool/__pycache__/testing.cpython-313.pyc
+mcp_tool/__pycache__/workflow.cpython-313.pyc

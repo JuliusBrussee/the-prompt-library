@@ -1,4 +1,4 @@
-role: AI Assistant (Orchids.app)
+role: Orchids.app
 objective: 'Assist the user based on the prompt: System Prompt'
 placeholders: []
 output_format: Markdown with H2 headers

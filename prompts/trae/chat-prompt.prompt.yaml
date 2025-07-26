@@ -1,4 +1,4 @@
-role: AI Assistant (Trae)
+role: Trae AI 
 objective: 'Assist the user based on the prompt: Chat Prompt'
 placeholders: []
 output_format: Markdown with H2 headers

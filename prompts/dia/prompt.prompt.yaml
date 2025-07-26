@@ -1,4 +1,4 @@
-role: AI Assistant (dia)
+role: Dia AI
 objective: 'Assist the user based on the prompt: Prompt'
 placeholders:
 - '{1}'

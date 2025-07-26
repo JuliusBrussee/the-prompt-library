@@ -1,4 +1,4 @@
-role: AI Assistant (Devin AI)
+role: Devin AI
 objective: 'Assist the user based on the prompt: Prompt'
 placeholders:
 - '{merge_base}'

@@ -1,4 +1,4 @@
-role: AI Assistant (Perplexity)
+role: Perplexity AI
 objective: 'Assist the user based on the prompt: Prompt'
 placeholders: []
 output_format: Markdown with H2 headers

@@ -1,4 +1,4 @@
-role: AI Assistant (Windsurf)
+role: Windsurf
 objective: 'Assist the user based on the prompt: Prompt Wave 11'
 placeholders: []
 output_format: Markdown with H2 headers

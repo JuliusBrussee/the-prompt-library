@@ -4,8 +4,13 @@ const tagFiltersContainer = document.getElementById('tag-filters');
 const toastContainer = document.getElementById('toast-container');
 const randomPromptBtn = document.getElementById('random-prompt-btn');
 const logoHeader = document.querySelector('.logo');
+const clearFiltersBtn = document.getElementById('clear-filters-btn');
 
 let activeTags = [];
+let currentSortOrder = 'default'; // Default sort order
+
+const sortByBtn = document.getElementById('sort-by-btn');
+const sortByDropdown = document.getElementById('sort-by-dropdown');
 
 const showToast = (message) => {
     const toast = document.createElement('div');
@@ -25,6 +30,48 @@ const showToast = (message) => {
     }, 3000);
 };
 
+const sortPrompts = (promptsToSort) => {
+    return promptsToSort.sort((a, b) => {
+        if (currentSortOrder === 'default') {
+            return 0;
+        } else if (currentSortOrder === 'usage') {
+            const tagOrder = ['coding-software-development', 'business-strategy-entrepreneurship', 'creative-writing'];
+            const aTags = a.tags || [];
+            const bTags = b.tags || [];
+
+            const aIndex = tagOrder.findIndex(tag => aTags.includes(tag));
+            const bIndex = tagOrder.findIndex(tag => bTags.includes(tag));
+
+            if (aIndex !== -1 && bIndex !== -1) {
+                return aIndex - bIndex;
+            }
+            if (aIndex !== -1) {
+                return -1;
+            }
+            if (bIndex !== -1) {
+                return 1;
+            }
+        } else if (currentSortOrder === 'reverse') {
+            return b.role.localeCompare(a.role);
+        }
+        // Add other sort conditions here
+        return 0;
+    });
+};
+
+sortByBtn.addEventListener('click', () => {
+    sortByDropdown.classList.toggle('show');
+});
+
+sortByDropdown.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+        currentSortOrder = e.target.dataset.sort;
+        updateSortButtonText();
+        filterPrompts();
+        sortByDropdown.classList.remove('show');
+    }
+});
+
 const filterPrompts = () => {
     const searchTerm = searchInput.value.toLowerCase();
     const filteredPrompts = prompts.filter(prompt => {
@@ -40,7 +87,8 @@ const filterPrompts = () => {
         return matchesSearch && matchesTags;
     });
 
-    displayPrompts(filteredPrompts);
+    const sortedPrompts = sortPrompts(filteredPrompts);
+    displayPrompts(sortedPrompts);
 };
 
 const displayPrompts = (filteredPrompts) => {
@@ -270,6 +318,16 @@ const initializeTagFilters = () => {
     });
 };
 
+const updateSortButtonText = () => {
+    const sortText = `Sort By: ${currentSortOrder.charAt(0).toUpperCase() + currentSortOrder.slice(1)}`;
+    sortByBtn.querySelector('span').textContent = sortText;
+    if (currentSortOrder !== 'default') {
+        sortByBtn.classList.add('active');
+    } else {
+        sortByBtn.classList.remove('active');
+    }
+};
+
 const displayRandomPrompt = () => {
     const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
     displayPrompts([randomPrompt]);
@@ -278,19 +336,23 @@ const displayRandomPrompt = () => {
 const resetFilters = () => {
     searchInput.value = '';
     activeTags = [];
+    currentSortOrder = 'default';
     document.querySelectorAll('.tag-filter.active').forEach(button => {
         button.classList.remove('active');
     });
+    updateSortButtonText();
     filterPrompts();
 };
 
 searchInput.addEventListener('input', filterPrompts);
 randomPromptBtn.addEventListener('click', displayRandomPrompt);
 logoHeader.addEventListener('click', resetFilters);
+clearFiltersBtn.addEventListener('click', resetFilters);
 
 // Initial load
-const validPrompts = prompts.filter(p => p);
+const validPrompts = prompts.filter(p => p).sort((a, b) => a.role.localeCompare(b.role));
 initializeTagFilters();
+updateSortButtonText();
 displayPrompts(validPrompts);
 
 const promptCountElement = document.getElementById('prompt-count-footer');

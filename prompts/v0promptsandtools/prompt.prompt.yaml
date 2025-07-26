@@ -1,4 +1,4 @@
-role: AI Assistant (v0 Prompts and Tools)
+role: v0
 objective: 'Assist the user based on the prompt: Prompt'
 placeholders:
 - '{action}'

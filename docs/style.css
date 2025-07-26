@@ -72,7 +72,7 @@ body {
 .sidebar-button {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     padding: 10px 15px;
     margin-bottom: 20px;
@@ -571,4 +571,63 @@ body {
         top: 10px;
         right: 15px;
     }
+}
+.sidebar-controls {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#sort-by-btn {
+    background-color: var(--gh-button-bg);
+    color: var(--gh-text-primary);
+    border: 1px solid var(--gh-button-border);
+    border-radius: 6px;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#sort-by-btn:hover {
+    background-color: var(--gh-button-hover-bg);
+    border-color: var(--gh-accent-blue);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--gh-bg-secondary);
+    width: 100%;
+    box-shadow: 0 8px 16px var(--gh-shadow-color);
+    z-index: 1;
+    border: 1px solid var(--gh-border-color);
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: var(--gh-text-secondary);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(139, 148, 158, 0.1);
+    color: var(--gh-text-primary);
+}
+
+.dropdown-content a.active {
+    background-color: var(--gh-accent-blue);
+    color: #fff;
+}
+
+.show {
+    display: block;
 }

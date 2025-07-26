@@ -1,1 +1,3 @@
-PyYAML
+ PyYAML==6.0.1
+mcp[cli]>=1.2.0
+httpx>=0.27.0

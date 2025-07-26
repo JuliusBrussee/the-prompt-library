@@ -40,7 +40,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 
 # Install dependencies
-pip install -r mcp_tool/requirements.txt
+pip install -r src/prompt_toolkit/requirements.txt
 ```
 
 ### 3. Build the Search Index
@@ -48,7 +48,7 @@ pip install -r mcp_tool/requirements.txt
 The library uses a JSON index for fast prompt searching. Build it by running:
 
 ```bash
-python3 -m mcp_tool.build_index
+python3 -m src.prompt_toolkit.build_index
 ```
 You only need to run this once initially, or whenever you add or modify prompt files.
 
@@ -60,7 +60,7 @@ You can interact with the prompt library in several ways: as a command-line tool
 
 ### 1. Find and Use Prompts (CLI)
 
-The interactive script (`mcp_tool/interactive.py`) is the primary way to find and use prompts.
+The interactive script (`src/prompt_toolkit/interactive.py`) is the primary way to find and use prompts.
 
 *   **`find <query>`**: Searches the library for prompts matching your keywords.
 *   **`get <query>`**: Retrieves the single best-matching prompt.
@@ -70,29 +70,29 @@ The interactive script (`mcp_tool/interactive.py`) is the primary way to find an
 
 ```bash
 # Find relevant prompts by keyword
-python3 -m mcp_tool.interactive find "code documentation"
+python3 -m src.prompt_toolkit.interactive find "code documentation"
 
 # Get the best prompt for a task
-python3 -m mcp_tool.interactive get "Create a unit test for my function"
+python3 -m src.prompt_toolkit.interactive get "Create a unit test for my function"
 
 # Use interactive mode to get help with a code review
-python3 -m mcp_tool.interactive get "code review" --interactive
+python3 -m src.prompt_toolkit.interactive get "code review" --interactive
 ```
 
 ### 2. Run Automated Workflows
 
-Workflows chain multiple prompts together to accomplish complex tasks. They are defined in `.workflow.yaml` files inside the `/workflows` directory.
+Workflows chain multiple prompts together to accomplish complex tasks. They are defined in `.workflow.yaml` files inside the `/prompt_workflows` directory.
 
 **How to Run a Workflow:**
 
-Use the `mcp_tool/workflow.py` script to execute a workflow file.
+Use the `src/prompt_toolkit/workflow.py` script to execute a workflow file.
 
 ```bash
 # Example: Transform a user story into code and tests
-python3 -m mcp_tool.workflow run workflows/user-story-to-code-test.workflow.yaml
+python3 -m src.prompt_toolkit.workflow run prompt_workflows/user-story-to-code-test.workflow.yaml
 
 # Example: Generate a content marketing campaign
-python3 -m mcp_tool.workflow run workflows/content-marketing-campaign.workflow.yaml
+python3 -m src.prompt_toolkit.workflow run prompt_workflows/content-marketing-campaign.workflow.yaml
 ```
 
 ### 3. Test Prompts (WIP)
@@ -120,14 +120,14 @@ The testing framework validates a prompt's output against a set of assertions us
 
 **How to Run Tests:**
 
-Use the `mcp_tool/testing.py` script to run a test file.
+Use the `src/prompt_toolkit/testing.py` script to run a test file.
 
 ```bash
 # Run a test file using the default configured LLM
-python3 -m mcp_tool.testing tests/unit_test_generator.test.yaml
+python3 -m src.prompt_toolkit.testing tests/unit_test_generator.test.yaml
 
 # Override the LLM provider and model for a specific run
-python3 -m mcp_tool.testing tests/unit_test_generator.test.yaml --llm-provider openai --llm-model gpt-4
+python3 -m src.prompt_toolkit.testing tests/unit_test_generator.test.yaml --llm-provider openai --llm-model gpt-4
 ```
 
 ### 4. Use as an MCP Server
@@ -139,7 +139,7 @@ The library includes a server that exposes its tools over the Model Context Prot
 Once you have installed dependencies and built the index, you can start the server:
 
 ```bash
-python3 -m mcp_tool.mcp_server
+python3 -m src.prompt_toolkit.mcp_server
 ```
 
 **Connecting with Gemini CLI:**
@@ -153,7 +153,7 @@ To connect the Gemini CLI to the server, create a `.gemini/settings.json` file i
             "command": "python3",
             "args": [
                 "-m",
-                "mcp_tool.mcp_server"
+                "src.prompt_toolkit.mcp_server"
             ],
             "transport": "stdio",
             "trust": "trusted"
@@ -169,12 +169,14 @@ With this file in place, running `/mcp` in the Gemini CLI from this directory wi
 
 ```
 prompt-library/
-├── prompts/                # Individual YAML prompts split by domain
-├── mcp_tool/               # Helper CLI & CI scripts
-├── workflows/              # Definitions for multi-step prompt sequences
-├── tests/                  # Definitions for prompt test cases
+├── data/                   # CSV / JSON bulk exports
 ├── docs/                   # Website source code
-└── data/                   # CSV / JSON bulk exports
+├── prompts/                # Individual YAML prompts split by domain
+├── prompt_workflows/       # Definitions for multi-step prompt sequences
+├── schemas/                # YAML schemas for prompts, tests, and workflows
+├── src/                    # Python source code for all tooling
+│   └── prompt_toolkit/
+└── tests/                  # Definitions for prompt test cases
 ```
 
 ---
@@ -192,7 +194,7 @@ All prompts adhere to a standard YAML format for consistency and machine readabi
 | `output_format` | Expected structure (e.g., Markdown table) |
 | `tags`          | Optional keywords for search              |
 
-The official schema is defined in [`prompt.schema.yaml`](prompt.schema.yaml).
+The official schema is defined in [`schemas/prompt.schema.yaml`](schemas/prompt.schema.yaml).
 
 ---
 
