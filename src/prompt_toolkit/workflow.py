@@ -56,19 +56,19 @@ def run_workflow(workflow_path):
                 resolved_inputs[placeholder] = value
         
         # Construct the final prompt text for this step
-        full_text_template = f"""
-ROLE:
+        requirements = prompt_content.get('requirements') or []
+        requirements_str = '- ' + '\n- '.join(requirements) if requirements else ''
+        full_text_template = f"""ROLE:
 {prompt_content.get('role', '')}
 
 OBJECTIVE:
 {prompt_content.get('objective', '')}
 
 REQUIREMENTS:
-{'- ' + '\n- '.join(prompt_content.get('requirements') or [])}
+{requirements_str}
 
 OUTPUT FORMAT:
-{prompt_content.get('output_format', '')}
-"""
+{prompt_content.get('output_format', '')}"""
         
         final_prompt = full_text_template
         for placeholder, value in resolved_inputs.items():

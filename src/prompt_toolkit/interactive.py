@@ -45,19 +45,19 @@ def run_interactive_session(query):
         filled_values[placeholder] = user_value
 
     # Combine all text parts to perform substitution
-    full_text_template = f"""
-ROLE:
+    requirements = prompt_content.get('requirements') or []
+    requirements_str = '- ' + '\n- '.join(requirements) if requirements else ''
+    full_text_template = f"""ROLE:
 {prompt_content.get('role', '')}
 
 OBJECTIVE:
 {prompt_content.get('objective', '')}
 
 REQUIREMENTS:
-{'- ' + '\n- '.join(prompt_content.get('requirements') or [])}
+{requirements_str}
 
 OUTPUT FORMAT:
-{prompt_content.get('output_format', '')}
-"""
+{prompt_content.get('output_format', '')}"""
     
     # Substitute placeholder values
     final_prompt = full_text_template

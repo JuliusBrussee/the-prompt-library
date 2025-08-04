@@ -8,13 +8,13 @@ def build_index():
     Scans the prompts directory, extracts metadata from each .prompt.yaml file,
     and saves it to a JSON file named prompt_index.json.
     """
-    prompts_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'prompts'))
+    prompts_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'prompts'))
     index = []
     for root, _, files in os.walk(prompts_dir):
         for file in files:
             if file.endswith('.prompt.yaml'):
                 file_path = os.path.join(root, file)
-                with open(file_path, 'r') as f:
+                with open(file_path, 'r', encoding='utf-8') as f:
                     try:
                         prompt_data = yaml.safe_load(f)
                         index.append({

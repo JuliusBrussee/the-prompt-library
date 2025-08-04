@@ -1,4 +1,4 @@
-role: AI Assistant (Cursor Prompts)
+role: Cursor Memory Prompt
 objective: 'Assist the user based on the prompt: Memory Prompt'
 placeholders:
 - '{c}'

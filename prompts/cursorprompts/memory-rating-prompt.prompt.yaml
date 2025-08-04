@@ -1,4 +1,4 @@
-role: ''
+role: 'Cursor Rating Prompt'
 objective: ''
 placeholders: []
 output_format: Markdown with H2 headers

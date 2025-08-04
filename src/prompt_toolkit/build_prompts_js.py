@@ -6,7 +6,7 @@ import os
 
 prompts = []
 for filepath in glob.glob('prompts/**/*.prompt.yaml', recursive=True):
-    with open(filepath, 'r') as f:
+    with open(filepath, 'r', encoding='utf-8') as f:
         try:
             data = yaml.safe_load(f)
             if data:

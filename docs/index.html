@@ -1,102 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Prompt Library</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Prompt Library</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons / Favicon -->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Code highlight (optional, lightweight) -->
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css" onload="this.rel='stylesheet'">
+
+  <meta name="color-scheme" content="dark light" />
 </head>
 <body>
-    <div class="page-container">
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <h1 class="logo">The Prompt Library</h1>
-            </div>
-            
-            <div class="sidebar-content">
-                <div class="sidebar-controls">
-                    <button id="sort-by-btn" class="sidebar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
-                        <span>Sort By</span>
-                    </button>
-                    <div id="sort-by-dropdown" class="dropdown-content">
-                      <a href="#" data-sort="default">Default</a>
-                      <a href="#" data-sort="reverse">Reverse</a>
-                      <a href="#" data-sort="usage">Most Used</a>
-                    </div>
-                    <button id="clear-filters-btn" class="sidebar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
-                        <span>Clear Filters</span>
-                    </button>
-                  </div>
-                <div class="tags-section">
-                    <h2>Tags</h2>
-                    <div id="tag-filters"></div>
-                </div>
-            </div>
-            <div class="sidebar-footer">
-                <button id="random-prompt-btn" class="sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shuffle"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
-                    <span>Random Prompt</span>
-                </button>
-                <p>Created by <a href="https://github.com/JuliusBrussee/the-prompt-library" target="_blank">Julius Brussee</a></p>
-                <p class="subtle-count">Total Prompts: <span id="prompt-count-footer"></span></p>
-            </div>
+    <header class="topbar" role="banner">
+        <div class="topbar-inner">
+          <h1 class="brand">
+            <span class="logo-emoji" aria-hidden="true">🚀</span>
+            <span class="logo">The Prompt Library</span>
+          </h1>
+          <nav class="top-actions" aria-label="Global">
+            <button id="theme-toggle" class="icon-button" aria-label="Toggle theme" title="Toggle theme (T)">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v1.06a7.002 7.002 0 0 1 6.94 6.25a1 1 0 0 1-.99 1.12H18a6 6 0 1 1-6-6V4a1 1 0 0 1 1-1z"/></svg>
+            </button>
+            <a class="github-link" href="https://github.com/JuliusBrussee/the-prompt-library" target="_blank" rel="noopener">GitHub</a>
+          </nav>
         </div>
-        <div class="main-content">
-            <div class="search-container">
-                <input type="text" id="search" placeholder="Search prompts...">
-            </div>
-            <div class="prompts-container" id="prompts-container">
-            </div>
-        </div>
-    </div>
-    <div id="toast-container"></div>
+      </header>
 
-    <!-- Prompt Detail Modal -->
-    <div id="prompt-detail-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2 id="modal-role"></h2>
-            <div class="modal-section">
-                <h3>Objective</h3>
-                <p id="modal-objective"></p>
-            </div>
-            <div class="modal-section" id="modal-output-format-section">
-                <h3>Output Format</h3>
-                <pre><code id="modal-output-format"></code></pre>
-            </div>
-            <div class="modal-section" id="modal-placeholders-section">
-                <h3>Placeholders</h3>
-                <div id="modal-placeholders-inputs"></div>
-            </div>
-            <div class="modal-section" id="modal-tags-section">
-                <h3>Tags</h3>
-                <div id="modal-tags" class="tags"></div>
-            </div>
-            <div class="modal-section" id="modal-system-instructions-section" style="display: none;">
-                <h3>System Instructions</h3>
-                <pre><code id="modal-system-instructions"></code></pre>
-            </div>
-            <div class="modal-section" id="modal-requirements-section">
-                <h3>Requirements</h3>
-                <ul id="modal-requirements"></ul>
-            </div>
-            <div class="modal-section" id="modal-author-section">
-                <h3>Author</h3>
-                <p id="modal-author"></p>
-            </div>
-            <div class="modal-actions">
-                <button id="modal-copy-button">Copy Prompt</button>
-            </div>
+  <div class="page-container">
+    <aside class="sidebar" aria-label="Filters">
+      <div class="sidebar-header">
+        <h2 class="sr-only">Filters and Tools</h2>
+        <div class="search-container">
+          <div class="search-input-wrap" role="search">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 20l-5.2-5.2a7 7 0 1 0-1.4 1.4L20 21zM5 10a5 5 0 1 1 10 0A5 5 0 0 1 5 10z"/></svg>
+            <input type="text" id="search" placeholder="Search prompts, tags, objectives..." aria-label="Search prompts"/>
+            <kbd class="shortcut-hint">/</kbd>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <script src="prompts.js"></script>
-    <script src="app.js"></script>
+      <div class="sidebar-content">
+        <div class="sidebar-controls">
+          <button id="sort-by-btn" class="sidebar-button" aria-haspopup="listbox" aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18l-8 9v7l-4-2v-5z"/></svg>
+            <span>Sort By</span>
+          </button>
+          <div id="sort-by-dropdown" class="dropdown-content" role="listbox" aria-label="Sort options">
+            <a href="#" data-sort="default" role="option" aria-selected="true">Default</a>
+            <a href="#" data-sort="reverse" role="option">Reverse</a>
+            <a href="#" data-sort="usage" role="option">Most Used</a>
+          </div>
+          <button id="clear-filters-btn" class="sidebar-button" title="Clear filters (C)">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.3 5.71L12 12.01l-6.29-6.3L4.3 6.12L10.59 12.4L4.29 18.7l1.41 1.41l6.3-6.29l6.29 6.29l1.41-1.41l-6.29-6.3l6.29-6.29z"/></svg>
+            <span>Clear Filters</span>
+          </button>
+        </div>
+
+        <div class="tags-section">
+          <div class="tags-head">
+            <h2>Tags</h2>
+            <div class="tag-search">
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 20l-5.2-5.2a7 7 0 1 0-1.4 1.4L20 21zM5 10a5 5 0 1 1 10 0A5 5 0 0 1 5 10z"/></svg>
+              <input type="text" id="tag-search" placeholder="Filter tags..." aria-label="Filter tags"/>
+            </div>
+          </div>
+          <div id="tag-filters" class="tag-list" role="listbox" aria-multiselectable="true"></div>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="footer-actions">
+          <button id="random-prompt-btn" class="sidebar-button" title="Show random prompt (R)">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h7v7l-2.5-2.5l-4 4l-2-2l4-4zM10 21H3v-7l2.5 2.5l4-4l2 2l-4 4z"/></svg>
+            <span>Random Prompt</span>
+          </button>
+        </div>
+        <p>Created by <a href="https://github.com/JuliusBrussee/the-prompt-library" target="_blank" rel="noopener">Julius Brussee</a></p>
+        <p class="subtle-count">Total Prompts: <span id="prompt-count-footer"></span></p>
+      </div>
+    </aside>
+
+    <main class="main-content" id="main" tabindex="-1">
+      <section class="toolbar">
+        <div class="chips" id="active-filters" aria-live="polite"></div>
+        <div class="results-info">
+          <span id="results-count">0</span> results
+        </div>
+      </section>
+
+      <div class="prompts-container" id="prompts-container" aria-live="polite"></div>
+
+      <footer class="page-footer">
+        <small>Tip: Press / to focus search, R for random, C to clear, S to toggle sidebar, T to toggle theme.</small>
+      </footer>
+    </main>
+  </div>
+
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Prompt Detail Modal -->
+  <div id="prompt-detail-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-role" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-button" aria-label="Close detail (Esc)">&times;</button>
+      <h2 id="modal-role"></h2>
+
+      <div class="modal-header-badges">
+        <div class="badge" id="modal-author-badge" hidden></div>
+      </div>
+
+      <div class="modal-section">
+        <h3>Objective</h3>
+        <p id="modal-objective"></p>
+      </div>
+
+      <div class="modal-section" id="modal-output-format-section" hidden>
+        <h3>Output Format</h3>
+        <pre><code id="modal-output-format" class="language-markdown"></code></pre>
+      </div>
+
+      <div class="modal-section" id="modal-placeholders-section" hidden>
+        <h3>Placeholders</h3>
+        <div id="modal-placeholders-inputs"></div>
+      </div>
+
+      <div class="modal-section" id="modal-tags-section" hidden>
+        <h3>Tags</h3>
+        <div id="modal-tags" class="tags"></div>
+      </div>
+
+      <div class="modal-section" id="modal-system-instructions-section" hidden>
+        <h3>System Instructions</h3>
+        <pre><code id="modal-system-instructions" class="language-markdown"></code></pre>
+      </div>
+
+      <div class="modal-section" id="modal-requirements-section" hidden>
+        <h3>Requirements</h3>
+        <ul id="modal-requirements"></ul>
+      </div>
+
+      <div class="modal-actions">
+        <button id="modal-copy-button">Copy Prompt</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- App Scripts -->
+  <script src="prompts.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Optional highlight.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/common.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.hljs) setTimeout(() => hljs.highlightAll(), 0);
+    });
+  </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-role: AI Assistant (Cursor Prompts)
+role: Cursor Chat Prompt
 objective: 'Assist the user based on the prompt: Chat Prompt'
 placeholders:
 - '{path}'
